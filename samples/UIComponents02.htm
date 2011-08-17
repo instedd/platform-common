@@ -1,0 +1,117 @@
+<!DOCTYPE HTML> 
+<html lang="en"> 
+<head> 
+	<meta charset="UTF-8"> 
+<title>Forms UI Components</title>
+<link href="../theme/stylesheets/styles.css" rel="stylesheet" type="text/css" />
+<link href="../theme/stylesheets/jquery.bubblepopup.v2.3.1.css" rel="stylesheet" type="text/css" />
+<link href="../theme/stylesheets/datepicker.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script> 
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+
+<script src="../theme/javascripts/jquery.bubblepopup.v2.3.1.min.js" type="text/javascript"></script>
+<script src="../theme/javascripts/custom-form-elements.js" type="text/javascript"></script>
+<script type="text/javascript" src="../theme/javascripts/superbly-tagfield.min.js"></script> 
+
+
+
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+		// Documentation: http://www.vegabit.com/jquery_bubble_popup_v2/
+		//create default Bubble Popups for all buttons...
+		$('.prueba').CreateBubblePopup({
+											selectable: false,
+											position : 'top',
+											innerHtml: 'Esto es un tooltip <br /> \
+														hola como va?',
+											
+		
+											innerHtmlStyle: {
+																color:'#000000', 
+																
+															},
+																				
+											themeName: 	'grey',
+											themePath: 	'images/jquerybubblepopup-theme'
+										 
+										});
+
+});
+//-->
+</script>
+
+
+</head>
+
+<body>
+<form method="post" action="">
+<div id="Main">
+    <div id="Header">Header</div><!-- #Header -->
+    
+    <div id="Content">
+    
+    <p class="Title">Applications</p>
+
+
+			<div class="nav">
+				<ul id="navigation">
+ 					<li class="sep"></li>
+					<li>
+						<a href="#">
+							<span class="menu-mid">Home</span>
+						</a>
+					</li>
+ 					<li class="sep"></li>
+					<li>
+						<a href="#">
+							<span class="menu-mid wsub">My groups</span>
+						</a>
+	            	   	<div class="sub">
+			   				<ul>
+                                <li><a href="#">Item 1 paralala</a></li>
+                                <li><a href="#">Item 2 Hola so</a></li>
+                                <li><a href="#">Item 3</a></li>
+			   				</ul>
+                         </div>  
+					</li>
+ 					<li class="sep"></li>
+					<li>
+						<a href="#">
+							<span class="menu-mid">Tour</span>
+						</a>
+					</li>
+ 					<li class="sep"></li>
+					<li>
+						<a href="#">
+							<span class="menu-mid">Community</span>
+						</a>
+					</li>
+ 					<li class="sep"></li>
+					<li>
+						<a href="#">
+							<span class="menu-mid">Help</span>
+						</a>
+					</li>
+ 					<li class="sep"></li>
+                    
+			   	</ul>
+			</div><br clear="all">
+
+   
+	<hr />
+
+    
+    <div > <p>Viendo como funciona el popup <a href="#" class="prueba">Form UI components</a>. Este texto es la nada misma</p></div>
+
+<p>
+            
+            
+            </p>
+
+
+</div><!-- #Main -->
+</form>
+</body>
+</html>
