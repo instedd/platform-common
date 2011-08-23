@@ -25,13 +25,13 @@ Visit http://ryanfait.com/ for more information.
 
 var checkboxHeight = "25";
 var radioHeight = "25";
-var selectWidth = "auto";
+/*var selectWidth = "312";*/
 
 
 /* No need to change anything after this */
 
 
-document.write('<style type="text/css">input.styled { display: none; } select.styled { position: relative; width: ' + selectWidth + 'px; opacity: 0; filter: alpha(opacity=0); z-index: 5; } .disabled { opacity: 0.5; filter: alpha(opacity=50); }</style>');
+document.write('<style type="text/css">input.styled { display: none; } select.styled { position: relative; ' + /*width: ' + selectWidth + 'px;*/ 'opacity: 0; filter: alpha(opacity=0); z-index: 5; } .disabled { opacity: 0.5; filter: alpha(opacity=50); }</style>');
 
 var Custom = {
 	init: function() {
@@ -76,6 +76,14 @@ var Custom = {
 				span[a].id = "select" + inputs[a].name;
 				span[a].appendChild(textnode);
 				inputs[a].parentNode.insertBefore(span[a], inputs[a]);
+
+				// begin InSTEDD: in order to have rounded beginning of dropdowns 
+				var prefixSpan = document.createElement("span");
+				prefixSpan.className = "selectPrefix";
+				prefixSpan.id = "selectPrefix" + inputs[a].name;
+				span[a].parentNode.insertBefore(prefixSpan, span[a]);
+				// end
+				
 				if(!inputs[a].getAttribute("disabled")) {
 					inputs[a].onchange = Custom.choose;
 				} else {
