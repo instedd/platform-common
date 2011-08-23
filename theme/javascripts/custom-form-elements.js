@@ -33,11 +33,15 @@ var radioHeight = "25";
 
 document.write('<style type="text/css">input.styled { display: none; } select.styled { position: relative; ' + /*width: ' + selectWidth + 'px;*/ 'opacity: 0; filter: alpha(opacity=0); z-index: 5; } .disabled { opacity: 0.5; filter: alpha(opacity=50); }</style>');
 
+function hasStyledClass(domElem) {
+	return domElem.className.match(/\bstyled\b/)
+}
+
 var Custom = {
 	init: function() {
 		var inputs = document.getElementsByTagName("input"), span = Array(), textnode, option, active;
 		for(a = 0; a < inputs.length; a++) {
-			if((inputs[a].type == "checkbox" || inputs[a].type == "radio") && inputs[a].className == "styled") {
+			if((inputs[a].type == "checkbox" || inputs[a].type == "radio") && hasStyledClass(inputs[a])) {
 				span[a] = document.createElement("span");
 				span[a].className = inputs[a].type;
 
@@ -66,7 +70,7 @@ var Custom = {
 		}
 		inputs = document.getElementsByTagName("select");
 		for(a = 0; a < inputs.length; a++) {
-			if(inputs[a].className == "styled") {
+			if(hasStyledClass(inputs[a])) {
 				option = inputs[a].getElementsByTagName("option");
 				active = option[0].childNodes[0].nodeValue;
 				textnode = document.createTextNode(active);
@@ -133,13 +137,13 @@ var Custom = {
 	clear: function() {
 		inputs = document.getElementsByTagName("input");
 		for(var b = 0; b < inputs.length; b++) {
-			if(inputs[b].type == "checkbox" && inputs[b].checked == true && inputs[b].className == "styled") {
+			if(inputs[b].type == "checkbox" && inputs[b].checked == true && hasStyledClass(inputs[b])) {
 				inputs[b].previousSibling.style.backgroundPosition = "0 -" + checkboxHeight*2 + "px";
-			} else if(inputs[b].type == "checkbox" && inputs[b].className == "styled") {
+			} else if(inputs[b].type == "checkbox" && hasStyledClass(inputs[b])) {
 				inputs[b].previousSibling.style.backgroundPosition = "0 0";
-			} else if(inputs[b].type == "radio" && inputs[b].checked == true && inputs[b].className == "styled") {
+			} else if(inputs[b].type == "radio" && inputs[b].checked == true && hasStyledClass(inputs[b])) {
 				inputs[b].previousSibling.style.backgroundPosition = "0 -" + radioHeight*2 + "px";
-			} else if(inputs[b].type == "radio" && inputs[b].className == "styled") {
+			} else if(inputs[b].type == "radio" && hasStyledClass(inputs[b])) {
 				inputs[b].previousSibling.style.backgroundPosition = "0 0";
 			}
 		}
