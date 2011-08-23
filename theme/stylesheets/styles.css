@@ -384,4 +384,66 @@ a .menu-mid.wsub {
 }
 
 
+/* ---------------------- Tables --------------------------*/
 
+/* -------- General ---------*/
+.GralTable {
+	border:1px solid #e7e9ee;
+	margin-top:10px;
+	width:100%;
+	-moz-border-radius:6px 6px 6px 6px;
+	-webkit-border-radius:6px 6px 6px 6px;
+	border-radius:6px 6px 6px 6px;
+	
+}
+.GralTable th {
+	/* old browsers */
+	background: #e5e6ec;
+	/* firefox */
+	background: -moz-linear-gradient(top, #ffffff 0%, #e5e6ec 100%);
+	/* webkit */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e6ec));
+	/* ie */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e6ec',GradientType=0 );
+	color:#a7aab7;
+	text-align:left;
+	padding: 6px 0 0 10px;
+	border-right:1px solid #e7e9ee;
+	border-bottom:1px solid #e7e9ee
+}
+.GralTable th:first-child { border-left:none }
+.GralTable th:last-child { border-right:none }
+.GralTable th span { display:block; margin-right:5px; float:right }
+.GralTable tr:nth-child(2) {
+	background-color: #ffffff;
+	/* firefox */
+	background: -moz-linear-gradient(top, #e5e6ec 0%, #ffffff 30%);
+	/* webkit */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#ffffff), color-stop(0%,#e5e6ec));
+	/* ie */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e6ec',GradientType=0 );
+	color:#a7aab7
+}
+.GralTable tr:nth-child(2) td{
+	padding: 15px 0 6px 10px;
+}
+
+.GralTable td {
+	letter-spacing:-0.005em;
+	color:#5c658e;
+	padding: 0 0 0 10px;
+	border-spacing:0;
+}
+
+/* -------- Clean ---------*/
+.CleanTable th {
+	background:#ffffff;
+	border:none
+}
+.CleanTable td {
+	border:none
+}
+
+/* -------- Two column table  ---------*/
+.TwoColumn tr td:nth-child(1) { }
+.TwoColumn tr td:nth-child(2) { width:100px; padding-right:8px; text-align:right }
