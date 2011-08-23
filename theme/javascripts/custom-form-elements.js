@@ -58,6 +58,10 @@ var Custom = {
 				} else {
 					span[a].className = span[a].className += " disabled";
 				}
+				
+				if (inputs[a].type == "checkbox") {
+					span[a].id = "checkbox" + inputs[a].name;
+				}
 			}
 		}
 		inputs = document.getElementsByTagName("select");
