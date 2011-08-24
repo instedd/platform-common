@@ -18,6 +18,16 @@ $('#instedd-footer').append('\
         <div class="tool-name">Nuntium</div>\
       </a>\
     </li>\
+    <li id="veegilo">\
+      <a href="http://veegilo.instedd.org/">\
+        <div class="tool-name">Veegilo</div>\
+      </a>\
+    </li>\
+    <li id="remindem">\
+      <a href="http://remindem.instedd.org/">\
+        <div class="tool-name">Remindem</div>\
+      </a>\
+    </li>\
     <li id="nuntiumLocalGateway">\
       <a href="http://instedd.org/">\
         <div class="tool-name">Nuntium</div>\

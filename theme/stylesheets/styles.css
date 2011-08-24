@@ -451,31 +451,28 @@ a .menu-mid.wsub {
 .TwoColumn tr td:nth-child(1) { }
 .TwoColumn tr td:nth-child(2) { width:100px; padding-right:8px; text-align:right }
 
-/* --------- Footer --------*/
-
-.footer {
-  outline: 0;
-  height: 29px;
-  display: block;
-  background-color: transparent;
-  width: 16px;
-}
-.footer:hover {
-  background-position: 0px 29px; 
-}
+/* --------- Footer -------- */
 
 .footer-next {
-  background-image: url("http://bitbucket.org/ataraciuk/instedd-tools-footer/raw/tip/images/nextButton.png");
+	width: 16px;
+	height: 29px;
+  background-image: url(../images/footer/next.png);
   float: right;
   position: relative;
-  top: -60px;
+  top: -53px;
 }
 
 .footer-prev {
-  background-image: url("http://bitbucket.org/ataraciuk/instedd-tools-footer/raw/tip/images/prevButton.png");
+	width: 16px;
+	height: 29px;
+  background-image: url(../images/footer/previous.png);
   float: left;
   position: relative;
-  top: -60px;
+  top: -53px;
+}
+
+.footer-next:hover, .footer-prev:hover {
+	background-position: 0px -29px;
 }
 
 .jcarousel-clip, .jcarousel-container {
@@ -485,53 +482,40 @@ a .menu-mid.wsub {
 }
 
 .jcarousel-container {
-  background-image: url("http://bitbucket.org/ataraciuk/instedd-tools-footer/raw/tip/images/toolsContainer.png");
+  background-image: url(../images/footer/container.png);
 }
 
 .jcarousel-item {
-  width: 57px;
-  margin-left:1px;
-  padding-right:3px;
-  margin-right:1px;
+  width: 56px;
+  margin:3px;
   text-align: center;
-  margin-top: 3px;
-  padding-top: 5px;
 }
 
 .jcarousel-item a {
-  height: 65px;
+  height: 73px;
+	width: 56px;
   display: block;
   outline: 0;
   text-decoration: none;
   background-repeat: no-repeat;
-  background-position: 5px 0px;
+  background-position: 0px 0px;
 }
 
-.tool-name {
-  position: relative;
-  top: 43px;
-  font-size: 10px;
-  color: #777777;
-  font-family: arial;
-  line-height: 11px;
+.tool-name, .tool-sub-name {
+	display: none;
 }
 
-.tool-sub-name {
-  position: relative;
-  top: 43px;
-  font-size: 7px;
-  color: #aaaaaa;
-  font-family: arial;
-  line-height: 10px;
-}
-
-.jcarousel-item.selected {
-  background-image: url(../images/footer/selectedContainer.png);
-  height: 68px;
-}
-
-.jcarousel-item.selected a {
+.jcarousel-item.selected a, .jcarousel-item.selected a:hover {
+	background-position: 0px -180px;
   cursor: default;
+}
+
+.jcarousel-item a:hover {
+	background-position: 0px -90px;
+}
+
+.jcarousel-item a:active {
+	background-position: 0px -180px;
 }
 
 #geochat a {
@@ -578,5 +562,13 @@ a .menu-mid.wsub {
   background-image: url(../images/footer/buttons/geoChatPolls.png);
 }
 
-/* faltan: veegilo remindem */
+#veegilo a {
+  background-image: url(../images/footer/buttons/veegilo.png);
+}
+
+#remindem a {
+  background-image: url(../images/footer/buttons/remindem.png);
+}
+
+/* --------- End footer -------- */
 
