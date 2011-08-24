@@ -132,6 +132,7 @@ var Custom = {
 				}
 			}
 			element.checked = true;
+			jQuery(element).change();
 		}
 	},
 	clear: function() {
