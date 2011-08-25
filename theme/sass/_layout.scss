@@ -17,12 +17,22 @@ body {
   position: relative;
 }
 
+/* for centering */
 #header, #container, #footer-container {
   @include pagesize;
 }
 
+#header {
+  height: 80px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background: url(../images/footer/shadow.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;  
+}
+
 #toolbar {
-  height: 28px;
+  height: 30px;
 }
 
 #footer-span {
@@ -50,18 +60,32 @@ body {
   background: url(../images/footer/shadow.png);
   background-repeat:no-repeat;
   background-position:center 5px;
-  height: 176px;
+  height: 148px;
+  padding-top: 26px;
+  padding-bottom: 13px;
   & > div:nth-child(1) {
     border-bottom: 1px solid #ddd;
   }
   & > div:nth-child(2) {
     border-top: 1px solid white;
-    padding-top: 10px;
-    padding-bottom: 13px;
+    padding-top: 15px;
+  }
+  .platform {
+    background: url(../images/footer/InSTEDDPlatform.png);
+    background-repeat: no-repeat;
+    width: 260px;
+    height: 89px;
+    padding-top: 28px;
+  }
+  .more {
+    float: right;
+    margin: 7px 0px;
   }
 }
 
 /* temp */
 #toolbar { background-color: black; }
-#header { background-color: orange; }
 #container { background-color: yellow; }
+
+@import "footer";
+

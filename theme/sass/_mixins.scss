@@ -19,3 +19,16 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$from', endColorstr='$to',GradientType=0) /* IE6-9 */;
   background: linear-gradient(top, $from 0%,$to 100%) /* W3C */;
 }
+
+
+@mixin button-states($imageHeight) {
+  background-repeat: no-repeat;
+  background-position-x: 0px;
+  background-position-y: 0px;
+  &:hover {
+    background-position-y: -$imageHeight;
+  }
+  &:active {
+    background-position-y: -2*$imageHeight;
+  }
+}
