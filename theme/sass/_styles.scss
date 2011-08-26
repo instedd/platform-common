@@ -24,10 +24,20 @@ button { overflow:visible }
 textarea:focus, input:focus { outline: none; }
 
 /* ----- Input text ----- */
-.TextField { color:#5C658E; border:1px solid #dddddd; padding:0 6px; color: $black; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; -webkit-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset; -moz-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset; box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset; height:22px; width:inherit; margin: 1px; }
-.TextField:focus { border:2px solid #dddddd; margin: 0px; }
-.TextField.read, .TextField.read:focus { background: $disabled_bgtext; color: $disabled_text; border-width:1px; margin: 1px; }
-.TextField.error { border:2px solid #ff6600; margin: 0px; }
+@mixin texboxes_border {
+  border:1px solid #dddddd; 
+  padding:0 6px; 
+  color: $black; 
+  -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; -webkit-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset; -moz-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset; 
+  box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset;
+  margin: 1px;
+  color:#5C658E;
+  &:focus { border:2px solid #dddddd; margin: 0px; }
+  &.read, &.read:focus { background: $disabled_bgtext; color: $disabled_text; border-width:1px; margin: 1px; }
+  &.error { border:2px solid #ff6600; margin: 0px; }
+}
+
+.TextField {  height:22px; width:inherit; @include texboxes_border; }
 
 /* ----- Pulldown/Select ----- */
 .pulldown { position: relative; height:26px; }
@@ -45,7 +55,8 @@ select.styled { width:inherit; height:26px; line-height:26px; cursor:pointer } /
 }
 
 /* ----- Text Area ----- */
-.Txarea { width:inherit; -moz-border-radius:6px; -webkit-border-radius:6px; border-radius:6px;  border:1px solid #dddddd; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; -webkit-box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.3) inset; -moz-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset; box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset }
+textarea.styled { width:inherit; @include texboxes_border; }
+
 .TaskBox { background:#ebebeb; font-size:10px; letter-spacing:-0.05em; padding:2px 0; width:inherit; margin-top:5px; text-align:center; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px; white-space:nowrap }
 .TaskBox div { display: inline-block; vertical-align:middle; margin-left:-2px }
 .TaskBox div.L { color:#777777; width:4%; text-align:left; padding-left:0px }
@@ -76,7 +87,7 @@ select.styled { width:inherit; height:26px; line-height:26px; cursor:pointer } /
 .search { position:relative; display:inline }
 .search .TextField { background: url(../images/search/magnifyingGlass.png) no-repeat 99% 2px }
 .search .TextField:hover { background: url(../images/search/magnifyingGlass.png) no-repeat 99% -18px }
-.search .TextField:focus{ background: url(../images/search/magnifyingGlass.png) no-repeat 99% -37px }
+.search .TextField:focus { background: url(../images/search/magnifyingGlass.png) no-repeat 99% -38px }
 
 
 /* ----- Calendar ----- */

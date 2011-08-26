@@ -92,6 +92,8 @@ var Custom = {
 				span[a].parentNode.insertBefore(prefixSpan, span[a]);
 				// end
 				
+				// TODO should add prefix width to selct element to be 100% exact or use right padding/margin to remove from .select
+				
 				if(!inputs[a].getAttribute("disabled")) {
 					inputs[a].onchange = Custom.choose;
 				} else {
