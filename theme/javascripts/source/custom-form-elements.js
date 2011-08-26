@@ -96,6 +96,7 @@ var Custom = {
 					inputs[a].onchange = Custom.choose;
 				} else {
 					inputs[a].previousSibling.className = inputs[a].previousSibling.className += " disabled";
+					prefixSpan.className = prefixSpan.className + " disabled";
 				}
 			}
 		}
