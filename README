@@ -4,6 +4,14 @@ This is project consist on common files to be used among InSTEDD platform projec
 
 == How to develop ==
 
+To compile javascript files:
+  $ rake js
+To compile stylesheets files:
+  $ rake css
+  
+To compile all
+  $ rake all
+
 This is a plain compass project http://compass-style.org
 
   $ cd <working-copy>
@@ -14,12 +22,17 @@ This is a plain compass project http://compass-style.org
   
   To monitor your project for changes and automatically recompile:
   $ compass watch
-
+  
 == How to preview ==
 
 Under ./samples there are .html file that consumes ./theme directly
 
 == How to use it ==
 
-On your project you should copy ./theme folder and use ./samples to find which stylesheets/javascripts you need to include.
+On your project you should copy ./theme folder 
+  include:
+    stylesheets/theme.css
+    jquery
+    jquery-ui (may not be required)
+    javascripts/theme.js
 

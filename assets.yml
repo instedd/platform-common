@@ -1,0 +1,12 @@
+public: theme
+sources:
+  javascripts: javascripts/source
+destination:
+  javascripts: javascripts/temp
+javascripts:
+  theme:
+    - jquery.bubblepopup.v2.3.1.min
+    - custom-form-elements
+    - superbly-tagfield.min
+    - jquery.jcarousel.min
+    - footer
