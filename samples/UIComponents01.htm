@@ -12,41 +12,22 @@
         $(function() {
             var carTags = ['Cholera','H1N1','Hepatitis','Hepatize','Hepatized','Hepatizes','Hepatizing','Hrpatocellular','Kampong Cham','Kampong Chang','Kampong speu','Kampong Thom','Kampot','Honda','Hyundai','Jaguar','Jeep','Kia','Lada','Lexus','Lotus','Malaria','Mazda','Mercedes','Nissan','Opel','Peugeot','Porsche','Rover','Renault','Suzuki','Subaru','Seat','Tifus','Volvo','Vauxhall','VW'];
  
-            // Initialize Demo 1
-            /*$("#tagfield1").superblyTagField({
-                allowNewTags: true,
-                showTagsNumber: 10,
-                preset: ['Audi','Bentley'],
-                tags: carTags
-            });*/
- 
             // Initialize Demo 2
             $("#tagfield2").superblyTagField({
                 allowNewTags: true,
                 showTagsNumber: 10,
                 preset: ['Cholera','H1N1'],
                 tags: carTags
-            });
- 
-            // Display an alert dialog with the tags when the "show tags" buttons are pressed
-			/*
-            $('#tagDemoButton1').click(function(e){
-                alert($("#tagfield1").val());
-            });*/
-            $('#tagDemoButton2').click(function(e){
-                alert($("#tagfield2").val());
-            });
+            }); 
         });
     </script> 
     
   <script>
-  $(document).ready(function() {
-    $("#datepicker").datepicker();
-	$("#datepicker").datepicker( "option", "changeMonth", true );
-	$("#datepicker").datepicker( "option", "changeYear", true );
-	$("#datepicker").datepicker( "option", "currentText", 'Now' );
-	$("#datepicker").datepicker( "option", "duration", 'slow' );
-	//$("#datepicker").datepicker( "option", "showWeek", true );
+  $(function() {
+  	$(".ux-datepicker").datepicker( "option", "changeMonth", true );
+  	$(".ux-datepicker").datepicker( "option", "changeYear", true );
+  	$(".ux-datepicker").datepicker( "option", "currentText", 'Now' );
+  	$(".ux-datepicker").datepicker( "option", "duration", 'slow' );
   });
 </script>
 
@@ -62,18 +43,18 @@
     <div id="Content">
     
     <p class="Title">Text field</p>
-    <p><input type="text" class="TextField w30 read" value="Read-only" readonly="readonly" /></p>
-    <p><input type="text" class="TextField w30" value="Normal" /></p>
-    <p><input type="text" class="TextField w30 error" value="Invalid" /><span class="Ierror">Error description</span></p>
+    <p><input type="text" class="w30" value="Read-only" readonly="readonly" /></p>
+    <p><input type="text" class="w30" value="Normal" /></p>
+    <p><input type="text" class="w30 error" value="Invalid" /><span class="Ierror">Error description</span></p>
 
     <div class="demoTextfield"><img src="demoImg/textfield.png" /></div>
     
 	<hr />
 
-    <p class="Title">Combo box</p>
+    <p class="Title">Combo box / Dropdown</p>
     
-    <div class="pulldown w30"><!-- Pulldowns must be allways inside a div with the class pulldown assigned-->
-        <select name="d" class="styled">
+    <div class="ux-dropdown w30"><!-- Combos must be allways inside a div with the class ux-dropdown assigned-->
+        <select name="d">
             <option value="1">iLab</option>
             <option value="2">Instedd</option>
             <option value="3">Manas Technology</option>
@@ -81,8 +62,8 @@
     </div>
 
     <p>
-    <div class="pulldown w30"><!-- Pulldowns must be allways inside a div with the class pulldown assigned-->
-        <select name="e" class="styled" disabled="disabled">
+    <div class="ux-dropdown w30"><!-- Combos must be allways inside a div with the class ux-dropdown assigned-->
+        <select name="e" disabled="disabled">
             <option value="1">iLab</option>
             <option value="2">Instedd</option>
             <option value="3">Manas Technology</option>
@@ -96,24 +77,28 @@
 
     <p class="Title">Text area</p>
     
-    <div class="w50">
-    <textarea placeholder="Write your comment here" class="styled" ></textarea>
-    <div class="TaskBox">
-        <div class="L">182</div><div class="M"><span class="Fill"></span></div><div class="R">14</div>
-    </div><!--#TaskBox -->
-    </div>
-    
     <p>
-      <div class="w50">
-        <textarea class="styled error">Lorem ipsum dolor sit amet</textarea>
-      </div>
+      <textarea placeholder="Write your comment here" class="w50"></textarea>
     </p>
     
     <p>
-    <div class="w50">
-      <textarea class="styled read" readonly="readonly">Lorem ipsum dolor sit amet</textarea>
-    </div>
+      <textarea class="w50 error">Lorem ipsum dolor sit amet</textarea>
     </p>
+    
+    <p>    
+      <textarea class="ux-text w50" readonly="readonly">Readonly ... Lorem ipsum dolor sit amet</textarea>
+    </p>
+  <hr />
+  
+    <p class="Title">Text area + Wajbar</p>
+    
+    <div class="w50">
+      <textarea placeholder="Write your comment here"></textarea>
+      <div class="TaskBox">
+          <div class="L">182</div><div class="M"><span class="Fill"></span></div><div class="R">14</div>
+      </div><!--#TaskBox -->
+    </div>
+    
 	<hr />
 
     <p class="Title">Numeric stepper</p>
@@ -126,18 +111,17 @@
     
 	<hr />
 
-    <p class="Title">Auto complete</p>
-    <div class="search w30">
-        <input type="text"  placeholder="Search" class="TextField"> 
-    </div>
+    <p class="Title">Search</p>
+    <p>
+        <input type="text" placeholder="Search" class="w30 ux-search"> 
+    </p>
     
     
 	<hr />
 
     <p class="Title">Tags</p>
     <div class="w30">
-    <input type="text" id="tagfield2" >
-    <!-- <input style="margin:3px;" type="button" id="tagDemoButton2" value="show tags"> -->
+      <input type="text" id="tagfield2" >
     </div>
     
          
@@ -145,8 +129,8 @@
 
     <p class="Title">Date Picker</p>
     
-    <div class="Calendar w30">
-    <input type="text" id="datepicker" class="TextField" placeholder="" >
+    <div>
+      <input type="text" class="w30 ux-datepicker" />
     </div>
     
 	<hr />
