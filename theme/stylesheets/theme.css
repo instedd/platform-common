@@ -155,7 +155,7 @@ textarea:focus, input:focus {
 /* line 37, ../sass/_styles.scss */
 .pulldown:active .select {
   background: url(../images/combobox/white.png) no-repeat right -80px;
-  font: 14px/25px arial, sans-serif;
+  line-height: 26px;
 }
 
 /* line 38, ../sass/_styles.scss */
