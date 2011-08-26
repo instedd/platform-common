@@ -81,6 +81,19 @@ body {
   }
 }
 
+body.smallfooter #footer-span {
+  height: 52px;
+}
+
+body.smallfooter #footer-container {
+  height: 52px;
+  padding:0px;
+  & > div:nth-child(1) {
+    display: none;
+  }
+}
+
+
 /* temp */
 #toolbar { background-color: black; }
 #container { background-color: yellow; }

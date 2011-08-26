@@ -1,0 +1,19 @@
+.BreadCrumb { background:#d0d0d0; border-radius: 4px; height: 22px; overflow: hidden; width:700px }
+.BreadCrumb:focus { background: #333333 }
+.BreadCrumb ul { margin: 0; padding:0 0 0 1px }
+.BreadCrumb li { background:url(../theme/images/breadCrumbs/item.png) no-repeat left top; margin:0; padding:0 15px 0 10px; float:left; list-style:none; height:21px; margin-left:-10px; line-height:20px; text-shadow: 1px 1px #ffffff }
+.BreadCrumb li:hover { background:url(../theme/images/breadCrumbs/item.png) no-repeat left -30px }
+.BreadCrumb li:active { background:url(../theme/images/breadCrumbs/item.png) no-repeat left -60px; line-height:21px }
+.BreadCrumb li:first-child { background:url(../theme/images/breadCrumbs/item.png) no-repeat -10px top; border-radius: 4px 0 0 4px; border-left:1px solid #ffffff; margin-left:0px; padding-left:8px }
+.BreadCrumb li:first-child:hover { background:url(../theme/images/breadCrumbs/item.png) no-repeat -10px -30px }
+.BreadCrumb li:first-child:active { background:url(../theme/images/breadCrumbs/item.png) no-repeat -10px -60px; border:none; padding-left:9px }
+.BreadCrumb li:nth-last-child(0n+2) { background:url(../theme/images/breadCrumbs/item.png) no-repeat left top; padding:0 5px 0 10px; position:relative }
+.BreadCrumb li:nth-last-child(0n+2):hover { background:url(../theme/images/breadCrumbs/item.png) no-repeat left -30px }
+.BreadCrumb li:nth-last-child(0n+2):active { background:url(../theme/images/breadCrumbs/item.png) no-repeat left -60px }
+.BreadCrumb li:nth-last-child(0n+2) span { background:url(../theme/images/breadCrumbs/item.png) no-repeat right top; height:21px; width:10px; position:absolute; right:-6px }
+.BreadCrumb li:nth-last-child(0n+2):hover span { background:url(../theme/images/breadCrumbs/item.png) no-repeat right -30px }
+.BreadCrumb li:nth-last-child(0n+2):active span { background:url(../theme/images/breadCrumbs/item.png) no-repeat right -60px }
+.BreadCrumb li:last-child { background:none; color:#555555; margin-left:0px; text-shadow:none }
+.BreadCrumb li:last-child:hover { color:#777777 }
+
+ 
