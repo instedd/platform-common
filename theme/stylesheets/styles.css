@@ -1,3 +1,4 @@
+/*html {behavior: url('../theme/stylesheets/css3.htc');}*/
 /* ----- Estructura contenido ----- */
 body { background:#fff; font-family:Arial, Helvetica, sans-serif; font-size:12px }
 p { padding:0; margin:15px 0 }
@@ -20,7 +21,7 @@ a:hover { text-decoration:none }
 button { overflow:visible }
 
 /* ----- Input text ----- */
-.TextField { color:#5C658E; border:1px solid #dddddd; padding:0 6px; color:#000000; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; -webkit-box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.3) inset; -moz-box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.3) inset; box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.3) inset; height:22px; width:inherit }
+.TextField { color:#5C658E; border:1px solid #dddddd; padding:0 6px; color:#000000; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; -webkit-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset; -moz-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset; box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset; height:22px; width:inherit }
 .TextField:focus { border:2px solid #dddddd }
 .TextField.read { background:#eeeeee; color:#777777 }
 .TextField.read:focus { border-width:1px }
@@ -77,39 +78,34 @@ select.styled { width:inherit; font-size: 26px; height:26px; line-height:26px; c
 
 
 /* ----------- BUTTONS ------------- */
+
 /* ----- White ----- */
-.white { background:url(../images/buttons/white.png) no-repeat left top; color:#000; padding:0 6px 6px 10px; height:34px; border:none; position:relative; cursor:pointer; display:inline-block }
-.white:hover { background:url(../images/buttons/white.png) no-repeat left -40px }
-.white:active { background:url(../images/buttons/white.png) no-repeat left -80px; padding-top:1px }
-.white span { background:url(../images/buttons/white.png) no-repeat right top; display:block; height:34px; width:6px; position:absolute; top:0px; right:-6px; cursor:pointer }
-.white:hover span { background:url(../images/buttons/white.png) no-repeat right -40px }
-.white:active span { background:url(../images/buttons/white.png) no-repeat right -80px }
-@-moz-document url-prefix() { 
-.white span  { background:url(../images/buttons/white.png) no-repeat right top; display:block; height:34px; width:6px; position:absolute; top:-7px; right:7px; cursor:pointer  } 
-}
-/*.white>span { background:url(../images/buttons/white.png) no-repeat right top; display:block; height:34px; width:6px; position:absolute; _top:-7px; _right:7px; cursor:pointer }
+.white { padding:5px 8px; border:1px solid #ffffff; box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2); border-radius:4px; -css3-background: linear-gradient(90deg,#d0d0d0,#ffffff); background: -moz-linear-gradient(top, #ffffff 0%, #d0d0d0 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#d0d0d0)); -webkit-box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2); -moz-border-radius:4px; -webkit-border-radius:4px; color:#000000; cursor:pointer }
+
+.white:hover  { padding:5px 8px; border:1px solid #ffffff; box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2); border-radius:4px; -css3-background: linear-gradient(90deg,#c5c5c5,#f2f2f2); background: -moz-linear-gradient(top, #f2f2f2 0%, #c5c5c5 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c5c5c5), color-stop(100%,#f2f2f2)); -webkit-box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2); -moz-border-radius:4px; -webkit-border-radius:4px; color:#000000; cursor:pointer }
+
+.white:active { background:#d0d0d0; border:1px solid #d0d0d0; border-top:1px solid #9c9c9c; -webkit-box-shadow:none; -moz-box-shadow:none; box-shadow:none; padding:6px 8px 4px 8px; filter:progid:DXImageTransform.Microsoft.Shadow(color='#ffffff',direction='0',strength='0'); color:#000000; }
+
+.white.inactive { background:#ffffff; border:1px solid #d0d0d0; -webkit-box-shadow:none; -moz-box-shadow:none; box-shadow:none; padding:5px 8px; filter:progid:DXImageTransform.Microsoft.Shadow(color='#ffffff',direction='0',strength='0'); color:#999999 }
 
 /* ----- Grey ----- */
-.grey { background:url(../images/buttons/grey.png) no-repeat left top; color:#ffffff; padding:0 6px 6px 10px; height:34px; border:none; position:relative; cursor:pointer }
-.grey:hover { background:url(../images/buttons/grey.png) no-repeat left -40px }
-.grey:active { background:url(../images/buttons/grey.png) no-repeat left -80px; padding-top:1px }
-.grey span { background:url(../images/buttons/grey.png) no-repeat right top; display:block; height:34px; width:6px; position:absolute; top:0px; right:-6px; cursor:pointer }
-.grey:hover span { background:url(../images/buttons/grey.png) no-repeat right -40px }
-.grey:active span { background:url(../images/buttons/grey.png) no-repeat right -80px }
-@-moz-document url-prefix() { 
-.grey span { background:url(../images/buttons/grey.png) no-repeat right top; display:block; height:34px; width:6px; position:absolute; top:-7px; right:7px; cursor:pointer }
-}
+.grey { padding:5px 8px; border:1px solid #313131; box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2); border-radius:4px; -css3-background: linear-gradient(90deg,#383838,#777777); background: -moz-linear-gradient(top, #777777 0%, #383838 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#777777), color-stop(100%,#383838)); -webkit-box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2); -moz-border-radius:4px; -webkit-border-radius:4px; color:#ffffff; cursor:pointer }
+
+.grey:hover  { padding:5px 8px; border:1px solid #313131; box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2); border-radius:4px; -css3-background: linear-gradient(90deg,#252525,#656565); background: -moz-linear-gradient(top, #656565 0%, #252525 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#656565), color-stop(100%,#252525)); -webkit-box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2); -moz-border-radius:4px; -webkit-border-radius:4px; color:#ffffff; cursor:pointer }
+
+.grey:active { background:#3c3c3c; border:1px solid #3c3c3c; border-top:1px solid #1e1e1e; -webkit-box-shadow:none; -moz-box-shadow:none; box-shadow:none; padding:6px 8px 4px 8px; filter:progid:DXImageTransform.Microsoft.Shadow(color='#ffffff',direction='0',strength='0'); color:#ffffff; }
+
+.grey.inactive { background:#767676; border:1px solid #3c3c3c; -webkit-box-shadow:none; -moz-box-shadow:none; box-shadow:none; padding:5px 8px; filter:progid:DXImageTransform.Microsoft.Shadow(color='#ffffff',direction='0',strength='0'); color:#cccccc; }
+
 
 /* ----- Orange ----- */
-.orange { background:url(../images/buttons/orange.png) no-repeat left top; color:#ffffff; padding:0 6px 6px 10px; height:34px; border:none; position:relative; cursor:pointer }
-.orange:hover { background:url(../images/buttons/orange.png) no-repeat left -40px }
-.orange:active { background:url(../images/buttons/orange.png) no-repeat left -80px; padding-top:1px }
-.orange span { background:url(../images/buttons/orange.png) no-repeat right top; display:block; height:34px; width:6px; position:absolute; top:0px; right:-6px; cursor:pointer }
-.orange:hover span { background:url(../images/buttons/orange.png) no-repeat right -40px }
-.orange:active span { background:url(../images/buttons/orange.png) no-repeat right -80px }
-@-moz-document url-prefix() { 
-.orange span { background:url(../images/buttons/orange.png) no-repeat right top; display:block; height:34px; width:6px; position:absolute; top:-7px; right:7px; cursor:pointer }
-}
+.orange { padding:5px 8px; border:1px solid #fe3700; box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2); border-radius:4px; -css3-background: linear-gradient(90deg,#ff6600,#fe973a); background: -moz-linear-gradient(top, #fe973a 0%, #ff6600 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fe973a), color-stop(100%,#ff6600)); -webkit-box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2); -moz-border-radius:4px; -webkit-border-radius:4px; color:#ffffff; cursor:pointer }
+
+.orange:hover  { padding:5px 8px; border:1px solid #fe3700; box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2); border-radius:4px; -css3-background: linear-gradient(90deg,#e85d01,#ff8619); background: -moz-linear-gradient(top, #ff8619 0%, #e85d01 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e85d01), color-stop(100%,#ff8619)); -webkit-box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2); -moz-border-radius:4px; -webkit-border-radius:4px; color:#ffffff; cursor:pointer }
+
+.orange:active { background:#ff6802; border:1px solid #ff6802; border-top:1px solid #fe1600; -webkit-box-shadow:none; -moz-box-shadow:none; box-shadow:none; padding:6px 8px 4px 8px; filter:progid:DXImageTransform.Microsoft.Shadow(color='#ffffff',direction='0',strength='0'); color:#ffffff }
+
+.orange.inactive { background:#fe9639; border:1px solid #ff6802; -webkit-box-shadow:none; -moz-box-shadow:none; box-shadow:none; padding:5px 8px; filter:progid:DXImageTransform.Microsoft.Shadow(color='#ffffff',direction='0',strength='0'); color:#ffddbf }
 
 
 /* ---------- Icon buttons --------- */
