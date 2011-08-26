@@ -12,6 +12,7 @@ GEM
 
 PLATFORMS
   ruby
+  x86-mingw32
 
 DEPENDENCIES
   compass (>= 0.11.1)
