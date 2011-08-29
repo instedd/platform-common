@@ -27,6 +27,28 @@ var checkboxHeight = "25";
 var radioHeight = "25";
 /*var selectWidth = "312";*/
 
+var cfePositions = {
+	'checkbox': {
+		'on': '-20px 0px',
+		'on_hover': '-20px -20px',
+		'on_active': '0px -40px',
+		'on_disabled': '',
+		'off': '0px 0px',
+		'off_hover': '0px -20px',
+		'off_active': '-20px -40px',
+		'off_disabled': ''
+	},
+	'radio': {
+		'on': '-20px 0px',
+		'on_hover': '-20px -20px',
+		'on_active': '0px -40px',
+		'on_disabled': '',
+		'off': '0px 0px',
+		'off_hover': '0px -20px',
+		'off_active': '-20px -40px',
+		'off_disabled': ''
+	}
+};
 
 /* No need to change anything after this */
 
@@ -46,19 +68,30 @@ var Custom = {
 				span[a].className = inputs[a].type;
 
 				if(inputs[a].checked == true) {
-					if(inputs[a].type == "checkbox") {
-						position = "0 -" + (checkboxHeight*2) + "px";
-						span[a].style.backgroundPosition = position;
-					} else {
-						position = "0 -" + (radioHeight*2) + "px";
-						span[a].style.backgroundPosition = position;
-					}
+					span[a].style.backgroundPosition = cfePositions[inputs[a].type]['on'];
+				} else {
+					span[a].style.backgroundPosition = cfePositions[inputs[a].type]['off'];
 				}
 				inputs[a].parentNode.insertBefore(span[a], inputs[a]);
 				inputs[a].onchange = Custom.clear;
 				if(!inputs[a].getAttribute("disabled")) {
 					span[a].onmousedown = Custom.pushed;
 					span[a].onmouseup = Custom.check;
+					jQuery(span[a]).hover(function(){
+						element = this.nextSibling;
+						if(element.checked == true) {
+							this.style.backgroundPosition = cfePositions[element.type]['on_hover'];
+						} else if(element.checked != true) {
+							this.style.backgroundPosition = cfePositions[element.type]['off_hover'];
+						}
+					}, function(){
+						element = this.nextSibling;
+						if(element.checked == true) {
+							this.style.backgroundPosition = cfePositions[element.type]['on'];
+						} else if(element.checked != true) {
+							this.style.backgroundPosition = cfePositions[element.type]['off'];
+						}
+					});
 				} else {
 					span[a].className = span[a].className += " disabled";
 				}
@@ -106,31 +139,27 @@ var Custom = {
 	},
 	pushed: function() {
 		element = this.nextSibling;
-		if(element.checked == true && element.type == "checkbox") {
-			this.style.backgroundPosition = "0 -" + checkboxHeight*3 + "px";
-		} else if(element.checked == true && element.type == "radio") {
-			this.style.backgroundPosition = "0 -" + radioHeight*3 + "px";
-		} else if(element.checked != true && element.type == "checkbox") {
-			this.style.backgroundPosition = "0 -" + checkboxHeight + "px";
-		} else {
-			this.style.backgroundPosition = "0 -" + radioHeight + "px";
+		if(element.checked == true) {
+			this.style.backgroundPosition = cfePositions[element.type]['off_active'];
+		} else if(element.checked != true) {
+			this.style.backgroundPosition = cfePositions[element.type]['on_active'];
 		}
 	},
 	check: function() {
 		element = this.nextSibling;
 		if(element.checked == true && element.type == "checkbox") {
-			this.style.backgroundPosition = "0 0";
+			this.style.backgroundPosition = cfePositions[element.type]['off'];
 			element.checked = false;
 		} else {
 			if(element.type == "checkbox") {
-				this.style.backgroundPosition = "0 -" + checkboxHeight*2 + "px";
+				this.style.backgroundPosition = cfePositions[element.type]['on'];
 			} else {
-				this.style.backgroundPosition = "0 -" + radioHeight*2 + "px";
+				this.style.backgroundPosition = cfePositions[element.type]['on'];
 				group = this.nextSibling.name;
 				inputs = document.getElementsByTagName("input");
 				for(a = 0; a < inputs.length; a++) {
 					if(inputs[a].name == group && inputs[a] != this.nextSibling) {
-						inputs[a].previousSibling.style.backgroundPosition = "0 0";
+						inputs[a].previousSibling.style.backgroundPosition = cfePositions[element.type]['off'];
 					}
 				}
 			}
@@ -142,13 +171,13 @@ var Custom = {
 		inputs = document.getElementsByTagName("input");
 		for(var b = 0; b < inputs.length; b++) {
 			if(inputs[b].type == "checkbox" && inputs[b].checked == true && hasStyledClass(inputs[b])) {
-				inputs[b].previousSibling.style.backgroundPosition = "0 -" + checkboxHeight*2 + "px";
+				inputs[b].previousSibling.style.backgroundPosition = cfePositions[inputs[b].type]['on'];
 			} else if(inputs[b].type == "checkbox" && hasStyledClass(inputs[b])) {
-				inputs[b].previousSibling.style.backgroundPosition = "0 0";
+				inputs[b].previousSibling.style.backgroundPosition = cfePositions[inputs[b].type]['off'];
 			} else if(inputs[b].type == "radio" && inputs[b].checked == true && hasStyledClass(inputs[b])) {
-				inputs[b].previousSibling.style.backgroundPosition = "0 -" + radioHeight*2 + "px";
+				inputs[b].previousSibling.style.backgroundPosition = cfePositions[inputs[b].type]['on'];
 			} else if(inputs[b].type == "radio" && hasStyledClass(inputs[b])) {
-				inputs[b].previousSibling.style.backgroundPosition = "0 0";
+				inputs[b].previousSibling.style.backgroundPosition = cfePositions[inputs[b].type]['off'];
 			}
 		}
 	},

@@ -103,11 +103,21 @@ textarea.ux-text { width:inherit; @include texboxes_border; }
 }
 
 /* ----- Checkbox ----- */
-.checkbox { background:url(../images/checkBox/checkbox.png) no-repeat; width:19px; height:26px; display:inline-block; vertical-align:middle }
+.checkbox { 
+  background:url(../images/checkBox/white.png) no-repeat; 
+  width:19px; height:19px; 
+  display:inline-block; 
+  vertical-align:middle;
+}
 
 
 /* ----- Radio ----- */
-.radio { background:url(../images/radioButton/radio.png) no-repeat; width:16px; height:24px;	display:inline-block;	vertical-align:middle }
+.radio { 
+  background:url(../images/radioButton/white.png) no-repeat; 
+  width:16px; height:19px; 
+  display:inline-block;	
+  vertical-align:middle;
+}
 
 
 /* ----- Search ----- */

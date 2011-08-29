@@ -2,11 +2,12 @@
 	$(function(){
 		// initialize built-in components
 		$(".ux-datepicker").datepicker();
-		$("input[type='text']").addClass("ux-text")
-		$("textarea").addClass("ux-text")
+		$("input[type='text']").addClass("ux-text");
+		$("textarea").addClass("ux-text");
 		$("input[readonly='readonly'], textarea[readonly='readonly']").addClass("readonly");
-		$(".ux-dropdown select").addClass("styled")
-		
+		$(".ux-dropdown select").addClass("styled");
+		$("input[type='radio']").addClass("styled");
+		$("input[type='checkbox']").addClass("styled");		
 		
 		$(".ux-nstep").each(function(){
 			var nstep = $(this);
