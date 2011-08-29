@@ -32,21 +32,17 @@ var cfePositions = {
 		'on': '-20px 0px',
 		'on_hover': '-20px -20px',
 		'on_active': '0px -40px',
-		'on_disabled': '',
 		'off': '0px 0px',
 		'off_hover': '0px -20px',
-		'off_active': '-20px -40px',
-		'off_disabled': ''
+		'off_active': '-20px -40px'
 	},
 	'radio': {
 		'on': '-20px 0px',
 		'on_hover': '-20px -20px',
 		'on_active': '0px -40px',
-		'on_disabled': '',
 		'off': '0px 0px',
 		'off_hover': '0px -20px',
-		'off_active': '-20px -40px',
-		'off_disabled': ''
+		'off_active': '-20px -40px'
 	}
 };
 
