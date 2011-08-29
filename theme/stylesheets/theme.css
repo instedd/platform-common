@@ -20,10 +20,11 @@ p {
 }
 
 /* line 6, ../sass/_styles.scss */
-p.Title {
+h1 {
   font-size: 20px;
   color: #777777;
   margin: 0 0 15px 0;
+  font-weight: normal;
 }
 
 /* line 7, ../sass/_styles.scss */
@@ -36,60 +37,30 @@ hr {
   position: relative;
 }
 
-/* line 9, ../sass/_styles.scss */
-#Main {
-  padding: 30px;
-}
-
-/* line 10, ../sass/_styles.scss */
-#Header {
-  font-size: 60px;
-  color: #777777;
-  font-weight: lighter;
-}
-
-/* line 11, ../sass/_styles.scss */
-#Content {
-  margin-top: 30px;
-}
-
-/* ----- Imagenes de la demo ----- */
-/* line 14, ../sass/_styles.scss */
-.demoTextfield {
-  position: relative;
-  margin: -122px 0 0 520px;
-}
-
-/* line 15, ../sass/_styles.scss */
-.demoPulldown {
-  position: relative;
-  margin: -26px 0 0 520px;
-}
-
 /* ----- CLASSES ----- */
-/* line 20, ../sass/_styles.scss */
+/* line 10, ../sass/_styles.scss */
 a {
   color: inherit;
   text-decoration: none;
 }
 
-/* line 21, ../sass/_styles.scss */
+/* line 11, ../sass/_styles.scss */
 a:hover {
   text-decoration: none;
 }
 
-/* line 22, ../sass/_styles.scss */
+/* line 12, ../sass/_styles.scss */
 button {
   overflow: visible;
 }
 
-/* line 24, ../sass/_styles.scss */
-textarea:focus, input:focus {
+/* line 14, ../sass/_styles.scss */
+textarea:focus, input:focus, button:focus {
   outline: none;
 }
 
 /* ----- Input text ----- */
-/* line 40, ../sass/_styles.scss */
+/* line 30, ../sass/_styles.scss */
 input.ux-text {
   height: 22px;
   width: inherit;
@@ -105,32 +76,32 @@ input.ux-text {
   margin: 1px;
   color: #5C658E;
 }
-/* line 35, ../sass/_styles.scss */
+/* line 25, ../sass/_styles.scss */
 input.ux-text:focus {
   border: 2px solid #dddddd;
   margin: 0px;
 }
-/* line 36, ../sass/_styles.scss */
+/* line 26, ../sass/_styles.scss */
 input.ux-text.readonly, input.ux-text.readonly:focus {
   background: #d0d0d0;
   color: #999999;
   border-width: 1px;
   margin: 1px;
 }
-/* line 37, ../sass/_styles.scss */
+/* line 27, ../sass/_styles.scss */
 input.ux-text.error {
   border: 2px solid #ff6600;
   margin: 0px;
 }
 
 /* ----- Dropdown/Select ----- */
-/* line 43, ../sass/_styles.scss */
+/* line 33, ../sass/_styles.scss */
 .ux-dropdown {
   position: relative;
   height: 26px;
   /* for chrome: font-size: 26px; */
 }
-/* line 47, ../sass/_styles.scss */
+/* line 37, ../sass/_styles.scss */
 .ux-dropdown .selectPrefix {
   background: url(../images/combobox/white.png) no-repeat left top;
   height: 26px;
@@ -138,7 +109,7 @@ input.ux-text.error {
   display: inline-block;
   position: absolute;
 }
-/* line 54, ../sass/_styles.scss */
+/* line 44, ../sass/_styles.scss */
 .ux-dropdown .select {
   background: url(../images/combobox/white.png) no-repeat right top;
   left: 7px;
@@ -150,29 +121,29 @@ input.ux-text.error {
   text-shadow: 0px 1px 0px #fff;
   line-height: 25px;
 }
-/* line 66, ../sass/_styles.scss */
+/* line 56, ../sass/_styles.scss */
 .ux-dropdown:hover .selectPrefix {
   background-position-y: -40px;
 }
-/* line 67, ../sass/_styles.scss */
+/* line 57, ../sass/_styles.scss */
 .ux-dropdown:hover .select {
   background-position-y: -40px;
 }
-/* line 68, ../sass/_styles.scss */
+/* line 58, ../sass/_styles.scss */
 .ux-dropdown:active .selectPrefix {
   background-position-y: -80px;
 }
-/* line 69, ../sass/_styles.scss */
+/* line 59, ../sass/_styles.scss */
 .ux-dropdown:active .select {
   background-position-y: -80px;
   line-height: 26px;
 }
-/* line 70, ../sass/_styles.scss */
+/* line 60, ../sass/_styles.scss */
 .ux-dropdown .select.disabled, .ux-dropdown .selectPrefix.disabled {
   background-position-y: -120px;
   line-height: 25px;
 }
-/* line 75, ../sass/_styles.scss */
+/* line 65, ../sass/_styles.scss */
 .ux-dropdown select.styled {
   width: inherit;
   height: 26px;
@@ -182,7 +153,7 @@ input.ux-text.error {
 }
 
 /* ----- Text Area ----- */
-/* line 85, ../sass/_styles.scss */
+/* line 75, ../sass/_styles.scss */
 textarea.ux-text {
   width: inherit;
   border: 1px solid #dddddd;
@@ -197,25 +168,25 @@ textarea.ux-text {
   margin: 1px;
   color: #5C658E;
 }
-/* line 35, ../sass/_styles.scss */
+/* line 25, ../sass/_styles.scss */
 textarea.ux-text:focus {
   border: 2px solid #dddddd;
   margin: 0px;
 }
-/* line 36, ../sass/_styles.scss */
+/* line 26, ../sass/_styles.scss */
 textarea.ux-text.readonly, textarea.ux-text.readonly:focus {
   background: #d0d0d0;
   color: #999999;
   border-width: 1px;
   margin: 1px;
 }
-/* line 37, ../sass/_styles.scss */
+/* line 27, ../sass/_styles.scss */
 textarea.ux-text.error {
   border: 2px solid #ff6600;
   margin: 0px;
 }
 
-/* line 87, ../sass/_styles.scss */
+/* line 77, ../sass/_styles.scss */
 .TaskBox {
   background: #ebebeb;
   font-size: 10px;
@@ -230,14 +201,14 @@ textarea.ux-text.error {
   white-space: nowrap;
 }
 
-/* line 88, ../sass/_styles.scss */
+/* line 78, ../sass/_styles.scss */
 .TaskBox div {
   display: inline-block;
   vertical-align: middle;
   margin-left: -2px;
 }
 
-/* line 89, ../sass/_styles.scss */
+/* line 79, ../sass/_styles.scss */
 .TaskBox div.L {
   color: #777777;
   width: 4%;
@@ -245,7 +216,7 @@ textarea.ux-text.error {
   padding-left: 0px;
 }
 
-/* line 90, ../sass/_styles.scss */
+/* line 80, ../sass/_styles.scss */
 .TaskBox div.R {
   color: #f86808;
   width: 4%;
@@ -253,14 +224,14 @@ textarea.ux-text.error {
   padding-right: 0px;
 }
 
-/* line 91, ../sass/_styles.scss */
+/* line 81, ../sass/_styles.scss */
 .TaskBox div.M {
   background: #f86808;
   width: 88%;
   margin: 0 2px;
 }
 
-/* line 92, ../sass/_styles.scss */
+/* line 82, ../sass/_styles.scss */
 .TaskBox div span {
   background: #777777;
   height: 4px;
@@ -269,14 +240,16 @@ textarea.ux-text.error {
 }
 
 /* ----- Numeric Stepper ----- */
-/* line 96, ../sass/_styles.scss */
-.nstep {
+/* line 86, ../sass/_styles.scss */
+.ux-nstep {
   position: relative;
   display: inline;
 }
-
-/* line 97, ../sass/_styles.scss */
-.nstep .kup {
+/* line 89, ../sass/_styles.scss */
+.ux-nstep .kup {
+  background-repeat: no-repeat;
+  background-position-x: 0px;
+  background-position-y: 0px;
   background: url(../images/numericStepper/up.png) no-repeat center top;
   width: 15px;
   height: 12px;
@@ -286,19 +259,19 @@ textarea.ux-text.error {
   right: 5px;
   top: -3px;
 }
-
-/* line 98, ../sass/_styles.scss */
-.nstep .kup:hover {
-  background: url(../images/numericStepper/up.png) no-repeat center -10px;
+/* line 28, ../sass/_mixins.scss */
+.ux-nstep .kup:hover {
+  background-position-y: -10px;
 }
-
-/* line 99, ../sass/_styles.scss */
-.nstep .kup:active {
-  background: url(../images/numericStepper/up.png) no-repeat center -20px;
+/* line 31, ../sass/_mixins.scss */
+.ux-nstep .kup:active {
+  background-position-y: -20px;
 }
-
-/* line 100, ../sass/_styles.scss */
-.nstep .kdown {
+/* line 96, ../sass/_styles.scss */
+.ux-nstep .kdown {
+  background-repeat: no-repeat;
+  background-position-x: 0px;
+  background-position-y: 0px;
   background: url(../images/numericStepper/down.png) no-repeat center top;
   width: 15px;
   height: 12px;
@@ -308,15 +281,13 @@ textarea.ux-text.error {
   right: 5px;
   bottom: -3px;
 }
-
-/* line 101, ../sass/_styles.scss */
-.nstep .kdown:hover {
-  background: url(../images/numericStepper/down.png) no-repeat center -10px;
+/* line 28, ../sass/_mixins.scss */
+.ux-nstep .kdown:hover {
+  background-position-y: -10px;
 }
-
-/* line 102, ../sass/_styles.scss */
-.nstep .kdown:active {
-  background: url(../images/numericStepper/down.png) no-repeat center -20px;
+/* line 31, ../sass/_mixins.scss */
+.ux-nstep .kdown:active {
+  background-position-y: -20px;
 }
 
 /* ----- Checkbox ----- */
@@ -1172,18 +1143,36 @@ a .menu-mid.wsub {
 /* ------------ Super TAG ------------------ */
 /* line 385, ../sass/_styles.scss */
 .superblyTagfieldDiv {
-  color: #5C658E;
   border: 1px solid #dddddd;
-  padding: 0 1px;
-  color: #000000;
+  padding: 0 6px;
+  color: black;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  -webkit-box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.3) inset;
+  -webkit-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset;
   -moz-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset;
   box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset;
+  margin: 1px;
+  color: #5C658E;
   min-height: 22px;
   width: inherit;
+}
+/* line 25, ../sass/_styles.scss */
+.superblyTagfieldDiv:focus {
+  border: 2px solid #dddddd;
+  margin: 0px;
+}
+/* line 26, ../sass/_styles.scss */
+.superblyTagfieldDiv.readonly, .superblyTagfieldDiv.readonly:focus {
+  background: #d0d0d0;
+  color: #999999;
+  border-width: 1px;
+  margin: 1px;
+}
+/* line 27, ../sass/_styles.scss */
+.superblyTagfieldDiv.error {
+  border: 2px solid #ff6600;
+  margin: 0px;
 }
 
 /* line 387, ../sass/_styles.scss */
@@ -1223,8 +1212,8 @@ a .menu-mid.wsub {
 
 /* line 412, ../sass/_styles.scss */
 .superblyTagItems > li {
-  font-size: 12px;
-  font-family: Arial, Georgia, Helvetica, sans-serif;
+  /*  font-size:12px;
+  	font-family: Arial, Georgia, Helvetica, sans-serif; */
   color: #000;
   list-style: none;
   float: left;
@@ -1274,8 +1263,8 @@ a .menu-mid.wsub {
 
 /* line 451, ../sass/_styles.scss */
 .superblySuggestItems .superblySuggestItem {
-  font-size: 11px;
-  font-family: Arial, Georgia, Helvetica, sans-serif;
+  /*    font-size:11px;
+  	font-family: Arial, Georgia, Helvetica, sans-serif; */
   padding: 3px 5px;
   list-style: none;
   float: none;

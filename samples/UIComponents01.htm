@@ -7,7 +7,13 @@
 <script type="text/javascript" src="../theme/javascripts/jquery-1.6.2.min.js"></script> 
 <script type="text/javascript" src="../theme/javascripts/jquery-ui-1.8.16.min.js"></script>
 <script type="text/javascript" src="../theme/javascripts/theme.js"></script>
-
+<style type="text/css">
+#Main { padding:30px }
+#Header { font-size:60px; color:#777777; font-weight:lighter }
+#Content{ margin-top:30px }
+.demoTextfield { position:relative; margin:-122px 0 0 520px;}
+.demoPulldown { position:relative; margin:-26px 0 0 520px;}
+</style>
     <script type="text/javascript"> 
         $(function() {
             var carTags = ['Cholera','H1N1','Hepatitis','Hepatize','Hepatized','Hepatizes','Hepatizing','Hrpatocellular','Kampong Cham','Kampong Chang','Kampong speu','Kampong Thom','Kampot','Honda','Hyundai','Jaguar','Jeep','Kia','Lada','Lexus','Lotus','Malaria','Mazda','Mercedes','Nissan','Opel','Peugeot','Porsche','Rover','Renault','Suzuki','Subaru','Seat','Tifus','Volvo','Vauxhall','VW'];
@@ -42,7 +48,7 @@
     
     <div id="Content">
     
-    <p class="Title">Text field</p>
+    <h1>Text field</h1>
     <p><input type="text" class="w30" value="Read-only" readonly="readonly" /></p>
     <p><input type="text" class="w30" value="Normal" /></p>
     <p><input type="text" class="w30 error" value="Invalid" /><span class="Ierror">Error description</span></p>
@@ -51,7 +57,7 @@
     
 	<hr />
 
-    <p class="Title">Combo box / Dropdown</p>
+    <h1>Combo box / Dropdown</h1>
     
     <div class="ux-dropdown w30"><!-- Combos must be allways inside a div with the class ux-dropdown assigned-->
         <select name="d">
@@ -75,7 +81,7 @@
     
 	<hr />
 
-    <p class="Title">Text area</p>
+    <h1>Text area</h1>
     
     <p>
       <textarea placeholder="Write your comment here" class="w50"></textarea>
@@ -90,7 +96,7 @@
     </p>
   <hr />
   
-    <p class="Title">Text area + Wajbar</p>
+    <h1>Text area + Wajbar</h1>
     
     <div class="w50">
       <textarea placeholder="Write your comment here"></textarea>
@@ -101,17 +107,15 @@
     
 	<hr />
 
-    <p class="Title">Numeric stepper</p>
-    <div class="nstep"><!-- Numeric steppers Up/Down must be allways inside a div with the class nstep assigned. With must be apllied to Text input-->
-        <input type="text" name="nodes" id="nodes" size="2" value="1" class="TextField w06" >
-        <input type="button" value="" onClick="this.form.nodes.value--" readonly="readonly" class="kdown">
-        <input type="button" value="" onClick="this.form.nodes.value++" class="kup">
+    <h1>Numeric stepper</h1>
+    <div class="ux-nstep w06"><!-- Numeric steppers Up/Down must be allways inside a div with the class ux-nstep assigned. Width may be applied to div or input -->
+        <input type="text" size="2" value="1">
     </div>
      
     
 	<hr />
 
-    <p class="Title">Search</p>
+    <h1>Search</h1>
     <p>
         <input type="text" placeholder="Search" class="w30 ux-search"> 
     </p>
@@ -119,9 +123,9 @@
     
 	<hr />
 
-    <p class="Title">Tags</p>
+    <h1>Tags</h1>
     <div class="w30">
-      <input type="text" id="tagfield2" >
+      <input type="text" id="tagfield2">
     </div>
     
          
@@ -135,12 +139,12 @@
     
 	<hr />
 
-    <p class="Title">CRUD list</p>
+    <h1>CRUD list</h1>
     
     
 	<hr />
 
-    <p class="Title">Radio button</p>
+    <h1>Radio button</h1>
     
     <p>
     <input type="radio" class="styled" checked name="GroupA" > Enabled <br>
@@ -154,7 +158,7 @@
     
 	<hr />
 
-    <p class="Title">Checkbox</p>
+    <h1>Checkbox</h1>
     
     <p>
     <input type="checkbox" class="styled" checked name="GroupC" > SMS <br>
@@ -168,38 +172,38 @@
     
 	<hr />
 
-    <p class="Title">White button</p>
+    <h1>White button</h1>
     
     <button type="button" class="white">Label</button>
     
    	
 	<hr />
 
-    <p class="Title">Grey button</p>
+    <h1>Grey button</h1>
     
     <button type="button" class="grey"><span></span>Label</button>
     
     
 	<hr />
 
-    <p class="Title">Orange button</p>
+    <h1>Orange button</h1>
     
     <button type="button" class="orange"><span></span>Label</button>
     
     
 	<hr />
 
-    <p class="Title">Icon button</p>
+    <h1>Icon button</h1>
     
     <button type="button" class="icon farrow"></button><span><a href="#">Label</a></span>
     
 	<hr />
 
-    <p class="Title">Mark button</p>
+    <h1>Mark button</h1>
 
     <hr />
     
-    <p class="Title">Two Column Table</p>
+    <h1>Two Column Table</h1>
 
     <table class="GralTable TwoColumn CleanTable">
         <tr>
@@ -233,7 +237,7 @@
 
    <hr />
     
-    <p class="Title">Table</p>
+    <h1>Table</h1>
 
     <table class="GralTable">
         <tr>

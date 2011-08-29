@@ -3,25 +3,15 @@
 body { background:#fff; font-family:Arial, Helvetica, sans-serif; font-size:14px }
 textarea, input, select, button, label { font-size:14px }
 p { padding:0; margin:15px 0 }
-p.Title { font-size:20px; color:#777777; margin:0 0 15px 0 }
+h1 { font-size:20px; color:#777777; margin:0 0 15px 0; font-weight: normal; }
 hr { border:0; height:1px; margin:20px 0 32px; color:#CCC; background:#CCC; position:relative }
-
-#Main { padding:30px }
-#Header { font-size:60px; color:#777777; font-weight:lighter }
-#Content{ margin-top:30px }
-
-/* ----- Imagenes de la demo ----- */
-.demoTextfield { position:relative; margin:-122px 0 0 520px;}
-.demoPulldown { position:relative; margin:-26px 0 0 520px;}
-
-
 
 /* ----- CLASSES ----- */
 a { color:inherit; text-decoration:none }
 a:hover { text-decoration:none }
 button { overflow:visible }
 
-textarea:focus, input:focus { outline: none; }
+textarea:focus, input:focus, button:focus { outline: none; }
 
 /* ----- Input text ----- */
 @mixin texboxes_border {
@@ -93,14 +83,24 @@ textarea.ux-text { width:inherit; @include texboxes_border; }
 
 
 /* ----- Numeric Stepper ----- */
-.nstep { position:relative; display:inline }
-.nstep .kup { background:url(../images/numericStepper/up.png) no-repeat center top; width:15px; height:12px; cursor:pointer; border:none; position:absolute; right:5px; top:-3px }
-.nstep .kup:hover { background:url(../images/numericStepper/up.png) no-repeat center -10px }
-.nstep .kup:active{ background:url(../images/numericStepper/up.png) no-repeat center -20px }
-.nstep .kdown { background:url(../images/numericStepper/down.png) no-repeat center top; width:15px; height:12px; cursor:pointer; border:none; position:absolute; right:5px; bottom:-3px }
-.nstep .kdown:hover { background:url(../images/numericStepper/down.png) no-repeat center -10px }
-.nstep .kdown:active { background:url(../images/numericStepper/down.png) no-repeat center -20px }
-
+.ux-nstep { 
+  position:relative; 
+  display:inline;
+  .kup { 
+    @include button-states(10px);
+    background:url(../images/numericStepper/up.png) no-repeat center top; 
+    width:15px; height:12px; 
+    cursor:pointer; border:none; 
+    position:absolute; right:5px; top:-3px;
+  }
+  .kdown { 
+    @include button-states(10px);
+    background:url(../images/numericStepper/down.png) no-repeat center top; 
+    width:15px; height:12px; 
+    cursor:pointer; border:none; 
+    position:absolute; right:5px; bottom:-3px 
+  }
+}
 
 /* ----- Checkbox ----- */
 .checkbox { background:url(../images/checkBox/checkbox.png) no-repeat; width:19px; height:26px; display:inline-block; vertical-align:middle }
@@ -382,7 +382,7 @@ a .menu-mid.wsub {
 
 
 /* ------------ Super TAG ------------------ */
-.superblyTagfieldDiv { color:#5C658E; border:1px solid #dddddd; padding:0 1px; color:#000000; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; -webkit-box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.3) inset; -moz-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset; box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset; min-height:22px; width:inherit }
+.superblyTagfieldDiv { @include texboxes_border; min-height:22px; width:inherit; }
 
 .superblyTagfieldClearer{ clear: both }
 	
@@ -410,8 +410,8 @@ a .menu-mid.wsub {
 }
 	
 .superblyTagItems > li{
-    font-size:12px;
-	font-family: Arial, Georgia, Helvetica, sans-serif;
+/*  font-size:12px;
+	font-family: Arial, Georgia, Helvetica, sans-serif; */
 	color:#000;
 	list-style: none;
 	float: left;
@@ -449,8 +449,8 @@ a .menu-mid.wsub {
 }   
    
 .superblySuggestItems .superblySuggestItem{
-    font-size:11px;
-	font-family: Arial, Georgia, Helvetica, sans-serif;
+/*    font-size:11px;
+	font-family: Arial, Georgia, Helvetica, sans-serif; */
     padding:3px 5px;
 	list-style: none;
 	float: none;
