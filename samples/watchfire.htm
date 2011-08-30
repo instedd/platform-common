@@ -2,57 +2,64 @@
 <html>
 <head>
   <title>App Name</title>
-  <link href="../theme/stylesheets/theme.css" rel="stylesheet" type="text/css" />
+  	<link href="../theme/stylesheets/theme.css" rel="stylesheet" type="text/css" />
 
-  <script type="text/javascript" src="../theme/javascripts/jquery-1.6.2.min.js"></script>
-  <script type="text/javascript" src="../theme/javascripts/theme.js"></script>
-<link href="watchfire.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="../theme/javascripts/jquery-1.6.2.min.js"></script>
+    <script type="text/javascript" src="../theme/javascripts/theme.js"></script>
+	<link href="watchfire.css" rel="stylesheet" type="text/css">
+    
 </head>
 <body class="smallfooter">
+  <div id="topgrad"></div><!-- #topgrad -->
   <div id="wrapper">
     <div id="toolbar">
-      Toolbar
-    </div>
+      <div id="NavMenu"><ul class="menu"><li class="before"></li><li class="active"><a href="#">Home</a></li><li class="after"><a href="#">Volunteers</a></li><li><a href="#">Help</a></li><li></li></ul></div><!-- #NavMenu -->
+      <div class="left"><img src="../theme/images/header/InSTEDDPlatform.png"/></div>
+      <div class="right">John Doe <button type="button" class="icon fsettings"></button></div>
+    </div><!-- #toolbar -->
 
     <div id="header">
-      <a href="/" class="left"><img src="../theme/images/header/logos/watchfire.png"/></a>
-      <br>
+    
+      <div class="logo"><a href="/"><img src="../theme/images/header/logos/watchfire.png"/></a></div>
+
       <div class="BreadCrumb">
-      	<ul><li><a href="#">Hola</a></li><li><a href="#">Chau</a></li><li><a href="#">Hasta siempre</a><span></span></li><li><a href="#">Ultimo</a></li></ul>
-      </div>
-    </div>
+      	<ul><li><a href="#">Missions</a><span></span></li><li><a href="#">Rangeland near Roswell</a></li></ul>
+      </div><!-- #BreadCrumb -->
+      
+      <div class="clear"></div><!-- #clear -->
+      
+    </div><!-- #header -->
 
     <div id="container">
       Container
-    </div>
+    </div><!-- #container -->
 
     <div id="footer-span">
       <div id="footer">
         <div id="footer-container">
-          <div>
+          <div id="footer-top">
             <div class="left platform">
               Praesent dapibus, arcu at semper sagittis, lectus est vehicula lorem, id porttitor mauris nisl et mauris. Duis quis ligula nec lectus consectetur aliquet.
             </div>
             <div class="right">
               <a href="http://instedd.org/technologies/" class="more">Learn more</a>
-              <div id="instedd-footer" data-app-name="nuntium"></div>
-            </div>
-            <div class="clear"></div>
-          </div>
-          <div>
+              <div id="instedd-footer" data-app-name="nuntium"></div><!-- #instedd-footer -->
+            </div><!-- #right -->
+            <div class="clear"></div><!-- #clear -->
+          </div><!-- #footer-top -->
+          <div id="footer-bottom">
             <div class="left">
               &copy; 2011 InSTEDD. All rights reserved
-            </div>
+            </div><!-- #left -->
             <div class="right">
               <a href="/">Home</a>
               <a href="http://instedd.org">InSTEDD</a>
-            </div>
-            <div class="clear">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+            </div><!-- #right -->
+            <div class="clear"></div><!-- #clear -->
+          </div><!-- #footer-bottom -->
+        </div><!-- #footer-container -->
+      </div><!-- #footer -->
+    </div><!-- #footer-span -->
+  </div><!-- #wrapper -->
 </body>
 </html>
