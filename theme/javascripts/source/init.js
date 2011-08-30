@@ -1,7 +1,9 @@
 (function($){	
 	$(function(){
 		// initialize built-in components.
-		$(".ux-datepicker").datepicker();
+		if ($.fn.datepicker) {
+			$(".ux-datepicker").datepicker();
+		}
 		$("input[type='text']").addClass("ux-text");
 		$("textarea").addClass("ux-text");
 		$("input[readonly='readonly'], textarea[readonly='readonly']").addClass("readonly");
@@ -23,5 +25,14 @@
 			kdown.click(function(){ source.val(current()-1); });
 			kup.click(function(){ source.val(current()+1); });
 		});
+		
+		// add in the pre-last li of the BreadCrumb a span
+		var bc_items = $('.BreadCrumb li');
+		if (bc_items.length >= 2) {
+			$(bc_items[bc_items.length - 2]).append("<span>");
+		}
+		//
+		
+		
 	});
 })(jQuery);

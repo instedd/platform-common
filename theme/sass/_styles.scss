@@ -151,8 +151,9 @@ textarea.ux-text { width:inherit; @include texboxes_border; }
 .BreadCrumb li:nth-last-child(0n+2) span { background:url(../images/breadCrumbs/item.png) no-repeat right top; height:21px; width:10px; position:absolute; right:-6px }
 .BreadCrumb li:nth-last-child(0n+2):hover span { background:url(../images/breadCrumbs/item.png) no-repeat right -30px }
 .BreadCrumb li:nth-last-child(0n+2):active span { background:url(../images/breadCrumbs/item.png) no-repeat right -60px }
-.BreadCrumb li:last-child { background:none; color:#555555; margin-left:0px; text-shadow:none }
-.BreadCrumb li:last-child:hover { color:#777777 }
+.BreadCrumb li:last-child { background:none !important; color:#555555; margin-left:0px; text-shadow:none }
+.BreadCrumb li:last-child:first-child {  border-left:1px solid #d0d0d0; }
+.BreadCrumb li:last-child:hover { background:none !important; color:#777777; }
 
 
 
