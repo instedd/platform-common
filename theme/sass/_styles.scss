@@ -126,15 +126,15 @@ textarea.ux-text { width:inherit; @include texboxes_border; }
 
 
 /* ----- BreadCrumb ----- */
-.BreadCrumb { background:#d0d0d0; border-radius: 4px; height: 22px; overflow: hidden; width:700px }
+.BreadCrumb { background:#d0d0d0; border-radius: 4px; height: 22px; overflow: hidden }
 .BreadCrumb:focus { background: #333333 }
 .BreadCrumb ul { margin: 0; padding:0 0 0 1px }
 .BreadCrumb li { background:url(../images/breadCrumbs/item.png) no-repeat left top; margin:0; padding:0 15px 0 10px; float:left; list-style:none; height:21px; margin-left:-10px; line-height:20px; text-shadow: 1px 1px #ffffff }
 .BreadCrumb li:hover { background:url(../images/breadCrumbs/item.png) no-repeat left -30px }
 .BreadCrumb li:active { background:url(../images/breadCrumbs/item.png) no-repeat left -60px; line-height:21px }
-.BreadCrumb li:first-child { background:url(../images/breadCrumbs/item.png) no-repeat -10px top; border-radius: 4px 0 0 4px; border-left:1px solid #ffffff; margin-left:0px; padding-left:8px }
-.BreadCrumb li:first-child:hover { background:url(../images/breadCrumbs/item.png) no-repeat -10px -30px }
-.BreadCrumb li:first-child:active { background:url(../images/breadCrumbs/item.png) no-repeat -10px -60px; border:none; padding-left:9px }
+.BreadCrumb li:first-child { background:url(../images/breadCrumbs/item.png) no-repeat -10px top !important; border-radius: 4px 0 0 4px; border-left:1px solid #ffffff; margin-left:0px; padding-left:8px }
+.BreadCrumb li:first-child:hover { background:url(../images/breadCrumbs/item.png) no-repeat -10px -30px !important }
+.BreadCrumb li:first-child:active { background:url(../images/breadCrumbs/item.png) no-repeat -10px -60px !important; border:none; padding-left:9px }
 .BreadCrumb li:nth-last-child(0n+2) { background:url(../images/breadCrumbs/item.png) no-repeat left top; padding:0 5px 0 10px; position:relative }
 .BreadCrumb li:nth-last-child(0n+2):hover { background:url(../images/breadCrumbs/item.png) no-repeat left -30px }
 .BreadCrumb li:nth-last-child(0n+2):active { background:url(../images/breadCrumbs/item.png) no-repeat left -60px }

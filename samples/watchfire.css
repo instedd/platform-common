@@ -1,4 +1,4 @@
-.BreadCrumb { background:#d0d0d0; border-radius: 4px; height: 22px; overflow: hidden; width:700px }
+/*.BreadCrumb { background:#d0d0d0; border-radius: 4px; height: 22px; overflow: hidden; width:700px }
 .BreadCrumb:focus { background: #333333 }
 .BreadCrumb ul { margin: 0; padding:0 0 0 1px }
 .BreadCrumb li { background:url(../theme/images/breadCrumbs/item.png) no-repeat left top; margin:0; padding:0 15px 0 10px; float:left; list-style:none; height:21px; margin-left:-10px; line-height:20px; text-shadow: 1px 1px #ffffff }
@@ -15,5 +15,16 @@
 .BreadCrumb li:nth-last-child(0n+2):active span { background:url(../theme/images/breadCrumbs/item.png) no-repeat right -60px }
 .BreadCrumb li:last-child { background:none; color:#555555; margin-left:0px; text-shadow:none }
 .BreadCrumb li:last-child:hover { color:#777777 }
+*/
 
- 
+#wrapper { width:960px; margin:0 auto; position:relative }
+#topgrad { -css3-background: linear-gradient(90deg,#f2f2f2,#ffffff); background: -moz-linear-gradient(top, #ffffff 0%, #f2f2f2 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f2f2f2)); border-top:1px solid #b6bac0; border-bottom:1px solid #b6bac0; position:absolute; width:100%; height:30px }
+#toolbar { background:none; position:relative }
+#toolbar #NavMenu { position:absolute; width:100%; text-align:center }
+#header .logo { float:left }
+#header .BreadCrumb { margin:18px 0 0 0; width:620px; float:right }
+ul.menu { background:#FFF; display:inline-block; margin:1px 0 0 0; padding:0; height:30px; border-bottom:1px solid #FFF }
+.menu li { list-style:none; display:inline-block; vertical-align:middle; -css3-background: linear-gradient(90deg,#f2f2f2,#ffffff); background: -moz-linear-gradient(top, #ffffff 0%, #f2f2f2 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f2f2f2)); height:30px; line-height:28px; padding:0 10px; margin:0; border-bottom:1px solid #b6bac0 }
+.menu li.active { background:none; border-bottom:1px solid #FFF }  
+.menu li.before {  border-radius:0px 0px 8px 0px; -moz-border-radius:0px 0px 8px 0px; -webkit-border-radius:0px 0px 8px 0px; border-right:1px solid #b6bac0 }  
+.menu li.after {  border-radius:0px 0px 0px 8px; -moz-border-radius:0px 0px 0px 8px; -webkit-border-radius:0px 0px 0px 8px; border-left:1px solid #b6bac0 }  

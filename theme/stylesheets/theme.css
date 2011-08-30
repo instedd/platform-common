@@ -371,7 +371,6 @@ textarea.ux-text.error {
   border-radius: 4px;
   height: 22px;
   overflow: hidden;
-  width: 700px;
 }
 
 /* line 130, ../sass/_styles.scss */
@@ -411,7 +410,7 @@ textarea.ux-text.error {
 
 /* line 135, ../sass/_styles.scss */
 .BreadCrumb li:first-child {
-  background: url(../images/breadCrumbs/item.png) no-repeat -10px top;
+  background: url(../images/breadCrumbs/item.png) no-repeat -10px top !important;
   border-radius: 4px 0 0 4px;
   border-left: 1px solid #ffffff;
   margin-left: 0px;
@@ -420,12 +419,12 @@ textarea.ux-text.error {
 
 /* line 136, ../sass/_styles.scss */
 .BreadCrumb li:first-child:hover {
-  background: url(../images/breadCrumbs/item.png) no-repeat -10px -30px;
+  background: url(../images/breadCrumbs/item.png) no-repeat -10px -30px !important;
 }
 
 /* line 137, ../sass/_styles.scss */
 .BreadCrumb li:first-child:active {
-  background: url(../images/breadCrumbs/item.png) no-repeat -10px -60px;
+  background: url(../images/breadCrumbs/item.png) no-repeat -10px -60px !important;
   border: none;
   padding-left: 9px;
 }
