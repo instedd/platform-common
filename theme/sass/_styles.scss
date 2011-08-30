@@ -163,103 +163,163 @@ textarea.ux-text { width:inherit; @include texboxes_border; }
 
 
 /* ----------- BUTTONS ------------- */
+@mixin css3-button($border_color,$background_color,$background_color2,$color,
+$hover_background_color,$hover_background_color2,
+$active_border_color, $active_border_top_color, $disabled_border_color,$disabled_background_color,$disabled_color) {
+  padding:5px 8px; 
+  border:1px solid $border_color; 
+  box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2); 
+  border-radius:4px; 
+  -css3-background: linear-gradient(90deg,$background_color,$background_color2); 
+  background: -moz-linear-gradient(top, $background_color2 0%, $background_color 100%); 
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$background_color2), color-stop(100%,$background_color)); 
+  -webkit-box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2); 
+  -moz-box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2); 
+  -moz-border-radius:4px; 
+  -webkit-border-radius:4px; 
+  color:$color; 
+  cursor:pointer;
+  height: 29px;
+  margin: 4px 2px;
+  &:hover  { 
+    padding:5px 8px; 
+    border:1px solid $border_color; 
+    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2); 
+    border-radius:4px; -css3-background: linear-gradient(90deg,$hover_background_color,$hover_background_color2); 
+    background: -moz-linear-gradient(top, $hover_background_color2 0%, $hover_background_color 100%); 
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$hover_background_color), color-stop(100%,$hover_background_color2));
+    -webkit-box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2); 
+    -moz-box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2); 
+    -moz-border-radius:4px; 
+    -webkit-border-radius:4px; 
+    color:$color; 
+    cursor:pointer;
+  }
+  &:active { 
+    background:$background_color; 
+    border:1px solid $active_border_color;
+    border-top:1px solid $active_border_top_color;
+    -webkit-box-shadow: none; 
+    -moz-box-shadow: none; 
+    box-shadow: none; 
+    padding:6px 8px 4px 8px;
+    filter:progid:DXImageTransform.Microsoft.Shadow(color='$border_color',direction='0',strength='0'); 
+    color:$color; 
+  }
+  &.disabled { 
+    opacity: 1;
+    background:$disabled_background_color; 
+    border:1px solid $disabled_border_color; 
+    -webkit-box-shadow:none; 
+    -moz-box-shadow:none; 
+    box-shadow:none; 
+    padding:5px 8px; 
+    filter:progid:DXImageTransform.Microsoft.Shadow(color='#ffffff',direction='0',strength='0'); 
+    color:$disabled_color; 
+  }
+}
 
-/* ----- White ----- */
-.white { padding:5px 8px; border:1px solid #ffffff; box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2); border-radius:4px; -css3-background: linear-gradient(90deg,#d0d0d0,#ffffff); background: -moz-linear-gradient(top, #ffffff 0%, #d0d0d0 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#d0d0d0)); -webkit-box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2); -moz-border-radius:4px; -webkit-border-radius:4px; color:#000000; cursor:pointer }
+button.white {
+  @include css3-button(
+    #ffffff,#d0d0d0,#ffffff,#000000, 
+    #c5c5c5,#f2f2f2, 
+    #d0d0d0,#9c9c9c, 
+    #d0d0d0,#ffffff,#999999);
+}
 
-.white:hover  { padding:5px 8px; border:1px solid #ffffff; box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2); border-radius:4px; -css3-background: linear-gradient(90deg,#c5c5c5,#f2f2f2); background: -moz-linear-gradient(top, #f2f2f2 0%, #c5c5c5 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c5c5c5), color-stop(100%,#f2f2f2)); -webkit-box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2); -moz-border-radius:4px; -webkit-border-radius:4px; color:#000000; cursor:pointer }
+button.grey {
+  @include css3-button(
+    #313131,#383838,#777777,#ffffff, 
+    #656565,#252525, 
+    #3c3c3c,#1e1e1e, 
+    #3c3c3c,#767676,#cccccc);
+}
 
-.white:active { background:#d0d0d0; border:1px solid #d0d0d0; border-top:1px solid #9c9c9c; -webkit-box-shadow:none; -moz-box-shadow:none; box-shadow:none; padding:6px 8px 4px 8px; filter:progid:DXImageTransform.Microsoft.Shadow(color='#ffffff',direction='0',strength='0'); color:#000000; }
-
-.white.inactive { background:#ffffff; border:1px solid #d0d0d0; -webkit-box-shadow:none; -moz-box-shadow:none; box-shadow:none; padding:5px 8px; filter:progid:DXImageTransform.Microsoft.Shadow(color='#ffffff',direction='0',strength='0'); color:#999999 }
-
-/* ----- Grey ----- */
-.grey { padding:5px 8px; border:1px solid #313131; box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2); border-radius:4px; -css3-background: linear-gradient(90deg,#383838,#777777); background: -moz-linear-gradient(top, #777777 0%, #383838 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#777777), color-stop(100%,#383838)); -webkit-box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2); -moz-border-radius:4px; -webkit-border-radius:4px; color:#ffffff; cursor:pointer }
-
-.grey:hover  { padding:5px 8px; border:1px solid #313131; box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2); border-radius:4px; -css3-background: linear-gradient(90deg,#252525,#656565); background: -moz-linear-gradient(top, #656565 0%, #252525 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#656565), color-stop(100%,#252525)); -webkit-box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2); -moz-border-radius:4px; -webkit-border-radius:4px; color:#ffffff; cursor:pointer }
-
-.grey:active { background:#3c3c3c; border:1px solid #3c3c3c; border-top:1px solid #1e1e1e; -webkit-box-shadow:none; -moz-box-shadow:none; box-shadow:none; padding:6px 8px 4px 8px; filter:progid:DXImageTransform.Microsoft.Shadow(color='#ffffff',direction='0',strength='0'); color:#ffffff; }
-
-.grey.inactive { background:#767676; border:1px solid #3c3c3c; -webkit-box-shadow:none; -moz-box-shadow:none; box-shadow:none; padding:5px 8px; filter:progid:DXImageTransform.Microsoft.Shadow(color='#ffffff',direction='0',strength='0'); color:#cccccc; }
-
-
-/* ----- Orange ----- */
-.orange { padding:5px 8px; border:1px solid #fe3700; box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2); border-radius:4px; -css3-background: linear-gradient(90deg,#ff6600,#fe973a); background: -moz-linear-gradient(top, #fe973a 0%, #ff6600 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fe973a), color-stop(100%,#ff6600)); -webkit-box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2); -moz-border-radius:4px; -webkit-border-radius:4px; color:#ffffff; cursor:pointer }
-
-.orange:hover  { padding:5px 8px; border:1px solid #fe3700; box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2); border-radius:4px; -css3-background: linear-gradient(90deg,#e85d01,#ff8619); background: -moz-linear-gradient(top, #ff8619 0%, #e85d01 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e85d01), color-stop(100%,#ff8619)); -webkit-box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2); -moz-border-radius:4px; -webkit-border-radius:4px; color:#ffffff; cursor:pointer }
-
-.orange:active { background:#ff6802; border:1px solid #ff6802; border-top:1px solid #fe1600; -webkit-box-shadow:none; -moz-box-shadow:none; box-shadow:none; padding:6px 8px 4px 8px; filter:progid:DXImageTransform.Microsoft.Shadow(color='#ffffff',direction='0',strength='0'); color:#ffffff }
-
-.orange.inactive { background:#fe9639; border:1px solid #ff6802; -webkit-box-shadow:none; -moz-box-shadow:none; box-shadow:none; padding:5px 8px; filter:progid:DXImageTransform.Microsoft.Shadow(color='#ffffff',direction='0',strength='0'); color:#ffddbf }
-
+button.orange {
+  @include css3-button(
+    #fe3700,#ff6600,#fe973a,#ffffff, 
+    #e85d01,#ff8619, 
+    #ff6802,#fe1600, 
+    #ff6802,#fe9639,#ffddbf);
+}
 
 /* ---------- Icon buttons --------- */
-.icon { background-position:center top; background-repeat:no-repeat; width:24px; height:24px; display:inline-block; vertical-align:middle; margin-right:4px; cursor:pointer; border:none }
-.icon:hover { background-position:center -30px }
-.icon:active { background-position:center -60px }
+@mixin icon_button {
+  background-color: transparent;
+  background-position:left top; 
+  background-repeat:no-repeat; 
+  height:24px; 
+  display:inline-block; 
+  vertical-align:middle; 
+  margin-right:4px; 
+  cursor:pointer; border:none;
+  padding-left: 27px;
+  &:hover { background-position-y: -30px; }
+  &:active { background-position-y: -60px; }
+}
 
 /* ----- Color ----- */
-.caccept { background:url(../images/buttons/color/accept.png) }
-.cadd{ background:url(../images/buttons/color/add.png) }
-.cremove { background:url(../images/buttons/color/remove.png) }
+.caccept { @include icon_button; background-image:url(../images/buttons/color/accept.png) }
+.cadd{ @include icon_button; background-image:url(../images/buttons/color/add.png) }
+.cremove { @include icon_button; background-image:url(../images/buttons/color/remove.png) }
 
 
 /* ----- Fancy ----- */
-.faccept { background:url(../images/buttons/fancy/accept.png) }
-.fadd{ background:url(../images/buttons/fancy/add.png) }
-.fandroid{ background:url(../images/buttons/fancy/android.png) }
-.fapple { background:url(../images/buttons/fancy/apple.png) }
-.farrange { background:url(../images/buttons/fancy/arrange.png) }
-.farrow { background:url(../images/buttons/fancy/arrow.png) }
-.fblock { background:url(../images/buttons/fancy/block.png) }
-.fbranch { background:url(../images/buttons/fancy/branch.png) }
-.fbug { background:url(../images/buttons/fancy/bug.png) }
-.fclaim { background:url(../images/buttons/fancy/claim.png) }
-.fclose { background:url(../images/buttons/fancy/close.png) }
-.fconfiguration { background:url(../images/buttons/fancy/configuration.png) }
-.fedit { background:url(../images/buttons/fancy/edit.png) }
-.fexport { background:url(../images/buttons/fancy/export.png) }
-.ffacebook { background:url(../images/buttons/fancy/facebook.png) }
-.ffolder { background:url(../images/buttons/fancy/folder.png) }
-.fhelp { background:url(../images/buttons/fancy/help.png) }
-.fimport { background:url(../images/buttons/fancy/import.png) }
-.finsert { background:url(../images/buttons/fancy/insert.png) }
-.fkey { background:url(../images/buttons/fancy/key.png) }
-.fleave { background:url(../images/buttons/fancy/leave.png) }
-.fleft { background:url(../images/buttons/fancy/left.png) }
-.flocation { background:url(../images/buttons/fancy/location.png) }
-.fmerge { background:url(../images/buttons/fancy/merge.png) }
-.fmessage { background:url(../images/buttons/fancy/message.png) }
-.fpause { background:url(../images/buttons/fancy/pause.png) }
-.fphone { background:url(../images/buttons/fancy/phone.png) }
-.fplay { background:url(../images/buttons/fancy/play.png) }
-.fpreview { background:url(../images/buttons/fancy/preview.png) }
-.frecord { background:url(../images/buttons/fancy/record.png) }
-.frecording { background:url(../images/buttons/fancy/recording.png) }
-.fremove { background:url(../images/buttons/fancy/remove.png) }
-.frequest { background:url(../images/buttons/fancy/request.png) }
-.fright { background:url(../images/buttons/fancy/right.png) }
-.frss { background:url(../images/buttons/fancy/rss.png) }
-.fsettings { background:url(../images/buttons/fancy/settings.png) }
-.fsnapshot { background:url(../images/buttons/fancy/snapshot.png) }
-.fstop { background:url(../images/buttons/fancy/stop.png) }
-.fstopped { background:url(../images/buttons/fancy/stopped.png) }
-.fteach { background:url(../images/buttons/fancy/teach.png) }
-.ftwitter { background:url(../images/buttons/fancy/twitter.png) }
-.fuser { background:url(../images/buttons/fancy/user.png) }
-.fusers { background:url(../images/buttons/fancy/users.png) }
-.fuTurn { background:url(../images/buttons/fancy/uTurn.png) }
-.fwindows { background:url(../images/buttons/fancy/windows.png) }
+.faccept { @include icon_button; background-image:url(../images/buttons/fancy/accept.png) }
+.fadd{ @include icon_button; background-image:url(../images/buttons/fancy/add.png) }
+.fandroid{ @include icon_button; background-image:url(../images/buttons/fancy/android.png) }
+.fapple { @include icon_button; background-image:url(../images/buttons/fancy/apple.png) }
+.farrange { @include icon_button; background-image:url(../images/buttons/fancy/arrange.png) }
+.farrow { @include icon_button; background-image:url(../images/buttons/fancy/arrow.png) }
+.fblock { @include icon_button; background-image:url(../images/buttons/fancy/block.png) }
+.fbranch { @include icon_button; background-image:url(../images/buttons/fancy/branch.png) }
+.fbug { @include icon_button; background-image:url(../images/buttons/fancy/bug.png) }
+.fclaim { @include icon_button; background-image:url(../images/buttons/fancy/claim.png) }
+.fclose { @include icon_button; background-image:url(../images/buttons/fancy/close.png) }
+.fconfiguration { @include icon_button; background-image:url(../images/buttons/fancy/configuration.png) }
+.fedit { @include icon_button; background-image:url(../images/buttons/fancy/edit.png) }
+.fexport { @include icon_button; background-image:url(../images/buttons/fancy/export.png) }
+.ffacebook { @include icon_button; background-image:url(../images/buttons/fancy/facebook.png) }
+.ffolder { @include icon_button; background-image:url(../images/buttons/fancy/folder.png) }
+.fhelp { @include icon_button; background-image:url(../images/buttons/fancy/help.png) }
+.fimport { @include icon_button; background-image:url(../images/buttons/fancy/import.png) }
+.finsert { @include icon_button; background-image:url(../images/buttons/fancy/insert.png) }
+.fkey { @include icon_button; background-image:url(../images/buttons/fancy/key.png) }
+.fleave { @include icon_button; background-image:url(../images/buttons/fancy/leave.png) }
+.fleft { @include icon_button; background-image:url(../images/buttons/fancy/left.png) }
+.flocation { @include icon_button; background-image:url(../images/buttons/fancy/location.png) }
+.fmerge { @include icon_button; background-image:url(../images/buttons/fancy/merge.png) }
+.fmessage { @include icon_button; background-image:url(../images/buttons/fancy/message.png) }
+.fpause { @include icon_button; background-image:url(../images/buttons/fancy/pause.png) }
+.fphone { @include icon_button; background-image:url(../images/buttons/fancy/phone.png) }
+.fplay { @include icon_button; background-image:url(../images/buttons/fancy/play.png) }
+.fpreview { @include icon_button; background-image:url(../images/buttons/fancy/preview.png) }
+.frecord { @include icon_button; background-image:url(../images/buttons/fancy/record.png) }
+.frecording { @include icon_button; background-image:url(../images/buttons/fancy/recording.png) }
+.fremove { @include icon_button; background-image:url(../images/buttons/fancy/remove.png) }
+.frequest { @include icon_button; background-image:url(../images/buttons/fancy/request.png) }
+.fright { @include icon_button; background-image:url(../images/buttons/fancy/right.png) }
+.frss { @include icon_button; background-image:url(../images/buttons/fancy/rss.png) }
+.fsettings { @include icon_button; background-image:url(../images/buttons/fancy/settings.png) }
+.fsnapshot { @include icon_button; background-image:url(../images/buttons/fancy/snapshot.png) }
+.fstop { @include icon_button; background-image:url(../images/buttons/fancy/stop.png) }
+.fstopped { @include icon_button; background-image:url(../images/buttons/fancy/stopped.png) }
+.fteach { @include icon_button; background-image:url(../images/buttons/fancy/teach.png) }
+.ftwitter { @include icon_button; background-image:url(../images/buttons/fancy/twitter.png) }
+.fuser { @include icon_button; background-image:url(../images/buttons/fancy/user.png) }
+.fusers { @include icon_button; background-image:url(../images/buttons/fancy/users.png) }
+.fuTurn { @include icon_button; background-image:url(../images/buttons/fancy/uTurn.png) }
+.fwindows { @include icon_button; background-image:url(../images/buttons/fancy/windows.png) }
 
 /* ----- Plain ----- */
-.padd{ background:url(../images/buttons/plain/add.png) }
-.pblock{ background:url(../images/buttons/plain/block.png) }
-.pclose{ background:url(../images/buttons/plain/close.png) }
-.pnext{ background:url(../images/buttons/plain/next.png) }
-.pprevious{ background:url(../images/buttons/plain/previous.png) }
-.premove{ background:url(../images/buttons/plain/remove.png) }
-.pstop{ background:url(../images/buttons/plain/stop.png) }
-.pstopped{ background:url(../images/buttons/plain/stopped.png) }
+.padd{ @include icon_button; background-image:url(../images/buttons/plain/add.png) }
+.pblock{ @include icon_button; background-image:url(../images/buttons/plain/block.png) }
+.pclose{ @include icon_button; background-image:url(../images/buttons/plain/close.png) }
+.pnext{ @include icon_button; background-image:url(../images/buttons/plain/next.png) }
+.pprevious{ @include icon_button; background-image:url(../images/buttons/plain/previous.png) }
+.premove{ @include icon_button; background-image:url(../images/buttons/plain/remove.png) }
+.pstop{ @include icon_button; background-image:url(../images/buttons/plain/stop.png) }
+.pstopped{ @include icon_button; background-image:url(../images/buttons/plain/stopped.png) }
 
 
 

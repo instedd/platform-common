@@ -7,7 +7,8 @@
 		$("input[readonly='readonly'], textarea[readonly='readonly']").addClass("readonly");
 		$(".ux-dropdown select").addClass("styled");
 		$("input[type='radio']").addClass("styled");
-		$("input[type='checkbox']").addClass("styled");		
+		$("input[type='checkbox']").addClass("styled");
+		$("button[disabled]").addClass("disabled");
 		
 		$(".ux-nstep").each(function(){
 			var nstep = $(this);
