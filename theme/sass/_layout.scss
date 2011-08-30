@@ -16,7 +16,7 @@ body {
 }
 
 /* for centering */
-#header, #container, #footer-container {
+#toolbar, #header, #container, #footer-container {
   @include pagesize;
 }
 
@@ -92,11 +92,6 @@ body.smallfooter #footer-container {
     display: none;
   }
 }
-
-
-/* temp */
-#toolbar { background-color: black; }
-#container { background-color: yellow; }
 
 @import "footer";
 
