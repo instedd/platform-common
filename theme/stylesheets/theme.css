@@ -2975,7 +2975,7 @@ html {
 
 /* line 6, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_layout.scss */
 body {
-  background: white;
+  background: white url(../images/interface/backbody.png) repeat-x top;
   height: 100%;
   margin: 0;
   padding: 0;
