@@ -23,6 +23,8 @@
 #toolbar #NavMenu { position:absolute; width:100%; text-align:center }
 #header .logo { float:left }
 
+
+/* -------------- Main Top menu ------------------- */
 ul.menu { background:#FFF; font-size:12px; display:inline-block; margin:0; padding:0; height:31px; border-bottom:1px solid #FFF }
 .menu li { list-style:none; display:inline-block; vertical-align:middle; background: url(../theme/images/interface/backbody.png) repeat-x top; height:31px; line-height:28px; padding:0 10px; margin:0 0 0 -3px; border-bottom:1px solid #b6bac0; border-right:1px solid #b6bac0 }
 .menu li:hover { background:#FFFFFF }
@@ -33,17 +35,12 @@ ul.menu { background:#FFF; font-size:12px; display:inline-block; margin:0; paddi
 .menu li:last-child { border-right:none }  
 
 
-ul.InPlattform { margin:6px 0 0 0; padding:4px 4px 8px 4px; position:absolute; top:-3px; left:0; z-index:2 }
-
+/* -------------- InSTEDD Plattform menu ------------------- */
+ul.InPlattform { margin:6px 0 0 0; padding:4px; position:absolute; top:-3px; left:0; z-index:2 }
 ul.InPlattform:hover { background:#FFFFFF; -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2) ; -moz-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2); box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2); -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px }
-
-.InPlattform li { background:url(../theme/images/header/InSTEDDPlatform.png) no-repeat left top; min-width:138px; height:18px; display:inline-block; list-style:none; cursor:pointer }
-
-.InPlattform li:hover { background:url(../theme/images/header/InSTEDDPlatform.png) no-repeat left -20px }
-
-.InPlattform li ul { display:none; margin:25px 0 0 -42px; font-size:12px  }
-
-ul.InPlattform:hover li ul{ display:block }
-
+.InPlattform li { background:url(../theme/images/header/InSTEDDPlatform.png) no-repeat left top; min-width:138px; min-height:18px; display:inline-block; list-style:none; cursor:pointer }
+.InPlattform li:hover { background:url(../theme/images/header/InSTEDDPlatform.png) no-repeat left -25px }
+.InPlattform li ul { display:none; margin:22px 0 0 -42px; font-size:12px  }
+ul.InPlattform:hover li ul { display:block }
 .InPlattform li ul li { background:#FFFFFF; color:#555555; margin-bottom:5px; cursor:pointer; padding:2px 2px 1px 4px; display:block }
 .InPlattform li ul li:hover { background:#d0d0d0; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px }
