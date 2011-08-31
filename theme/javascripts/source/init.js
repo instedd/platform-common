@@ -28,6 +28,12 @@
 		
 		// these are one time per page
 		
+		// position user menu
+		$('#User').mouseenter(function(){
+			var container = $('.container', $(this));
+			container.css('margin-left', -container.width()/2 + $(this).width()/2);
+		});
+		
 		// add in the pre-last li of the BreadCrumb a span
 		var bc_items = $('.BreadCrumb li');
 		if (bc_items.length >= 2) {
