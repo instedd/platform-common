@@ -3316,3 +3316,68 @@ body.smallfooter #footer-container > div:nth-child(1) {
 #instedd-pulldown:hover li ul {
   display: block;
 }
+
+/* -------------- Main Top menu ------------------- */
+/* line 2, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_navmenu.scss */
+#NavMenu {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+/* line 5, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_navmenu.scss */
+#NavMenu ul {
+  background: #FFF;
+  font-size: 12px;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  height: 31px;
+  border-bottom: 1px solid #FFF;
+}
+/* line 14, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_navmenu.scss */
+#NavMenu ul li {
+  list-style: none;
+  display: inline-block;
+  vertical-align: middle;
+  background: url(../images/interface/backbody.png) repeat-x top;
+  height: 31px;
+  line-height: 28px;
+  padding: 0 10px;
+  margin: 0 0 0 -3px;
+  border-bottom: 1px solid #b6bac0;
+  border-right: 1px solid #b6bac0;
+}
+/* line 15, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_navmenu.scss */
+#NavMenu ul li:hover {
+  background: #FFFFFF;
+}
+/* line 16, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_navmenu.scss */
+#NavMenu ul li:last-child:hover, #NavMenu li:first-child:hover {
+  background: url(../images/interface/backbody.png) repeat-x top;
+  color: #ff6600;
+}
+/* line 17, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_navmenu.scss */
+#NavMenu ul li.active {
+  background: none;
+  color: #ff6600;
+  border-bottom: 1px solid #FFFFFF;
+  border-right: none;
+}
+/* line 18, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_navmenu.scss */
+#NavMenu ul li.before {
+  border-radius: 0px 0px 8px 0px;
+  -moz-border-radius: 0px 0px 8px 0px;
+  -webkit-border-radius: 0px 0px 8px 0px;
+  border-right: 1px solid #b6bac0;
+}
+/* line 19, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_navmenu.scss */
+#NavMenu ul li.after {
+  border-radius: 0px 0px 0px 8px;
+  -moz-border-radius: 0px 0px 0px 8px;
+  -webkit-border-radius: 0px 0px 0px 8px;
+  border-left: 1px solid #b6bac0;
+}
+/* line 20, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_navmenu.scss */
+#NavMenu ul li:last-child {
+  border-right: none;
+}

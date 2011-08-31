@@ -1,17 +1,6 @@
 
-#wrapper { width:960px; margin:0 auto; position:relative }
-#toolbar #NavMenu { position:absolute; width:100%; text-align:center }
-#header .logo { float:left }
 
 
-/* -------------- Main Top menu ------------------- */
-ul.menu { background:#FFF; font-size:12px; display:inline-block; margin:0; padding:0; height:31px; border-bottom:1px solid #FFF }
-.menu li { list-style:none; display:inline-block; vertical-align:middle; background: url(../theme/images/interface/backbody.png) repeat-x top; height:31px; line-height:28px; padding:0 10px; margin:0 0 0 -3px; border-bottom:1px solid #b6bac0; border-right:1px solid #b6bac0 }
-.menu li:hover { background:#FFFFFF }
-.menu li:last-child:hover, .menu li:first-child:hover { background: url(../theme/images/interface/backbody.png) repeat-x top; color:#ff6600}  
-.menu li.active { background:none; color:#ff6600; border-bottom:1px solid #FFFFFF; border-right:none }  
-.menu li.before { border-radius:0px 0px 8px 0px; -moz-border-radius:0px 0px 8px 0px; -webkit-border-radius:0px 0px 8px 0px; border-right:1px solid #b6bac0 }  
-.menu li.after { border-radius:0px 0px 0px 8px; -moz-border-radius:0px 0px 0px 8px; -webkit-border-radius:0px 0px 0px 8px; border-left:1px solid #b6bac0 }  
-.menu li:last-child { border-right:none }  
+
 
 

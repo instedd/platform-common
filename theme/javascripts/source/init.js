@@ -26,6 +26,8 @@
 			kup.click(function(){ source.val(current()+1); });
 		});
 		
+		// these are one time per page
+		
 		// add in the pre-last li of the BreadCrumb a span
 		var bc_items = $('.BreadCrumb li');
 		if (bc_items.length >= 2) {
@@ -33,6 +35,12 @@
 		}
 		//
 		
-		
+		// add before/after for the NavMenu
+		var nav_menu = $('#NavMenu ul');
+		nav_menu.prepend($('<li>')).append($('<li>'));
+		var active_item = $(".active", nav_menu);
+		active_item.prev().addClass('before');
+		active_item.next().addClass('after');
+		//
 	});
 })(jQuery);
