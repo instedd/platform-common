@@ -3015,14 +3015,16 @@ body {
 /* line 34, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_layout.scss */
 #toolbar {
   height: 30px;
+  background: none;
+  position: relative;
 }
 
-/* line 38, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_layout.scss */
+/* line 40, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_layout.scss */
 #footer-span {
   height: 200px;
 }
 
-/* line 42, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_layout.scss */
+/* line 44, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_layout.scss */
 #footer {
   position: absolute;
   bottom: 0px;
@@ -3038,18 +3040,18 @@ body {
   background: linear-gradient(top, #ffffff 0%, #ebebeb 100%);
   color: #777777;
 }
-/* line 49, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_layout.scss */
+/* line 51, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_layout.scss */
 #footer a {
   color: #777777;
   text-decoration: none;
   padding-left: 11px;
 }
-/* line 53, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_layout.scss */
+/* line 55, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_layout.scss */
 #footer a:hover {
   color: black;
 }
 
-/* line 59, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_layout.scss */
+/* line 61, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_layout.scss */
 #footer-container {
   background: url(../images/footer/shadow.png);
   background-repeat: no-repeat;
@@ -3058,16 +3060,16 @@ body {
   padding-top: 26px;
   padding-bottom: 13px;
 }
-/* line 66, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_layout.scss */
+/* line 68, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_layout.scss */
 #footer-container > div:nth-child(1) {
   border-bottom: 1px solid #ddd;
 }
-/* line 69, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_layout.scss */
+/* line 71, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_layout.scss */
 #footer-container > div:nth-child(2) {
   border-top: 1px solid white;
   padding-top: 15px;
 }
-/* line 73, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_layout.scss */
+/* line 75, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_layout.scss */
 #footer-container .platform {
   background: url(../images/footer/InSTEDDPlatform.png);
   background-repeat: no-repeat;
@@ -3075,23 +3077,23 @@ body {
   height: 89px;
   padding-top: 28px;
 }
-/* line 80, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_layout.scss */
+/* line 82, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_layout.scss */
 #footer-container .more {
   float: right;
   margin: 7px 0px;
 }
 
-/* line 86, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_layout.scss */
+/* line 88, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_layout.scss */
 body.smallfooter #footer-span {
   height: 52px;
 }
 
-/* line 90, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_layout.scss */
+/* line 92, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_layout.scss */
 body.smallfooter #footer-container {
   height: 52px;
   padding: 0px;
 }
-/* line 93, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_layout.scss */
+/* line 95, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_layout.scss */
 body.smallfooter #footer-container > div:nth-child(1) {
   display: none;
 }
@@ -3180,7 +3182,7 @@ body.smallfooter #footer-container > div:nth-child(1) {
 }
 
 /* line 47, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_footer.scss */
-.tool-name, .tool-sub-name {
+.tool-name {
   display: none;
 }
 
@@ -3253,4 +3255,64 @@ body.smallfooter #footer-container > div:nth-child(1) {
 /* line 104, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_footer.scss */
 #remindem a {
   background-image: url(../images/footer/buttons/remindem.png);
+}
+
+/* -------------- InSTEDD Platform pulldown menu ------------------- */
+/* line 3, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_pulldown.scss */
+#instedd-pulldown {
+  margin: 6px 0 0 0;
+  padding: 4px;
+  position: absolute;
+  top: -3px;
+  left: 0;
+  z-index: 2;
+}
+/* line 10, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_pulldown.scss */
+#instedd-pulldown:hover {
+  background: #FFFFFF;
+  -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 20, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_pulldown.scss */
+#instedd-pulldown li {
+  background: url(../images/header/InSTEDDPlatform.png) no-repeat left top;
+  min-width: 138px;
+  min-height: 18px;
+  display: inline-block;
+  list-style: none;
+  cursor: pointer;
+}
+/* line 28, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_pulldown.scss */
+#instedd-pulldown li:hover {
+  background-position-y: -25px;
+}
+/* line 30, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_pulldown.scss */
+#instedd-pulldown li ul {
+  display: none;
+  margin: 22px 0 0 -42px;
+  font-size: 12px;
+}
+/* line 33, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_pulldown.scss */
+#instedd-pulldown li ul li {
+  background: #FFFFFF;
+  color: #555555;
+  margin-bottom: 5px;
+  cursor: pointer;
+  padding: 2px 2px 1px 4px;
+  display: block;
+}
+/* line 41, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_pulldown.scss */
+#instedd-pulldown li ul li:hover {
+  background: #d0d0d0;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 46, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_pulldown.scss */
+#instedd-pulldown:hover li ul {
+  display: block;
 }

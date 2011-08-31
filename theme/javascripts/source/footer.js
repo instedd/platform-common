@@ -1,77 +1,37 @@
 jQuery(function(){
 
+var apps = [
+	{ id:'geochat', url:'http://geochat.instedd.org/', name:'Geochat'},
+	{ id:'geochatPolls', url:'http://instedd.org/technologies/geochat-polls/', name:'Geochat Polls'},
+	{ id:'nuntium', url:'http://nuntium.instedd.org/', name:'Nuntium'},
+	{ id:'veegilo', url:'http://veegilo.instedd.org/', name:'Veegilo'},
+	{ id:'remindem', url:'http://remindem.instedd.org/', name:'Remindem'},
+	{ id:'nuntiumLocalGateway', url:'http://instedd.org/', name:'Nuntium Local Gateway'},
+	{ id:'mesh4X', url:'http://instedd.org/technologies/mesh4x/', name:'Mesh4X'},
+	{ id:'reportingWheel', url:'http://reportingwheel.instedd.org/', name:'Reporting Wheel'},
+	{ id:'resourceMap', url:'http://resourcemap.instedd.org/', name:'Resource Map'},
+	{ id:'riff', url:'http://riff.instedd.org/', name:'Riff'},
+	{ id:'seentags', url:'http://seentags.instedd.org/', name:'Seentags'},
+	{ id:'taskMeUp', url:'http://taskmeup.instedd.org/', name:'Task Me Up'},
+	{ id:'verboice', url:'http://verboice.instedd.org/', name:'Verboice'}
+];
+
 $('#instedd-footer').append('\
 <div id="tools-carousel-wrapper">\
   <ul id="tools-carousel">\
-    <li id="geochat">\
-      <a href="http://geochat.instedd.org/">\
-         <div class="tool-name">Geochat</div>\
-      </a>\
-    </li>\
-    <li id="geochatPolls">\
-      <a href="http://instedd.org/technologies/geochat-polls/">\
-        <div class="tool-name">Geochat Polls</div>\
-      </a>\
-    </li>\
-    <li id="nuntium">\
-      <a href="http://nuntium.instedd.org/">\
-        <div class="tool-name">Nuntium</div>\
-      </a>\
-    </li>\
-    <li id="veegilo">\
-      <a href="http://veegilo.instedd.org/">\
-        <div class="tool-name">Veegilo</div>\
-      </a>\
-    </li>\
-    <li id="remindem">\
-      <a href="http://remindem.instedd.org/">\
-        <div class="tool-name">Remindem</div>\
-      </a>\
-    </li>\
-    <li id="nuntiumLocalGateway">\
-      <a href="http://instedd.org/">\
-        <div class="tool-name">Nuntium</div>\
-        <div class="tool-sub-name">Local Gateway</div>\
-      </a>\
-    </li>\
-    <li id="mesh4X">\
-      <a href="http://instedd.org/technologies/mesh4x/">\
-        <div class="tool-name">Mesh4X</div>\
-      </a>\
-    </li>\
-    <li id="reportingWheel">\
-      <a href="http://reportingwheel.instedd.org/">\
-        <div class="tool-name">Reporting Wheel</div>\
-      </a>\
-    </li>\
-    <li id="resourceMap">\
-      <a href="http://resourcemap.instedd.org/">\
-        <div class="tool-name">Resource Map</div>\
-      </a>\
-    </li>\
-    <li id="riff">\
-      <a href="http://riff.instedd.org/">\
-        <div class="tool-name">Riff</div>\
-      </a>\
-    </li>\
-    <li id="seentags">\
-      <a href="http://seentags.instedd.org/">\
-        <div class="tool-name">Seentags</div>\
-      </a>\
-    </li>\
-    <li id="taskMeUp">\
-      <a href="http://taskmeup.instedd.org/">\
-        <div class="tool-name">Task Me Up</div>\
-      </a>\
-    </li>\
-    <li id="verboice">\
-      <a href="http://verboice.instedd.org/">\
-        <div class="tool-name">Verboice</div>\
-      </a>\
-    </li>\
   </ul>\
 </div>\
 ');
+
+$('#instedd-pulldown').append($("<li>").append($("<ul>")));
+
+$.each(apps, function(index, app){
+	$("#tools-carousel").append($("<li>").attr('id',app.id)
+		.append($("<a>").attr('href',app.url).append($("<div>").addClass('tool-name').text(app.name)))
+	);
+	
+	$('#instedd-pulldown > li > ul').append($("<li>").append($("<a>").attr('href',app.url).text(app.name)));
+});
 
 function firstInCallback(carousel, item, i) {
   if (i > 1) jQuery(".footer-prev").show();
