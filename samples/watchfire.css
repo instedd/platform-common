@@ -21,8 +21,8 @@
 #topgrad { -css3-background: linear-gradient(90deg,#f2f2f2,#ffffff); background: -moz-linear-gradient(top, #ffffff 0%, #f2f2f2 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f2f2f2)); border-top:1px solid #b6bac0; border-bottom:1px solid #b6bac0; position:absolute; width:100%; height:30px }
 #toolbar { background:none; position:relative }
 #toolbar #NavMenu { position:absolute; width:100%; text-align:center }
+#toolbar button.icon { position:absolute; right:2px; top:5px; padding-left:12px }
 #header .logo { float:left }
-
 
 /* -------------- Main Top menu ------------------- */
 ul.menu { background:#FFF; font-size:12px; display:inline-block; margin:0; padding:0; height:31px; border-bottom:1px solid #FFF }
@@ -44,3 +44,20 @@ ul.InPlattform:hover { background:#FFFFFF; -webkit-box-shadow: 1px 1px 1px 1px r
 ul.InPlattform:hover li ul { display:block }
 .InPlattform li ul li { background:#FFFFFF; color:#555555; margin-bottom:5px; cursor:pointer; padding:2px 2px 1px 4px; display:block }
 .InPlattform li ul li:hover { background:#d0d0d0; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px }
+
+
+
+/* -------------- User menu ------------------- */
+#User { background:url(../theme/images/icons/misc/black/arrowDown.png) no-repeat 94% 6px; font-size:12px; padding:4px 16px 2px 4px; right:34px; top:6px; position:absolute; cursor:pointer }
+#User:hover {  box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.2); -moz-box-shadow:0px 1px 2px 2px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.2); border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px }
+#User div.container { background:#FFFFFF; font-size:12px; min-width:250px; padding:8px; margin-top:-9px; position:absolute; box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.2); -moz-box-shadow:0px 1px 2px 2px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.2); border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px; display:none }
+#User:hover div.container { display:block }
+
+#User div p { margin:0 0 3px 0; padding:0 }
+#User div hr { margin:3px 0; padding:0  }
+
+
+
+.avatar { width:65px; height:65px; text-align:center; margin:0 0 2px 0; padding:0 5px 0 0; border:none; display: table; position:relative }
+.avatar span { display:block; position:absolute; margin:0px auto; width:65px; height:65px; z-index:1; box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2)inset; -moz-box-shadow:0px 0px 2px 1px rgba(0, 0, 0, 0.2)inset; -webkit-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2)inset; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px }
+.avatar img { border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px }
