@@ -45,7 +45,7 @@ function lastInCallback(carousel, item, i) {
 }
 
 jQuery('#tools-carousel').jcarousel({
-  scroll: 10,
+  scroll: 9,
   buttonNextHTML: '<a href="#" class="footer-next footer" onclick="return false;"> </a>',
   buttonPrevHTML: '<a href="#" class="footer-prev footer" onclick="return false;"> </a>',
   itemFirstInCallback: firstInCallback,

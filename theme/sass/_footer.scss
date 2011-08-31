@@ -20,9 +20,12 @@
 }
 
 .jcarousel-clip, .jcarousel-container {
-  width: 620px;
   height: 79px;
   overflow: hidden;
+}
+
+.jcarousel-container, .jcarousel-clip {
+  width: 620px;
 }
 
 .jcarousel-container {
@@ -36,7 +39,7 @@
 }
 
 .jcarousel-item a {
-  height: 73px;
+  height: 76px;
 	width: 56px;
   display: block;
   outline: 0;

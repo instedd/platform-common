@@ -3144,26 +3144,30 @@ body.smallfooter #footer-container > div:nth-child(1) {
 
 /* line 22, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_footer.scss */
 .jcarousel-clip, .jcarousel-container {
-  width: 620px;
   height: 79px;
   overflow: hidden;
 }
 
-/* line 28, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_footer.scss */
+/* line 27, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_footer.scss */
+.jcarousel-container, .jcarousel-clip {
+  width: 620px;
+}
+
+/* line 31, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_footer.scss */
 .jcarousel-container {
   background-image: url(../images/footer/container.png);
 }
 
-/* line 32, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_footer.scss */
+/* line 35, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_footer.scss */
 .jcarousel-item {
   width: 56px;
   margin: 3px;
   text-align: center;
 }
 
-/* line 38, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_footer.scss */
+/* line 41, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_footer.scss */
 .jcarousel-item a {
-  height: 73px;
+  height: 76px;
   width: 56px;
   display: block;
   outline: 0;
@@ -3181,78 +3185,78 @@ body.smallfooter #footer-container > div:nth-child(1) {
   background-position-y: -180px;
 }
 
-/* line 47, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_footer.scss */
+/* line 50, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_footer.scss */
 .tool-name {
   display: none;
 }
 
-/* line 51, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_footer.scss */
+/* line 54, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_footer.scss */
 .jcarousel-item.selected a, .jcarousel-item.selected a:hover {
   background-position: 0px -180px;
   cursor: default;
 }
 
-/* line 56, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_footer.scss */
+/* line 59, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_footer.scss */
 #geochat a {
   background-image: url(../images/footer/buttons/geoChat.png);
 }
 
-/* line 60, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_footer.scss */
+/* line 63, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_footer.scss */
 #riff a {
   background-image: url(../images/footer/buttons/riff.png);
 }
 
-/* line 64, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_footer.scss */
+/* line 67, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_footer.scss */
 #taskMeUp a {
   background-image: url(../images/footer/buttons/taskMeUp.png);
 }
 
-/* line 68, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_footer.scss */
+/* line 71, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_footer.scss */
 #resourceMap a {
   background-image: url(../images/footer/buttons/resourceMap.png);
 }
 
-/* line 72, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_footer.scss */
+/* line 75, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_footer.scss */
 #nuntium a {
   background-image: url(../images/footer/buttons/nuntium.png);
 }
 
-/* line 76, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_footer.scss */
+/* line 79, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_footer.scss */
 #nuntiumLocalGateway a {
   background-image: url(../images/footer/buttons/nuntiumLocalGateway.png);
 }
 
-/* line 80, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_footer.scss */
+/* line 83, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_footer.scss */
 #seentags a {
   background-image: url(../images/footer/buttons/seentags.png);
 }
 
-/* line 84, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_footer.scss */
+/* line 87, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_footer.scss */
 #mesh4X a {
   background-image: url(../images/footer/buttons/mesh4x.png);
 }
 
-/* line 88, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_footer.scss */
+/* line 91, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_footer.scss */
 #reportingWheel a {
   background-image: url(../images/footer/buttons/reportingWheel.png);
 }
 
-/* line 92, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_footer.scss */
+/* line 95, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_footer.scss */
 #verboice a {
   background-image: url(../images/footer/buttons/verboice.png);
 }
 
-/* line 96, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_footer.scss */
+/* line 99, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_footer.scss */
 #geochatPolls a {
   background-image: url(../images/footer/buttons/geoChatPolls.png);
 }
 
-/* line 100, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_footer.scss */
+/* line 103, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_footer.scss */
 #veegilo a {
   background-image: url(../images/footer/buttons/veegilo.png);
 }
 
-/* line 104, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_footer.scss */
+/* line 107, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_footer.scss */
 #remindem a {
   background-image: url(../images/footer/buttons/remindem.png);
 }
