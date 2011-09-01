@@ -442,7 +442,10 @@ a .menu-mid.wsub {
 .w50 { width:500px !important; }
 
 /* ----- Error ----- */
-.Ierror { background:url(../images//icons/small/orange/alert.png) no-repeat; color:#ff6600; padding-left:19px; padding-top: 1px; margin-left:2px; white-space:nowrap }
+label.error { 
+  background:url(../images//icons/small/orange/alert.png) no-repeat; 
+  color:#ff6600 !important; 
+  padding-left:19px; padding-top: 1px; margin-left:2px; white-space:nowrap; display: inline !important; }
 
 /*.pulldown { position:relative }
 .pulldown span.l { background:url(../images/combobox/white.png) no-repeat left top; height:22px; padding:2px 0 2px 10px; display:block }

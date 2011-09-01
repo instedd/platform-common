@@ -2329,13 +2329,14 @@ a .menu-mid.wsub {
 
 /* ----- Error ----- */
 /* line 445, ../sass/_styles.scss */
-.Ierror {
+label.error {
   background: url(../images//icons/small/orange/alert.png) no-repeat;
-  color: #ff6600;
+  color: #ff6600 !important;
   padding-left: 19px;
   padding-top: 1px;
   margin-left: 2px;
   white-space: nowrap;
+  display: inline !important;
 }
 
 /*.pulldown { position:relative }
@@ -2344,20 +2345,20 @@ a .menu-mid.wsub {
 .pulldown span.r { background:url(../images/combobox/white.png) no-repeat right top; height:26px; width:20px; display:block; position:absolute; right:0px; cursor:pointer }
 .pulldown:hover span.r { background:url(../images/combobox/white.png) no-repeat right -39px; height:26px; width:20px; display:block; position:absolute; right:0px; cursor:pointer }
 .pulldown select { margin-top:-26px; position:absolute; z-index:5; cursor:pointer; opacity: 0 }*/
-/* line 455, ../sass/_styles.scss */
+/* line 458, ../sass/_styles.scss */
 ::-webkit-input-placeholder {
   font-style: italic;
   color: #999;
 }
 
-/* line 456, ../sass/_styles.scss */
+/* line 459, ../sass/_styles.scss */
 :-moz-placeholder {
   font-style: italic;
   color: #999;
 }
 
 /* ------------ Super TAG ------------------ */
-/* line 460, ../sass/_styles.scss */
+/* line 463, ../sass/_styles.scss */
 .superblyTagfieldDiv {
   border: 1px solid #dddddd;
   padding: 0 6px;
@@ -2391,18 +2392,18 @@ a .menu-mid.wsub {
   margin: 0px;
 }
 
-/* line 462, ../sass/_styles.scss */
+/* line 465, ../sass/_styles.scss */
 .superblyTagfieldClearer {
   clear: both;
 }
 
-/* line 464, ../sass/_styles.scss */
+/* line 467, ../sass/_styles.scss */
 .superblyTagfieldDiv ul {
   margin: 0;
   padding: 0;
 }
 
-/* line 466, ../sass/_styles.scss */
+/* line 469, ../sass/_styles.scss */
 .superblyTagfield {
   /* if no javascript */
   outline: none;
@@ -2412,7 +2413,7 @@ a .menu-mid.wsub {
   background-color: #FFFFFF;
 }
 
-/* line 475, ../sass/_styles.scss */
+/* line 478, ../sass/_styles.scss */
 .superblyTagInput {
   border: none;
   outline: none;
@@ -2420,13 +2421,13 @@ a .menu-mid.wsub {
   margin: 0px;
 }
 
-/* line 482, ../sass/_styles.scss */
+/* line 485, ../sass/_styles.scss */
 .superblyTagInputItem {
   padding: 0px;
   margin: 0px;
 }
 
-/* line 487, ../sass/_styles.scss */
+/* line 490, ../sass/_styles.scss */
 .superblyTagItems > li {
   /*  font-size:12px;
   	font-family: Arial, Georgia, Helvetica, sans-serif; */
@@ -2438,19 +2439,19 @@ a .menu-mid.wsub {
   position: relative;
 }
 
-/* line 499, ../sass/_styles.scss */
+/* line 502, ../sass/_styles.scss */
 .superblyTagItems .superblyTagItem {
   background-color: #ebebeb;
 }
 
-/* line 503, ../sass/_styles.scss */
+/* line 506, ../sass/_styles.scss */
 .superblyTagItems .superblyTagItem a {
   color: #000000;
   cursor: pointer;
   font-style: normal;
 }
 
-/* line 508, ../sass/_styles.scss */
+/* line 511, ../sass/_styles.scss */
 .remove {
   background: url(../images/icons/misc/grey/cross.png) no-repeat center 1px;
   height: 11px;
@@ -2460,7 +2461,7 @@ a .menu-mid.wsub {
   display: inline-block;
 }
 
-/* line 514, ../sass/_styles.scss */
+/* line 517, ../sass/_styles.scss */
 .superblySuggestItems {
   min-width: 100px;
   position: absolute;
@@ -2477,7 +2478,7 @@ a .menu-mid.wsub {
   box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
-/* line 526, ../sass/_styles.scss */
+/* line 529, ../sass/_styles.scss */
 .superblySuggestItems .superblySuggestItem {
   /*    font-size:11px;
   	font-family: Arial, Georgia, Helvetica, sans-serif; */
@@ -2491,20 +2492,20 @@ a .menu-mid.wsub {
   border-radius: 3px;
 }
 
-/* line 537, ../sass/_styles.scss */
+/* line 540, ../sass/_styles.scss */
 .superblySuggestItems .superblySuggestItem:hover {
   cursor: pointer;
   background: #cccccc;
 }
 
-/* line 541, ../sass/_styles.scss */
+/* line 544, ../sass/_styles.scss */
 .superblySuggestItems .selected {
   background-color: #cccccc;
 }
 
 /* ---------------------- Tables --------------------------*/
 /* -------- General ---------*/
-/* line 549, ../sass/_styles.scss */
+/* line 552, ../sass/_styles.scss */
 .GralTable {
   border: 1px solid #e7e9ee;
   margin-top: 10px;
@@ -2514,7 +2515,7 @@ a .menu-mid.wsub {
   border-radius: 6px 6px 6px 6px;
 }
 
-/* line 558, ../sass/_styles.scss */
+/* line 561, ../sass/_styles.scss */
 .GralTable th {
   /* old browsers */
   background: #e5e6ec;
@@ -2531,24 +2532,24 @@ a .menu-mid.wsub {
   border-bottom: 1px solid #e7e9ee;
 }
 
-/* line 573, ../sass/_styles.scss */
+/* line 576, ../sass/_styles.scss */
 .GralTable th:first-child {
   border-left: none;
 }
 
-/* line 574, ../sass/_styles.scss */
+/* line 577, ../sass/_styles.scss */
 .GralTable th:last-child {
   border-right: none;
 }
 
-/* line 575, ../sass/_styles.scss */
+/* line 578, ../sass/_styles.scss */
 .GralTable th span {
   display: block;
   margin-right: 5px;
   float: right;
 }
 
-/* line 576, ../sass/_styles.scss */
+/* line 579, ../sass/_styles.scss */
 .GralTable tr:nth-child(2) {
   background-color: #ffffff;
   /* firefox */
@@ -2560,12 +2561,12 @@ a .menu-mid.wsub {
   color: #a7aab7;
 }
 
-/* line 586, ../sass/_styles.scss */
+/* line 589, ../sass/_styles.scss */
 .GralTable tr:nth-child(2) td {
   padding: 15px 0 6px 10px;
 }
 
-/* line 590, ../sass/_styles.scss */
+/* line 593, ../sass/_styles.scss */
 .GralTable td {
   letter-spacing: -0.005em;
   color: #5c658e;
@@ -2574,19 +2575,19 @@ a .menu-mid.wsub {
 }
 
 /* -------- Clean ---------*/
-/* line 598, ../sass/_styles.scss */
+/* line 601, ../sass/_styles.scss */
 .CleanTable th {
   background: #ffffff;
   border: none;
 }
 
-/* line 602, ../sass/_styles.scss */
+/* line 605, ../sass/_styles.scss */
 .CleanTable td {
   border: none;
 }
 
 /* -------- Two column table  ---------*/
-/* line 608, ../sass/_styles.scss */
+/* line 611, ../sass/_styles.scss */
 .TwoColumn tr td:nth-child(2) {
   width: 100px;
   padding-right: 8px;
