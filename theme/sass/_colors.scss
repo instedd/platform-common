@@ -1,14 +1,20 @@
 $black: #000000;
-$darkgray: #777777;
-$lightgray: #cccccc;
-$disabled_text: #999999;
+$black_hover: #333333;
+
+$darkgray: #555555;
+$darkgray_hover: #777777;
+
+$lightgray: #999999;
+$lightgray_hover: #adadad;
+
+$orange: #ff6600;
+$orange_hover: #ff8533;
+
+$blue: #1f86c8;
+$blue_hover: #4c9ed3;
+
+$green: #769925;
+$green_hover: #91ad51;
+
+$disabled_text: $lightgray;
 $disabled_bgtext: #d0d0d0;
-//$box-gray: #ebebeb
-//$orange: #ff6600
-//$lighorange: #fff6e5
-//$darkgreen: #769925
-//$lightgreen: #efffca
-//$red: #ff3000
-//$box-orange: #ff9d44
-//$box-ligh-orange: #ff6600
-//$ligh-blue: #1f86c8

@@ -9,7 +9,7 @@
   @include degrade();
 }
 
-@mixin degrade($from:#ffffff, $to:#ebebeb) {
+@mixin degrade($from:#ffffff, $to:#d0d0d0) {
   background: $from /* Old browsers */;
   background: -moz-linear-gradient(top, $from 0%, $to 100%) /* FF3.6+ */;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$from), color-stop(100%,$to)) /* Chrome,Safari4+ */;

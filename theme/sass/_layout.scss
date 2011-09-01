@@ -44,16 +44,16 @@ body {
 #footer {
   position: absolute;
   bottom: 0px;
-  border-top: 1px solid $lightgray;
+  border-top: 1px solid #cccccc;
   width: 100%;
   @include gray-degrade;
   color: $darkgray;
+  font-size: 12px;
   a {
     color: $darkgray;
     text-decoration: none;
-    padding-left: 11px;
     &:hover {
-      color: $black;
+      color: $darkgray_hover;
     }
   }
 }
@@ -66,18 +66,22 @@ body {
   padding-top: 26px;
   padding-bottom: 13px;
   & > div:nth-child(1) {
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #d0d0d0;
   }
   & > div:nth-child(2) {
-    border-top: 1px solid white;
+    border-top: 1px solid #f0f0f0;
     padding-top: 15px;
+    text-shadow: 0px 1px 0px #fff;
+    a:not(:first-child) { padding-left: 11px; }
   }
   .platform {
     background: url(../images/footer/InSTEDDPlatform.png);
     background-repeat: no-repeat;
-    width: 260px;
+    width: 290px;
     height: 89px;
     padding-top: 28px;
+    a { color: $orange; }
+    a:hover { color: $orange_hover; }
   }
   .more {
     float: right;
@@ -94,6 +98,9 @@ body.smallfooter #footer-container {
   padding:0px;
   & > div:nth-child(1) {
     display: none;
+  }
+  & > div:nth-child(2) {
+    padding-top: 20px;
   }
 }
 
