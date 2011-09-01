@@ -1,7 +1,7 @@
 <!DOCTYPE HTML> 
 <html>
 <head>
-  <title>Footer Sample</title>
+  <title>Form Sample</title>
   <link href="../theme/stylesheets/theme.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="../theme/javascripts/jquery-1.6.2.min.js"></script>
   <script type="text/javascript" src="../theme/javascripts/theme.js"></script>  
@@ -13,23 +13,43 @@
       <div id="header"></div>
       
       <div id="container">
+        <h1>Foo entity</h1>
         
         <form action="/">
+          <h2>Properties</h2>
+          <p>Below you can configure this Foo entity properties</p>
     
           <div class="field">
             <label>Title</label>
+            <input type="text" />
+          </div>
+
+          <div class="field">
+            <label>Subtitle</label>
+            <p>Here it will goes an optional explanation of the field</p>
             <input type="text" />
           </div>
     
           <div class="field">
             <label>Mode</label>
             <p>Choose what you want</p>
-            <input type="radio" name="mode" id="opt1"/><label for="opt1">Option 1</label> <br/>
-            <input type="radio" name="mode" id="opt2"/><label for="opt1">Option 2</label>
+            <input type="radio" name="mode" id="opt1"/><label for="opt1" class="radio">Option 1</label><br/>
+            <input type="radio" name="mode" id="opt2"/><label for="opt2" class="radio">Option 2</label>
           </div>
     
+          <div class="field">
+            <label>Mode</label>
+            <p>Choose what you want</p>
+            <input type="checkbox" name="mode" id="chk1"/><label for="chk1" class="checkbox">Option 1</label><br/>
+            <input type="checkbox" name="mode" id="chk2"/><label for="chk2" class="checkbox">Option 2</label>
+          </div>
+              
           <hr/>
-    
+          
+          <div class="actions">
+            <button type="submit" class="grey">Primary action</button>
+            <button type="button" class="white">secondary action</button>
+          </div>
         </form>
   
       </div>
