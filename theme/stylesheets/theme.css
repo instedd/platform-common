@@ -3203,36 +3203,30 @@ a .menu-mid.wsub {
 }
 
 /* line 2, ../sass/_form.scss */
-h1, h2 {
-  font-size: 18px;
-  color: #555555;
-}
-
-/* line 4, ../sass/_form.scss */
 .field {
   margin: 0px 0px 19px 0px;
 }
-/* line 6, ../sass/_form.scss */
+/* line 4, ../sass/_form.scss */
 .field label {
   font-size: 14px;
   display: block;
   color: #555555;
 }
-/* line 11, ../sass/_form.scss */
+/* line 9, ../sass/_form.scss */
 .field p {
   font-size: 12px;
   padding: 0;
   margin: 2px 0px 5px 0px;
   color: #555555;
 }
-/* line 17, ../sass/_form.scss */
+/* line 15, ../sass/_form.scss */
 .field label.radio, .field label.checkbox {
   display: inline;
   margin-left: 4px;
   color: black;
 }
 
-/* line 24, ../sass/_form.scss */
+/* line 22, ../sass/_form.scss */
 .actions {
   padding-bottom: 20px;
 }

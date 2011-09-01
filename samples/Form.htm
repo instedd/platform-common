@@ -4,7 +4,8 @@
   <title>Form Sample</title>
   <link href="../theme/stylesheets/theme.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="../theme/javascripts/jquery-1.6.2.min.js"></script>
-  <script type="text/javascript" src="../theme/javascripts/theme.js"></script>  
+  <script type="text/javascript" src="../theme/javascripts/jquery-ui-1.8.16.min.js"></script>
+    <script type="text/javascript" src="../theme/javascripts/theme.js"></script>  
 </head>
 <body>
   
@@ -21,15 +22,33 @@
     
           <div class="field">
             <label>Title</label>
-            <input type="text" />
+            <input type="text" class="w30 error" />
+            <span class="Ierror">Error description</span></p>
           </div>
 
           <div class="field">
             <label>Subtitle</label>
             <p>Here it will goes an optional explanation of the field</p>
-            <input type="text" />
+            <input type="text" class="w30" />
+          </div>
+          
+          <div class="field">
+            <label>Privacy</label>
+            <p>Here it will goes an optional explanation of the field</p>
+            <div class="ux-dropdown w30">
+              <select>
+                <option>Lorem ipsum</option>
+                <option>dolor sit amet</option>
+              </select>
+            </div>
           </div>
     
+          <div class="field">
+            <label>Expiraton</label>
+            <p>Here it will goes an optional explanation of the field</p>
+            <input type="text" class="ux-datepicker w30" />
+          </div>
+            
           <div class="field">
             <label>Mode</label>
             <p>Choose what you want</p>
