@@ -1,3 +1,5 @@
+$ux_text_image_width: 25px;
+
 /*html {behavior: url('../theme/stylesheets/css3.htc');}*/
 /* ----- Estructura contenido ----- */
 body { background:#fff; font-family:Arial, Helvetica, sans-serif; font-size:14px; color: $black; }
@@ -19,7 +21,7 @@ textarea:focus, input:focus, button:focus { outline: none; }
 /* ----- Input text ----- */
 @mixin texboxes_border {
   border:1px solid #dddddd; 
-  padding:0 6px; 
+  padding:0 2px; 
   color: $black; 
   -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; -webkit-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset; -moz-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset; 
   box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset;
@@ -74,15 +76,19 @@ input.ux-text {  height:22px; width:inherit; @include texboxes_border; }
 }
 
 /* ----- Text Area ----- */
-textarea.ux-text { width:inherit; @include texboxes_border; }
+textarea.ux-text { width: inherit; @include texboxes_border; padding:2px 2px; resize:none; }
 
-.TaskBox { background:#ebebeb; font-size:10px; letter-spacing:-0.05em; padding:2px 0; width:inherit; margin-top:5px; text-align:center; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px; white-space:nowrap }
-.TaskBox div { display: inline-block; vertical-align:middle; margin-left:-2px }
-.TaskBox div.L { color:#777777; width:4%; text-align:left; padding-left:0px }
-.TaskBox div.R { color:#f86808; width:4%; text-align:right; padding-right:0px }
-.TaskBox div.M { background:#f86808; width:88%; margin:0 2px }
-.TaskBox div span { background:#777777; height:4px; display:block; width:80% }
+.TaskBox { background:$disabled_bgtext; font-size:10px; font-weight: bold; letter-spacing:-0.05em; padding:0px 0px 1px 0px; width:inherit; margin:0px 1px; text-align:center; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px; white-space:nowrap }
+.TaskBox div { display: inline-block; vertical-align:middle; margin-left:-2px; }
+.TaskBox div.L { color:$darkgray; width:22px; text-align:left; padding-left:0px; }
+.TaskBox div.R { color:$orange; width:22px; text-align:right; padding-right:0px; }
+.TaskBox div.M { background:$orange; width:444px; margin:0 2px } /* TODO move to JS initialization */
+.TaskBox div span { background:$darkgray; height:4px; display:block; width:80% }
 
+.TaskBox.readonly div.R { color: white; }
+.TaskBox.readonly div.M { background: white; }
+.TaskBox.readonly div.L { color:$lightgray; }
+.TaskBox.readonly div span { background:$lightgray; }
 
 /* ----- Numeric Stepper ----- */
 .ux-nstep { 
@@ -93,14 +99,14 @@ textarea.ux-text { width:inherit; @include texboxes_border; }
     background:url(../images/numericStepper/up.png) no-repeat center top; 
     width:15px; height:12px; 
     cursor:pointer; border:none; 
-    position:absolute; right:5px; top:-3px;
+    position:absolute; right:3px; top:-1px;
   }
   .kdown { 
     @include button-states(10px);
     background:url(../images/numericStepper/down.png) no-repeat center top; 
     width:15px; height:12px; 
     cursor:pointer; border:none; 
-    position:absolute; right:5px; bottom:-3px 
+    position:absolute; right:3px; bottom:-4px 
   }
 }
 
@@ -125,17 +131,18 @@ span.radio {
 /* ----- Search ----- */
 .ux-search { 
   background: url(../images/search/magnifyingGlass.png) no-repeat 99% 2px;
-  &:hover { background-position-y: -18px }
-  &:focus { background-position-y: -38px }
+  padding-right: $ux_text_image_width !important;
+  &:hover { background-position-y: -18px; }
+  &:focus { background-position-y: -38px; }
 }
 
 /* ----- Calendar ----- */
 .ux-datepicker {
   background:url(../images/datePicker/calendar.png) no-repeat 99% 2px; 
+  padding-right: $ux_text_image_width !important;
   width:inherit; 
   &:focus { background-position-y: -18px; }
 }
-
 
 /* ----- BreadCrumb ----- */
 .BreadCrumb { background:#d0d0d0; border-radius: 4px; height: 22px; overflow: hidden }
@@ -153,9 +160,9 @@ span.radio {
 .BreadCrumb li:nth-last-child(0n+2) span { background:url(../images/breadCrumbs/item.png) no-repeat right top; height:21px; width:10px; position:absolute; right:-6px }
 .BreadCrumb li:nth-last-child(0n+2):hover span { background:url(../images/breadCrumbs/item.png) no-repeat right -30px }
 .BreadCrumb li:nth-last-child(0n+2):active span { background:url(../images/breadCrumbs/item.png) no-repeat right -60px }
-.BreadCrumb li:last-child { background:none !important; color:#555555; margin-left:0px; text-shadow:none }
+.BreadCrumb li:last-child { background:none !important; color:$darkgray; margin-left:0px; text-shadow:none }
 .BreadCrumb li:last-child:first-child {  border-left:1px solid #d0d0d0; }
-.BreadCrumb li:last-child:hover { background:none !important; color:#777777; }
+.BreadCrumb li:last-child:hover { background:none !important; color:$darkgray; }
 
 
 
@@ -232,7 +239,7 @@ button.white {
 
 button.grey {
   @include css3-button(
-    #313131,#383838,#777777,#ffffff, 
+    #313131,#383838,#555555,#ffffff, 
     #656565,#252525, 
     #3c3c3c,#1e1e1e, 
     #3c3c3c,#767676,#cccccc);
@@ -430,15 +437,21 @@ a .menu-mid.wsub {
 
 
 
-
-
 /* ----- Widths ----- */
-.w06 { width:60px !important; }
-.w15 { width:150px !important; }
-.w20 { width:200px !important; }
-.w30 { width:300px !important; }
-.w40 { width:400px !important; }
-.w50 { width:500px !important; }
+@mixin width-class($size) {
+  width: $size !important;
+  & > .ux-text, &.ux-text { width: $size - 6px !important; } 
+  & > .ux-dropdown .select, &.ux-dropdown .select { width: $size - 7px !important; }
+  & > .ux-datepicker, &.ux-datepicker { width: $size - 4px - $ux_text_image_width !important; }
+  & > .ux-search, &.ux-search { width: $size - 4px - $ux_text_image_width !important; }  
+}
+
+.w06 { @include width-class(60px); }
+.w15 { @include width-class(150px); }
+.w20 { @include width-class(200px); }
+.w30 { @include width-class(300px); }
+.w40 { @include width-class(400px); }
+.w50 { @include width-class(500px); }
 
 /* ----- Error ----- */
 label.error { 
@@ -459,7 +472,7 @@ label.error {
 
 
 /* ------------ Super TAG ------------------ */
-.superblyTagfieldDiv { @include texboxes_border; min-height:22px; width:inherit; }
+.superblyTagfieldDiv { @include texboxes_border; min-height:22px; margin-right: 0px; }
 
 .superblyTagfieldClearer{ clear: both }
 	
@@ -487,19 +500,16 @@ label.error {
 }
 	
 .superblyTagItems > li{
-/*  font-size:12px;
-	font-family: Arial, Georgia, Helvetica, sans-serif; */
-	color:#000;
 	list-style: none;
 	float: left;
-	padding: 3px;
+	padding: 1px 2px 2px 4px;
 	margin: 2px 1px 0px 1px;
-	position: relative;
-	
+	position: relative;	
+	border-radius: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px;
 }
 
 .superblyTagItems .superblyTagItem{
-    background-color: #ebebeb;
+    background-color: $disabled_bgtext;
 }
 
 .superblyTagItems .superblyTagItem a{
@@ -507,11 +517,7 @@ label.error {
     cursor: pointer;
     font-style:normal;
 }
-.remove { background: url(../images/icons/misc/grey/cross.png) no-repeat center 1px; height:11px; width:11px; padding:0 1px; margin-left:2px; display:inline-block }
-.superblyTagItems .superblyTagItem a:hover {}
-
-.superblyTagItems .superblyTagItem a.hover {}
-
+.remove { background-image: url(../images/tags/cross.png); height:10px; width:11px; padding:0 1px; margin-left:2px; display:inline-block; @include button-states(15px); }
 
 .superblySuggestItems{
     min-width:100px;
@@ -526,8 +532,6 @@ label.error {
 }   
    
 .superblySuggestItems .superblySuggestItem{
-/*    font-size:11px;
-	font-family: Arial, Georgia, Helvetica, sans-serif; */
     padding:3px 5px;
 	list-style: none;
 	float: none;
@@ -542,6 +546,10 @@ label.error {
    
 .superblySuggestItems .selected{
 	background-color: #cccccc;
+}
+
+.superblySuggestItems:empty {
+  -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none;
 }
 
 

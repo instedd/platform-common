@@ -1,7 +1,7 @@
 /* Main css file for instedd platform apps */
 /*html {behavior: url('../theme/stylesheets/css3.htc');}*/
 /* ----- Estructura contenido ----- */
-/* line 3, ../sass/_styles.scss */
+/* line 5, ../sass/_styles.scss */
 body {
   background: #fff;
   font-family: Arial, Helvetica, sans-serif;
@@ -9,19 +9,19 @@ body {
   color: black;
 }
 
-/* line 4, ../sass/_styles.scss */
+/* line 6, ../sass/_styles.scss */
 textarea, input, select, button, label {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
 }
 
-/* line 5, ../sass/_styles.scss */
+/* line 7, ../sass/_styles.scss */
 p {
   padding: 0;
   margin: 15px 0;
 }
 
-/* line 7, ../sass/_styles.scss */
+/* line 9, ../sass/_styles.scss */
 h1, h2 {
   font-size: 18px;
   color: #555555;
@@ -29,13 +29,13 @@ h1, h2 {
   font-weight: normal;
 }
 
-/* line 8, ../sass/_styles.scss */
+/* line 10, ../sass/_styles.scss */
 h1 + p, h2 + p {
   margin: -15px 0 15px 0;
   color: #555555;
 }
 
-/* line 10, ../sass/_styles.scss */
+/* line 12, ../sass/_styles.scss */
 hr {
   border: 0;
   height: 1px;
@@ -45,34 +45,34 @@ hr {
 }
 
 /* ----- CLASSES ----- */
-/* line 13, ../sass/_styles.scss */
+/* line 15, ../sass/_styles.scss */
 a {
   color: inherit;
   text-decoration: none;
 }
 
-/* line 14, ../sass/_styles.scss */
+/* line 16, ../sass/_styles.scss */
 a:hover {
   text-decoration: none;
 }
 
-/* line 15, ../sass/_styles.scss */
+/* line 17, ../sass/_styles.scss */
 button {
   overflow: visible;
 }
 
-/* line 17, ../sass/_styles.scss */
+/* line 19, ../sass/_styles.scss */
 textarea:focus, input:focus, button:focus {
   outline: none;
 }
 
 /* ----- Input text ----- */
-/* line 32, ../sass/_styles.scss */
+/* line 34, ../sass/_styles.scss */
 input.ux-text {
   height: 22px;
   width: inherit;
   border: 1px solid #dddddd;
-  padding: 0 6px;
+  padding: 0 2px;
   color: black;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -82,32 +82,32 @@ input.ux-text {
   box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset;
   margin: 1px;
 }
-/* line 27, ../sass/_styles.scss */
+/* line 29, ../sass/_styles.scss */
 input.ux-text:focus {
   border: 2px solid #dddddd;
   margin: 0px;
 }
-/* line 28, ../sass/_styles.scss */
+/* line 30, ../sass/_styles.scss */
 input.ux-text.readonly, input.ux-text.readonly:focus {
   background: #d0d0d0;
   color: #999999;
   border-width: 1px;
   margin: 1px;
 }
-/* line 29, ../sass/_styles.scss */
+/* line 31, ../sass/_styles.scss */
 input.ux-text.error {
   border: 2px solid #ff6600;
   margin: 0px;
 }
 
 /* ----- Dropdown/Select ----- */
-/* line 35, ../sass/_styles.scss */
+/* line 37, ../sass/_styles.scss */
 .ux-dropdown {
   position: relative;
   height: 28px;
   /* for chrome: font-size: 26px; */
 }
-/* line 39, ../sass/_styles.scss */
+/* line 41, ../sass/_styles.scss */
 .ux-dropdown .selectPrefix {
   background: url(../images/combobox/white.png) no-repeat left top;
   height: 28px;
@@ -115,7 +115,7 @@ input.ux-text.error {
   display: inline-block;
   position: absolute;
 }
-/* line 46, ../sass/_styles.scss */
+/* line 48, ../sass/_styles.scss */
 .ux-dropdown .select {
   background: url(../images/combobox/white.png) no-repeat right top;
   left: 7px;
@@ -127,29 +127,29 @@ input.ux-text.error {
   text-shadow: 0px 1px 0px #fff;
   line-height: 25px;
 }
-/* line 58, ../sass/_styles.scss */
+/* line 60, ../sass/_styles.scss */
 .ux-dropdown:hover .selectPrefix {
   background-position-y: -40px;
 }
-/* line 59, ../sass/_styles.scss */
+/* line 61, ../sass/_styles.scss */
 .ux-dropdown:hover .select {
   background-position-y: -40px;
 }
-/* line 60, ../sass/_styles.scss */
+/* line 62, ../sass/_styles.scss */
 .ux-dropdown:active .selectPrefix {
   background-position-y: -80px;
 }
-/* line 61, ../sass/_styles.scss */
+/* line 63, ../sass/_styles.scss */
 .ux-dropdown:active .select {
   background-position-y: -80px;
   line-height: 26px;
 }
-/* line 62, ../sass/_styles.scss */
+/* line 64, ../sass/_styles.scss */
 .ux-dropdown .select.disabled, .ux-dropdown .selectPrefix.disabled {
   background-position-y: -120px;
   line-height: 25px;
 }
-/* line 67, ../sass/_styles.scss */
+/* line 69, ../sass/_styles.scss */
 .ux-dropdown select.styled {
   width: inherit;
   height: 28px;
@@ -159,11 +159,11 @@ input.ux-text.error {
 }
 
 /* ----- Text Area ----- */
-/* line 77, ../sass/_styles.scss */
+/* line 79, ../sass/_styles.scss */
 textarea.ux-text {
   width: inherit;
   border: 1px solid #dddddd;
-  padding: 0 6px;
+  padding: 0 2px;
   color: black;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -172,33 +172,36 @@ textarea.ux-text {
   -moz-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset;
   box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset;
   margin: 1px;
+  padding: 2px 2px;
+  resize: none;
 }
-/* line 27, ../sass/_styles.scss */
+/* line 29, ../sass/_styles.scss */
 textarea.ux-text:focus {
   border: 2px solid #dddddd;
   margin: 0px;
 }
-/* line 28, ../sass/_styles.scss */
+/* line 30, ../sass/_styles.scss */
 textarea.ux-text.readonly, textarea.ux-text.readonly:focus {
   background: #d0d0d0;
   color: #999999;
   border-width: 1px;
   margin: 1px;
 }
-/* line 29, ../sass/_styles.scss */
+/* line 31, ../sass/_styles.scss */
 textarea.ux-text.error {
   border: 2px solid #ff6600;
   margin: 0px;
 }
 
-/* line 79, ../sass/_styles.scss */
+/* line 81, ../sass/_styles.scss */
 .TaskBox {
-  background: #ebebeb;
+  background: #d0d0d0;
   font-size: 10px;
+  font-weight: bold;
   letter-spacing: -0.05em;
-  padding: 2px 0;
+  padding: 0px 0px 1px 0px;
   width: inherit;
-  margin-top: 5px;
+  margin: 0px 1px;
   text-align: center;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -206,51 +209,72 @@ textarea.ux-text.error {
   white-space: nowrap;
 }
 
-/* line 80, ../sass/_styles.scss */
+/* line 82, ../sass/_styles.scss */
 .TaskBox div {
   display: inline-block;
   vertical-align: middle;
   margin-left: -2px;
 }
 
-/* line 81, ../sass/_styles.scss */
+/* line 83, ../sass/_styles.scss */
 .TaskBox div.L {
-  color: #777777;
-  width: 4%;
+  color: #555555;
+  width: 22px;
   text-align: left;
   padding-left: 0px;
 }
 
-/* line 82, ../sass/_styles.scss */
+/* line 84, ../sass/_styles.scss */
 .TaskBox div.R {
-  color: #f86808;
-  width: 4%;
+  color: #ff6600;
+  width: 22px;
   text-align: right;
   padding-right: 0px;
 }
 
-/* line 83, ../sass/_styles.scss */
+/* line 85, ../sass/_styles.scss */
 .TaskBox div.M {
-  background: #f86808;
-  width: 88%;
+  background: #ff6600;
+  width: 444px;
   margin: 0 2px;
 }
 
-/* line 84, ../sass/_styles.scss */
+/* TODO move to JS initialization */
+/* line 86, ../sass/_styles.scss */
 .TaskBox div span {
-  background: #777777;
+  background: #555555;
   height: 4px;
   display: block;
   width: 80%;
 }
 
-/* ----- Numeric Stepper ----- */
 /* line 88, ../sass/_styles.scss */
+.TaskBox.readonly div.R {
+  color: white;
+}
+
+/* line 89, ../sass/_styles.scss */
+.TaskBox.readonly div.M {
+  background: white;
+}
+
+/* line 90, ../sass/_styles.scss */
+.TaskBox.readonly div.L {
+  color: #999999;
+}
+
+/* line 91, ../sass/_styles.scss */
+.TaskBox.readonly div span {
+  background: #999999;
+}
+
+/* ----- Numeric Stepper ----- */
+/* line 94, ../sass/_styles.scss */
 .ux-nstep {
   position: relative;
   display: inline;
 }
-/* line 91, ../sass/_styles.scss */
+/* line 97, ../sass/_styles.scss */
 .ux-nstep .kup {
   background-repeat: no-repeat;
   background-position-x: 0px;
@@ -261,8 +285,8 @@ textarea.ux-text.error {
   cursor: pointer;
   border: none;
   position: absolute;
-  right: 5px;
-  top: -3px;
+  right: 3px;
+  top: -1px;
 }
 /* line 28, ../sass/_mixins.scss */
 .ux-nstep .kup:hover {
@@ -272,7 +296,7 @@ textarea.ux-text.error {
 .ux-nstep .kup:active {
   background-position-y: -20px;
 }
-/* line 98, ../sass/_styles.scss */
+/* line 104, ../sass/_styles.scss */
 .ux-nstep .kdown {
   background-repeat: no-repeat;
   background-position-x: 0px;
@@ -283,8 +307,8 @@ textarea.ux-text.error {
   cursor: pointer;
   border: none;
   position: absolute;
-  right: 5px;
-  bottom: -3px;
+  right: 3px;
+  bottom: -4px;
 }
 /* line 28, ../sass/_mixins.scss */
 .ux-nstep .kdown:hover {
@@ -296,7 +320,7 @@ textarea.ux-text.error {
 }
 
 /* ----- Checkbox ----- */
-/* line 108, ../sass/_styles.scss */
+/* line 114, ../sass/_styles.scss */
 span.checkbox {
   background: url(../images/checkBox/white.png) no-repeat;
   width: 19px;
@@ -306,7 +330,7 @@ span.checkbox {
 }
 
 /* ----- Radio ----- */
-/* line 117, ../sass/_styles.scss */
+/* line 123, ../sass/_styles.scss */
 span.radio {
   background: url(../images/radioButton/white.png) no-repeat;
   width: 16px;
@@ -316,32 +340,34 @@ span.radio {
 }
 
 /* ----- Search ----- */
-/* line 126, ../sass/_styles.scss */
+/* line 132, ../sass/_styles.scss */
 .ux-search {
   background: url(../images/search/magnifyingGlass.png) no-repeat 99% 2px;
+  padding-right: 25px !important;
 }
-/* line 128, ../sass/_styles.scss */
+/* line 135, ../sass/_styles.scss */
 .ux-search:hover {
   background-position-y: -18px;
 }
-/* line 129, ../sass/_styles.scss */
+/* line 136, ../sass/_styles.scss */
 .ux-search:focus {
   background-position-y: -38px;
 }
 
 /* ----- Calendar ----- */
-/* line 133, ../sass/_styles.scss */
+/* line 140, ../sass/_styles.scss */
 .ux-datepicker {
   background: url(../images/datePicker/calendar.png) no-repeat 99% 2px;
+  padding-right: 25px !important;
   width: inherit;
 }
-/* line 136, ../sass/_styles.scss */
+/* line 144, ../sass/_styles.scss */
 .ux-datepicker:focus {
   background-position-y: -18px;
 }
 
 /* ----- BreadCrumb ----- */
-/* line 141, ../sass/_styles.scss */
+/* line 148, ../sass/_styles.scss */
 .BreadCrumb {
   background: #d0d0d0;
   border-radius: 4px;
@@ -349,18 +375,18 @@ span.radio {
   overflow: hidden;
 }
 
-/* line 142, ../sass/_styles.scss */
+/* line 149, ../sass/_styles.scss */
 .BreadCrumb:focus {
   background: #333333;
 }
 
-/* line 143, ../sass/_styles.scss */
+/* line 150, ../sass/_styles.scss */
 .BreadCrumb ul {
   margin: 0;
   padding: 0 0 0 1px;
 }
 
-/* line 144, ../sass/_styles.scss */
+/* line 151, ../sass/_styles.scss */
 .BreadCrumb li {
   background: url(../images/breadCrumbs/item.png) no-repeat left top;
   margin: 0;
@@ -373,18 +399,18 @@ span.radio {
   text-shadow: 1px 1px #ffffff;
 }
 
-/* line 145, ../sass/_styles.scss */
+/* line 152, ../sass/_styles.scss */
 .BreadCrumb li:hover {
   background: url(../images/breadCrumbs/item.png) no-repeat left -30px;
 }
 
-/* line 146, ../sass/_styles.scss */
+/* line 153, ../sass/_styles.scss */
 .BreadCrumb li:active {
   background: url(../images/breadCrumbs/item.png) no-repeat left -60px;
   line-height: 22px;
 }
 
-/* line 147, ../sass/_styles.scss */
+/* line 154, ../sass/_styles.scss */
 .BreadCrumb li:first-child {
   background: url(../images/breadCrumbs/item.png) no-repeat -10px top !important;
   border-radius: 4px 0 0 4px;
@@ -393,36 +419,36 @@ span.radio {
   padding-left: 8px;
 }
 
-/* line 148, ../sass/_styles.scss */
+/* line 155, ../sass/_styles.scss */
 .BreadCrumb li:first-child:hover {
   background: url(../images/breadCrumbs/item.png) no-repeat -10px -30px !important;
 }
 
-/* line 149, ../sass/_styles.scss */
+/* line 156, ../sass/_styles.scss */
 .BreadCrumb li:first-child:active {
   background: url(../images/breadCrumbs/item.png) no-repeat -10px -60px !important;
   border: none;
   padding-left: 9px;
 }
 
-/* line 150, ../sass/_styles.scss */
+/* line 157, ../sass/_styles.scss */
 .BreadCrumb li:nth-last-child(0n+2) {
   background: url(../images/breadCrumbs/item.png) no-repeat left top;
   padding: 0 5px 0 10px;
   position: relative;
 }
 
-/* line 151, ../sass/_styles.scss */
+/* line 158, ../sass/_styles.scss */
 .BreadCrumb li:nth-last-child(0n+2):hover {
   background: url(../images/breadCrumbs/item.png) no-repeat left -30px;
 }
 
-/* line 152, ../sass/_styles.scss */
+/* line 159, ../sass/_styles.scss */
 .BreadCrumb li:nth-last-child(0n+2):active {
   background: url(../images/breadCrumbs/item.png) no-repeat left -60px;
 }
 
-/* line 153, ../sass/_styles.scss */
+/* line 160, ../sass/_styles.scss */
 .BreadCrumb li:nth-last-child(0n+2) span {
   background: url(../images/breadCrumbs/item.png) no-repeat right top;
   height: 21px;
@@ -431,17 +457,17 @@ span.radio {
   right: -6px;
 }
 
-/* line 154, ../sass/_styles.scss */
+/* line 161, ../sass/_styles.scss */
 .BreadCrumb li:nth-last-child(0n+2):hover span {
   background: url(../images/breadCrumbs/item.png) no-repeat right -30px;
 }
 
-/* line 155, ../sass/_styles.scss */
+/* line 162, ../sass/_styles.scss */
 .BreadCrumb li:nth-last-child(0n+2):active span {
   background: url(../images/breadCrumbs/item.png) no-repeat right -60px;
 }
 
-/* line 156, ../sass/_styles.scss */
+/* line 163, ../sass/_styles.scss */
 .BreadCrumb li:last-child {
   background: none !important;
   color: #555555;
@@ -449,19 +475,19 @@ span.radio {
   text-shadow: none;
 }
 
-/* line 157, ../sass/_styles.scss */
+/* line 164, ../sass/_styles.scss */
 .BreadCrumb li:last-child:first-child {
   border-left: 1px solid #d0d0d0;
 }
 
-/* line 158, ../sass/_styles.scss */
+/* line 165, ../sass/_styles.scss */
 .BreadCrumb li:last-child:hover {
   background: none !important;
-  color: #777777;
+  color: #555555;
 }
 
 /* ----------- BUTTONS ------------- */
-/* line 225, ../sass/_styles.scss */
+/* line 232, ../sass/_styles.scss */
 button.white {
   padding: 5px 8px;
   border: 1px solid white;
@@ -479,7 +505,7 @@ button.white {
   height: 29px;
   margin: 4px 2px;
 }
-/* line 187, ../sass/_styles.scss */
+/* line 194, ../sass/_styles.scss */
 button.white:hover {
   padding: 5px 8px;
   border: 1px solid white;
@@ -495,7 +521,7 @@ button.white:hover {
   color: black;
   cursor: pointer;
 }
-/* line 201, ../sass/_styles.scss */
+/* line 208, ../sass/_styles.scss */
 button.white:active {
   background: #d0d0d0;
   border: 1px solid #d0d0d0;
@@ -507,7 +533,7 @@ button.white:active {
   filter: progid:DXImageTransform.Microsoft.Shadow(color='$border_color',direction='0',strength='0');
   color: black;
 }
-/* line 212, ../sass/_styles.scss */
+/* line 219, ../sass/_styles.scss */
 button.white.disabled {
   opacity: 1;
   background: white;
@@ -520,15 +546,15 @@ button.white.disabled {
   color: #999999;
 }
 
-/* line 233, ../sass/_styles.scss */
+/* line 240, ../sass/_styles.scss */
 button.grey {
   padding: 5px 8px;
   border: 1px solid #313131;
   box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  -css3-background: linear-gradient(90deg, #383838, #777777);
-  background: -moz-linear-gradient(top, #777777 0%, #383838 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #777777), color-stop(100%, #383838));
+  -css3-background: linear-gradient(90deg, #383838, #555555);
+  background: -moz-linear-gradient(top, #555555 0%, #383838 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #555555), color-stop(100%, #383838));
   -webkit-box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2);
   -moz-border-radius: 4px;
@@ -538,7 +564,7 @@ button.grey {
   height: 29px;
   margin: 4px 2px;
 }
-/* line 187, ../sass/_styles.scss */
+/* line 194, ../sass/_styles.scss */
 button.grey:hover {
   padding: 5px 8px;
   border: 1px solid #313131;
@@ -554,7 +580,7 @@ button.grey:hover {
   color: white;
   cursor: pointer;
 }
-/* line 201, ../sass/_styles.scss */
+/* line 208, ../sass/_styles.scss */
 button.grey:active {
   background: #383838;
   border: 1px solid #3c3c3c;
@@ -566,7 +592,7 @@ button.grey:active {
   filter: progid:DXImageTransform.Microsoft.Shadow(color='$border_color',direction='0',strength='0');
   color: white;
 }
-/* line 212, ../sass/_styles.scss */
+/* line 219, ../sass/_styles.scss */
 button.grey.disabled {
   opacity: 1;
   background: #767676;
@@ -579,7 +605,7 @@ button.grey.disabled {
   color: #cccccc;
 }
 
-/* line 241, ../sass/_styles.scss */
+/* line 248, ../sass/_styles.scss */
 button.orange {
   padding: 5px 8px;
   border: 1px solid #fe3700;
@@ -597,7 +623,7 @@ button.orange {
   height: 29px;
   margin: 4px 2px;
 }
-/* line 187, ../sass/_styles.scss */
+/* line 194, ../sass/_styles.scss */
 button.orange:hover {
   padding: 5px 8px;
   border: 1px solid #fe3700;
@@ -613,7 +639,7 @@ button.orange:hover {
   color: white;
   cursor: pointer;
 }
-/* line 201, ../sass/_styles.scss */
+/* line 208, ../sass/_styles.scss */
 button.orange:active {
   background: #ff6600;
   border: 1px solid #ff6802;
@@ -625,7 +651,7 @@ button.orange:active {
   filter: progid:DXImageTransform.Microsoft.Shadow(color='$border_color',direction='0',strength='0');
   color: white;
 }
-/* line 212, ../sass/_styles.scss */
+/* line 219, ../sass/_styles.scss */
 button.orange.disabled {
   opacity: 1;
   background: #fe9639;
@@ -640,7 +666,7 @@ button.orange.disabled {
 
 /* ---------- Icon buttons --------- */
 /* ----- Color ----- */
-/* line 266, ../sass/_styles.scss */
+/* line 273, ../sass/_styles.scss */
 .caccept {
   background-color: transparent;
   background-position: left top;
@@ -654,20 +680,20 @@ button.orange.disabled {
   border: none;
   background-image: url(../images/buttons/color/accept.png);
 }
-/* line 260, ../sass/_styles.scss */
+/* line 267, ../sass/_styles.scss */
 .caccept:hover {
   background-position-y: -30px;
 }
-/* line 261, ../sass/_styles.scss */
+/* line 268, ../sass/_styles.scss */
 .caccept:active {
   background-position-y: -60px;
 }
-/* line 262, ../sass/_styles.scss */
+/* line 269, ../sass/_styles.scss */
 .caccept:not(:empty) {
   padding-left: 27px;
 }
 
-/* line 267, ../sass/_styles.scss */
+/* line 274, ../sass/_styles.scss */
 .cadd {
   background-color: transparent;
   background-position: left top;
@@ -681,20 +707,20 @@ button.orange.disabled {
   border: none;
   background-image: url(../images/buttons/color/add.png);
 }
-/* line 260, ../sass/_styles.scss */
+/* line 267, ../sass/_styles.scss */
 .cadd:hover {
   background-position-y: -30px;
 }
-/* line 261, ../sass/_styles.scss */
+/* line 268, ../sass/_styles.scss */
 .cadd:active {
   background-position-y: -60px;
 }
-/* line 262, ../sass/_styles.scss */
+/* line 269, ../sass/_styles.scss */
 .cadd:not(:empty) {
   padding-left: 27px;
 }
 
-/* line 268, ../sass/_styles.scss */
+/* line 275, ../sass/_styles.scss */
 .cremove {
   background-color: transparent;
   background-position: left top;
@@ -708,21 +734,21 @@ button.orange.disabled {
   border: none;
   background-image: url(../images/buttons/color/remove.png);
 }
-/* line 260, ../sass/_styles.scss */
+/* line 267, ../sass/_styles.scss */
 .cremove:hover {
   background-position-y: -30px;
 }
-/* line 261, ../sass/_styles.scss */
+/* line 268, ../sass/_styles.scss */
 .cremove:active {
   background-position-y: -60px;
 }
-/* line 262, ../sass/_styles.scss */
+/* line 269, ../sass/_styles.scss */
 .cremove:not(:empty) {
   padding-left: 27px;
 }
 
 /* ----- Fancy ----- */
-/* line 272, ../sass/_styles.scss */
+/* line 279, ../sass/_styles.scss */
 .faccept {
   background-color: transparent;
   background-position: left top;
@@ -736,20 +762,20 @@ button.orange.disabled {
   border: none;
   background-image: url(../images/buttons/fancy/accept.png);
 }
-/* line 260, ../sass/_styles.scss */
+/* line 267, ../sass/_styles.scss */
 .faccept:hover {
   background-position-y: -30px;
 }
-/* line 261, ../sass/_styles.scss */
+/* line 268, ../sass/_styles.scss */
 .faccept:active {
   background-position-y: -60px;
 }
-/* line 262, ../sass/_styles.scss */
+/* line 269, ../sass/_styles.scss */
 .faccept:not(:empty) {
   padding-left: 27px;
 }
 
-/* line 273, ../sass/_styles.scss */
+/* line 280, ../sass/_styles.scss */
 .fadd {
   background-color: transparent;
   background-position: left top;
@@ -763,20 +789,20 @@ button.orange.disabled {
   border: none;
   background-image: url(../images/buttons/fancy/add.png);
 }
-/* line 260, ../sass/_styles.scss */
+/* line 267, ../sass/_styles.scss */
 .fadd:hover {
   background-position-y: -30px;
 }
-/* line 261, ../sass/_styles.scss */
+/* line 268, ../sass/_styles.scss */
 .fadd:active {
   background-position-y: -60px;
 }
-/* line 262, ../sass/_styles.scss */
+/* line 269, ../sass/_styles.scss */
 .fadd:not(:empty) {
   padding-left: 27px;
 }
 
-/* line 274, ../sass/_styles.scss */
+/* line 281, ../sass/_styles.scss */
 .fandroid {
   background-color: transparent;
   background-position: left top;
@@ -790,20 +816,20 @@ button.orange.disabled {
   border: none;
   background-image: url(../images/buttons/fancy/android.png);
 }
-/* line 260, ../sass/_styles.scss */
+/* line 267, ../sass/_styles.scss */
 .fandroid:hover {
   background-position-y: -30px;
 }
-/* line 261, ../sass/_styles.scss */
+/* line 268, ../sass/_styles.scss */
 .fandroid:active {
   background-position-y: -60px;
 }
-/* line 262, ../sass/_styles.scss */
+/* line 269, ../sass/_styles.scss */
 .fandroid:not(:empty) {
   padding-left: 27px;
 }
 
-/* line 275, ../sass/_styles.scss */
+/* line 282, ../sass/_styles.scss */
 .fapple {
   background-color: transparent;
   background-position: left top;
@@ -817,20 +843,20 @@ button.orange.disabled {
   border: none;
   background-image: url(../images/buttons/fancy/apple.png);
 }
-/* line 260, ../sass/_styles.scss */
+/* line 267, ../sass/_styles.scss */
 .fapple:hover {
   background-position-y: -30px;
 }
-/* line 261, ../sass/_styles.scss */
+/* line 268, ../sass/_styles.scss */
 .fapple:active {
   background-position-y: -60px;
 }
-/* line 262, ../sass/_styles.scss */
+/* line 269, ../sass/_styles.scss */
 .fapple:not(:empty) {
   padding-left: 27px;
 }
 
-/* line 276, ../sass/_styles.scss */
+/* line 283, ../sass/_styles.scss */
 .farrange {
   background-color: transparent;
   background-position: left top;
@@ -844,20 +870,20 @@ button.orange.disabled {
   border: none;
   background-image: url(../images/buttons/fancy/arrange.png);
 }
-/* line 260, ../sass/_styles.scss */
+/* line 267, ../sass/_styles.scss */
 .farrange:hover {
   background-position-y: -30px;
 }
-/* line 261, ../sass/_styles.scss */
+/* line 268, ../sass/_styles.scss */
 .farrange:active {
   background-position-y: -60px;
 }
-/* line 262, ../sass/_styles.scss */
+/* line 269, ../sass/_styles.scss */
 .farrange:not(:empty) {
   padding-left: 27px;
 }
 
-/* line 277, ../sass/_styles.scss */
+/* line 284, ../sass/_styles.scss */
 .farrow {
   background-color: transparent;
   background-position: left top;
@@ -871,20 +897,20 @@ button.orange.disabled {
   border: none;
   background-image: url(../images/buttons/fancy/arrow.png);
 }
-/* line 260, ../sass/_styles.scss */
+/* line 267, ../sass/_styles.scss */
 .farrow:hover {
   background-position-y: -30px;
 }
-/* line 261, ../sass/_styles.scss */
+/* line 268, ../sass/_styles.scss */
 .farrow:active {
   background-position-y: -60px;
 }
-/* line 262, ../sass/_styles.scss */
+/* line 269, ../sass/_styles.scss */
 .farrow:not(:empty) {
   padding-left: 27px;
 }
 
-/* line 278, ../sass/_styles.scss */
+/* line 285, ../sass/_styles.scss */
 .fblock {
   background-color: transparent;
   background-position: left top;
@@ -898,20 +924,20 @@ button.orange.disabled {
   border: none;
   background-image: url(../images/buttons/fancy/block.png);
 }
-/* line 260, ../sass/_styles.scss */
+/* line 267, ../sass/_styles.scss */
 .fblock:hover {
   background-position-y: -30px;
 }
-/* line 261, ../sass/_styles.scss */
+/* line 268, ../sass/_styles.scss */
 .fblock:active {
   background-position-y: -60px;
 }
-/* line 262, ../sass/_styles.scss */
+/* line 269, ../sass/_styles.scss */
 .fblock:not(:empty) {
   padding-left: 27px;
 }
 
-/* line 279, ../sass/_styles.scss */
+/* line 286, ../sass/_styles.scss */
 .fbranch {
   background-color: transparent;
   background-position: left top;
@@ -925,20 +951,20 @@ button.orange.disabled {
   border: none;
   background-image: url(../images/buttons/fancy/branch.png);
 }
-/* line 260, ../sass/_styles.scss */
+/* line 267, ../sass/_styles.scss */
 .fbranch:hover {
   background-position-y: -30px;
 }
-/* line 261, ../sass/_styles.scss */
+/* line 268, ../sass/_styles.scss */
 .fbranch:active {
   background-position-y: -60px;
 }
-/* line 262, ../sass/_styles.scss */
+/* line 269, ../sass/_styles.scss */
 .fbranch:not(:empty) {
   padding-left: 27px;
 }
 
-/* line 280, ../sass/_styles.scss */
+/* line 287, ../sass/_styles.scss */
 .fbug {
   background-color: transparent;
   background-position: left top;
@@ -952,20 +978,20 @@ button.orange.disabled {
   border: none;
   background-image: url(../images/buttons/fancy/bug.png);
 }
-/* line 260, ../sass/_styles.scss */
+/* line 267, ../sass/_styles.scss */
 .fbug:hover {
   background-position-y: -30px;
 }
-/* line 261, ../sass/_styles.scss */
+/* line 268, ../sass/_styles.scss */
 .fbug:active {
   background-position-y: -60px;
 }
-/* line 262, ../sass/_styles.scss */
+/* line 269, ../sass/_styles.scss */
 .fbug:not(:empty) {
   padding-left: 27px;
 }
 
-/* line 281, ../sass/_styles.scss */
+/* line 288, ../sass/_styles.scss */
 .fclaim {
   background-color: transparent;
   background-position: left top;
@@ -979,20 +1005,20 @@ button.orange.disabled {
   border: none;
   background-image: url(../images/buttons/fancy/claim.png);
 }
-/* line 260, ../sass/_styles.scss */
+/* line 267, ../sass/_styles.scss */
 .fclaim:hover {
   background-position-y: -30px;
 }
-/* line 261, ../sass/_styles.scss */
+/* line 268, ../sass/_styles.scss */
 .fclaim:active {
   background-position-y: -60px;
 }
-/* line 262, ../sass/_styles.scss */
+/* line 269, ../sass/_styles.scss */
 .fclaim:not(:empty) {
   padding-left: 27px;
 }
 
-/* line 282, ../sass/_styles.scss */
+/* line 289, ../sass/_styles.scss */
 .fclose {
   background-color: transparent;
   background-position: left top;
@@ -1006,20 +1032,20 @@ button.orange.disabled {
   border: none;
   background-image: url(../images/buttons/fancy/close.png);
 }
-/* line 260, ../sass/_styles.scss */
+/* line 267, ../sass/_styles.scss */
 .fclose:hover {
   background-position-y: -30px;
 }
-/* line 261, ../sass/_styles.scss */
+/* line 268, ../sass/_styles.scss */
 .fclose:active {
   background-position-y: -60px;
 }
-/* line 262, ../sass/_styles.scss */
+/* line 269, ../sass/_styles.scss */
 .fclose:not(:empty) {
   padding-left: 27px;
 }
 
-/* line 283, ../sass/_styles.scss */
+/* line 290, ../sass/_styles.scss */
 .fconfiguration {
   background-color: transparent;
   background-position: left top;
@@ -1033,20 +1059,20 @@ button.orange.disabled {
   border: none;
   background-image: url(../images/buttons/fancy/configuration.png);
 }
-/* line 260, ../sass/_styles.scss */
+/* line 267, ../sass/_styles.scss */
 .fconfiguration:hover {
   background-position-y: -30px;
 }
-/* line 261, ../sass/_styles.scss */
+/* line 268, ../sass/_styles.scss */
 .fconfiguration:active {
   background-position-y: -60px;
 }
-/* line 262, ../sass/_styles.scss */
+/* line 269, ../sass/_styles.scss */
 .fconfiguration:not(:empty) {
   padding-left: 27px;
 }
 
-/* line 284, ../sass/_styles.scss */
+/* line 291, ../sass/_styles.scss */
 .fedit {
   background-color: transparent;
   background-position: left top;
@@ -1060,20 +1086,20 @@ button.orange.disabled {
   border: none;
   background-image: url(../images/buttons/fancy/edit.png);
 }
-/* line 260, ../sass/_styles.scss */
+/* line 267, ../sass/_styles.scss */
 .fedit:hover {
   background-position-y: -30px;
 }
-/* line 261, ../sass/_styles.scss */
+/* line 268, ../sass/_styles.scss */
 .fedit:active {
   background-position-y: -60px;
 }
-/* line 262, ../sass/_styles.scss */
+/* line 269, ../sass/_styles.scss */
 .fedit:not(:empty) {
   padding-left: 27px;
 }
 
-/* line 285, ../sass/_styles.scss */
+/* line 292, ../sass/_styles.scss */
 .fexport {
   background-color: transparent;
   background-position: left top;
@@ -1087,20 +1113,20 @@ button.orange.disabled {
   border: none;
   background-image: url(../images/buttons/fancy/export.png);
 }
-/* line 260, ../sass/_styles.scss */
+/* line 267, ../sass/_styles.scss */
 .fexport:hover {
   background-position-y: -30px;
 }
-/* line 261, ../sass/_styles.scss */
+/* line 268, ../sass/_styles.scss */
 .fexport:active {
   background-position-y: -60px;
 }
-/* line 262, ../sass/_styles.scss */
+/* line 269, ../sass/_styles.scss */
 .fexport:not(:empty) {
   padding-left: 27px;
 }
 
-/* line 286, ../sass/_styles.scss */
+/* line 293, ../sass/_styles.scss */
 .ffacebook {
   background-color: transparent;
   background-position: left top;
@@ -1114,20 +1140,20 @@ button.orange.disabled {
   border: none;
   background-image: url(../images/buttons/fancy/facebook.png);
 }
-/* line 260, ../sass/_styles.scss */
+/* line 267, ../sass/_styles.scss */
 .ffacebook:hover {
   background-position-y: -30px;
 }
-/* line 261, ../sass/_styles.scss */
+/* line 268, ../sass/_styles.scss */
 .ffacebook:active {
   background-position-y: -60px;
 }
-/* line 262, ../sass/_styles.scss */
+/* line 269, ../sass/_styles.scss */
 .ffacebook:not(:empty) {
   padding-left: 27px;
 }
 
-/* line 287, ../sass/_styles.scss */
+/* line 294, ../sass/_styles.scss */
 .ffolder {
   background-color: transparent;
   background-position: left top;
@@ -1141,20 +1167,20 @@ button.orange.disabled {
   border: none;
   background-image: url(../images/buttons/fancy/folder.png);
 }
-/* line 260, ../sass/_styles.scss */
+/* line 267, ../sass/_styles.scss */
 .ffolder:hover {
   background-position-y: -30px;
 }
-/* line 261, ../sass/_styles.scss */
+/* line 268, ../sass/_styles.scss */
 .ffolder:active {
   background-position-y: -60px;
 }
-/* line 262, ../sass/_styles.scss */
+/* line 269, ../sass/_styles.scss */
 .ffolder:not(:empty) {
   padding-left: 27px;
 }
 
-/* line 288, ../sass/_styles.scss */
+/* line 295, ../sass/_styles.scss */
 .fhelp {
   background-color: transparent;
   background-position: left top;
@@ -1168,20 +1194,20 @@ button.orange.disabled {
   border: none;
   background-image: url(../images/buttons/fancy/help.png);
 }
-/* line 260, ../sass/_styles.scss */
+/* line 267, ../sass/_styles.scss */
 .fhelp:hover {
   background-position-y: -30px;
 }
-/* line 261, ../sass/_styles.scss */
+/* line 268, ../sass/_styles.scss */
 .fhelp:active {
   background-position-y: -60px;
 }
-/* line 262, ../sass/_styles.scss */
+/* line 269, ../sass/_styles.scss */
 .fhelp:not(:empty) {
   padding-left: 27px;
 }
 
-/* line 289, ../sass/_styles.scss */
+/* line 296, ../sass/_styles.scss */
 .fimport {
   background-color: transparent;
   background-position: left top;
@@ -1195,20 +1221,20 @@ button.orange.disabled {
   border: none;
   background-image: url(../images/buttons/fancy/import.png);
 }
-/* line 260, ../sass/_styles.scss */
+/* line 267, ../sass/_styles.scss */
 .fimport:hover {
   background-position-y: -30px;
 }
-/* line 261, ../sass/_styles.scss */
+/* line 268, ../sass/_styles.scss */
 .fimport:active {
   background-position-y: -60px;
 }
-/* line 262, ../sass/_styles.scss */
+/* line 269, ../sass/_styles.scss */
 .fimport:not(:empty) {
   padding-left: 27px;
 }
 
-/* line 290, ../sass/_styles.scss */
+/* line 297, ../sass/_styles.scss */
 .finsert {
   background-color: transparent;
   background-position: left top;
@@ -1222,20 +1248,20 @@ button.orange.disabled {
   border: none;
   background-image: url(../images/buttons/fancy/insert.png);
 }
-/* line 260, ../sass/_styles.scss */
+/* line 267, ../sass/_styles.scss */
 .finsert:hover {
   background-position-y: -30px;
 }
-/* line 261, ../sass/_styles.scss */
+/* line 268, ../sass/_styles.scss */
 .finsert:active {
   background-position-y: -60px;
 }
-/* line 262, ../sass/_styles.scss */
+/* line 269, ../sass/_styles.scss */
 .finsert:not(:empty) {
   padding-left: 27px;
 }
 
-/* line 291, ../sass/_styles.scss */
+/* line 298, ../sass/_styles.scss */
 .fkey {
   background-color: transparent;
   background-position: left top;
@@ -1249,20 +1275,20 @@ button.orange.disabled {
   border: none;
   background-image: url(../images/buttons/fancy/key.png);
 }
-/* line 260, ../sass/_styles.scss */
+/* line 267, ../sass/_styles.scss */
 .fkey:hover {
   background-position-y: -30px;
 }
-/* line 261, ../sass/_styles.scss */
+/* line 268, ../sass/_styles.scss */
 .fkey:active {
   background-position-y: -60px;
 }
-/* line 262, ../sass/_styles.scss */
+/* line 269, ../sass/_styles.scss */
 .fkey:not(:empty) {
   padding-left: 27px;
 }
 
-/* line 292, ../sass/_styles.scss */
+/* line 299, ../sass/_styles.scss */
 .fleave {
   background-color: transparent;
   background-position: left top;
@@ -1276,20 +1302,20 @@ button.orange.disabled {
   border: none;
   background-image: url(../images/buttons/fancy/leave.png);
 }
-/* line 260, ../sass/_styles.scss */
+/* line 267, ../sass/_styles.scss */
 .fleave:hover {
   background-position-y: -30px;
 }
-/* line 261, ../sass/_styles.scss */
+/* line 268, ../sass/_styles.scss */
 .fleave:active {
   background-position-y: -60px;
 }
-/* line 262, ../sass/_styles.scss */
+/* line 269, ../sass/_styles.scss */
 .fleave:not(:empty) {
   padding-left: 27px;
 }
 
-/* line 293, ../sass/_styles.scss */
+/* line 300, ../sass/_styles.scss */
 .fleft {
   background-color: transparent;
   background-position: left top;
@@ -1303,20 +1329,20 @@ button.orange.disabled {
   border: none;
   background-image: url(../images/buttons/fancy/left.png);
 }
-/* line 260, ../sass/_styles.scss */
+/* line 267, ../sass/_styles.scss */
 .fleft:hover {
   background-position-y: -30px;
 }
-/* line 261, ../sass/_styles.scss */
+/* line 268, ../sass/_styles.scss */
 .fleft:active {
   background-position-y: -60px;
 }
-/* line 262, ../sass/_styles.scss */
+/* line 269, ../sass/_styles.scss */
 .fleft:not(:empty) {
   padding-left: 27px;
 }
 
-/* line 294, ../sass/_styles.scss */
+/* line 301, ../sass/_styles.scss */
 .flocation {
   background-color: transparent;
   background-position: left top;
@@ -1330,20 +1356,20 @@ button.orange.disabled {
   border: none;
   background-image: url(../images/buttons/fancy/location.png);
 }
-/* line 260, ../sass/_styles.scss */
+/* line 267, ../sass/_styles.scss */
 .flocation:hover {
   background-position-y: -30px;
 }
-/* line 261, ../sass/_styles.scss */
+/* line 268, ../sass/_styles.scss */
 .flocation:active {
   background-position-y: -60px;
 }
-/* line 262, ../sass/_styles.scss */
+/* line 269, ../sass/_styles.scss */
 .flocation:not(:empty) {
   padding-left: 27px;
 }
 
-/* line 295, ../sass/_styles.scss */
+/* line 302, ../sass/_styles.scss */
 .fmerge {
   background-color: transparent;
   background-position: left top;
@@ -1357,20 +1383,20 @@ button.orange.disabled {
   border: none;
   background-image: url(../images/buttons/fancy/merge.png);
 }
-/* line 260, ../sass/_styles.scss */
+/* line 267, ../sass/_styles.scss */
 .fmerge:hover {
   background-position-y: -30px;
 }
-/* line 261, ../sass/_styles.scss */
+/* line 268, ../sass/_styles.scss */
 .fmerge:active {
   background-position-y: -60px;
 }
-/* line 262, ../sass/_styles.scss */
+/* line 269, ../sass/_styles.scss */
 .fmerge:not(:empty) {
   padding-left: 27px;
 }
 
-/* line 296, ../sass/_styles.scss */
+/* line 303, ../sass/_styles.scss */
 .fmessage {
   background-color: transparent;
   background-position: left top;
@@ -1384,20 +1410,20 @@ button.orange.disabled {
   border: none;
   background-image: url(../images/buttons/fancy/message.png);
 }
-/* line 260, ../sass/_styles.scss */
+/* line 267, ../sass/_styles.scss */
 .fmessage:hover {
   background-position-y: -30px;
 }
-/* line 261, ../sass/_styles.scss */
+/* line 268, ../sass/_styles.scss */
 .fmessage:active {
   background-position-y: -60px;
 }
-/* line 262, ../sass/_styles.scss */
+/* line 269, ../sass/_styles.scss */
 .fmessage:not(:empty) {
   padding-left: 27px;
 }
 
-/* line 297, ../sass/_styles.scss */
+/* line 304, ../sass/_styles.scss */
 .fpause {
   background-color: transparent;
   background-position: left top;
@@ -1411,20 +1437,20 @@ button.orange.disabled {
   border: none;
   background-image: url(../images/buttons/fancy/pause.png);
 }
-/* line 260, ../sass/_styles.scss */
+/* line 267, ../sass/_styles.scss */
 .fpause:hover {
   background-position-y: -30px;
 }
-/* line 261, ../sass/_styles.scss */
+/* line 268, ../sass/_styles.scss */
 .fpause:active {
   background-position-y: -60px;
 }
-/* line 262, ../sass/_styles.scss */
+/* line 269, ../sass/_styles.scss */
 .fpause:not(:empty) {
   padding-left: 27px;
 }
 
-/* line 298, ../sass/_styles.scss */
+/* line 305, ../sass/_styles.scss */
 .fphone {
   background-color: transparent;
   background-position: left top;
@@ -1438,20 +1464,20 @@ button.orange.disabled {
   border: none;
   background-image: url(../images/buttons/fancy/phone.png);
 }
-/* line 260, ../sass/_styles.scss */
+/* line 267, ../sass/_styles.scss */
 .fphone:hover {
   background-position-y: -30px;
 }
-/* line 261, ../sass/_styles.scss */
+/* line 268, ../sass/_styles.scss */
 .fphone:active {
   background-position-y: -60px;
 }
-/* line 262, ../sass/_styles.scss */
+/* line 269, ../sass/_styles.scss */
 .fphone:not(:empty) {
   padding-left: 27px;
 }
 
-/* line 299, ../sass/_styles.scss */
+/* line 306, ../sass/_styles.scss */
 .fplay {
   background-color: transparent;
   background-position: left top;
@@ -1465,20 +1491,20 @@ button.orange.disabled {
   border: none;
   background-image: url(../images/buttons/fancy/play.png);
 }
-/* line 260, ../sass/_styles.scss */
+/* line 267, ../sass/_styles.scss */
 .fplay:hover {
   background-position-y: -30px;
 }
-/* line 261, ../sass/_styles.scss */
+/* line 268, ../sass/_styles.scss */
 .fplay:active {
   background-position-y: -60px;
 }
-/* line 262, ../sass/_styles.scss */
+/* line 269, ../sass/_styles.scss */
 .fplay:not(:empty) {
   padding-left: 27px;
 }
 
-/* line 300, ../sass/_styles.scss */
+/* line 307, ../sass/_styles.scss */
 .fpreview {
   background-color: transparent;
   background-position: left top;
@@ -1492,20 +1518,20 @@ button.orange.disabled {
   border: none;
   background-image: url(../images/buttons/fancy/preview.png);
 }
-/* line 260, ../sass/_styles.scss */
+/* line 267, ../sass/_styles.scss */
 .fpreview:hover {
   background-position-y: -30px;
 }
-/* line 261, ../sass/_styles.scss */
+/* line 268, ../sass/_styles.scss */
 .fpreview:active {
   background-position-y: -60px;
 }
-/* line 262, ../sass/_styles.scss */
+/* line 269, ../sass/_styles.scss */
 .fpreview:not(:empty) {
   padding-left: 27px;
 }
 
-/* line 301, ../sass/_styles.scss */
+/* line 308, ../sass/_styles.scss */
 .frecord {
   background-color: transparent;
   background-position: left top;
@@ -1519,20 +1545,20 @@ button.orange.disabled {
   border: none;
   background-image: url(../images/buttons/fancy/record.png);
 }
-/* line 260, ../sass/_styles.scss */
+/* line 267, ../sass/_styles.scss */
 .frecord:hover {
   background-position-y: -30px;
 }
-/* line 261, ../sass/_styles.scss */
+/* line 268, ../sass/_styles.scss */
 .frecord:active {
   background-position-y: -60px;
 }
-/* line 262, ../sass/_styles.scss */
+/* line 269, ../sass/_styles.scss */
 .frecord:not(:empty) {
   padding-left: 27px;
 }
 
-/* line 302, ../sass/_styles.scss */
+/* line 309, ../sass/_styles.scss */
 .frecording {
   background-color: transparent;
   background-position: left top;
@@ -1546,20 +1572,20 @@ button.orange.disabled {
   border: none;
   background-image: url(../images/buttons/fancy/recording.png);
 }
-/* line 260, ../sass/_styles.scss */
+/* line 267, ../sass/_styles.scss */
 .frecording:hover {
   background-position-y: -30px;
 }
-/* line 261, ../sass/_styles.scss */
+/* line 268, ../sass/_styles.scss */
 .frecording:active {
   background-position-y: -60px;
 }
-/* line 262, ../sass/_styles.scss */
+/* line 269, ../sass/_styles.scss */
 .frecording:not(:empty) {
   padding-left: 27px;
 }
 
-/* line 303, ../sass/_styles.scss */
+/* line 310, ../sass/_styles.scss */
 .fremove {
   background-color: transparent;
   background-position: left top;
@@ -1573,20 +1599,20 @@ button.orange.disabled {
   border: none;
   background-image: url(../images/buttons/fancy/remove.png);
 }
-/* line 260, ../sass/_styles.scss */
+/* line 267, ../sass/_styles.scss */
 .fremove:hover {
   background-position-y: -30px;
 }
-/* line 261, ../sass/_styles.scss */
+/* line 268, ../sass/_styles.scss */
 .fremove:active {
   background-position-y: -60px;
 }
-/* line 262, ../sass/_styles.scss */
+/* line 269, ../sass/_styles.scss */
 .fremove:not(:empty) {
   padding-left: 27px;
 }
 
-/* line 304, ../sass/_styles.scss */
+/* line 311, ../sass/_styles.scss */
 .frequest {
   background-color: transparent;
   background-position: left top;
@@ -1600,20 +1626,20 @@ button.orange.disabled {
   border: none;
   background-image: url(../images/buttons/fancy/request.png);
 }
-/* line 260, ../sass/_styles.scss */
+/* line 267, ../sass/_styles.scss */
 .frequest:hover {
   background-position-y: -30px;
 }
-/* line 261, ../sass/_styles.scss */
+/* line 268, ../sass/_styles.scss */
 .frequest:active {
   background-position-y: -60px;
 }
-/* line 262, ../sass/_styles.scss */
+/* line 269, ../sass/_styles.scss */
 .frequest:not(:empty) {
   padding-left: 27px;
 }
 
-/* line 305, ../sass/_styles.scss */
+/* line 312, ../sass/_styles.scss */
 .fright {
   background-color: transparent;
   background-position: left top;
@@ -1627,20 +1653,20 @@ button.orange.disabled {
   border: none;
   background-image: url(../images/buttons/fancy/right.png);
 }
-/* line 260, ../sass/_styles.scss */
+/* line 267, ../sass/_styles.scss */
 .fright:hover {
   background-position-y: -30px;
 }
-/* line 261, ../sass/_styles.scss */
+/* line 268, ../sass/_styles.scss */
 .fright:active {
   background-position-y: -60px;
 }
-/* line 262, ../sass/_styles.scss */
+/* line 269, ../sass/_styles.scss */
 .fright:not(:empty) {
   padding-left: 27px;
 }
 
-/* line 306, ../sass/_styles.scss */
+/* line 313, ../sass/_styles.scss */
 .frss {
   background-color: transparent;
   background-position: left top;
@@ -1654,20 +1680,20 @@ button.orange.disabled {
   border: none;
   background-image: url(../images/buttons/fancy/rss.png);
 }
-/* line 260, ../sass/_styles.scss */
+/* line 267, ../sass/_styles.scss */
 .frss:hover {
   background-position-y: -30px;
 }
-/* line 261, ../sass/_styles.scss */
+/* line 268, ../sass/_styles.scss */
 .frss:active {
   background-position-y: -60px;
 }
-/* line 262, ../sass/_styles.scss */
+/* line 269, ../sass/_styles.scss */
 .frss:not(:empty) {
   padding-left: 27px;
 }
 
-/* line 307, ../sass/_styles.scss */
+/* line 314, ../sass/_styles.scss */
 .fsettings {
   background-color: transparent;
   background-position: left top;
@@ -1681,20 +1707,20 @@ button.orange.disabled {
   border: none;
   background-image: url(../images/buttons/fancy/settings.png);
 }
-/* line 260, ../sass/_styles.scss */
+/* line 267, ../sass/_styles.scss */
 .fsettings:hover {
   background-position-y: -30px;
 }
-/* line 261, ../sass/_styles.scss */
+/* line 268, ../sass/_styles.scss */
 .fsettings:active {
   background-position-y: -60px;
 }
-/* line 262, ../sass/_styles.scss */
+/* line 269, ../sass/_styles.scss */
 .fsettings:not(:empty) {
   padding-left: 27px;
 }
 
-/* line 308, ../sass/_styles.scss */
+/* line 315, ../sass/_styles.scss */
 .fsnapshot {
   background-color: transparent;
   background-position: left top;
@@ -1708,20 +1734,20 @@ button.orange.disabled {
   border: none;
   background-image: url(../images/buttons/fancy/snapshot.png);
 }
-/* line 260, ../sass/_styles.scss */
+/* line 267, ../sass/_styles.scss */
 .fsnapshot:hover {
   background-position-y: -30px;
 }
-/* line 261, ../sass/_styles.scss */
+/* line 268, ../sass/_styles.scss */
 .fsnapshot:active {
   background-position-y: -60px;
 }
-/* line 262, ../sass/_styles.scss */
+/* line 269, ../sass/_styles.scss */
 .fsnapshot:not(:empty) {
   padding-left: 27px;
 }
 
-/* line 309, ../sass/_styles.scss */
+/* line 316, ../sass/_styles.scss */
 .fstop {
   background-color: transparent;
   background-position: left top;
@@ -1735,20 +1761,20 @@ button.orange.disabled {
   border: none;
   background-image: url(../images/buttons/fancy/stop.png);
 }
-/* line 260, ../sass/_styles.scss */
+/* line 267, ../sass/_styles.scss */
 .fstop:hover {
   background-position-y: -30px;
 }
-/* line 261, ../sass/_styles.scss */
+/* line 268, ../sass/_styles.scss */
 .fstop:active {
   background-position-y: -60px;
 }
-/* line 262, ../sass/_styles.scss */
+/* line 269, ../sass/_styles.scss */
 .fstop:not(:empty) {
   padding-left: 27px;
 }
 
-/* line 310, ../sass/_styles.scss */
+/* line 317, ../sass/_styles.scss */
 .fstopped {
   background-color: transparent;
   background-position: left top;
@@ -1762,20 +1788,20 @@ button.orange.disabled {
   border: none;
   background-image: url(../images/buttons/fancy/stopped.png);
 }
-/* line 260, ../sass/_styles.scss */
+/* line 267, ../sass/_styles.scss */
 .fstopped:hover {
   background-position-y: -30px;
 }
-/* line 261, ../sass/_styles.scss */
+/* line 268, ../sass/_styles.scss */
 .fstopped:active {
   background-position-y: -60px;
 }
-/* line 262, ../sass/_styles.scss */
+/* line 269, ../sass/_styles.scss */
 .fstopped:not(:empty) {
   padding-left: 27px;
 }
 
-/* line 311, ../sass/_styles.scss */
+/* line 318, ../sass/_styles.scss */
 .fteach {
   background-color: transparent;
   background-position: left top;
@@ -1789,20 +1815,20 @@ button.orange.disabled {
   border: none;
   background-image: url(../images/buttons/fancy/teach.png);
 }
-/* line 260, ../sass/_styles.scss */
+/* line 267, ../sass/_styles.scss */
 .fteach:hover {
   background-position-y: -30px;
 }
-/* line 261, ../sass/_styles.scss */
+/* line 268, ../sass/_styles.scss */
 .fteach:active {
   background-position-y: -60px;
 }
-/* line 262, ../sass/_styles.scss */
+/* line 269, ../sass/_styles.scss */
 .fteach:not(:empty) {
   padding-left: 27px;
 }
 
-/* line 312, ../sass/_styles.scss */
+/* line 319, ../sass/_styles.scss */
 .ftwitter {
   background-color: transparent;
   background-position: left top;
@@ -1816,20 +1842,20 @@ button.orange.disabled {
   border: none;
   background-image: url(../images/buttons/fancy/twitter.png);
 }
-/* line 260, ../sass/_styles.scss */
+/* line 267, ../sass/_styles.scss */
 .ftwitter:hover {
   background-position-y: -30px;
 }
-/* line 261, ../sass/_styles.scss */
+/* line 268, ../sass/_styles.scss */
 .ftwitter:active {
   background-position-y: -60px;
 }
-/* line 262, ../sass/_styles.scss */
+/* line 269, ../sass/_styles.scss */
 .ftwitter:not(:empty) {
   padding-left: 27px;
 }
 
-/* line 313, ../sass/_styles.scss */
+/* line 320, ../sass/_styles.scss */
 .fuser {
   background-color: transparent;
   background-position: left top;
@@ -1843,20 +1869,20 @@ button.orange.disabled {
   border: none;
   background-image: url(../images/buttons/fancy/user.png);
 }
-/* line 260, ../sass/_styles.scss */
+/* line 267, ../sass/_styles.scss */
 .fuser:hover {
   background-position-y: -30px;
 }
-/* line 261, ../sass/_styles.scss */
+/* line 268, ../sass/_styles.scss */
 .fuser:active {
   background-position-y: -60px;
 }
-/* line 262, ../sass/_styles.scss */
+/* line 269, ../sass/_styles.scss */
 .fuser:not(:empty) {
   padding-left: 27px;
 }
 
-/* line 314, ../sass/_styles.scss */
+/* line 321, ../sass/_styles.scss */
 .fusers {
   background-color: transparent;
   background-position: left top;
@@ -1870,20 +1896,20 @@ button.orange.disabled {
   border: none;
   background-image: url(../images/buttons/fancy/users.png);
 }
-/* line 260, ../sass/_styles.scss */
+/* line 267, ../sass/_styles.scss */
 .fusers:hover {
   background-position-y: -30px;
 }
-/* line 261, ../sass/_styles.scss */
+/* line 268, ../sass/_styles.scss */
 .fusers:active {
   background-position-y: -60px;
 }
-/* line 262, ../sass/_styles.scss */
+/* line 269, ../sass/_styles.scss */
 .fusers:not(:empty) {
   padding-left: 27px;
 }
 
-/* line 315, ../sass/_styles.scss */
+/* line 322, ../sass/_styles.scss */
 .fuTurn {
   background-color: transparent;
   background-position: left top;
@@ -1897,20 +1923,20 @@ button.orange.disabled {
   border: none;
   background-image: url(../images/buttons/fancy/uTurn.png);
 }
-/* line 260, ../sass/_styles.scss */
+/* line 267, ../sass/_styles.scss */
 .fuTurn:hover {
   background-position-y: -30px;
 }
-/* line 261, ../sass/_styles.scss */
+/* line 268, ../sass/_styles.scss */
 .fuTurn:active {
   background-position-y: -60px;
 }
-/* line 262, ../sass/_styles.scss */
+/* line 269, ../sass/_styles.scss */
 .fuTurn:not(:empty) {
   padding-left: 27px;
 }
 
-/* line 316, ../sass/_styles.scss */
+/* line 323, ../sass/_styles.scss */
 .fwindows {
   background-color: transparent;
   background-position: left top;
@@ -1924,21 +1950,21 @@ button.orange.disabled {
   border: none;
   background-image: url(../images/buttons/fancy/windows.png);
 }
-/* line 260, ../sass/_styles.scss */
+/* line 267, ../sass/_styles.scss */
 .fwindows:hover {
   background-position-y: -30px;
 }
-/* line 261, ../sass/_styles.scss */
+/* line 268, ../sass/_styles.scss */
 .fwindows:active {
   background-position-y: -60px;
 }
-/* line 262, ../sass/_styles.scss */
+/* line 269, ../sass/_styles.scss */
 .fwindows:not(:empty) {
   padding-left: 27px;
 }
 
 /* ----- Plain ----- */
-/* line 319, ../sass/_styles.scss */
+/* line 326, ../sass/_styles.scss */
 .padd {
   background-color: transparent;
   background-position: left top;
@@ -1952,20 +1978,20 @@ button.orange.disabled {
   border: none;
   background-image: url(../images/buttons/plain/add.png);
 }
-/* line 260, ../sass/_styles.scss */
+/* line 267, ../sass/_styles.scss */
 .padd:hover {
   background-position-y: -30px;
 }
-/* line 261, ../sass/_styles.scss */
+/* line 268, ../sass/_styles.scss */
 .padd:active {
   background-position-y: -60px;
 }
-/* line 262, ../sass/_styles.scss */
+/* line 269, ../sass/_styles.scss */
 .padd:not(:empty) {
   padding-left: 27px;
 }
 
-/* line 320, ../sass/_styles.scss */
+/* line 327, ../sass/_styles.scss */
 .pblock {
   background-color: transparent;
   background-position: left top;
@@ -1979,20 +2005,20 @@ button.orange.disabled {
   border: none;
   background-image: url(../images/buttons/plain/block.png);
 }
-/* line 260, ../sass/_styles.scss */
+/* line 267, ../sass/_styles.scss */
 .pblock:hover {
   background-position-y: -30px;
 }
-/* line 261, ../sass/_styles.scss */
+/* line 268, ../sass/_styles.scss */
 .pblock:active {
   background-position-y: -60px;
 }
-/* line 262, ../sass/_styles.scss */
+/* line 269, ../sass/_styles.scss */
 .pblock:not(:empty) {
   padding-left: 27px;
 }
 
-/* line 321, ../sass/_styles.scss */
+/* line 328, ../sass/_styles.scss */
 .pclose {
   background-color: transparent;
   background-position: left top;
@@ -2006,20 +2032,20 @@ button.orange.disabled {
   border: none;
   background-image: url(../images/buttons/plain/close.png);
 }
-/* line 260, ../sass/_styles.scss */
+/* line 267, ../sass/_styles.scss */
 .pclose:hover {
   background-position-y: -30px;
 }
-/* line 261, ../sass/_styles.scss */
+/* line 268, ../sass/_styles.scss */
 .pclose:active {
   background-position-y: -60px;
 }
-/* line 262, ../sass/_styles.scss */
+/* line 269, ../sass/_styles.scss */
 .pclose:not(:empty) {
   padding-left: 27px;
 }
 
-/* line 322, ../sass/_styles.scss */
+/* line 329, ../sass/_styles.scss */
 .pnext {
   background-color: transparent;
   background-position: left top;
@@ -2033,20 +2059,20 @@ button.orange.disabled {
   border: none;
   background-image: url(../images/buttons/plain/next.png);
 }
-/* line 260, ../sass/_styles.scss */
+/* line 267, ../sass/_styles.scss */
 .pnext:hover {
   background-position-y: -30px;
 }
-/* line 261, ../sass/_styles.scss */
+/* line 268, ../sass/_styles.scss */
 .pnext:active {
   background-position-y: -60px;
 }
-/* line 262, ../sass/_styles.scss */
+/* line 269, ../sass/_styles.scss */
 .pnext:not(:empty) {
   padding-left: 27px;
 }
 
-/* line 323, ../sass/_styles.scss */
+/* line 330, ../sass/_styles.scss */
 .pprevious {
   background-color: transparent;
   background-position: left top;
@@ -2060,20 +2086,20 @@ button.orange.disabled {
   border: none;
   background-image: url(../images/buttons/plain/previous.png);
 }
-/* line 260, ../sass/_styles.scss */
+/* line 267, ../sass/_styles.scss */
 .pprevious:hover {
   background-position-y: -30px;
 }
-/* line 261, ../sass/_styles.scss */
+/* line 268, ../sass/_styles.scss */
 .pprevious:active {
   background-position-y: -60px;
 }
-/* line 262, ../sass/_styles.scss */
+/* line 269, ../sass/_styles.scss */
 .pprevious:not(:empty) {
   padding-left: 27px;
 }
 
-/* line 324, ../sass/_styles.scss */
+/* line 331, ../sass/_styles.scss */
 .premove {
   background-color: transparent;
   background-position: left top;
@@ -2087,20 +2113,20 @@ button.orange.disabled {
   border: none;
   background-image: url(../images/buttons/plain/remove.png);
 }
-/* line 260, ../sass/_styles.scss */
+/* line 267, ../sass/_styles.scss */
 .premove:hover {
   background-position-y: -30px;
 }
-/* line 261, ../sass/_styles.scss */
+/* line 268, ../sass/_styles.scss */
 .premove:active {
   background-position-y: -60px;
 }
-/* line 262, ../sass/_styles.scss */
+/* line 269, ../sass/_styles.scss */
 .premove:not(:empty) {
   padding-left: 27px;
 }
 
-/* line 325, ../sass/_styles.scss */
+/* line 332, ../sass/_styles.scss */
 .pstop {
   background-color: transparent;
   background-position: left top;
@@ -2114,20 +2140,20 @@ button.orange.disabled {
   border: none;
   background-image: url(../images/buttons/plain/stop.png);
 }
-/* line 260, ../sass/_styles.scss */
+/* line 267, ../sass/_styles.scss */
 .pstop:hover {
   background-position-y: -30px;
 }
-/* line 261, ../sass/_styles.scss */
+/* line 268, ../sass/_styles.scss */
 .pstop:active {
   background-position-y: -60px;
 }
-/* line 262, ../sass/_styles.scss */
+/* line 269, ../sass/_styles.scss */
 .pstop:not(:empty) {
   padding-left: 27px;
 }
 
-/* line 326, ../sass/_styles.scss */
+/* line 333, ../sass/_styles.scss */
 .pstopped {
   background-color: transparent;
   background-position: left top;
@@ -2141,41 +2167,41 @@ button.orange.disabled {
   border: none;
   background-image: url(../images/buttons/plain/stopped.png);
 }
-/* line 260, ../sass/_styles.scss */
+/* line 267, ../sass/_styles.scss */
 .pstopped:hover {
   background-position-y: -30px;
 }
-/* line 261, ../sass/_styles.scss */
+/* line 268, ../sass/_styles.scss */
 .pstopped:active {
   background-position-y: -60px;
 }
-/* line 262, ../sass/_styles.scss */
+/* line 269, ../sass/_styles.scss */
 .pstopped:not(:empty) {
   padding-left: 27px;
 }
 
 /* ---------- MENU ----------*/
-/* line 333, ../sass/_styles.scss */
+/* line 340, ../sass/_styles.scss */
 .nav {
   background: white url(../images/header/backheader.png) repeat-x;
   height: 32px;
   z-index: 10;
 }
 
-/* line 336, ../sass/_styles.scss */
+/* line 343, ../sass/_styles.scss */
 .nav ul {
   margin: 0;
   list-style: none;
   font-size: 12px;
 }
 
-/* line 341, ../sass/_styles.scss */
+/* line 348, ../sass/_styles.scss */
 .nav li {
   display: inline-block;
   position: relative;
 }
 
-/* line 345, ../sass/_styles.scss */
+/* line 352, ../sass/_styles.scss */
 .nav li.sep {
   background: #f2f2f2;
   border-right: 1px solid #ffffff;
@@ -2185,13 +2211,13 @@ button.orange.disabled {
   margin: 0;
 }
 
-/* line 347, ../sass/_styles.scss */
+/* line 354, ../sass/_styles.scss */
 .nav li a {
   display: block;
   line-height: 38px;
 }
 
-/* line 351, ../sass/_styles.scss */
+/* line 358, ../sass/_styles.scss */
 a .menu-mid {
   padding: 0 10px;
   margin-top: 2px;
@@ -2200,14 +2226,14 @@ a .menu-mid {
   display: block;
 }
 
-/* line 358, ../sass/_styles.scss */
+/* line 365, ../sass/_styles.scss */
 a .menu-mid.wsub {
   background: url(../images/icons/misc/black/arrowDown.png) no-repeat 97% 45%;
   margin: 2px 7px 0 7px;
   padding: 0 14px 0 6px;
 }
 
-/* line 366, ../sass/_styles.scss */
+/* line 373, ../sass/_styles.scss */
 .nav li a:hover .menu-mid.wsub,
 .nav li.active a .menu-mid.wsub,
 .nav li:hover a .menu-mid.wsub {
@@ -2220,7 +2246,7 @@ a .menu-mid.wsub {
   box-shadow: 0px -1px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
-/* line 374, ../sass/_styles.scss */
+/* line 381, ../sass/_styles.scss */
 .nav li a:hover,
 .nav li.active a,
 .nav li.hover a,
@@ -2228,13 +2254,13 @@ a .menu-mid.wsub {
   color: #000;
 }
 
-/* line 378, ../sass/_styles.scss */
+/* line 385, ../sass/_styles.scss */
 .nav li:hover .sub,
 .nav li.hover .sub {
   display: block;
 }
 
-/* line 381, ../sass/_styles.scss */
+/* line 388, ../sass/_styles.scss */
 .nav li .sub {
   display: none;
   position: absolute;
@@ -2249,7 +2275,7 @@ a .menu-mid.wsub {
   box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
-/* line 389, ../sass/_styles.scss */
+/* line 396, ../sass/_styles.scss */
 .nav li ul {
   margin: 0;
   padding: 0 12px 10px;
@@ -2257,7 +2283,7 @@ a .menu-mid.wsub {
   font-size: 14px;
 }
 
-/* line 397, ../sass/_styles.scss */
+/* line 404, ../sass/_styles.scss */
 .nav li:hover li,
 .nav li.active li {
   width: 100%;
@@ -2266,7 +2292,7 @@ a .menu-mid.wsub {
   background: none !important;
 }
 
-/* line 405, ../sass/_styles.scss */
+/* line 412, ../sass/_styles.scss */
 .nav li:hover li a,
 .nav li.active li a {
   color: #09548B;
@@ -2277,7 +2303,7 @@ a .menu-mid.wsub {
   text-indent: 1px;
 }
 
-/* line 414, ../sass/_styles.scss */
+/* line 421, ../sass/_styles.scss */
 .nav li:hover li a:hover,
 .nav li.active li a:hover {
   color: #fff;
@@ -2287,7 +2313,7 @@ a .menu-mid.wsub {
 }
 
 /*IE*/
-/* line 422, ../sass/_styles.scss */
+/* line 429, ../sass/_styles.scss */
 .nav li li a:hover,
 .nav li li a:hover {
   color: #fff;
@@ -2297,38 +2323,134 @@ a .menu-mid.wsub {
 }
 
 /* ----- Widths ----- */
-/* line 436, ../sass/_styles.scss */
+/* line 449, ../sass/_styles.scss */
 .w06 {
   width: 60px !important;
 }
+/* line 443, ../sass/_styles.scss */
+.w06 > .ux-text, .w06.ux-text {
+  width: 54px !important;
+}
+/* line 444, ../sass/_styles.scss */
+.w06 > .ux-dropdown .select, .w06.ux-dropdown .select {
+  width: 53px !important;
+}
+/* line 445, ../sass/_styles.scss */
+.w06 > .ux-datepicker, .w06.ux-datepicker {
+  width: 31px !important;
+}
+/* line 446, ../sass/_styles.scss */
+.w06 > .ux-search, .w06.ux-search {
+  width: 31px !important;
+}
 
-/* line 437, ../sass/_styles.scss */
+/* line 450, ../sass/_styles.scss */
 .w15 {
   width: 150px !important;
 }
+/* line 443, ../sass/_styles.scss */
+.w15 > .ux-text, .w15.ux-text {
+  width: 144px !important;
+}
+/* line 444, ../sass/_styles.scss */
+.w15 > .ux-dropdown .select, .w15.ux-dropdown .select {
+  width: 143px !important;
+}
+/* line 445, ../sass/_styles.scss */
+.w15 > .ux-datepicker, .w15.ux-datepicker {
+  width: 121px !important;
+}
+/* line 446, ../sass/_styles.scss */
+.w15 > .ux-search, .w15.ux-search {
+  width: 121px !important;
+}
 
-/* line 438, ../sass/_styles.scss */
+/* line 451, ../sass/_styles.scss */
 .w20 {
   width: 200px !important;
 }
+/* line 443, ../sass/_styles.scss */
+.w20 > .ux-text, .w20.ux-text {
+  width: 194px !important;
+}
+/* line 444, ../sass/_styles.scss */
+.w20 > .ux-dropdown .select, .w20.ux-dropdown .select {
+  width: 193px !important;
+}
+/* line 445, ../sass/_styles.scss */
+.w20 > .ux-datepicker, .w20.ux-datepicker {
+  width: 171px !important;
+}
+/* line 446, ../sass/_styles.scss */
+.w20 > .ux-search, .w20.ux-search {
+  width: 171px !important;
+}
 
-/* line 439, ../sass/_styles.scss */
+/* line 452, ../sass/_styles.scss */
 .w30 {
   width: 300px !important;
 }
+/* line 443, ../sass/_styles.scss */
+.w30 > .ux-text, .w30.ux-text {
+  width: 294px !important;
+}
+/* line 444, ../sass/_styles.scss */
+.w30 > .ux-dropdown .select, .w30.ux-dropdown .select {
+  width: 293px !important;
+}
+/* line 445, ../sass/_styles.scss */
+.w30 > .ux-datepicker, .w30.ux-datepicker {
+  width: 271px !important;
+}
+/* line 446, ../sass/_styles.scss */
+.w30 > .ux-search, .w30.ux-search {
+  width: 271px !important;
+}
 
-/* line 440, ../sass/_styles.scss */
+/* line 453, ../sass/_styles.scss */
 .w40 {
   width: 400px !important;
 }
+/* line 443, ../sass/_styles.scss */
+.w40 > .ux-text, .w40.ux-text {
+  width: 394px !important;
+}
+/* line 444, ../sass/_styles.scss */
+.w40 > .ux-dropdown .select, .w40.ux-dropdown .select {
+  width: 393px !important;
+}
+/* line 445, ../sass/_styles.scss */
+.w40 > .ux-datepicker, .w40.ux-datepicker {
+  width: 371px !important;
+}
+/* line 446, ../sass/_styles.scss */
+.w40 > .ux-search, .w40.ux-search {
+  width: 371px !important;
+}
 
-/* line 441, ../sass/_styles.scss */
+/* line 454, ../sass/_styles.scss */
 .w50 {
   width: 500px !important;
 }
+/* line 443, ../sass/_styles.scss */
+.w50 > .ux-text, .w50.ux-text {
+  width: 494px !important;
+}
+/* line 444, ../sass/_styles.scss */
+.w50 > .ux-dropdown .select, .w50.ux-dropdown .select {
+  width: 493px !important;
+}
+/* line 445, ../sass/_styles.scss */
+.w50 > .ux-datepicker, .w50.ux-datepicker {
+  width: 471px !important;
+}
+/* line 446, ../sass/_styles.scss */
+.w50 > .ux-search, .w50.ux-search {
+  width: 471px !important;
+}
 
 /* ----- Error ----- */
-/* line 444, ../sass/_styles.scss */
+/* line 457, ../sass/_styles.scss */
 label.error {
   background: url(../images/icons/small/orange/alert.png) no-repeat;
   color: #ff6600 !important;
@@ -2345,23 +2467,23 @@ label.error {
 .pulldown span.r { background:url(../images/combobox/white.png) no-repeat right top; height:26px; width:20px; display:block; position:absolute; right:0px; cursor:pointer }
 .pulldown:hover span.r { background:url(../images/combobox/white.png) no-repeat right -39px; height:26px; width:20px; display:block; position:absolute; right:0px; cursor:pointer }
 .pulldown select { margin-top:-26px; position:absolute; z-index:5; cursor:pointer; opacity: 0 }*/
-/* line 457, ../sass/_styles.scss */
+/* line 470, ../sass/_styles.scss */
 ::-webkit-input-placeholder {
   font-style: italic;
   color: #999;
 }
 
-/* line 458, ../sass/_styles.scss */
+/* line 471, ../sass/_styles.scss */
 :-moz-placeholder {
   font-style: italic;
   color: #999;
 }
 
 /* ------------ Super TAG ------------------ */
-/* line 462, ../sass/_styles.scss */
+/* line 475, ../sass/_styles.scss */
 .superblyTagfieldDiv {
   border: 1px solid #dddddd;
-  padding: 0 6px;
+  padding: 0 2px;
   color: black;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -2371,38 +2493,38 @@ label.error {
   box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset;
   margin: 1px;
   min-height: 22px;
-  width: inherit;
+  margin-right: 0px;
 }
-/* line 27, ../sass/_styles.scss */
+/* line 29, ../sass/_styles.scss */
 .superblyTagfieldDiv:focus {
   border: 2px solid #dddddd;
   margin: 0px;
 }
-/* line 28, ../sass/_styles.scss */
+/* line 30, ../sass/_styles.scss */
 .superblyTagfieldDiv.readonly, .superblyTagfieldDiv.readonly:focus {
   background: #d0d0d0;
   color: #999999;
   border-width: 1px;
   margin: 1px;
 }
-/* line 29, ../sass/_styles.scss */
+/* line 31, ../sass/_styles.scss */
 .superblyTagfieldDiv.error {
   border: 2px solid #ff6600;
   margin: 0px;
 }
 
-/* line 464, ../sass/_styles.scss */
+/* line 477, ../sass/_styles.scss */
 .superblyTagfieldClearer {
   clear: both;
 }
 
-/* line 466, ../sass/_styles.scss */
+/* line 479, ../sass/_styles.scss */
 .superblyTagfieldDiv ul {
   margin: 0;
   padding: 0;
 }
 
-/* line 468, ../sass/_styles.scss */
+/* line 481, ../sass/_styles.scss */
 .superblyTagfield {
   /* if no javascript */
   outline: none;
@@ -2412,7 +2534,7 @@ label.error {
   background-color: #FFFFFF;
 }
 
-/* line 477, ../sass/_styles.scss */
+/* line 490, ../sass/_styles.scss */
 .superblyTagInput {
   border: none;
   outline: none;
@@ -2420,47 +2542,58 @@ label.error {
   margin: 0px;
 }
 
-/* line 484, ../sass/_styles.scss */
+/* line 497, ../sass/_styles.scss */
 .superblyTagInputItem {
   padding: 0px;
   margin: 0px;
 }
 
-/* line 489, ../sass/_styles.scss */
+/* line 502, ../sass/_styles.scss */
 .superblyTagItems > li {
-  /*  font-size:12px;
-  	font-family: Arial, Georgia, Helvetica, sans-serif; */
-  color: #000;
   list-style: none;
   float: left;
-  padding: 3px;
+  padding: 1px 2px 2px 4px;
   margin: 2px 1px 0px 1px;
   position: relative;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
 }
 
-/* line 501, ../sass/_styles.scss */
+/* line 511, ../sass/_styles.scss */
 .superblyTagItems .superblyTagItem {
-  background-color: #ebebeb;
+  background-color: #d0d0d0;
 }
 
-/* line 505, ../sass/_styles.scss */
+/* line 515, ../sass/_styles.scss */
 .superblyTagItems .superblyTagItem a {
   color: #000000;
   cursor: pointer;
   font-style: normal;
 }
 
-/* line 510, ../sass/_styles.scss */
+/* line 520, ../sass/_styles.scss */
 .remove {
-  background: url(../images/icons/misc/grey/cross.png) no-repeat center 1px;
-  height: 11px;
+  background-image: url(../images/tags/cross.png);
+  height: 10px;
   width: 11px;
   padding: 0 1px;
   margin-left: 2px;
   display: inline-block;
+  background-repeat: no-repeat;
+  background-position-x: 0px;
+  background-position-y: 0px;
+}
+/* line 28, ../sass/_mixins.scss */
+.remove:hover {
+  background-position-y: -15px;
+}
+/* line 31, ../sass/_mixins.scss */
+.remove:active {
+  background-position-y: -30px;
 }
 
-/* line 516, ../sass/_styles.scss */
+/* line 522, ../sass/_styles.scss */
 .superblySuggestItems {
   min-width: 100px;
   position: absolute;
@@ -2477,10 +2610,8 @@ label.error {
   box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
-/* line 528, ../sass/_styles.scss */
+/* line 534, ../sass/_styles.scss */
 .superblySuggestItems .superblySuggestItem {
-  /*    font-size:11px;
-  	font-family: Arial, Georgia, Helvetica, sans-serif; */
   padding: 3px 5px;
   list-style: none;
   float: none;
@@ -2491,20 +2622,27 @@ label.error {
   border-radius: 3px;
 }
 
-/* line 539, ../sass/_styles.scss */
+/* line 543, ../sass/_styles.scss */
 .superblySuggestItems .superblySuggestItem:hover {
   cursor: pointer;
   background: #cccccc;
 }
 
-/* line 543, ../sass/_styles.scss */
+/* line 547, ../sass/_styles.scss */
 .superblySuggestItems .selected {
   background-color: #cccccc;
 }
 
+/* line 551, ../sass/_styles.scss */
+.superblySuggestItems:empty {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
 /* ---------------------- Tables --------------------------*/
 /* -------- General ---------*/
-/* line 551, ../sass/_styles.scss */
+/* line 559, ../sass/_styles.scss */
 .GralTable {
   border: 1px solid #e7e9ee;
   margin-top: 10px;
@@ -2514,7 +2652,7 @@ label.error {
   border-radius: 6px 6px 6px 6px;
 }
 
-/* line 560, ../sass/_styles.scss */
+/* line 568, ../sass/_styles.scss */
 .GralTable th {
   /* old browsers */
   background: #e5e6ec;
@@ -2531,24 +2669,24 @@ label.error {
   border-bottom: 1px solid #e7e9ee;
 }
 
-/* line 575, ../sass/_styles.scss */
+/* line 583, ../sass/_styles.scss */
 .GralTable th:first-child {
   border-left: none;
 }
 
-/* line 576, ../sass/_styles.scss */
+/* line 584, ../sass/_styles.scss */
 .GralTable th:last-child {
   border-right: none;
 }
 
-/* line 577, ../sass/_styles.scss */
+/* line 585, ../sass/_styles.scss */
 .GralTable th span {
   display: block;
   margin-right: 5px;
   float: right;
 }
 
-/* line 578, ../sass/_styles.scss */
+/* line 586, ../sass/_styles.scss */
 .GralTable tr:nth-child(2) {
   background-color: #ffffff;
   /* firefox */
@@ -2560,12 +2698,12 @@ label.error {
   color: #a7aab7;
 }
 
-/* line 588, ../sass/_styles.scss */
+/* line 596, ../sass/_styles.scss */
 .GralTable tr:nth-child(2) td {
   padding: 15px 0 6px 10px;
 }
 
-/* line 592, ../sass/_styles.scss */
+/* line 600, ../sass/_styles.scss */
 .GralTable td {
   letter-spacing: -0.005em;
   color: #5c658e;
@@ -2574,19 +2712,19 @@ label.error {
 }
 
 /* -------- Clean ---------*/
-/* line 600, ../sass/_styles.scss */
+/* line 608, ../sass/_styles.scss */
 .CleanTable th {
   background: #ffffff;
   border: none;
 }
 
-/* line 604, ../sass/_styles.scss */
+/* line 612, ../sass/_styles.scss */
 .CleanTable td {
   border: none;
 }
 
 /* -------- Two column table  ---------*/
-/* line 610, ../sass/_styles.scss */
+/* line 618, ../sass/_styles.scss */
 .TwoColumn tr td:nth-child(2) {
   width: 100px;
   padding-right: 8px;
@@ -2815,7 +2953,7 @@ label.error {
  */
 /* line 31, ../sass/_datepicker.scss */
 .ui-datepicker {
-  width: 17em;
+  width: 200px;
   padding: 6px;
   -webkit-box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.4);
@@ -2941,7 +3079,7 @@ label.error {
 /* line 50, ../sass/_datepicker.scss */
 .ui-datepicker td {
   border: 0;
-  padding: 0;
+  padding: 1px;
   text-align: right;
 }
 
@@ -3060,16 +3198,16 @@ label.error {
 
 /* line 96, ../sass/_datepicker.scss */
 .ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
-  color: #555555;
+  color: white;
   text-decoration: none;
 }
 
 /* line 97, ../sass/_datepicker.scss */
 .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
-  background: #cccccc;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
+  background: #d0d0d0 !important;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
 }
 
 /* line 98, ../sass/_datepicker.scss */
@@ -3080,9 +3218,12 @@ label.error {
 
 /* line 99, ../sass/_datepicker.scss */
 .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
-  background: white url(images/ui-bg_glass_65_ffffff_1x400.png) 50% 50% repeat-x;
+  background: #555555;
   font-weight: normal;
-  color: #212121;
+  color: white;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
 }
 
 /* line 100, ../sass/_datepicker.scss */
@@ -3100,10 +3241,11 @@ label.error {
 ----------------------------------*/
 /* line 105, ../sass/_datepicker.scss */
 .ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
-  background: #cccccc;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
+  background: white;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  border: 1px solid #d0d0d0;
 }
 
 /* line 106, ../sass/_datepicker.scss */
