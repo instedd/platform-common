@@ -214,7 +214,7 @@ $active_border_color, $active_border_top_color, $disabled_border_color,$disabled
     box-shadow: none; 
 #    padding:6px 8px 4px 8px;
     filter:progid:DXImageTransform.Microsoft.Shadow(color='$border_color',direction='0',strength='0'); 
-    color:$color; 
+    color:$color;
   }
   &.disabled { 
     opacity: 1;
@@ -229,26 +229,37 @@ $active_border_color, $active_border_top_color, $disabled_border_color,$disabled
   }
 }
 
+/*
+@mixin css3-button(
+$border_color,$background_color,$background_color2,$color,
+$hover_background_color,$hover_background_color2,
+$active_border_color, $active_border_top_color, 
+$disabled_border_color,$disabled_background_color,$disabled_color) {
+*/
+
 button.white {
+  text-shadow: 0px 1px 0px white; 
   @include css3-button(
-    #ffffff,#d0d0d0,#ffffff,#000000, 
-    #c5c5c5,#f2f2f2, 
+    #ffffff,#d2d2d2,#ffffff,#000000, 
+    #f0f0f0,#c7c7c7, 
     #d0d0d0,#9c9c9c, 
     #d0d0d0,#ffffff,#999999);
 }
 
 button.grey {
+  text-shadow: 0px -1px 0px black; 
   @include css3-button(
-    #313131,#383838,#555555,#ffffff, 
-    #656565,#252525, 
+    #313131,#3b3b3b,#767676,#ffffff, 
+    #616161,#313131, 
     #3c3c3c,#1e1e1e, 
     #3c3c3c,#767676,#cccccc);
 }
 
 button.orange {
+  text-shadow: 0px -1px 0px #fe3700;
   @include css3-button(
-    #fe3700,#ff6600,#fe973a,#ffffff, 
-    #e85d01,#ff8619, 
+    #fe3700,#ff6802,#fe9639,#ffffff, 
+    #fe8418,#e95f02, 
     #ff6802,#fe1600, 
     #ff6802,#fe9639,#ffddbf);
 }
