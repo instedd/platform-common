@@ -2,7 +2,9 @@
 	$(function(){
 		// initialize built-in components.
 		if ($.fn.datepicker) {
-			$(".ux-datepicker").datepicker();
+			$(".ux-datepicker")
+				.click(function(){ $(this).datepicker("show"); })
+				.datepicker();
 		}
 		$("input[type='text']").addClass("ux-text");
 		$("textarea").addClass("ux-text");
@@ -31,7 +33,9 @@
 		// position user menu
 		$('#User').mouseenter(function(){
 			var container = $('.container', $(this));
-			container.css('margin-left', -container.width()/2 + $(this).width()/2);
+			container.prepend($("<div>").addClass("band"));
+			container.css('margin-left', -container.width()/2 + $(this).width()/2 - 2);
+			$('.band', container).width($(this).width() + 20); // hack padding of #User
 		});
 		
 		// add in the pre-last li of the BreadCrumb a span
