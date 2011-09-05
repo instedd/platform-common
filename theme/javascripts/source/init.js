@@ -1,4 +1,4 @@
-(function($){	
+(function($){
 	$(function(){
 		// initialize built-in components.
 		if ($.fn.datepicker) {
@@ -6,6 +6,7 @@
 				.click(function(){ $(this).datepicker("show"); })
 				.datepicker();
 		}
+				
 		$("input[type='text']").addClass("ux-text");
 		$("textarea").addClass("ux-text");
 		$("input[readonly='readonly'], textarea[readonly='readonly']").addClass("readonly");
@@ -13,6 +14,8 @@
 		$("input[type='radio']").addClass("styled");
 		$("input[type='checkbox']").addClass("styled");
 		$("button[disabled]").addClass("disabled");
+		
+		$(".ux-wajbar").wajbar();
 		
 		$(".ux-nstep").each(function(){
 			var nstep = $(this);
