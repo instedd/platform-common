@@ -344,7 +344,8 @@ button.orange {
 .pstop{ @include icon_button; background-image:url(../images/buttons/plain/stop.png) }
 .pstopped{ @include icon_button; background-image:url(../images/buttons/plain/stopped.png) }
 
-
+/* ----- Level Selector ----- */
+.lblock{ @include icon_button; background-image:url(../images/levelSelector/disable.png) }
 
 
 /* ---------- MENU ----------*/
@@ -464,6 +465,7 @@ a .menu-mid.wsub {
 .w30 { @include width-class(300px); }
 .w40 { @include width-class(400px); }
 .w50 { @include width-class(500px); }
+.w55 { @include width-class(550px); }
 
 /* ----- Error ----- */
 label.error { 
