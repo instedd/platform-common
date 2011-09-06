@@ -349,7 +349,8 @@ button.orange {
 .pstop{ @include icon_button; background-image:url(../images/buttons/plain/stop.png) }
 .pstopped{ @include icon_button; background-image:url(../images/buttons/plain/stopped.png) }
 
-
+/* ----- Level Selector ----- */
+.lblock{ @include icon_button; background-image:url(../images/levelSelector/disable.png) }
 
 
 /* ---------- MENU ----------*/
@@ -470,6 +471,7 @@ a .menu-mid.wsub {
 .w30 { @include width-class(300px); }
 .w40 { @include width-class(400px); }
 .w50 { @include width-class(500px); }
+.w55 { @include width-class(550px); }
 
 /* ----- Error ----- */
 label.error { 
@@ -578,7 +580,7 @@ label.error {
 .box.grey, .sbox.grey { background:#d0d0d0; color:#555555 }
 
 hr.shadow { background: #e5e6ec; background: -moz-linear-gradient(top, #e5e6ec 0%, #ffffff 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e5e6ec), color-stop(100%, #ffffff));
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5e6ec', endColorstr='#ffffff',GradientType=0 ); height:15px; margin:3px 0 3px -10px; }
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5e6ec', endColorstr='#ffffff',GradientType=0 ); height:15px; margin:3px 0 3px -10px; z-index:0; }
 
 /* ---------------------- Tables --------------------------*/
 

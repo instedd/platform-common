@@ -89,7 +89,7 @@
             <tr>
             <td>for</td>
             <td>
-                <div class="w100 disabled">
+                <div class="w55 disabled">
                   <textarea placeholder="Write your comment here" readonly="readonly"></textarea>
                   <div class="TaskBox">
                       <div class="L">182</div><div class="M"><span class="Fill"></span></div><div class="R">14</div>
@@ -100,11 +100,11 @@
             </tr>
             <tr>
             <td>near</td>
-            <td><input type="text" placeholder="Search" class="w100 ux-search"> </td>
+            <td><input type="text" placeholder="Search" class="w55 ux-search"> </td>
             </tr>
             </table>
                
-			<div><img src="demoImg/mapa.png"></div>
+			<div><img src="demoImg/mapa.png" width="610" height="278"></div>
             
         
         </div><!-- #box -->
@@ -132,37 +132,51 @@
             <button type="button" class="faccept">Mark as complete</button>
             <hr class="shadow">
             <div id="scroll">
-            <table>
-            <tr>
-            <td>John Doe</td>
-            <td><span class="mobile">+1 415 254 1574</span></td>
-            </tr>
-            <tr>
-            <td>Robert Cooper</td>
-            <td><span class="mobile">+1 408 396 9068</span></td>
-            </tr>
-            <tr>
-            <td>Peter Smith</td>
-            <td><span class="mobile">+1 325 983 1129</span></td>
-            </tr>
-            <tr>
-            <td>Walter Thompson</td>
-            <td><span class="mobile">+1 401 331 0947</span></td>
-            </tr>
-            </table>
+            <div class="listitem">
+            	<span class="a"><a href="#">6 Confirmed</a></span>
+                <table>
+                <tr>
+                <td>John Doe</td>
+                <td><span class="mobile">+1 415 254 1574</span></td>
+                </tr>
+                <tr>
+                <td>Robert Cooper</td>
+                <td><span class="phone">+1 408 396 9068</span></td>
+                </tr>
+                <tr>
+                <td>Peter Smith</td>
+                <td><span class="phone">+1 325 983 1129</span></td>
+                </tr>
+                <tr>
+                <td>Walter Thompson</td>
+                <td><span class="mobile">+1 401 331 0947</span></td>
+                </tr>
+                </table>
+            </div><!-- #listitem -->
             <hr>
-            <table>
-            <tr>
-            <td><button type="button" class="icon fblock"></button> John Doe</td>
-            <td><span class="mobile">+1 408 396 9068</span><br><span class="mobile">+1 408 396 9068</span></td>
-            </tr>
-            <tr>
-            <td><button type="button" class="icon fblock"></button> Robert Cooper</td>
-            <td><span class="mobile">+1 408 396 9068</span><br><span class="mobile">+1 408 396 9068</span></td>
-            </tr>
-            </table>
+            <div class="listitem">
+            	<span class="a"><a href="#">2 pending</a></span>
+                <table>
+                <tr>
+                <td><button type="button" class="icon fblock"></button> John Doe</td>
+                <td><span class="mobile">+1 408 396 9068</span><br><span class="phone">+1 408 396 9068</span></td>
+                </tr>
+                <tr class="blocked">
+                <td><button type="button" class="icon lblock"></button> Christian Shepard</td>
+                <td><span class="mobile">+1 408 396 9068</span></td>
+                </tr>
+                </table>
+            </div><!-- #listitem -->
             <hr>
+            <div class="listitem col">
+            	<span class="a"><a href="#">1 Unresponsive</a></span>
+                <table><tr><td></td></tr></table>
+            </div><!-- #listitem -->
             <hr>
+            <div class="listitem col">
+            	<span class="a"><a href="#">8 Denied</a></span>
+                <table><tr><td></td></tr></table>
+            </div><!-- #listitem -->
             </div><!-- #scroll -->
         
         </div><!-- #box -->
