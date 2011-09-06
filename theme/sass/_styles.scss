@@ -83,11 +83,11 @@ input.ux-text {  height:22px; width:inherit; @include texboxes_border; }
 /* ----- Text Area ----- */
 textarea.ux-text { width: inherit; @include texboxes_border; padding:2px 2px; resize:none; }
 
-.TaskBox { background:$disabled_bgtext; font-size:10px; font-weight: bold; letter-spacing:-0.05em; padding:0px 0px 1px 0px; margin:0px 1px; text-align:center; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px; white-space:nowrap }
+.TaskBox { border: 1px solid #dddddd; background:$disabled_bgtext; font-size:10px; font-weight: bold; letter-spacing:-0.05em; padding:0px 0px 1px 0px; margin:0px 1px; text-align:center; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px; white-space:nowrap }
 .TaskBox div { display: inline-block; vertical-align:middle; margin-left:-2px; }
-.TaskBox div.L { color:$darkgray; width:22px; text-align:left; padding-left:0px; }
-.TaskBox div.R { color:$orange; width:22px; text-align:right; padding-right:0px; }
-.TaskBox div.M { background:$orange; width:444px; margin:0 2px } /* TODO move to JS initialization */
+.TaskBox div.L { color:$darkgray; width:4%; text-align:left; padding-left:0px; }
+.TaskBox div.R { color:$orange; width:4%; text-align:right; padding-right:0px; }
+.TaskBox div.M { background:$orange; width:88%; margin:0 2px }
 .TaskBox div span { background:$darkgray; height:4px; display:block; width:80% }
 
 .TaskBox.readonly div.R { color: white; }
