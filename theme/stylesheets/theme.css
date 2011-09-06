@@ -436,7 +436,7 @@ span.radio {
 /* line 161, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_styles.scss */
 .BreadCrumb li:first-child:active {
   background: url(../images/breadCrumbs/item.png) no-repeat -10px -60px !important;
-  border-left: 1px solid #555555;
+  border-left: 1px solid #d0d0d0;
 }
 
 /* line 162, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_styles.scss */
