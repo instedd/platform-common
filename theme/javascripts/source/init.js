@@ -45,7 +45,7 @@
 		// add in the pre-last li of the BreadCrumb a span
 		var bc_items = $('.BreadCrumb li');
 		if (bc_items.length >= 2) {
-			$(bc_items[bc_items.length - 2]).append("<span>");
+			$(bc_items[bc_items.length - 2]).append($("<span>"));
 		}
 		//
 		
