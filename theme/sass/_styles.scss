@@ -113,7 +113,7 @@ textarea.ux-text { width: inherit; @include texboxes_border; padding:2px 2px; re
 /* ----- Checkbox ----- */
 span.checkbox { 
   background:url(../images/checkBox/white.png) no-repeat; 
-  width:19px; height:19px; 
+  width:19px; height:20px; 
   display:inline-block; 
   vertical-align:middle;
 }
@@ -122,7 +122,7 @@ span.checkbox {
 /* ----- Radio ----- */
 span.radio { 
   background:url(../images/radioButton/white.png) no-repeat; 
-  width:16px; height:19px; 
+  width:16px; height:20px; 
   display:inline-block;	
   vertical-align:middle;
 }

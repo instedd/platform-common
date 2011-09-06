@@ -1,6 +1,6 @@
 
 form h2 {
-  margin: 15px 0px;
+  margin: 30px 0px 15px 0px;
 }
 
 .field { 
@@ -30,7 +30,7 @@ form h2 {
     color: $darkgray; 
     text-decoration: none;
     padding: 5px 8px;
-    &:hover { text-decoration: underline; color: $darkgray_hover; }
+    &:hover { color: $darkgray_hover; }
   }
   
 }
