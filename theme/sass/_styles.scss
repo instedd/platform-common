@@ -280,6 +280,7 @@ button.orange {
   vertical-align:middle; 
   margin: 4px 2px; 
   cursor:pointer; border:none;
+  padding-top: 4px;
   &:hover { background-position:0 -30px; }
   &:active { background-position:0 -60px; }
   &:not(:empty) { padding-left: 27px; }
