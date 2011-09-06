@@ -76,9 +76,9 @@
             <tr>
             <td>Recruit</td>
             <td>
-            <div class="ux-nstep w06 disabled"><input type="text" size="2" value="1" readonly></div> 
+            <div class="ux-nstep w06 disabled"><input type="text" size="2" value="1" readonly="readonly"></div> 
             <div class="ux-dropdown w30 disabled">
-                <select name="d">
+                <select name="d" >
                     <option value="1">iLab</option>
                     <option value="2">Instedd</option>
                     <option value="3">Manas Technology</option>
@@ -89,8 +89,8 @@
             <tr>
             <td>for</td>
             <td>
-                <div class="w100">
-                  <textarea placeholder="Write your comment here"></textarea>
+                <div class="w100 disabled">
+                  <textarea placeholder="Write your comment here" readonly="readonly"></textarea>
                   <div class="TaskBox">
                       <div class="L">182</div><div class="M"><span class="Fill"></span></div><div class="R">14</div>
                   </div><!--#TaskBox -->
@@ -105,15 +105,68 @@
             </table>
                
 			<div><img src="demoImg/mapa.png"></div>
+            
         
         </div><!-- #box -->
+        
+        <br>
+        
+        <button type="button" class="fdelete">Delete this mission</button>
     
     </div><!-- #LeftContent -->
     
     
     
     <div class="RightContent">
-    
+    	
+        <div class="box">
+        	
+        	<div class="sbox grey StateDisplay">
+                <div class="values">
+                  <div class="L"><span>4</span><span>confirmed</span></div>
+                  <div class="R"><span>14</span><span>missing</span></div><br clear="all">
+                  <div class="M"><span class="Fill"></span></div>
+                </div><!--#values -->
+                <button type="button" class="white">Download as CSV</button>
+            </div><!-- #sbox grey -->
+            <button type="button" class="faccept">Mark as complete</button>
+            <hr class="shadow">
+            <div id="scroll">
+            <table>
+            <tr>
+            <td>John Doe</td>
+            <td><span class="mobile">+1 415 254 1574</span></td>
+            </tr>
+            <tr>
+            <td>Robert Cooper</td>
+            <td><span class="mobile">+1 408 396 9068</span></td>
+            </tr>
+            <tr>
+            <td>Peter Smith</td>
+            <td><span class="mobile">+1 325 983 1129</span></td>
+            </tr>
+            <tr>
+            <td>Walter Thompson</td>
+            <td><span class="mobile">+1 401 331 0947</span></td>
+            </tr>
+            </table>
+            <hr>
+            <table>
+            <tr>
+            <td><button type="button" class="icon fblock"></button> John Doe</td>
+            <td><span class="mobile">+1 408 396 9068</span><br><span class="mobile">+1 408 396 9068</span></td>
+            </tr>
+            <tr>
+            <td><button type="button" class="icon fblock"></button> Robert Cooper</td>
+            <td><span class="mobile">+1 408 396 9068</span><br><span class="mobile">+1 408 396 9068</span></td>
+            </tr>
+            </table>
+            <hr>
+            <hr>
+            </div><!-- #scroll -->
+        
+        </div><!-- #box -->
+   
     </div><!-- #RightContent -->
 
     <div class="clear"></div><!-- #clear -->

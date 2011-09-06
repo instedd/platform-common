@@ -275,8 +275,8 @@ button.orange {
   vertical-align:middle; 
   margin: 4px 2px; 
   cursor:pointer; border:none;
-  &:hover { background-position-y: -30px; }
-  &:active { background-position-y: -60px; }
+  &:hover { background-position:0 -30px; }
+  &:active { background-position:0 -60px; }
   &:not(:empty) { padding-left: 27px; }
 }
 
@@ -299,6 +299,7 @@ button.orange {
 .fclaim { @include icon_button; background-image:url(../images/buttons/fancy/claim.png) }
 .fclose { @include icon_button; background-image:url(../images/buttons/fancy/close.png) }
 .fconfiguration { @include icon_button; background-image:url(../images/buttons/fancy/configuration.png) }
+.fdelete { @include icon_button; background-image:url(../images/buttons/fancy/trash.png) }
 .fedit { @include icon_button; background-image:url(../images/buttons/fancy/edit.png) }
 .fexport { @include icon_button; background-image:url(../images/buttons/fancy/export.png) }
 .ffacebook { @include icon_button; background-image:url(../images/buttons/fancy/facebook.png) }
