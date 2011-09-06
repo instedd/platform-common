@@ -12,11 +12,16 @@ h1 + p, h2 + p { margin: -15px 0 15px 0; color: $darkgray; }
 hr { border:0; height:1px; color:#dddddd; background:#dddddd; position:relative; margin: 3px 0px; }
 
 /* ----- CLASSES ----- */
-a { color:inherit; text-decoration:none }
-a:hover { text-decoration:none }
+a { color: inherit; text-decoration:none }
+a:hover { text-decoration:none; }
 button { overflow:visible }
 
 textarea:focus, input:focus, button:focus { outline: none; }
+
+p a { 
+  color:$orange; 
+  &:hover { color: $orange_hover; }
+}
 
 /* ----- Input text ----- */
 @mixin texboxes_border {
@@ -455,7 +460,8 @@ a .menu-mid.wsub {
   & > .ux-text, &.ux-text { width: $size - 6px !important; } 
   & > .ux-dropdown .select, &.ux-dropdown .select { width: $size - 7px !important; }
   & > .ux-datepicker, &.ux-datepicker { width: $size - 4px - $ux_text_image_width !important; }
-  & > .ux-search, &.ux-search { width: $size - 4px - $ux_text_image_width !important; }  
+  & > .ux-search, &.ux-search { width: $size - 4px - $ux_text_image_width !important; }
+  hr.shadow { width: $size + 20px; }
 }
 
 .w06 { @include width-class(60px); }
@@ -564,6 +570,15 @@ label.error {
   -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none;
 }
 
+
+/* ------------ Gral BOX ------------------- */
+.box { background:#FFFFFF; padding:10px; box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2); -moz-box-shadow:1px 1px 1px 1px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2); border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px }
+.sbox { padding:2px; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px }
+
+.box.grey, .sbox.grey { background:#d0d0d0; color:#555555 }
+
+hr.shadow { background: #e5e6ec; background: -moz-linear-gradient(top, #e5e6ec 0%, #ffffff 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e5e6ec), color-stop(100%, #ffffff));
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5e6ec', endColorstr='#ffffff',GradientType=0 ); height:15px; margin:3px 0 3px -10px; }
 
 /* ---------------------- Tables --------------------------*/
 

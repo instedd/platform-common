@@ -8,6 +8,7 @@
 		}
 				
 		$("input[type='text']").addClass("ux-text");
+		$("input[type='password']").addClass("ux-text");
 		$("textarea").addClass("ux-text");
 		$("input[readonly='readonly'], textarea[readonly='readonly']").addClass("readonly");
 		$(".ux-dropdown select").addClass("styled");
