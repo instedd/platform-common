@@ -1,4 +1,8 @@
 
+form h2 {
+  margin: 15px 0px;
+}
+
 .field { 
   margin: 0px 0px 19px 0px; 
   label { 
@@ -20,5 +24,13 @@
 }
 
 .actions {
-  padding-bottom: 20px;
+  padding: 14px 0px;
+  
+  a { 
+    color: $darkgray; 
+    text-decoration: none;
+    padding: 5px 8px;
+    &:hover { text-decoration: underline; color: $darkgray_hover; }
+  }
+  
 }
