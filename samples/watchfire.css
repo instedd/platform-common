@@ -4,7 +4,7 @@ h1 { font-size:18px; font-weight:normal; color:#555555 }
 #User div p { margin: 0 0 7px 0; padding:0 }
 #User div hr { margin: 6px 0; padding:0 }
 
-#toolbar button.icon { position:absolute; right:2px; top:5px; padding-left:12px }
+#toolbar button.icon { position:absolute; right:2px; top:0px; padding-left:12px }
 
 #container { padding-top:15px }
 
