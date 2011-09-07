@@ -82,6 +82,46 @@
           </div>
         </form>
   
+  
+        <hr>
+        
+        <h1>Test: Rails 3 Form with errors</h1>
+        
+        <div class="centered box w30">
+
+        <form accept-charset="UTF-8" action="#" class="user_new" id="user_new" method="post">
+          <h2>Create account</h2>
+
+          <div class="field w30">
+            <label for="user_email">Email</label>
+            <input id="user_email" name="user[email]" size="30" type="email" value="sdf@sdf.com" class="ux-text">
+          </div>
+
+          <div class="field w30">
+            <div class="field_with_errors"><label for="user_password">Password</label></div>
+            <div class="field_with_errors"><input id="user_password" name="user[password]" size="30" type="password" value="" class="ux-text"></div>
+          </div>
+
+          <div class="field w30">
+            <label for="user_password_confirmation">Password confirmation</label>
+            <input id="user_password_confirmation" name="user[password_confirmation]" size="30" type="password" value="" class="ux-text">
+          </div>
+
+          <div class="actions">
+            <button type="submit" class="white">Create account</button>
+          </div>
+
+          <hr>
+
+          <p>
+          Forgot your password? <a href="/users/password/new">Reset it</a>
+          </p>
+
+        </form>
+        </div>
+        
+        
+        <br/><br/>
       </div>
   </div>
 </body>
