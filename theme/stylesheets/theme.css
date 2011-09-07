@@ -3636,24 +3636,25 @@ hr + h2 {
   display: inline;
   margin-left: 4px;
   color: black;
+  cursor: pointer;
 }
 
-/* line 26, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_form.scss */
+/* line 27, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_form.scss */
 hr + .actions {
   padding: 14px 0px;
 }
 
-/* line 30, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_form.scss */
+/* line 31, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_form.scss */
 .actions {
   padding: 0px 0px 14px 0px;
 }
-/* line 32, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_form.scss */
+/* line 33, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_form.scss */
 .actions a {
   color: #555555;
   text-decoration: none;
   padding: 5px 8px;
 }
-/* line 36, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_form.scss */
+/* line 37, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_form.scss */
 .actions a:hover {
   color: #777777;
 }

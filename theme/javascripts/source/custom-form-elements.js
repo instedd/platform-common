@@ -171,7 +171,6 @@ var Custom = {
 		}
 	},
 	clear: function() {
-		return;
 		inputs = document.getElementsByTagName("input");
 		for(var b = 0; b < inputs.length; b++) {
 			if (hasStyledClass(inputs[b])) {
