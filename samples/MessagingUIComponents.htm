@@ -1,0 +1,67 @@
+<!DOCTYPE HTML> 
+<html lang="en"> 
+<head> 
+	<meta charset="UTF-8"> 
+<title>Forms UI Components</title>
+<link href="../theme/stylesheets/theme.css" rel="stylesheet" type="text/css" />
+<link href="samples.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../theme/javascripts/jquery-1.6.2.min.js"></script> 
+<script type="text/javascript" src="../theme/javascripts/jquery-ui-1.8.16.min.js"></script>
+<script type="text/javascript" src="../theme/javascripts/theme.js"></script>
+    <script type="text/javascript"> 
+        $(function() {
+            var carTags = ['Cholera','H1N1','Hepatitis','Hepatize','Hepatized','Hepatizes','Hepatizing','Hrpatocellular','Kampong Cham','Kampong Chang','Kampong speu','Kampong Thom','Kampot','Honda','Hyundai','Jaguar','Jeep','Kia','Lada','Lexus','Lotus','Malaria','Mazda','Mercedes','Nissan','Opel','Peugeot','Porsche','Rover','Renault','Suzuki','Subaru','Seat','Tifus','Volvo','Vauxhall','VW'];
+ 
+            // Initialize Demo 2
+            $("#tagfield2").superblyTagField({
+                allowNewTags: true,
+                showTagsNumber: 10,
+                preset: ['Cholera','H1N1'],
+                tags: carTags
+            }); 
+        });
+    </script> 
+    
+  <script>
+  $(function() {
+  	$(".ux-datepicker").datepicker( "option", "changeMonth", true );
+  	$(".ux-datepicker").datepicker( "option", "changeYear", true );
+  	$(".ux-datepicker").datepicker( "option", "currentText", 'Now' );
+  	$(".ux-datepicker").datepicker( "option", "duration", 'slow' );
+  });
+</script>
+
+
+
+</head>
+
+<body>
+<form method="post" action="">
+<div id="Main">
+    <div id="Header">Messaging UI Components</div><!-- #Header -->
+    
+    <div id="Content">
+    
+    <h1>Error messages</h1>
+    
+    <div class="w60 box error_description">
+      <h2>3 errors prohibited this Task Hub from beign saved:</h2>
+      <ul>
+        <li>Source is invalid</li>
+        <li>Name can't be blank</li>
+        <li>Title can't be blank</li>
+      </ul>
+    </div>
+    
+
+    
+    </div><!-- #Content -->
+    
+    
+
+
+
+</div><!-- #Main -->
+</form>
+</body>
+</html>
