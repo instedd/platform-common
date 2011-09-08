@@ -33,7 +33,9 @@
 					};
 					kdown.click(function(){ source.val(current()-1); });
 					kup.click(function(){ source.val(current()+1); });
-				});			
+				});
+				
+				Custom.init();
 			}
 		} 
 	});
