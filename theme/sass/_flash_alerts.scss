@@ -1,4 +1,5 @@
 .flash {
+  @extend .drop_shadow;
   position: absolute;
   white-space: nowrap;
   top: 0px;
