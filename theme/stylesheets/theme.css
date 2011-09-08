@@ -4191,24 +4191,32 @@ body.smallfooter #footer-container > div:nth-child(2) {
 }
 
 /* line 1, ../sass/_flash_alerts.scss */
-.flash, .flash_notice, .flash_error {
-  border-radius: 0px 0px 5px 5px;
-  display: inline-block;
+.flash {
+  position: relative;
+  top: -31px;
+  z-index: -1;
+  text-align: center;
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 26px;
+}
+/* line 8, ../sass/_flash_alerts.scss */
+.flash > span {
   padding: 5px 15px;
-  position: absolute;
-  margin: 11px auto 0px auto;
-  top: 93px;
-  left: 479px;
+  display: inline-block;
+  border-radius: 0px 0px 5px 5px;
+  width: auto;
 }
 
-/* line 12, ../sass/_flash_alerts.scss */
-.flash_notice {
+/* line 16, ../sass/_flash_alerts.scss */
+.flash_notice > span {
   background-color: #e6faa9;
   color: #769925;
 }
 
-/* line 18, ../sass/_flash_alerts.scss */
-.flash_error {
+/* line 21, ../sass/_flash_alerts.scss */
+.flash_error > span {
   background-color: #ffee9e;
   color: #ff6600;
 }
