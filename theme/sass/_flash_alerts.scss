@@ -1,24 +1,18 @@
 .flash {
-  position: relative;
-  top: -31px;
-  z-index: -1;
-  text-align: center;
-  @include pagesize;
-  height: 26px;
-  & > span {
-    padding: 5px 15px;
-    display: inline-block;
-    border-radius: 0px 0px 5px 5px;
-    width: auto;
-  }
+  position: absolute;
+  white-space: nowrap;
+  top: 0px;
+  padding: 5px 15px;
+  display: inline-block;
+  border-radius: 0px 0px 5px 5px;
 }
 
-.flash_notice > span {
+.flash_notice {
   background-color: #e6faa9;
   color: $green;
 }
 
-.flash_error > span {
+.flash_error {
   background-color: #ffee9e;
   color: $orange;
 }

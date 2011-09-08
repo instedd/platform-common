@@ -8,14 +8,20 @@
     <script type="text/javascript" src="../theme/javascripts/theme.js"></script>  
 </head>
 <body>  
+  <div class="flash flash_error">Lorem ipsum dolor sit amet</div>
+
   <div id="wrapper">
       <div id="toolbar"></div>
       <div id="header"></div>
-      <div class="flash flash_error"><span>Lorem ipsum dolor sit amet</span></div>
       
       <div id="container">
         <div class="box centered w30">
           <h2>Alerts</h2>
+          
+          <button class="white" onclick="$.status.showError('Lorem ipsum dolor sit amet');">show error</button>
+
+          <button class="white" onclick="$.status.showNotice('Lorem ipsum dolor sit amet');">show notice</button>
+          
         </div>  
       </div>
   </div>

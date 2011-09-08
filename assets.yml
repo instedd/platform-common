@@ -10,5 +10,6 @@ javascripts:
     - superbly-tagfield.min
     - jquery.jcarousel.min
     - jquery.wajbar
+    - jquery.status
     - footer
     - init
