@@ -32,7 +32,7 @@ $.status.showError(msg, [kind]);
 						message_body.css('top', - message.outerHeight() + 'px');
 						window.setTimeout(function(){
 							message_body.animate({top : 0}, 1200);
-						});
+						}, 200);
 					}
 				}
 			},

@@ -2730,9 +2730,7 @@ label.error {
 
 /* ------------ Gral BOX ------------------- */
 /* line 483, ../sass/_styles.scss */
-.box {
-  background: #FFFFFF;
-  padding: 10px;
+.drop_shadow, .box, .flash > div {
   box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2);
@@ -2742,6 +2740,12 @@ label.error {
 }
 
 /* line 484, ../sass/_styles.scss */
+.box {
+  background: #FFFFFF;
+  padding: 10px;
+}
+
+/* line 485, ../sass/_styles.scss */
 .sbox {
   padding: 2px;
   border-radius: 5px;
@@ -2749,18 +2753,18 @@ label.error {
   -webkit-border-radius: 5px;
 }
 
-/* line 486, ../sass/_styles.scss */
+/* line 487, ../sass/_styles.scss */
 .box.grey, .sbox.grey {
   background: #d0d0d0;
   color: #555555;
 }
 
-/* line 488, ../sass/_styles.scss */
+/* line 489, ../sass/_styles.scss */
 .box + .box {
   margin-top: 7px;
 }
 
-/* line 490, ../sass/_styles.scss */
+/* line 491, ../sass/_styles.scss */
 hr.shadow {
   background: #e5e6ec;
   background: -moz-linear-gradient(top, #e5e6ec 0%, white 100%);
@@ -2771,22 +2775,22 @@ hr.shadow {
   z-index: 0;
 }
 
-/* line 493, ../sass/_styles.scss */
+/* line 494, ../sass/_styles.scss */
 .error_description {
   background: url(../images/icons/medium/orange/alert.png) no-repeat 8px 8px;
   color: #ff6600;
 }
-/* line 496, ../sass/_styles.scss */
+/* line 497, ../sass/_styles.scss */
 .error_description h2 {
   color: #ff6600;
   font-size: 18px;
   margin-bottom: 2px;
 }
-/* line 501, ../sass/_styles.scss */
+/* line 502, ../sass/_styles.scss */
 .error_description > * {
   margin-left: 35px;
 }
-/* line 502, ../sass/_styles.scss */
+/* line 503, ../sass/_styles.scss */
 .error_description ul {
   font-size: 12px;
   line-height: 20px;
@@ -2799,7 +2803,7 @@ hr.shadow {
 
 /* ---------------------- Tables --------------------------*/
 /* -------- General ---------*/
-/* line 516, ../sass/_styles.scss */
+/* line 517, ../sass/_styles.scss */
 .GralTable {
   width: 100%;
   -moz-border-radius: 6px 6px 6px 6px;
@@ -2808,7 +2812,7 @@ hr.shadow {
   border-collapse: collapse;
 }
 
-/* line 523, ../sass/_styles.scss */
+/* line 524, ../sass/_styles.scss */
 .GralTable th {
   /* old browsers */
   background: #e5e6ec;
@@ -2824,25 +2828,25 @@ hr.shadow {
   padding: 6px;
 }
 
-/* line 537, ../sass/_styles.scss */
+/* line 538, ../sass/_styles.scss */
 .GralTable tr:nth-child(2) {
   background: url(../images/interface/backtd.png) repeat-x;
 }
 
-/* line 539, ../sass/_styles.scss */
+/* line 540, ../sass/_styles.scss */
 .GralTable td {
   letter-spacing: -0.005em;
   padding: 2px 6px;
 }
 
 /* -------- Clean ---------*/
-/* line 542, ../sass/_styles.scss */
+/* line 543, ../sass/_styles.scss */
 .CleanTable th {
   background: #ffffff;
 }
 
 /* -------- Two column table  ---------*/
-/* line 546, ../sass/_styles.scss */
+/* line 547, ../sass/_styles.scss */
 .TwoColumn tr td:nth-child(2) {
   width: 100px;
   text-align: right;
@@ -3682,10 +3686,10 @@ body.smallfooter #footer-container > div:nth-child(2) {
 .footer-next {
   background-image: url(../images/footer/next.png);
   float: right;
-  width: 16px;
-  height: 29px;
+  width: 20px;
+  height: 79px;
   position: relative;
-  top: -53px;
+  top: -80px;
   padding-left: 0px !important;
   background-repeat: no-repeat;
   background-position-x: 0px;
@@ -3693,21 +3697,21 @@ body.smallfooter #footer-container > div:nth-child(2) {
 }
 /* line 28, ../sass/_mixins.scss */
 .footer-next:hover {
-  background-position-y: -29px;
+  background-position-y: -80px;
 }
 /* line 31, ../sass/_mixins.scss */
 .footer-next:active {
-  background-position-y: -58px;
+  background-position-y: -160px;
 }
 
 /* line 16, ../sass/_footer.scss */
 .footer-prev {
   background-image: url(../images/footer/previous.png);
   float: left;
-  width: 16px;
-  height: 29px;
+  width: 20px;
+  height: 79px;
   position: relative;
-  top: -53px;
+  top: -80px;
   padding-left: 0px !important;
   background-repeat: no-repeat;
   background-position-x: 0px;
@@ -3715,11 +3719,11 @@ body.smallfooter #footer-container > div:nth-child(2) {
 }
 /* line 28, ../sass/_mixins.scss */
 .footer-prev:hover {
-  background-position-y: -29px;
+  background-position-y: -80px;
 }
 /* line 31, ../sass/_mixins.scss */
 .footer-prev:active {
-  background-position-y: -58px;
+  background-position-y: -160px;
 }
 
 /* line 22, ../sass/_footer.scss */
@@ -3740,7 +3744,7 @@ body.smallfooter #footer-container > div:nth-child(2) {
 
 /* line 35, ../sass/_footer.scss */
 .jcarousel-item {
-  width: 56px;
+  width: 54px;
   margin: 3px;
   text-align: center;
 }
@@ -3827,8 +3831,8 @@ body.smallfooter #footer-container > div:nth-child(2) {
 }
 
 /* line 99, ../sass/_footer.scss */
-#geochatPolls a {
-  background-image: url(../images/footer/buttons/geoChatPolls.png);
+#pollit a {
+  background-image: url(../images/footer/buttons/pollit.png);
 }
 
 /* line 103, ../sass/_footer.scss */
@@ -4030,24 +4034,30 @@ body.smallfooter #footer-container > div:nth-child(2) {
 }
 
 /* line 1, ../sass/_flash_alerts.scss */
-.flash, .flash_notice, .flash_error {
-  border-radius: 0px 0px 5px 5px;
-  display: inline-block;
-  padding: 5px 15px;
+.flash {
   position: absolute;
-  margin: 11px auto 0px auto;
-  top: 93px;
-  left: 479px;
+  top: 0px;
+  overflow: hidden;
 }
 
-/* line 12, ../sass/_flash_alerts.scss */
-.flash_notice {
+/* line 7, ../sass/_flash_alerts.scss */
+.flash > div {
+  white-space: nowrap;
+  padding: 5px 15px;
+  display: inline-block;
+  border-radius: 0px 0px 5px 5px;
+  position: relative;
+  margin: 0px 2px 2px 2px;
+}
+
+/* line 17, ../sass/_flash_alerts.scss */
+.flash_notice > div {
   background-color: #e6faa9;
   color: #769925;
 }
 
-/* line 18, ../sass/_flash_alerts.scss */
-.flash_error {
+/* line 22, ../sass/_flash_alerts.scss */
+.flash_error > div {
   background-color: #ffee9e;
   color: #ff6600;
 }
