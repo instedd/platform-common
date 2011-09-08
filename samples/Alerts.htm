@@ -7,9 +7,9 @@
   <script type="text/javascript" src="../theme/javascripts/jquery-ui-1.8.16.min.js"></script>
     <script type="text/javascript" src="../theme/javascripts/theme.js"></script>  
 </head>
-<body>
-  <div class="flash_error">Lorem ipsum dolor sit amet</div>
-  
+<body>  
+  <div class="flash flash_error"><div>Lorem ipsum dolor sit amet</div></div>
+
   <div id="wrapper">
       <div id="toolbar"></div>
       <div id="header"></div>
@@ -17,6 +17,11 @@
       <div id="container">
         <div class="box centered w30">
           <h2>Alerts</h2>
+          
+          <button class="white" onclick="$.status.showError('Lorem ipsum dolor sit amet');">show error</button>
+
+          <button class="white" onclick="$.status.showNotice('Lorem ipsum dolor sit amet');">show notice</button>
+          
         </div>  
       </div>
   </div>

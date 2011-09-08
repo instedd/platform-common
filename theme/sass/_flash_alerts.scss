@@ -1,22 +1,25 @@
-.flash {
-  border-radius: 0px 0px 5px 5px;
-
-  display: inline-block;
-  padding: 5px 15px;
+.flash { 
   position: absolute;
-  margin: 11px auto 0px auto;
-  top: 93px;
-  left: 479px;
+  top: 0px;
+  overflow: hidden;
 }
 
-.flash_notice {
-  @extend .flash;
+.flash > div {
+  @extend .drop_shadow;
+  white-space: nowrap;
+  padding: 5px 15px;
+  display: inline-block;
+  border-radius: 0px 0px 5px 5px;
+  position: relative;
+  margin: 0px 2px 2px 2px;  
+}
+
+.flash_notice > div {
   background-color: #e6faa9;
   color: $green;
 }
 
-.flash_error {
-  @extend .flash;
+.flash_error > div {
   background-color: #ffee9e;
   color: $orange;
 }
