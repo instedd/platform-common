@@ -60,16 +60,10 @@ table td div { display:inline-block; vertical-align:middle }
  
 /* --------  Events Table ------------ */ 
 
-.tablewrapp { padding:2px 0; border:1px solid #E7E9EE; border-radius:6px; -moz-border-radius:6px; -webkit-border-radius:6px}
-.Events tr:hover { background:#eaeaea }
-.Events tr:hover td { cursor:pointer }
-.Events th { font-weight:normal }
-.Events td { vertical-align:middle; color:#000000 }
-.Events tr:last-child td { color:#1f86c8 }
-.Events td.minactive, .Missions td.paused { color:#555555 }
-.Events td.mactive span { background:#9fc643; margin-right:5px; width:10px; height:10px; display:inline-block; border-radius:2px; -moz-border-radius:2px; -webkit-border-radius:2px }
-.Events td.mpaused span { background:#d0d0d0; margin-right:5px; width:10px; height:9px; border-top:1px solid #9c9c9c; display:inline-block; border-radius:2px; -moz-border-radius:2px; -webkit-border-radius:2px }
-.Events td.minactive span { background:#d0d0d0; margin-right:5px; width:10px; height:9px; border-top:1px solid #9c9c9c; display:inline-block; border-radius:2px; -moz-border-radius:2px; -webkit-border-radius:2px }
+.minactive, .Missions td.paused { color:#555555 }
+.mactive span { background:#9fc643; margin-right:5px; width:10px; height:10px; display:inline-block; border-radius:2px; -moz-border-radius:2px; -webkit-border-radius:2px }
+.mpaused span { background:#d0d0d0; margin-right:5px; width:10px; height:9px; border-top:1px solid #9c9c9c; display:inline-block; border-radius:2px; -moz-border-radius:2px; -webkit-border-radius:2px }
+.minactive span { background:#d0d0d0; margin-right:5px; width:10px; height:9px; border-top:1px solid #9c9c9c; display:inline-block; border-radius:2px; -moz-border-radius:2px; -webkit-border-radius:2px }
 
 
 
