@@ -51,6 +51,11 @@
 	$(function(){
 		$.instedd.init_components($(document));
 		
+		$('.ux-collapsible > span:first-child > a').live('click', function(){
+			$(this).closest('.ux-collapsible').toggleClass('collapsed');
+			return false;
+		});
+		
 		// these are one time per page		
 		// position user menu
 		$('#User').mouseenter(function(){
