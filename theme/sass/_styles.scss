@@ -62,13 +62,17 @@ input.ux-text {  height:22px; width:inherit; @include texboxes_border; }
     line-height: 25px; 
   }
   
-  &:hover .selectPrefix{ background-position-y: -40px; }
-  &:hover .select { background-position-y: -40px; }
-  &:active .selectPrefix{ background-position-y: -80px; }
-  &:active .select{ background-position-y: -80px; line-height: 26px; }
-  .select.disabled, .selectPrefix.disabled {
-    background-position-y: -120px;
+  &:hover .selectPrefix{ background-position: left -40px; }
+  &:hover .select { background-position: right -40px; }
+  &:active .selectPrefix{ background-position: left -80px; }
+  &:active .select{ background-position: right -80px; line-height: 26px; }
+  .selectPrefix.disabled {
+    background-position: left -120px;
     line-height: 25px;
+  }
+  .select.disabled {
+    background-position: right -120px;
+    line-height: 25px;  
   }
 
   select.styled { 
