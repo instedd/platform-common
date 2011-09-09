@@ -3136,8 +3136,8 @@ label.error {
 }
 
 /* line 497, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_styles.scss */
-.box + .box {
-  margin-top: 7px;
+.box {
+  margin-bottom: 7px;
 }
 
 /* line 499, /Users/bcardiff/Work/InSTEDD/common/theme/sass/_styles.scss */
