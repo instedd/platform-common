@@ -104,15 +104,17 @@ textarea.ux-text { width: inherit; @include texboxes_border; padding:2px 2px; re
   position:relative; 
   display:inline;
   .kup { 
-    @include button-states(10px);
-    background:url(../images/numericStepper/up.png) no-repeat center top; 
+    @include button-states(10px, center);
+    background-image:url(../images/numericStepper/up.png);
+    background-color:transparent;
     width:15px; height:12px; 
     cursor:pointer; border:none; 
     position:absolute; right:3px; top:-1px;
   }
   .kdown { 
-    @include button-states(10px);
-    background:url(../images/numericStepper/down.png) no-repeat center top; 
+    @include button-states(10px, center);
+    background-image:url(../images/numericStepper/down.png);
+    background-color:transparent;
     width:15px; height:12px; 
     cursor:pointer; border:none; 
     position:absolute; right:3px; bottom:-4px 
