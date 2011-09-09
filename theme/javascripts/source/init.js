@@ -4,7 +4,7 @@
 			init_components: function(container) {
 				// initialize built-in components.
 				if ($.fn.datepicker) {
-					$(".ux-datepicker", container)
+					$(".ux-datepicker:not([readonly])", container)
 						.click(function(){ $(this).datepicker("show"); })
 						.datepicker();
 				}

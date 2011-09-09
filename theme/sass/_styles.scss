@@ -32,7 +32,7 @@ p a {
   box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset;
   margin: 1px;
   &:focus { border:2px solid #dddddd; margin: 0px; }
-  &.readonly, &.readonly:focus { background: $disabled_bgtext; color: $disabled_text; border-width:1px; margin: 1px; }
+  &.readonly, &.readonly:focus { background-color: $disabled_bgtext; color: $disabled_text; border-width:1px; margin: 1px; }
   &.error, .field_with_errors & { border:2px solid #ff6600; margin: 0px; }
 }
 
@@ -141,8 +141,9 @@ span.radio {
 .ux-search { 
   background: url(../images/search/magnifyingGlass.png) no-repeat 99% 2px;
   padding-right: $ux_text_image_width !important;
-  &:hover { background-position-y: -18px; }
-  &:focus { background-position-y: -38px; }
+  &:hover { background-position: 99% -18px; }
+  &:focus { background-position: 99% -38px; }
+  &.readonly { background-position: 99% -58px; }
 }
 
 /* ----- Calendar ----- */
@@ -150,7 +151,9 @@ span.radio {
   background:url(../images/datePicker/calendar.png) no-repeat 99% 2px; 
   padding-right: $ux_text_image_width !important;
   width:inherit; 
-  &:focus { background-position-y: -18px; }
+  &:hover { background-position: 99% -18px; }
+  &:focus { background-position: 99% -38px; }
+  &.readonly { background-position: 99% -58px; }
 }
 
 /* ----- BreadCrumb ----- */
