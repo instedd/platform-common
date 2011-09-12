@@ -52,7 +52,17 @@
 		$.instedd.init_components($(document));
 		
 		$('.ux-collapsible > span:first-child > a').live('click', function(){
-			$(this).closest('.ux-collapsible').toggleClass('collapsed');
+			var collapsible = $(this).closest('.ux-collapsible');
+			collapsible.toggleClass('collapsed');
+			
+			if (collapsible.data('on-expanded')) {
+				if (collapsible.hasClass('collapsed')) {
+					collapsible.removeClass(collapsible.data('on-expanded'));
+				} else {
+					collapsible.addClass(collapsible.data('on-expanded'));
+				}
+			}
+			
 			return false;
 		});
 		
