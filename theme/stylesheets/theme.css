@@ -3147,6 +3147,7 @@ label.error {
 /* ------------ Gral BOX ------------------- */
 /* line 495, ../sass/_styles.scss */
 .drop_shadow, .box, .flash > div {
+  border: 1px solid #d0d0d0;
   box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2);
@@ -3180,7 +3181,13 @@ label.error {
   margin-bottom: 7px !important;
 }
 
-/* line 503, ../sass/_styles.scss */
+/* line 502, ../sass/_styles.scss */
+.box.tab {
+  position: relative;
+  z-index: 10;
+}
+
+/* line 504, ../sass/_styles.scss */
 hr.shadow {
   background: #e5e6ec;
   background: -moz-linear-gradient(top, #e5e6ec 0%, white 100%);
@@ -3191,22 +3198,22 @@ hr.shadow {
   z-index: 0;
 }
 
-/* line 506, ../sass/_styles.scss */
+/* line 507, ../sass/_styles.scss */
 .error_description {
   background: url(../images/icons/medium/orange/alert.png) no-repeat 8px 8px;
   color: #ff6600;
 }
-/* line 509, ../sass/_styles.scss */
+/* line 510, ../sass/_styles.scss */
 .error_description h2 {
   color: #ff6600;
   font-size: 18px;
   margin-bottom: 2px;
 }
-/* line 514, ../sass/_styles.scss */
+/* line 515, ../sass/_styles.scss */
 .error_description > * {
   margin-left: 35px;
 }
-/* line 515, ../sass/_styles.scss */
+/* line 516, ../sass/_styles.scss */
 .error_description ul {
   font-size: 12px;
   line-height: 20px;
@@ -3217,9 +3224,147 @@ hr.shadow {
   list-style-position: inside;
 }
 
+/* ---------------------- Tabs --------------------------*/
+/* line 529, ../sass/_styles.scss */
+ul.tabs.top {
+  margin: 0 0 0 10px;
+  padding: 0;
+}
+
+/* line 530, ../sass/_styles.scss */
+ul.tabs.top li {
+  color: #555555;
+  display: inline-block;
+  list-type: none;
+  padding: 2px 1px 0 1px;
+  margin: 0 2px 0 0;
+  border-radius: 4px 4px 0 0;
+  -moz-border-radius: 4px 4px 0 0;
+  -webkit-border-radius: 4px 4px 0 0;
+}
+
+/* line 531, ../sass/_styles.scss */
+ul.tabs.top li.active {
+  color: #000000;
+  padding: 2px 0 0 0;
+  border-width: 1px 1px 0 1px;
+  border-color: #d0d0d0;
+  border-style: solid;
+  box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* line 532, ../sass/_styles.scss */
+ul.tabs.top li.active:hover {
+  background: #ffffff;
+}
+
+/* line 533, ../sass/_styles.scss */
+ul.tabs.top li:hover {
+  -css3-background: linear-gradient(90deg, #f3f3f3, #ffffff);
+  background: -moz-linear-gradient(top, #f3f3f3 0%, white 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f3f3f3), color-stop(100%, white));
+  box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* line 534, ../sass/_styles.scss */
+ul.tabs.top li:active {
+  background: #f3f3f3;
+  color: #000000;
+}
+
+/* line 536, ../sass/_styles.scss */
+ul.tabs.top li a {
+  display: block;
+  padding: 9px 10px 6px 10px;
+  position: relative;
+  margin-bottom: -2px;
+  z-index: 20;
+}
+
+/* line 537, ../sass/_styles.scss */
+ul.tabs.top li.active a {
+  background: #ffffff;
+  padding: 8px 11px 6px 11px;
+}
+
+/* line 539, ../sass/_styles.scss */
+ul.tabs.bottom {
+  margin: -7px 0 0 10px;
+  padding: 0;
+  position: relative;
+  z-index: 15;
+}
+
+/* line 540, ../sass/_styles.scss */
+ul.tabs.bottom li {
+  color: #555555;
+  display: inline-block;
+  list-type: none;
+  padding: 0 1px 2px 1px;
+  margin: 0 2px 0 0;
+  border-radius: 0 0 4px 4px;
+  -moz-border-radius: 0 0 4px 4px;
+  -webkit-border-radius: 0 0 4px 4px;
+}
+
+/* line 541, ../sass/_styles.scss */
+ul.tabs.bottom li.active {
+  color: #000000;
+  padding: 0 0 2px 0;
+  border-width: 0 1px 1px 1px;
+  border-color: #d0d0d0;
+  border-style: solid;
+  box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* line 542, ../sass/_styles.scss */
+ul.tabs.bottom li.active:hover {
+  background: #ffffff;
+}
+
+/* line 543, ../sass/_styles.scss */
+ul.tabs.bottom li:hover {
+  -css3-background: linear-gradient(90deg, #f3f3f3, #ffffff);
+  background: -moz-linear-gradient(top, #f3f3f3 0%, white 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f3f3f3), color-stop(100%, white));
+  box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* line 544, ../sass/_styles.scss */
+ul.tabs.bottom li:active {
+  background: #f3f3f3;
+  color: #000000;
+}
+
+/* line 546, ../sass/_styles.scss */
+ul.tabs.bottom li a {
+  display: block;
+  padding: 6px 10px 9px 10px;
+  border-radius: 0 0 4px 4px;
+  -moz-border-radius: 0 0 4px 4px;
+  -webkit-border-radius: 0 0 4px 4px;
+  position: relative;
+  margin-top: -2px;
+  z-index: 20;
+}
+
+/* line 547, ../sass/_styles.scss */
+ul.tabs.bottom li.active a {
+  background: #ffffff;
+  padding: 6px 11px 8px 11px;
+}
+
 /* ---------------------- Tables --------------------------*/
 /* -------- General ---------*/
-/* line 529, ../sass/_styles.scss */
+/* line 555, ../sass/_styles.scss */
 .tablewrapp {
   padding: 2px 0;
   border-radius: 6px;
@@ -3230,14 +3375,14 @@ hr.shadow {
   -webkit-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
-/* line 531, ../sass/_styles.scss */
+/* line 557, ../sass/_styles.scss */
 .titletable {
   color: #555555;
   margin: 5px 0 5px 5px;
   display: block;
 }
 
-/* line 533, ../sass/_styles.scss */
+/* line 559, ../sass/_styles.scss */
 .GralTable {
   width: 100%;
   -moz-border-radius: 6px 6px 6px 6px;
@@ -3246,7 +3391,7 @@ hr.shadow {
   border-collapse: collapse;
 }
 
-/* line 535, ../sass/_styles.scss */
+/* line 561, ../sass/_styles.scss */
 .GralTable th {
   background: #e5e6ec;
   background: -moz-linear-gradient(top, white 0%, #d0d0d0 100%);
@@ -3261,46 +3406,46 @@ hr.shadow {
   border-right: 1px solid #ffffff;
 }
 
-/* line 537, ../sass/_styles.scss */
+/* line 563, ../sass/_styles.scss */
 .GralTable th:last-child {
   border-right: none;
 }
 
-/* line 539, ../sass/_styles.scss */
+/* line 565, ../sass/_styles.scss */
 .GralTable tr:nth-child(2) {
   background: url(../images/interface/backtd.png) repeat-x;
 }
 
-/* line 541, ../sass/_styles.scss */
+/* line 567, ../sass/_styles.scss */
 .GralTable td {
   letter-spacing: -0.005em;
   padding: 2px 6px;
   border-bottom: 1px solid #eeeeee;
 }
 
-/* line 542, ../sass/_styles.scss */
+/* line 568, ../sass/_styles.scss */
 .GralTable tr:last-child td {
   border-bottom: none;
 }
 
 /* -------- Clean ---------*/
-/* line 545, ../sass/_styles.scss */
+/* line 571, ../sass/_styles.scss */
 .CleanTable th {
   background: #ffffff;
 }
 
 /* -------- Table with Buttons ---------*/
-/* line 548, ../sass/_styles.scss */
+/* line 574, ../sass/_styles.scss */
 .ButtonTable tr:hover {
   background: #eaeaea;
 }
 
-/* line 549, ../sass/_styles.scss */
+/* line 575, ../sass/_styles.scss */
 .ButtonTable td {
   height: 32px;
 }
 
-/* line 550, ../sass/_styles.scss */
+/* line 576, ../sass/_styles.scss */
 .ButtonTable td button {
   padding: 0;
   margin: -3px 0 0 0;
@@ -3308,18 +3453,18 @@ hr.shadow {
   display: none;
 }
 
-/* line 551, ../sass/_styles.scss */
+/* line 577, ../sass/_styles.scss */
 .ButtonTable tr:hover td button {
   display: block;
 }
 
-/* line 552, ../sass/_styles.scss */
+/* line 578, ../sass/_styles.scss */
 .ButtonTable tr td:last-child {
   width: 160px;
 }
 
 /* -------- Availability. Table with colors and rounded td corners ---------*/
-/* line 555, ../sass/_styles.scss */
+/* line 581, ../sass/_styles.scss */
 .Availability td {
   text-align: center;
   padding: 2px;
@@ -3330,80 +3475,80 @@ hr.shadow {
   -webkit-border-radius: 4px;
 }
 
-/* line 556, ../sass/_styles.scss */
+/* line 582, ../sass/_styles.scss */
 .Availability tr td:first-child {
   width: 18px;
 }
 
-/* line 557, ../sass/_styles.scss */
+/* line 583, ../sass/_styles.scss */
 .Availability td.b {
   background: #555555;
   color: #ffffff;
 }
 
-/* line 558, ../sass/_styles.scss */
+/* line 584, ../sass/_styles.scss */
 .Availability td.gn {
   background: #bde561;
   color: #769925;
 }
 
-/* line 559, ../sass/_styles.scss */
+/* line 585, ../sass/_styles.scss */
 .Availability tr:first-child td.gn {
   background: #769925;
   color: #ffffff;
 }
 
-/* line 560, ../sass/_styles.scss */
+/* line 586, ../sass/_styles.scss */
 .Availability tr td.gn:first-child {
   background: #769925;
   color: #ffffff;
 }
 
-/* line 561, ../sass/_styles.scss */
+/* line 587, ../sass/_styles.scss */
 .Availability td.gy {
   background: #cccccc;
   color: #555555;
 }
 
 /* -------- Two column table  ---------*/
-/* line 566, ../sass/_styles.scss */
+/* line 592, ../sass/_styles.scss */
 .TwoColumn tr td:nth-child(2) {
   width: 100px;
   text-align: right;
 }
 
 /* -------- ux-collapsible ---------*/
-/* line 570, ../sass/_styles.scss */
+/* line 596, ../sass/_styles.scss */
 .ux-collapsible > span:first-child {
   display: block;
 }
 
-/* line 574, ../sass/_styles.scss */
+/* line 600, ../sass/_styles.scss */
 .ux-collapsible > span:first-child > a {
   color: #555555;
 }
-/* line 576, ../sass/_styles.scss */
+/* line 602, ../sass/_styles.scss */
 .ux-collapsible > span:first-child > a:hover {
   color: #777777;
 }
 
-/* line 579, ../sass/_styles.scss */
+/* line 605, ../sass/_styles.scss */
 .ux-collapsible > span:first-child > .arrow {
   background: url(../images/icons/misc/grey/arrowDown.png) no-repeat left 5px;
   padding: 3px 0 3px 12px;
 }
 
-/* line 584, ../sass/_styles.scss */
+/* line 610, ../sass/_styles.scss */
 .ux-collapsible.collapsed > span:first-child > .arrow {
   background: url(../images/icons/misc/grey/arrowRight.png) no-repeat left 5px;
 }
 
-/* line 588, ../sass/_styles.scss */
+/* line 614, ../sass/_styles.scss */
 .ux-collapsible.collapsed .ux-content {
   display: none;
 }
 
-/* line 589, ../sass/_styles.scss */
+/* line 615, ../sass/_styles.scss */
 .ux-collapsible.box {
   margin: -10px;
 }
