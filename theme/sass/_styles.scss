@@ -278,6 +278,8 @@ button.orange {
     #ff6802,#fe1600, 
     #ff6802,#fe9639,#ffddbf);
 }
+button.cancel { color:#555555 }
+button.cancel:hover { color:#555555 }
 
 /* ---------- Icon buttons --------- */
 @mixin icon_button {
@@ -386,6 +388,7 @@ button.orange {
 .w50 { @include width-class(500px); }
 .w54 { @include width-class(540px); }
 .w55 { @include width-class(550px); }
+.w58 { @include width-class(580px); }
 .w60 { @include width-class(600px); }
 
 /* ----- Error ----- */
@@ -525,6 +528,8 @@ hr.shadow { background: #e5e6ec; background: -moz-linear-gradient(top, #e5e6ec 0
 /* -------- General ---------*/
 .tablewrapp { padding:2px 0; border-radius:6px; -moz-border-radius:6px; -webkit-border-radius:6px; box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2); -moz-box-shadow:0px 1px 1px 1px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2) }
 
+.titletable { color:#555555; margin:5px 0 5px 5px; display:block }
+
 .GralTable { width:100%; -moz-border-radius:6px 6px 6px 6px; -webkit-border-radius:6px 6px 6px 6px;	border-radius:6px 6px 6px 6px; border-collapse:collapse }
 
 .GralTable th {	background: #e5e6ec; background: -moz-linear-gradient(top, #ffffff 0%, #d0d0d0 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#d0d0d0)); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d0d0d0',GradientType=0 ); text-shadow: 0px 1px 0px #ffffff; color:#555555; font-weight:normal; text-align:left;	padding:6px; border-bottom:1px solid #ffffff; border-right:1px solid #ffffff }
@@ -545,6 +550,16 @@ hr.shadow { background: #e5e6ec; background: -moz-linear-gradient(top, #e5e6ec 0
 .ButtonTable td button { padding:0; margin:-3px 0 0 0; float:right; display:none }
 .ButtonTable tr:hover td button { display:block }
 .ButtonTable tr td:last-child { width:160px }
+
+/* -------- Availability. Table with colors and rounded td corners ---------*/
+.Availability td { text-align:center; padding:2px; border:1px solid #ffffff; border-collapse:separate; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px }
+.Availability tr td:first-child { width:18px }
+.Availability td.b { background:#555555; color:#ffffff }
+.Availability td.gn { background:#bde561; color:#769925 }
+.Availability tr:first-child td.gn { background:#769925; color:#ffffff }
+.Availability tr td.gn:first-child { background:#769925; color:#ffffff }
+.Availability td.gy { background:#cccccc; color:#555555 }
+
 
 /* -------- Two column table  ---------*/
 .TwoColumn tr td:nth-child(1) { }
