@@ -24,3 +24,14 @@ task :css do
   puts "compressing css"
   puts `compass compile`
 end
+
+task :deploy => [:all, :upload]
+
+task :upload  do
+  # be sure to have exported these keys
+  # export AWS_ACCESS_KEY_ID=yourS3accesskey
+  # export AWS_SECRET_ACCESS_KEY=yourS3secretkey
+  ['samples','theme'].each do |folder|
+    puts %x[s3sync -v --public-read --recursive --exclude="\.DS_Store|sass|javascripts/source" --delete #{folder}/ theme.instedd.org:#{folder}]
+  end
+end
