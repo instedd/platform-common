@@ -20,6 +20,7 @@ task :js do
 end
 
 task :css do
+  File.delete "#{Dir.pwd}/theme/stylesheets/theme.css"
   puts "compressing css"
   puts `compass compile`
 end

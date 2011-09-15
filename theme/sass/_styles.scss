@@ -91,6 +91,7 @@ input.ux-text {  height:22px; width:inherit; @include texboxes_border; }
 textarea.ux-text { width: inherit; @include texboxes_border; padding:2px 2px; resize:none; }
 
 .TaskBox { border: 1px solid #dddddd; background:$disabled_bgtext; font-size:10px; font-weight: bold; letter-spacing:-0.05em; padding:0px 0px 1px 0px; margin:0px 1px; text-align:center; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px; white-space:nowrap }
+.box.grey .TaskBox { background: white; border-color: white; }
 .TaskBox div { display: inline-block; vertical-align:middle; margin-left:-2px; }
 .TaskBox div.L { color:$darkgray; width:4%; text-align:left; padding-left:0px; }
 .TaskBox div.R { color:$orange; width:4%; text-align:right; padding-right:0px; }
@@ -494,7 +495,7 @@ label.error {
 
 
 /* ------------ Gral BOX ------------------- */
-.drop_shadow { border:1px solid #d0d0d0; box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2); -moz-box-shadow:0px 1px 1px 1px rgba(0, 0, 0, 0.3); -webkit-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2); border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; }
+.drop_shadow { border:1px solid #d0d0d0; box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.3); -moz-box-shadow:0px 1px 1px 1px rgba(0, 0, 0, 0.3); -webkit-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.3); border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; }
 .box { @extend .drop_shadow; background:#FFFFFF; padding:10px; }
 .sbox { padding:2px; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px }
 
