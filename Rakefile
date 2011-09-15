@@ -27,7 +27,12 @@ task :css do
   puts `compass compile`
 end
 
-task :deploy => [:all, :upload]
+task :deploy => [:all, :build_zip, :upload]
+
+task :build_zip => :all do
+  puts "building theme/theme.zip"
+  `zip -r theme/theme.zip theme/ -x theme/theme.zip *sass* *.DS_Store *javascripts/source/*`
+end
 
 task :upload  do
   # be sure to have exported these keys
