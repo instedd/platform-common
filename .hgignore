@@ -1,3 +1,6 @@
 syntax: glob
 .sass-cache
 .DS_Store
+theme/javascripts/theme.js
+theme/stylesheets/theme.css
+theme/theme.zip

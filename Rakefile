@@ -20,6 +20,27 @@ task :js do
 end
 
 task :css do
+  output_css = "#{Dir.pwd}/theme/stylesheets/theme.css"
+  File.delete(output_css) if File::exists?(output_css)
+  
   puts "compressing css"
   puts `compass compile`
+end
+
+task :deploy => [:all, :build_zip, :upload]
+
+task :build_zip => :all do
+  puts "building theme/theme.zip"
+  `zip -r theme/theme.zip theme/ -x theme/theme.zip *sass* *.DS_Store *javascripts/source/*`
+end
+
+task :upload  do
+  # be sure to have exported these keys
+  # export AWS_ACCESS_KEY_ID=yourS3accesskey
+  # export AWS_SECRET_ACCESS_KEY=yourS3secretkey
+  puts "uploading to s3"
+  ['samples','theme'].each do |folder|
+    puts %x[s3sync -v --public-read --recursive --exclude="\.DS_Store|sass|javascripts/source" --delete #{folder}/ theme.instedd.org:#{folder}]
+  end
+  puts "done"
 end
