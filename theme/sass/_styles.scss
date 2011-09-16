@@ -290,13 +290,11 @@ button.cancel:hover { color:#555555 }
   background-repeat:no-repeat; 
   height:24px; 
   min-width:24px;
-  display:inline-block; 
-  vertical-align:middle; 
   margin: 4px 2px; 
-  cursor:pointer; border:none;
-  padding-top: 4px;
+  cursor:pointer; 
+  border:none;
   @include button-states(30px);
-  &:not(:empty) { padding-left: 27px; }
+  &:not(:empty) { padding:0 0 0 23px; }
 }
 
 /* ----- Color ----- */
@@ -592,6 +590,34 @@ ul.tabs.bottom li.active a { background:#ffffff; padding:6px 11px 8px 11px }
 /* -------- Two column table  ---------*/
 .TwoColumn tr td:nth-child(1) { }
 .TwoColumn tr td:nth-child(2) { width:100px; text-align:right }
+
+
+/* --------- PAGINATION ----------- */
+.Pagination { background: #ffffff; /* old browsers */background: -moz-linear-gradient(top, #eaeaea 0%, #ffffff 100%); /* firefox */background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eaeaea), color-stop(100%,#ffffff)); /* webkit */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaeaea', endColorstr='#ffffff',GradientType=0 ); -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2) inset; -moz-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2) inset; box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2) inset; -moz-border-radius:22px; -webkit-border-radius:22px; border-radius:22px; font-size:13px; color:#000000; font-weight:bold; padding:2px 0; margin:12px auto; display: table; text-align:center; position:relative }
+.Pagination a { color:#777777; text-decoration:none }
+.Pagination span { margin:0 3px }
+
+.Pagination button { border:1px solid #ffffff; margin:0 4px 1px 4px; display:inline-block; vertical-align:middle;-moz-border-radius:22px; -webkit-border-radius:22px; border-radius:22px; width:22px; height:22px;-css3-background: radial-gradient(50% 12%, circle closest-corner, #ffffff, #d0d0d0 15%); background: -moz-radial-gradient(50% 10% , circle , white 1px, #D0D0D0 20px); background: -webkit-radial-gradient(50% 17%, circle, white, #dbdbdb 75%); box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2); -moz-box-shadow:0px 1px 1px 1px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2); cursor:pointer; position:relative; padding:0 }
+
+.Pagination button:hover { -css3-background: radial-gradient(50% 12%, circle closest-corner, #f9f9f9, #bfbfbf 15%); background: -moz-radial-gradient(50% 10% , circle , #f9f9f9 1px, #bfbfbf 20px); background: -webkit-radial-gradient(50% 17%, circle, #f9f9f9, #bfbfbf 75%); box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2); -moz-box-shadow:0px 1px 1px 1px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2) }
+
+.Pagination button:active { -css3-background:#d0d0d0; background:#d0d0d0; box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1)inset; -moz-box-shadow:0px 1px 1px 0px rgba(0, 0, 0, 0.1)inset; -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1)inset; border-color:#d0d0d0 }
+
+.Pagination button span { font-size:11px; color:#555555; display:block; height:22px; position:absolute }
+.Pagination  button:hover span { color:#000000 }
+
+
+.Pagination button.Previous span { top:2px; left:0px }
+.Pagination button.Next span { top:2px; right:0px  }
+
+@-moz-document url-prefix() {
+.Pagination button.Previous span { top:-9px; left:-3px }
+.Pagination button.Next span { top:-9px; right:3px  }
+.Pagination button.Previous:active span { top:-8px; left:-2px }
+.Pagination button.Next:active span { top:-8px; right:2px  }
+}
+
+
 
 /* -------- ux-collapsible ---------*/
 
