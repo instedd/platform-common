@@ -1,9 +1,12 @@
 require 'smart_asset'
 require 'fileutils'
+require 'right_aws'
+
+DISTRIBUTION_ID = 'E3L595KW7W8HK9'
 
 task :default => [:all]
 
-task :all => [:css, :js] do
+task :all => [:css, :js, :sample_index] do
 end
 
 task :js do
@@ -27,7 +30,22 @@ task :css do
   puts `compass compile`
 end
 
-task :deploy => [:all, :build_zip, :upload]
+task :deploy => [:all, :build_zip, :upload, :invalidate]
+
+task :sample_index do
+  puts "building samples/index.htm"
+  
+  file = File.new("samples/index.htm", "w+")
+  file.puts "<!DOCTYPE HTML><html><body><h1>InSTEDD Platform Common</h1><ul>"
+  
+  Dir["#{Dir.pwd}/samples/**/*.htm"].each do |filename|
+    filename.sub!("#{Dir.pwd}/samples/", "")    
+    file.puts "<li><a href=\"#{filename}\">#{filename}</a>"
+  end
+    
+  file.puts "</ul></body></html>"
+  file.close
+end
 
 task :build_zip => :all do
   puts "building theme/theme.zip"
@@ -43,4 +61,19 @@ task :upload  do
     puts %x[s3sync -v --public-read --recursive --exclude="\.DS_Store|sass|javascripts/source" --delete #{folder}/ theme.instedd.org:#{folder}]
   end
   puts "done"
+end
+
+task :invalidate do
+  puts "invalidating cloudfront paths"
+  acf = RightAws::AcfInterface.new(ENV['AWS_ACCESS_KEY_ID'], ENV['AWS_SECRET_ACCESS_KEY'])
+  
+  # fixed paths to invalidate
+  paths_to_invalidate = ['/theme/javascripts/theme.js', '/theme/stylesheets/theme.css']
+  
+  # files in sample to invalidate
+  Dir["#{Dir.pwd}/samples/**/*.*"].each do |filename|
+    paths_to_invalidate << filename.sub("#{Dir.pwd}", "")
+  end
+  
+  acf.create_invalidation DISTRIBUTION_ID, :path => paths_to_invalidate
 end
