@@ -612,14 +612,14 @@ ul.tabs.bottom li.active a { background:#ffffff; padding:6px 11px 7px 11px }
 .pagination  button:hover span { color:#000000 }
 
 
-.pagination button.previous_page span { top:2px; left:0px }
-.pagination button.next_page span { top:2px; right:0px  }
+.pagination button.prev span { top:2px; left:0px }
+.pagination button.next span { top:2px; right:0px  }
 
 @-moz-document url-prefix() {
-.pagination button.previous_page span { top:-9px; left:-3px }
-.pagination button.next_page span { top:-9px; right:3px  }
-.pagination button.previous_page:active span { top:-8px; left:-2px }
-.pagination button.next_page:active span { top:-8px; right:2px  }
+.pagination button.prev span { top:-9px; left:-3px }
+.pagination button.next span { top:-9px; right:3px  }
+.pagination button.prev:active span { top:-8px; left:-2px }
+.pagination button.next:active span { top:-8px; right:2px  }
 }
 
 
