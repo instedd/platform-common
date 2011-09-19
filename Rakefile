@@ -6,7 +6,7 @@ DISTRIBUTION_ID = 'E3L595KW7W8HK9'
 
 task :default => [:all]
 
-task :all => [:css, :js, :sample_index] do
+task :all => [:css, :js] do
 end
 
 task :js do
@@ -30,13 +30,18 @@ task :css do
   puts `compass compile`
 end
 
-task :deploy => [:all, :build_zip, :upload, :invalidate]
+task :deploy => [:all, :sample_index, :build_zip, :upload, :invalidate]
 
 task :sample_index do
   puts "building samples/index.htm"
+
+  hg_tip = `hg tip`.strip
+  hg_version = hg_tip.match("^changeset:.*:(.*)$")[1]
   
   file = File.new("samples/index.htm", "w+")
-  file.puts "<!DOCTYPE HTML><html><body><h1>InSTEDD Platform Common</h1><ul>"
+  file.puts "<!DOCTYPE HTML><html><body><h1>InSTEDD Platform Common</h1><pre>#{hg_tip}</pre>"
+  file.puts "<a href=\"http://code.google.com/p/instedd-platform-common/source/detail?r=#{hg_version}\">source on google code</a>"
+  file.puts "<ul>"
   
   Dir["#{Dir.pwd}/samples/**/*.htm"].each do |filename|
     filename.sub!("#{Dir.pwd}/samples/", "")    
