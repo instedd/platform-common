@@ -44,7 +44,8 @@ task :sample_index do
   file.puts "<ul>"
   
   Dir["#{Dir.pwd}/samples/**/*.htm"].each do |filename|
-    filename.sub!("#{Dir.pwd}/samples/", "")    
+    filename.sub!("#{Dir.pwd}/samples/", "")
+    next if filename == "index.htm"
     file.puts "<li><a href=\"#{filename}\">#{filename}</a>"
   end
     
