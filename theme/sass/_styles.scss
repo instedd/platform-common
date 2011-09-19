@@ -605,25 +605,19 @@ ul.tabs.bottom li.active a { background:#ffffff; padding:6px 11px 7px 11px }
 .pagination a { color:#777777; text-decoration:none }
 .pagination span { margin:0 3px }
 
-.pagination button { border:1px solid #ffffff; margin:0 4px 1px 4px; display:inline-block; vertical-align:middle;-moz-border-radius:22px; -webkit-border-radius:22px; border-radius:22px; width:22px; height:22px;-css3-background: radial-gradient(50% 12%, circle closest-corner, #ffffff, #d0d0d0 15%); background: -moz-radial-gradient(50% 10% , circle , white 1px, #D0D0D0 20px); background: -webkit-radial-gradient(50% 17%, circle, white, #dbdbdb 75%); box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2); -moz-box-shadow:0px 1px 1px 1px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2); cursor:pointer; position:relative; padding:0 }
+.pagination span.button { border:1px solid #ffffff; margin:0 4px 1px 4px; display:inline-block; vertical-align:middle; -moz-border-radius:22px; -webkit-border-radius:22px; border-radius:22px; width:22px; height:22px;-css3-background: radial-gradient(50% 12%, circle closest-corner, #ffffff, #d0d0d0 15%); background: -moz-radial-gradient(50% 10% , circle , white 1px, #D0D0D0 20px); background: -webkit-radial-gradient(50% 17%, circle, white, #dbdbdb 75%); box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2); -moz-box-shadow:0px 1px 1px 1px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2); cursor:pointer; position:relative; padding:0 }
 
-.pagination button:hover { -css3-background: radial-gradient(50% 12%, circle closest-corner, #f9f9f9, #bfbfbf 15%); background: -moz-radial-gradient(50% 10% , circle , #f9f9f9 1px, #bfbfbf 20px); background: -webkit-radial-gradient(50% 17%, circle, #f9f9f9, #bfbfbf 75%); box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2); -moz-box-shadow:0px 1px 1px 1px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2) }
+.pagination span.button:hover { -css3-background: radial-gradient(50% 12%, circle closest-corner, #f9f9f9, #bfbfbf 15%); background: -moz-radial-gradient(50% 10% , circle , #f9f9f9 1px, #bfbfbf 20px); background: -webkit-radial-gradient(50% 17%, circle, #f9f9f9, #bfbfbf 75%); box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2); -moz-box-shadow:0px 1px 1px 1px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2) }
 
-.pagination button:active { -css3-background:#d0d0d0; background:#d0d0d0; box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1)inset; -moz-box-shadow:0px 1px 1px 0px rgba(0, 0, 0, 0.1)inset; -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1)inset; border-color:#d0d0d0 }
+.pagination span.button:active { -css3-background:#d0d0d0; background:#d0d0d0; box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1)inset; -moz-box-shadow:0px 1px 1px 0px rgba(0, 0, 0, 0.1)inset; -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1)inset; border-color:#d0d0d0 }
 
-.pagination button span { font-size:11px; color:#555555; display:block; height:22px; position:absolute }
-.pagination  button:hover span { color:#000000 }
+.pagination span.button a { font-size:11px; color:#555555; display:block; height:22px; position:absolute }
+.pagination span.button:hover a { color:#000000 }
 
-
-.pagination button.prev span { top:2px; left:0px }
-.pagination button.next span { top:2px; right:0px  }
-
-@-moz-document url-prefix() {
-.pagination button.prev span { top:-9px; left:-3px }
-.pagination button.next span { top:-9px; right:3px  }
-.pagination button.prev:active span { top:-8px; left:-2px }
-.pagination button.next:active span { top:-8px; right:2px  }
-}
+.pagination span.prev a { top:2px; left:4px }
+.pagination span.prev:active a { top:3px; left:5px }
+.pagination span.next a { top:2px; right:4px }
+.pagination span.next:active a { top:3px; right:3px }
 
 
 
