@@ -43,7 +43,7 @@ task :sample_index do
   file.puts "<a href=\"http://code.google.com/p/instedd-platform-common/source/detail?r=#{hg_version}\">source on google code</a>"
   file.puts "<ul>"
   
-  Dir["#{Dir.pwd}/samples/**/*.htm"].each do |filename|
+  Dir["#{Dir.pwd}/samples/**/*.htm"].sort.each do |filename|
     filename.sub!("#{Dir.pwd}/samples/", "")
     next if filename == "index.htm"
     file.puts "<li><a href=\"#{filename}\">#{filename}</a>"
