@@ -250,6 +250,9 @@ $active_border_color, $active_border_top_color, $disabled_border_color,$disabled
 
 button span { position:relative; top:0px; left:0px }
 button:active span { position:relative; top:1px; left:1px }
+button:disabled  { cursor:default !important }
+button:disabled span { cursor:default !important; top:0px !important; left:0px !important }
+
 
 /*
 @mixin css3-button(
