@@ -185,11 +185,6 @@ span.radio {
 
 
 
-
-
-
-
-
 /* ----------- BUTTONS ------------- */
 @mixin css3-button($border_color,$background_color,$background_color2,$color,
 $hover_background_color,$hover_background_color2,
@@ -209,6 +204,7 @@ $active_border_color, $active_border_top_color, $disabled_border_color,$disabled
   cursor:pointer;
   height: 29px;
   margin: 4px 2px;
+  display:inline-block;
   position:relative;
   &:hover  { 
     padding:5px 8px; 
@@ -248,10 +244,10 @@ $active_border_color, $active_border_top_color, $disabled_border_color,$disabled
   }
 }
 
-button span { position:relative; top:0px; left:0px }
-button:active span { position:relative; top:1px; left:1px }
-button:disabled  { cursor:default !important }
-button:disabled span { cursor:default !important; top:0px !important; left:0px !important }
+button span, a.button span { position:relative; top:0px; left:0px }
+button:active span, a.button:active span { position:relative; top:1px; left:1px }
+button:disabled, a.button:disabled  { cursor:default !important }
+button:disabled span, a.button.disabled span { cursor:default !important; top:0px !important; left:0px !important }
 
 
 /*
@@ -290,6 +286,43 @@ button.orange {
 }
 button.cancel { color:#555555 }
 button.cancel:hover { color:#555555 }
+
+a.button.white {
+  text-shadow: 0px 1px 0px white;
+  padding: 7px 10px 6px 10px !important;
+  height: 15px !important; 
+  @include css3-button(
+    #ffffff,#d2d2d2,#ffffff,#000000, 
+    #f0f0f0,#c7c7c7, 
+    #d0d0d0,#9c9c9c, 
+    #d0d0d0,#ffffff,#999999);
+}
+
+a.button.grey {
+  text-shadow: 0px -1px 0px black; 
+  padding: 7px 10px 6px 10px !important;
+  height: 15px !important; 
+  @include css3-button(
+    #313131,#3b3b3b,#767676,#ffffff, 
+    #616161,#313131, 
+    #3c3c3c,#1e1e1e, 
+    #3c3c3c,#767676,#cccccc);
+}
+
+a.button.orange {
+  text-shadow: 0px -1px 0px #fe3700;
+  padding: 7px 10px 6px 10px !important;
+  height: 15px !important; 
+  @include css3-button(
+    #fe3700,#ff6802,#fe9639,#ffffff, 
+    #fe8418,#e95f02, 
+    #ff6802,#fe1600, 
+    #ff6802,#fe9639,#ffddbf);
+}
+a.button.cancel { color:#555555 }
+a.button.cancel:hover { color:#555555 }
+
+
 
 /* ---------- Icon buttons --------- */
 @mixin icon_button {
