@@ -575,6 +575,13 @@ ul.tabs.bottom li.active a { background:#ffffff; padding:6px 11px 7px 11px }
 .GralTable td { letter-spacing:-0.005em; padding:2px 6px; border-bottom:1px solid #eeeeee }
 .GralTable tr:last-child td { border-bottom:none }
 
+.GralTable tr th.sort { cursor:pointer }
+.GralTable tr th:first-child { border-radius:4px 0 0 0; -moz-border-radius:4px 0 0 0; -webkit-border-radius:4px 0 0 0 }
+.GralTable tr th:last-child { border-radius:0 4px 0 0; -moz-border-radius:0 4px 0 0; -webkit-border-radius:0 4px 0 0 }
+.GralTable th.up, .GralTable th.down { background:#d0d0d0 !important }
+.GralTable th.up span { margin:0 2px 0 0; display:block; height:0px; width:0px; border-width:5px 4px 7px 4px; border-style:solid; border-color: transparent transparent #555555 transparent; float:right }
+.GralTable th.down span { margin:4px 2px 0 0; display:block; height:0px; width:0px; border-width:7px 4px 5px 4px; border-style:solid; border-color: #555555 transparent transparent transparent; float:right }
+
 /* -------- Clean ---------*/
 .CleanTable th { background:#ffffff}
 
