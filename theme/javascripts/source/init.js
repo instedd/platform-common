@@ -9,11 +9,6 @@
 						.datepicker();
 				}
 
-				$("input[type='text']", container).addClass("ux-text");
-				$("input[type='password']", container).addClass("ux-text");
-				$("input[type='email']", container).addClass("ux-text");
-				$("textarea", container).addClass("ux-text");
-
 				$(".ux-wajbar", container).wajbar();
 
 				$(".ux-nstep", container).each(function(){
@@ -36,9 +31,14 @@
 						kup.click(function(){ source.val(current()+1); });
 					}
 				});
-				
-				$("input[readonly='readonly'], textarea[readonly='readonly']", container).addClass("readonly");
-				$("button[disabled]", container).addClass("disabled");
+
+				// TODO for non CSS3 browsers, add this lines
+				// $("input[type='text']", container).addClass("ux-text");
+				// $("input[type='password']", container).addClass("ux-text");
+				// $("input[type='email']", container).addClass("ux-text");
+				// $("textarea", container).addClass("ux-text");				
+				// $("input[readonly='readonly'], textarea[readonly='readonly']", container).addClass("readonly");
+				// $("button[disabled]", container).addClass("disabled");
 			}
 		} 
 	});

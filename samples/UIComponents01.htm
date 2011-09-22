@@ -55,22 +55,20 @@
 
     <h1>Combo box / Dropdown</h1>
     
-    <div class="ux-dropdown w30"><!-- Combos must be allways inside a div with the class ux-dropdown assigned-->
-        <select name="d">
+    <p>
+        <select name="d" class="w30">
             <option value="1">iLab</option>
             <option value="2">Instedd</option>
             <option value="3">Manas Technology</option>
         </select>
-    </div>
+    </p>
 
     <p>
-    <div class="ux-dropdown w30"><!-- Combos must be allways inside a div with the class ux-dropdown assigned-->
-        <select name="e" disabled="disabled">
-            <option value="1">iLab</option>
-            <option value="2">Instedd</option>
-            <option value="3">Manas Technology</option>
-        </select>
-    </div>
+      <select name="e" disabled="disabled" class="w30">
+          <option value="1">iLab</option>
+          <option value="2">Instedd</option>
+          <option value="3">Manas Technology</option>
+      </select>
     </p>
     
     <div class="demoPulldown"><img src="demoImg/pulldown.png" /></div>
@@ -88,7 +86,7 @@
     </p>
     
     <p>    
-      <textarea class="ux-text w50" readonly="readonly">Readonly ... Lorem ipsum dolor sit amet</textarea>
+      <textarea class="w50" readonly="readonly">Readonly ... Lorem ipsum dolor sit amet</textarea>
     </p>
   <hr />
   
@@ -294,13 +292,13 @@
 
         <div class="field w30">
           <label for="user_email">Email</label>
-          <input id="user_email" name="user[email]" size="30" type="email" value="" class="ux-text">
+          <input id="user_email" name="user[email]" size="30" type="email" value="">
         </div>
 
         <div class="field w30">
           <label for="user_current_password">Current password</label>
           <p>(we need your current password to confirm your changes)</p>
-          <input id="user_current_password" name="user[current_password]" size="30" type="password" class="ux-text">
+          <input id="user_current_password" name="user[current_password]" size="30" type="password">
         </div>
 
         <div class="ux-collapsible collapsed w30" data-on-expanded="box grey">
@@ -310,12 +308,12 @@
           <div class="field w30">
             <label for="user_password">Password</label> 
             <p>(leave blank if you don't want to change it)</p>
-            <input id="user_password" name="user[password]" size="30" type="password" class="ux-text">
+            <input id="user_password" name="user[password]" size="30" type="password">
           </div>
 
           <div class="field w30">
             <label for="user_password_confirmation">Password confirmation</label>
-            <input id="user_password_confirmation" name="user[password_confirmation]" size="30" type="password" class="ux-text">
+            <input id="user_password_confirmation" name="user[password_confirmation]" size="30" type="password">
           </div>
 
           </div>
@@ -335,11 +333,13 @@
     <h1>Test: all have same width</h1>
         <p><input type="text" class="w30" value="Normal" /></p>
         <p><input type="text" placeholder="Search" class="w30 ux-search"></p>
+        <p><input type="text" class="w30 ux-datepicker" /></p>
         <p><textarea placeholder="Write your comment here" class="w30"></textarea></p>
         <p><textarea placeholder="Write your comment here" class="w30 ux-wajbar" maxlength="140"></textarea></p>
 
         <p class="w30"><input type="text" value="Normal" /></p>
         <p class="w30"><input type="text" placeholder="Search" class="ux-search"></p>
+        <p class="w30"><input type="text" class="ux-datepicker" /></p>
         <p class="w30"><textarea placeholder="Write your comment here"></textarea></p>
 
       <p><input type="text" class="w50" value="Normal" /></p>
