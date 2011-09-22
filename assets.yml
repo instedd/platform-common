@@ -5,10 +5,9 @@ destination:
   javascripts: javascripts/temp
 javascripts:
   theme:
-    - jquery.bubblepopup.v2.3.1.min
-    - custom-form-elements
-    - superbly-tagfield.min
+    - superbly-tagfield
     - jquery.jcarousel.min
+    - jquery.bubblepopup.v2.3.1.min
     - jquery.wajbar
     - jquery.status
     - footer

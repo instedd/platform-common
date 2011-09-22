@@ -13,9 +13,6 @@
 				$("input[type='password']", container).addClass("ux-text");
 				$("input[type='email']", container).addClass("ux-text");
 				$("textarea", container).addClass("ux-text");
-				$(".ux-dropdown select", container).addClass("styled");
-				$("input[type='radio']", container).addClass("styled");
-				$("input[type='checkbox']", container).addClass("styled");
 
 				$(".ux-wajbar", container).wajbar();
 
@@ -42,8 +39,6 @@
 				
 				$("input[readonly='readonly'], textarea[readonly='readonly']", container).addClass("readonly");
 				$("button[disabled]", container).addClass("disabled");
-				
-				Custom.init();
 			}
 		} 
 	});
