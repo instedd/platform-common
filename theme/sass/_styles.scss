@@ -206,7 +206,7 @@ $active_border_color, $active_border_top_color, $disabled_border_color,$disabled
   -webkit-border-radius:4px; 
   color:$color; 
   cursor:pointer;
-  height: 29px;
+  height: 30px;
   margin: 4px 2px;
   display:inline-block;
   position:relative;
@@ -293,8 +293,8 @@ button.cancel:hover { color:#555555 }
 
 a.button.white {
   text-shadow: 0px 1px 0px white;
-  padding: 7px 10px 6px 10px !important;
-  height: 15px !important; 
+  padding: 7px 11px !important;
+  height: 14px !important; 
   @include css3-button(
     #ffffff,#d2d2d2,#ffffff,#000000, 
     #f0f0f0,#c7c7c7, 
@@ -303,9 +303,9 @@ a.button.white {
 }
 
 a.button.grey {
-  text-shadow: 0px -1px 0px black; 
-  padding: 7px 10px 6px 10px !important;
-  height: 15px !important; 
+  text-shadow: 0px 1px 0px black; 
+  padding: 7px 11px !important;
+  height: 14px !important; 
   @include css3-button(
     #313131,#3b3b3b,#767676,#ffffff, 
     #616161,#313131, 
@@ -314,9 +314,9 @@ a.button.grey {
 }
 
 a.button.orange {
-  text-shadow: 0px -1px 0px #fe3700;
-  padding: 7px 10px 6px 10px !important;
-  height: 15px !important; 
+  text-shadow: 0px 1px 0px #fe3700;
+  padding: 7px 11px !important;
+  height: 14px !important; 
   @include css3-button(
     #fe3700,#ff6802,#fe9639,#ffffff, 
     #fe8418,#e95f02, 
