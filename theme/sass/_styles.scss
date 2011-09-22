@@ -587,7 +587,7 @@ ul.tabs.bottom li:active { background:#f3f3f3; color:#000000 }
 ul.tabs.bottom li a { display:block; padding:7px 10px 8px 10px; border-radius:0 0 4px 4px; -moz-border-radius:0 0 4px 4px; -webkit-border-radius:0 0 4px 4px; position:relative; margin-top:-2px; z-index:20 }
 ul.tabs.bottom li.active a { background:#ffffff; padding:6px 11px 7px 11px }
 
-div.tabsline { height:2px; border-top:1px solid #d0d0d0; background:#ffffff; position:relative; z-index:25 }
+div.tabsline { height:2px; border-top:1px solid #d0d0d0; background:#ffffff; position:relative; z-index:10 }
 
 
 /* ---------------------- Tables --------------------------*/
