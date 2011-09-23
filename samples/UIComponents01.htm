@@ -36,7 +36,6 @@
 </head>
 
 <body>
-<form method="post" action="">
 <div id="Main">
     <div id="Header">Form UI components</div><!-- #Header -->
     
@@ -49,7 +48,10 @@
     
     <p><input type="email" class="w30" value="jdoe@acme.org" /></p>
 
-    <div class="demoTextfield"><img src="demoImg/textfield.png" /></div>
+
+    
+    <br><br>
+         
     
 	<hr />
 
@@ -71,7 +73,9 @@
       </select>
     </p>
     
-    <div class="demoPulldown"><img src="demoImg/pulldown.png" /></div>
+    
+    <br><br>
+         
     
 	<hr />
 
@@ -88,7 +92,12 @@
     <p>    
       <textarea class="w50" readonly="readonly">Readonly ... Lorem ipsum dolor sit amet</textarea>
     </p>
-  <hr />
+
+    
+    <br><br>
+         
+
+    <hr />
   
     <h1>Text area + Wajbar</h1>
     
@@ -111,7 +120,11 @@
       <textarea placeholder="Write your comment here" readonly="readonly" class="ux-wajbar" maxlength="140">Disabled textarea</textarea>
     </div>
     
+    <br><br>
+         
+    
 	<hr />
+    <br/>
 
     <h1>Numeric stepper</h1>
     <p>
@@ -127,7 +140,11 @@
     </p>
      
     
+    <br><br>
+         
+    
 	<hr />
+    <br/>
 
     <h1>Search</h1>
     <p>
@@ -138,17 +155,23 @@
     </p>
     
     
+    <br><br>
+         
 	<hr />
+    <br/>
 
     <h1>Tags</h1>
     <div class="w30">
-      <input type="text" id="tagfield2">
+      <form><input type="text" id="tagfield2"></form>
     </div>
     
+    <br><br>
          
 	<hr />
-
-    <p class="Title">Date Picker</p>
+    
+    <br>
+         
+    <h1>Date Picker</h1>
     
     <div>
       <input type="text" class="w30 ux-datepicker" />
@@ -158,11 +181,18 @@
       <input type="text" class="w30 ux-datepicker" readonly="readonly" />
     </div>
     
+    <br /><br />
+
 	<hr />
+    <br/>
 
     <h1>CRUD list</h1>
     
+    <p><input type="text" class="w30 ux-clist remove" value="John Doe" /></p>
+    <p><input type="text" class="w30 ux-clist" value="" placeholder="Name" /></p>
     
+    <br /><br />
+
 	<hr />
 
     <h1>Radio button</h1>
@@ -179,7 +209,10 @@
     <input type="radio" checked disabled="disabled" name="GroupB" id="GroupB_3"> <label for="GroupB_3">B - Option 3 (disabled and selected)</label>    
     </p>
     
+    <br /><br />
+
 	<hr />
+    <br/>
 
     <h1>Checkbox</h1>
     
@@ -195,15 +228,22 @@
     <input type="checkbox" checked disabled="disabled" name="GroupC" id="twitter2"> <label for="twitter2">Twitter</label>
     </p>
     
+    <br /><br />
+
 	<hr />
+    <br/>
 
     <h1>White button</h1>
     <button type="button" class="white"><span>Label</span></button>
     <a href="#" class="button white"><span>Label</span></a><br>
     
    	<button type="button" class="white" disabled><span>Label</span></button>
-    <a href="#" class="button white disabled"><span>Label</span></a><br>   
+    <a href="#" class="button white disabled"><span>Label</span></a>
+    
+    <br><br>
+       
 	<hr />
+    <br/>
 
     <h1>Grey button</h1>
     
@@ -212,8 +252,11 @@
     
     <button type="button" class="grey" disabled><span>Label</span></button>
     <a href="#" class="button grey disabled"><span>Label</span></a><br>    
+    
+    <br /><br />
 
 	<hr />
+    <br/>
 
     <h1>Orange button</h1>
 
@@ -224,16 +267,23 @@
     <a href="#" class="button orange disabled"><span>Label</span></a>    
     
 	<hr />
+    <br/>
 
   <h1>Icon Buttons</h1>
 
-  <button type="button" class="faccept">Label</button>
+  <button type="button" class="faccept">Label</button> <a href="#" class="fsettings">Change my password</a><br>
     
+    <br /><br />
+
 	<hr />
+    <br/>
 
     <h1>Mark button</h1>
+    
+    <br /><br />
 
-    <hr />
+	<hr />
+    <br/>
     
     <h1>Collapsible items</h1>
     
@@ -328,7 +378,10 @@
       
     </p>
     
-    <hr />
+    <br /><br />
+
+	<hr />
+    <br/>
     
     <h1>Test: all have same width</h1>
         <p><input type="text" class="w30" value="Normal" /></p>
@@ -349,8 +402,11 @@
       <p class="w50"><input type="text" value="Normal" /></p>
       <p class="w50"><input type="text" placeholder="Search" class="ux-search"></p>
       <p class="w50"><textarea placeholder="Write your comment here"></textarea></p>
+    
+    <br /><br />
 
-    <hr/>
+	<hr />
+    <br/>
       
     <h1>Test: Numeric stepper with text</h1>
 
@@ -365,8 +421,11 @@
       </div>
       <span>Lorem ipsum dolor sit amet</span>
     </p>
+    
+    <br /><br />
 
-    <hr />
+	<hr />
+    <br/>
     
     <h1>Two Column Table</h1>
 
@@ -399,8 +458,11 @@
             </td>
         </tr>
     </table>
+    
+    <br /><br />
 
-   <hr />
+	<hr />
+    <br/>
     
     <h1>Table</h1>
 
@@ -432,7 +494,7 @@
         </tr>
     </table>
 
-<br /><br />
+    <br /><br />
 
 
     
@@ -443,6 +505,5 @@
 
 
 </div><!-- #Main -->
-</form>
 </body>
 </html>
