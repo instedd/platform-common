@@ -69,22 +69,4 @@ table td div { display:inline-block; vertical-align:middle }
 
 
 
-/* ------------ State Display ------------------- */
-.StateDisplay { text-align:center }
-.StateDisplay .values { display:inline-block; width:50%; vertical-align:middle }
-.StateDisplay button { display:inline-block; vertical-align:middle }
-.values { font-size: 11px; letter-spacing: -0.02em; line-height:9px; padding: 2px 0; text-align: center; white-space: nowrap }
-.values div.L { color: #777777; text-align:left; padding-bottom:3px; float: left }
-.values div.R { color: #f86808; text-align:right; padding-bottom:3px; float: right }
-.values div.L span, .values div.R span { display:block }
-.values div.M { background: #f86808 }
-.values div.M span { background: #777777; height: 4px; display: block; width: 40% }
-
-.smvalues { background:#d0d0d0; font-size:11px; letter-spacing:-0.02em; line-height:9px; padding:3px; text-align: center; white-space: nowrap; width:50px; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px; border:1px solid #DDDDDD }
-.smvalues div.L { color: #777777; text-align:left; padding-bottom:3px; float: left }
-.smvalues div.R { color: #f86808; text-align:right; padding-bottom:3px; float: right }
-.smvalues div.L span, .values div.R span { display:block }
-.smvalues div.M { background: #f86808; display:block !important}
-.smvalues div.M span { background: #777777; height: 4px; display: block; width: 40% }
-
 
