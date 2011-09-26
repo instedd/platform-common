@@ -395,6 +395,7 @@ a.button.cancel:hover { color:#555555 }
 }
 a.icon_button {
   padding-top: 3px !important;
+  vertical-align:middle;
 }
 
 /* ----- Color ----- */
@@ -440,10 +441,12 @@ a.icon_button {
 .frequest { @extend .icon_button; background-image:url(../images/buttons/fancy/request.png) }
 .fright { @extend .icon_button; background-image:url(../images/buttons/fancy/right.png) }
 .frss { @extend .icon_button; background-image:url(../images/buttons/fancy/rss.png) }
+.fsearch { @extend .icon_button; background-image:url(../images/buttons/fancy/search.png) }
 .fsettings { @extend .icon_button; background-image:url(../images/buttons/fancy/settings.png) }
 .fsnapshot { @extend .icon_button; background-image:url(../images/buttons/fancy/snapshot.png) }
 .fstop { @extend .icon_button; background-image:url(../images/buttons/fancy/stop.png) }
 .fstopped { @extend .icon_button; background-image:url(../images/buttons/fancy/stopped.png) }
+.fsync { @extend .icon_button; background-image:url(../images/buttons/fancy/sync.png) }
 .fteach { @extend .icon_button; background-image:url(../images/buttons/fancy/teach.png) }
 .ftwitter { @extend .icon_button; background-image:url(../images/buttons/fancy/twitter.png) }
 .fuser { @extend .icon_button; background-image:url(../images/buttons/fancy/user.png) }

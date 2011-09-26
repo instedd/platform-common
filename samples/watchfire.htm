@@ -22,6 +22,7 @@
           </ul><!-- #menu -->
       </div><!-- #NavMenu -->
       
+      
       <ul class="RightMenu">
           <li>
             <div id="User">John Doe<br><br>
@@ -67,49 +68,42 @@
 
     <div id="container">
     
-    <h1><button class="power"></button> Fire on Rangeland</h1>
+    <h1>Fire on Rangeland: 10 volunteers (Single house apartment fire with pets and old people)</h1>
     
     <br>
     
     <div class="left">
     
-    	<div class="box grey w60">
+    	<div class="box w60">
         
-        	<table>
-            <tr>
-            <td>Recruit</td>
-            <td>
-            <div class="ux-nstep w06"><input type="text" size="2" value="1" readonly="readonly"></div> 
-            <div class="ux-dropdown w30">
-                <select name="d" disabled="disabled">
-                    <option value="1">iLab</option>
+            <label>Event name</label>
+            <input type="text" size="2" value="Fire on Rangeland" class="ux-text w58">
+            <br><br>
+            <label>Recruitees</label>
+            <span class="ux-nstep w06"><input type="text" size="2" value="10"></span> 
+            <span class="ux-dropdown w30">
+                <select>
+                    <option value="1">Volunteers</option>
                     <option value="2">Instedd</option>
                     <option value="3">Manas Technology</option>
                 </select>
-            </div>
-    		</td>
-            </tr>
-            <tr>
-            <td>for</td>
-            <td>
-                  <textarea placeholder="Write your comment here" class="w54 ux-wajbar" readonly="readonly" maxlength="200"></textarea>
-
-            </td>
-            </tr>
-            <tr>
-            <td>near</td>
-            <td><input type="text" placeholder="Search" class="w54 ux-search"> </td>
-            </tr>
-            </table>
-               
+            </span>
+            
+            <br><br>
+            
+            <label>Description</label>
+            <textarea class="w54 ux-wajbar" maxlength="200">Single house apartment fire with pets and old people</textarea>
+			<br>
+            <label>Address</label>
+            <span class="small-text">Enter an address to find recruits nearby or you can right-click in the map to indicate a location</span>
+            <input type="text" class="w30 ux-text" value="1710 Trousdale Dr"> <button class="fsearch">Find recruitees nearby</button>
+            <br><br>
 			<div><img src="demoImg/mapa.png" width="600" height="278"></div>
+            
+            <div class="box plain grey">Will call volunteers up to 7.4 mi</div><!-- #grey -->
             
         
         </div><!-- #box -->
-        
-        <br>
-        
-        <button type="button" class="fdelete">Delete this mission</button>
     
     </div><!-- #LeftContent -->
     
@@ -121,60 +115,43 @@
         	
         	<div class="sbox grey StateDisplay">
                 <div class="values">
-                  <div class="L"><span>4</span><span>confirmed</span></div>
+                  <div class="L"><span>No recruitees</span><span>confirmed</span></div>
                   <div class="R"><span>14</span><span>missing</span></div><br clear="all">
                   <div class="M"><span class="Fill"></span></div>
                 </div><!--#values -->
-                <button type="button" class="white">Download as CSV</button>
-            </div><!-- #sbox grey -->
-            <button type="button" class="faccept">Mark as complete</button>
+                <button type="button" class="orange">Start recruiting</button>
+            </div><!-- #sbox grey StateDisplay-->
+            
+            <div class="event-desc">
+                <p>We will call and text the recruitees below with the following message:</p>
+    
+                <p><em>Red Cross need your assistance for: </em>Single house apartment fire with pets and old people <em>near</em> 1710 Trousdale Dr.</p>
+            </div>
+
             <hr class="shadow">
             <div id="scroll">
             <div class="listitem ux-collapsible">
-            	<span><a href="#" class="arrow">6 Confirmed</a></span>
+            	<span><a href="#" class="arrow">8 Pending</a></span>
                 <table class="ux-content">
                 <tr>
-                <td>John Doe</td>
-                <td><span class="mobile">+1 415 254 1574</span></td>
+                    <td><input type="checkbox" checked> <span>John Doe</span></td>
+                    <td><span class="mobile">+1 415 254 1574</span></td>
                 </tr>
                 <tr>
-                <td>Robert Cooper</td>
-                <td><span class="phone">+1 408 396 9068</span></td>
+                    <td><input type="checkbox" checked> <span>Robert Cooper</span></td>
+                    <td><span class="phone">+1 408 396 9068</span></td>
                 </tr>
                 <tr>
-                <td>Peter Smith</td>
-                <td><span class="phone">+1 325 983 1129</span></td>
-                </tr>
-                <tr>
-                <td>Walter Thompson</td>
-                <td><span class="mobile">+1 401 331 0947</span></td>
-                </tr>
-                </table>
-            </div><!-- #listitem -->
-            <hr>
-            <div class="listitem ux-collapsible collapsed">
-            	<span><a href="#" class="arrow">2 pending</a></span>
-                <table class="ux-content">
-                <tr>
-                <td><button type="button" class="icon fblock"></button> John Doe</td>
-                <td><span class="mobile">+1 408 396 9068</span><br><span class="phone">+1 408 396 9068</span></td>
+                    <td><input type="checkbox" checked> <span>Peter Smith</span></td>
+                    <td><span class="phone">+1 325 983 1129</span></td>
                 </tr>
                 <tr class="blocked">
-                <td><button type="button" class="icon lblock"></button> Christian Shepard</td>
-                <td><span class="mobile">+1 408 396 9068</span></td>
+                    <td><input type="checkbox"> <span>Walter Thompson</span></td>
+                    <td><span class="gmobile">+1 401 331 0947</span></td>
                 </tr>
                 </table>
             </div><!-- #listitem -->
             <hr>
-            <div class="listitem ux-collapsible collapsed">
-            	<span><a href="#" class="arrow">1 Unresponsive</a></span>
-                <table class="ux-content"><tr><td></td></tr></table>
-            </div><!-- #listitem -->
-            <hr>
-            <div class="listitem ux-collapsible">
-            	<span><a href="#" class="arrow">8 Denied</a></span>
-                <table class="ux-content"><tr><td></td></tr></table>
-            </div><!-- #listitem -->
             </div><!-- #scroll -->
         
         </div><!-- #box -->
@@ -182,6 +159,14 @@
     </div><!-- #RightContent -->
 
     <div class="clear"></div><!-- #clear -->
+    
+    <br>
+    <hr>
+    <br>
+    
+    <button type="button" class="cadd">Recruit another role</button> 
+    <button type="button" class="fimport">Download recruiting results</button> 
+    <button type="button" class="fdelete">Delete this event</button>
     
     <br><br><br>
     </div><!-- #container -->
