@@ -14,6 +14,10 @@
 				$(".ux-nstep", container).each(function(){
 					var nstep = $(this);
 					var source = $("input[type='text']", nstep);
+					var min = parseInt(source.data('min'));
+					min = isNaN(min) ? null : min;
+					var max = parseInt(source.data('max'));
+					max = isNaN(max) ? null : max;
 					var kdown = $("<button>").attr('type','button').addClass('kdown').text('');
 					var kup = $("<button>").attr('type','button').addClass('kup').text('');
 					nstep.append(kdown).append(kup);
@@ -27,8 +31,14 @@
 							var res = parseInt(source.val());
 							return isNaN(res) ? 0 : res;
 						};
-						kdown.click(function(){ source.val(current()-1); });
-						kup.click(function(){ source.val(current()+1); });
+						kdown.click(function(){
+							if (min != null && min >= current()) return;
+							source.val(current()-1); 
+						});
+						kup.click(function(){
+							if (max != null && current() >= max) return;
+							source.val(current()+1);
+						});
 					}
 				});
 
