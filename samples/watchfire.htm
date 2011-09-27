@@ -66,7 +66,7 @@
       
     </div><!-- #header -->
 
-    <div id="container">
+    <div id="container" style="display:none">
     
     <h1>Fire on Rangeland: 10 volunteers (Single house apartment fire with pets and old people)</h1>
     
@@ -81,8 +81,8 @@
             <br><br>
             <label>Recruitees</label>
             <span class="ux-nstep w06"><input type="text" size="2" value="10"></span> 
-            <span class="ux-dropdown w30">
-                <select>
+            <span>
+                <select class="ux-dropdown w30">
                     <option value="1">Volunteers</option>
                     <option value="2">Instedd</option>
                     <option value="3">Manas Technology</option>
@@ -170,6 +170,199 @@
     
     <br><br><br>
     </div><!-- #container -->
+    
+    
+    
+    <div id="container" style="display:none">
+    
+    <h1>Fire on Rangeland: 10 volunteers (Single house apartment fire with pets and old people)</h1>
+    
+    <br>
+    
+    <div class="left">
+    
+    	<div class="box w60 grey">
+        
+            <label>Event name</label>
+            <input type="text" size="2" value="Fire on Rangeland" class="ux-text w58" readonly >
+            <br><br>
+            <label>Recruitees</label>
+            <span class="ux-nstep w06"><input type="text" size="2" value="10" readonly></span> 
+            <span>
+                <select class="ux-dropdown w30 disabled">
+                    <option value="1">Volunteers</option>
+                    <option value="2">Instedd</option>
+                    <option value="3">Manas Technology</option>
+                </select>
+            </span>
+            
+            <br><br>
+            
+            <label>Description</label>
+            <textarea class="w54 ux-wajbar" maxlength="200" readonly>Single house apartment fire with pets and old people</textarea>
+			<br>
+            <label>Address</label>
+            <span class="small-text">Enter an address to find recruits nearby or you can right-click in the map to indicate a location</span>
+            <input type="text" class="w30 ux-text" value="1710 Trousdale Dr" readonly > <button class="fsearch disabled">Find recruitees nearby</button>
+            <br><br>
+			<div><img src="demoImg/mapa.png" width="600" height="278"></div>
+            
+            <div class="box plain green">Will call volunteers up to 7.4 mi</div><!-- #grey -->
+            
+        
+        </div><!-- #box -->
+    
+    </div><!-- #LeftContent -->
+    
+    
+    
+    <div class="right">
+    	
+        <div class="box w30">
+        	
+        	<div class="sbox grey StateDisplay">
+                <div class="values">
+                  <div class="L"><span>No recruitees</span><span>confirmed</span></div>
+                  <div class="R"><span>14</span><span>missing</span></div><br clear="all">
+                  <div class="M"><span class="Fill"></span></div>
+                </div><!--#values -->
+                <button type="button" class="orange">Start recruiting</button>
+            </div><!-- #sbox grey StateDisplay-->
+            
+            <div class="event-desc">
+                <p>We will call and text the recruitees below with the following message:</p>
+    
+                <p><em>Red Cross need your assistance for: </em>Single house apartment fire with pets and old people <em>near</em> 1710 Trousdale Dr.</p>
+            </div>
+
+            <hr class="shadow">
+            <div id="scroll">
+            <div class="listitem ux-collapsible">
+            	<span><a href="#" class="arrow">8 Pending</a></span>
+                <table class="ux-content">
+                <tr>
+                    <td><input type="checkbox" checked> <span>John Doe</span></td>
+                    <td><span class="mobile">+1 415 254 1574</span></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" checked> <span>Robert Cooper</span></td>
+                    <td><span class="phone">+1 408 396 9068</span></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" checked> <span>Peter Smith</span></td>
+                    <td><span class="phone">+1 325 983 1129</span></td>
+                </tr>
+                <tr class="blocked">
+                    <td><input type="checkbox"> <span>Walter Thompson</span></td>
+                    <td><span class="gmobile">+1 401 331 0947</span></td>
+                </tr>
+                </table>
+            </div><!-- #listitem -->
+            <hr>
+            </div><!-- #scroll -->
+        
+        </div><!-- #box -->
+   
+    </div><!-- #RightContent -->
+
+    <div class="clear"></div><!-- #clear -->
+    
+    <br>
+    <hr>
+    <br>
+    
+    <button type="button" class="cadd">Recruit another role</button> 
+    <button type="button" class="fimport">Download recruiting results</button> 
+    <button type="button" class="fdelete">Delete this event</button>
+    
+    <br><br><br>
+    </div><!-- #container -->
+    
+    
+    <div id="container">
+    
+    <h1>New Event</h1>
+    
+    <br>
+    
+    <div class="left">
+    
+    	<div class="box w60">
+        
+            <label>Event name</label>
+            <input type="text" size="2" placeholder="Enter the name of this event, e.g. 'Fire on Rangeland' " class="ux-text w58">
+            <br><br>
+            <label>Recruitees</label>
+            <span class="ux-nstep w06"><input type="text" size="2" value="1"></span> 
+            <span>
+                <select class="ux-dropdown w30">
+                    <option value="1">Select a role</option>
+                </select>
+            </span>
+            
+            <br><br>
+            
+            <label>Description</label>
+            <textarea class="w54 ux-wajbar" maxlength="200" placeholder="Enter the description, e.g 'Single house apartment fire with pets and old people' "></textarea>
+			<br>
+            <label>Address</label>
+            <span class="small-text">Enter an address to find recruits nearby or you can right-click in the map to indicate a location</span>
+            <input type="text" class="w30 ux-text" placeholder="Enter the address, e.g '1710 Trousdale Dr' "> <button class="fsearch">Find recruitees nearby</button>
+            <br><br>
+			<div><img src="demoImg/mapa.png" width="600" height="320"></div>
+                        
+        
+        </div><!-- #box -->
+    
+    </div><!-- #LeftContent -->
+    
+    
+    
+    <div class="right">
+    	
+        <div class="box w30">
+        	
+        	<div class="sbox grey StateDisplay">
+                <div class="values">
+                  <div class="L"><span>No recruitees</span><span>required yet</span></div>
+                  <div class="R"><span></span><span></span></div><br clear="all">
+                  <div class="M"><span class="Fill" style="width:100%"></span></div>
+                </div><!--#values -->
+                <button type="button" class="orange disabled">Start recruiting</button>
+            </div><!-- #sbox grey StateDisplay-->
+            
+            <div class="event-desc">
+                <p>We will call and text the recruitees below with the following message:</p>
+    
+                <p><em>e.g. "Red Cross need your assistance for: Single house apartment fire with pets and old people near 1710 Trousdale Dr"</em></p>
+            </div>
+
+            <hr class="shadow">
+            <div id="scroll">
+            
+            	<p class="empty-event">This event has not been initialized, complete all the fields and start recruiting</p>
+                
+            </div><!-- #scroll -->
+        
+        </div><!-- #box -->
+   
+    </div><!-- #RightContent -->
+
+    <div class="clear"></div><!-- #clear -->
+    
+    <br>
+    <hr>
+    <br>
+    
+    <button type="button" class="cadd">Recruit another role</button> 
+    <button type="button" class="fimport">Download recruiting results</button> 
+    <button type="button" class="fdelete">Delete this event</button>
+    
+    <br><br><br>
+    </div><!-- #container -->
+    
+    
+    
 
     <div id="footer-span">
       <div id="footer">

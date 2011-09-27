@@ -9,6 +9,7 @@ label { color:#555555; display:block }
 .disabled .TaskBox div.R { color:#d0d0d0 }
 
 .box.plain { padding:6px; margin:4px 0; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px; -webkit-box-shadow:none;-moz-box-shadow:none; box-shadow:none }
+.box.green { background:#eeffc9; color:#799823 }
 
 /* ------------ User Menu ------------------- */
 .avatar { width:65px; height:65px; text-align:center; margin:0 0 2px 0; padding:0 5px 0 0; border:none; display: table; position:relative }
@@ -46,8 +47,8 @@ button.power.on.disabled { background:url(../theme/images/buttons/other/power.pn
 .small-text { font-size:11px; color:#555555 }
 .event-desc { margin-bottom:10px }
 .event-desc p { margin:4px 0 5px 0 }
-.event-desc p em { color:#555555 }
-
+.event-desc p em { color:#999999 }
+.empty-event { font-style:italic; color:#999999; text-align:center; padding:170px 40px 0 40px }
 #scroll { height:460px; width:289px; margin:-4px 0 -5px 0; overflow:auto; overflow-x:hidden; padding-right: 10px }
 
 @-moz-document url-prefix() { #scroll { height:475px } }
