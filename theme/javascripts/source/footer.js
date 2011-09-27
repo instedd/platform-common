@@ -27,7 +27,7 @@ $('#instedd-pulldown').append($("<li>").append($("<ul>")));
 
 $.each(apps, function(index, app){
 	$("#tools-carousel").append($("<li>").attr('id',app.id)
-		.append($("<a>").attr('href',app.url).append($("<div>").addClass('tool-name').text(app.name)))
+		.append($("<a>").attr('href',app.url).attr('target','_blank').append($("<div>").addClass('tool-name').text(app.name)))
 	);
 	
 	$('#instedd-pulldown > li > ul').append($("<li>").append($("<a>").attr('href',app.url).text(app.name)));
