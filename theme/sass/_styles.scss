@@ -191,8 +191,6 @@ ul.clist li { border-bottom:1px solid #DDDDDD; margin-bottom:2px; list-type:none
 ul.clist li button { margin:0px 0px 0px 2px !important }
 ul.clist li:last-child { border-bottom:none }
 
-div.clist { border-bottom:1px solid #DDDDDD; margin-bottom:2px }
-div .clist:first-child  { background:#ff0000 }
 
 /* ----- BreadCrumb ----- */
 .BreadCrumb { background:#d0d0d0; border-radius: 4px; height: 22px; overflow: hidden }
@@ -233,6 +231,30 @@ div .clist:first-child  { background:#ff0000 }
 .smvalues div.L span, .values div.R span { display:block }
 .smvalues div.M { background: #f86808; display:block !important}
 .smvalues div.M span { background: #777777; height: 4px; display: block; width: 40% }
+
+
+/* ------------ Steps Display ------------------- */
+.steps-line { background:#FFFFFF; height:6px; width:90%; margin:40px auto 30px auto; -webkit-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset; -moz-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset; box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset;	position:relative }
+
+.steps-container { position:absolute; top:-6px; width:100%; white-space:nowrap }
+
+.circle { background:#FFFFFF; display:inline-block; vertical-align:middle; width:12px; height:12px; margin:-1px 0 0 -3px; position:relative; -moz-border-radius:20px; -webkit-border-radius:20px; border-radius:20px;	-webkit-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset; -moz-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset;	box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset }
+.circle.first { float:left; margin-top:3px !important }
+.circle.last { right:0px; top:0px; margin-top:3px !important; position:absolute }
+	
+.inner { background:#ffffff; display:inline-block; width:6px; height:6px; -moz-border-radius:15px; -webkit-border-radius:15px; border-radius:15px; position:absolute; top:3px; left:3px; text-align:center; z-index:2  }	
+
+.line-fill { background:#ffffff; display:inline-block; vertical-align:middle; position:relative; height:2px; width:33%; margin:0 -5px 0 -7px; z-index:1 }
+
+.step-name { font-size:12px; text-align:center; width:120px; position:absolute; top:-25px; left:-60px }
+
+.circle.green .inner { background:#739524 }	
+.line-fill.green { background:#739524 }
+.circle.green .step-name  { color:#739524 }	
+
+
+
+
 
 
 /* ----------- BUTTONS ------------- */
@@ -605,6 +627,7 @@ label.error {
 .drop_shadow { border-top:1px solid #d0d0d0; box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.3); -moz-box-shadow:0px 1px 1px 1px rgba(0, 0, 0, 0.3); -webkit-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.3); border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; }
 .box { @extend .drop_shadow; background:#FFFFFF; padding:10px; }
 .sbox { padding:2px; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px }
+.box.plain { padding:6px; margin:4px 0; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px; -webkit-box-shadow:none;-moz-box-shadow:none; box-shadow:none }
 
 .box.grey, .sbox.grey { background:#d0d0d0; color:#555555 }
 
@@ -723,10 +746,10 @@ div.tabsline { padding:20px 0 20px 0; border-top:1px solid #d0d0d0; background:#
 .pagination span.button a { font-size:11px; color:#555555; display:block; height:22px; position:absolute }
 .pagination span.button:hover a { color:#000000 }
 
-.pagination span.prev a { top:2px; left:4px }
-.pagination span.prev:active a { top:3px; left:5px }
-.pagination span.next a { top:2px; right:4px }
-.pagination span.next:active a { top:3px; right:3px }
+.pagination span.prev a { top:3px; left:4px }
+.pagination span.prev:active a { top:4px; left:5px }
+.pagination span.next a { top:3px; right:4px }
+.pagination span.next:active a { top:4px; right:3px }
 
 
 
