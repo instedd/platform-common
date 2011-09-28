@@ -176,21 +176,23 @@ span.radio {
   -webkit-box-shadow: none !important; 
   -moz-box-shadow: none !important; 
   box-shadow: none !important;
-  &:hover { background-position: 99% -18px; }
-  &:focus { background-position: 99% -38px; border:2px solid #dddddd !important;
+  &:focus { border:2px solid #dddddd !important;
   -webkit-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset;
   -moz-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset; 
   box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset; }
   &.readonly { background-position: 99% -58px; }
 }
-.clist-add { background:url(../images/crudList/add.png) no-repeat center 4px; height:22px; width:22px; position:relative; margin:3px 0 0 -25px; padding:0px; display:inline-block; vertical-align:top; border:none; cursor:pointer; z-index:1}
-.clist-add:hover { background-position:center -16px }
-.clist-add:active { background-position:5px -35px }
 
-.clist-remove {background:url(../images/crudList/remove.png) no-repeat center 4px; height:22px; width:22px; position:relative; margin:3px 0 0 -25px; display:inline-block; vertical-align:top; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px; border:1px solid #e1e1e1; cursor:pointer; z-index:1 }
-.clist-remove:hover { background-position:center -16px }
-.clist-remove:active { background-position:4px -35px }
+.clist-add { @extend .padd; vertical-align:middle !important }
+.clist-remove { @extend .premove; vertical-align:middle !important }
 
+ul.clist { margin:4px 0; padding:0 }
+ul.clist li { border-bottom:1px solid #DDDDDD; margin-bottom:2px; list-type:none; display:block; padding:1px 0 1px 0; margin:0; width:inherit }
+ul.clist li button { margin:0px 0px 0px 2px !important }
+ul.clist li:last-child { border-bottom:none }
+
+div.clist { border-bottom:1px solid #DDDDDD; margin-bottom:2px }
+div .clist:first-child  { background:#ff0000 }
 
 /* ----- BreadCrumb ----- */
 .BreadCrumb { background:#d0d0d0; border-radius: 4px; height: 22px; overflow: hidden }
@@ -351,7 +353,7 @@ a.button.white {
 }
 
 a.button.grey {
-  text-shadow: 0px 1px 0px black; 
+  text-shadow: 0px -1px 0px black; 
   padding: 7px 11px !important;
   height: 14px !important; 
   @include css3-button(
@@ -362,7 +364,7 @@ a.button.grey {
 }
 
 a.button.orange {
-  text-shadow: 0px 1px 0px #fe3700;
+  text-shadow: 0px -1px 0px #fe3700;
   padding: 7px 11px !important;
   height: 14px !important; 
   @include css3-button(
@@ -461,6 +463,8 @@ a.icon_button {
 .pstop{ @extend .icon_button; background-image:url(../images/buttons/plain/stop.png) }
 .pstopped{ @extend .icon_button; background-image:url(../images/buttons/plain/stopped.png) }
 
+
+
 /* ----- Level Selector ----- */
 .lblock{ @extend .icon_button; background-image:url(../images/levelSelector/disable.png) }
 
@@ -481,6 +485,7 @@ a.icon_button {
   & > .ux-text:not(.ux-datepicker, .ux-search), &.ux-text:not(.ux-datepicker, .ux-search), & > .field_with_errors > .ux-text:not(.ux-datepicker, .ux-search) { width: $size - 6px !important; } 
   & > .ux-dropdown .select, &.ux-dropdown .select { width: $size - 7px !important; }
   & > .ux-text-with-image, &.ux-text-with-image { width: $size + 2px - $ux_text_image_width !important; }
+  & > .ux-clist, &.clist > li input.ux-text  { width: $size - 38px !important; }
   hr.shadow { width: $size + 20px; }
 }
 
