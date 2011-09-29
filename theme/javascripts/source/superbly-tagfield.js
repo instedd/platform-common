@@ -40,6 +40,7 @@
         var preset = settings.preset;
         var allowNewTags = settings.allowNewTags;
         var showTagsNumber = settings.showTagsNumber;
+		var addItemOnBlur = settings.addItemOnBlur;
 
         var tagstmp = tags.slice();
 
@@ -115,6 +116,19 @@
             }
 
         });
+
+		if (addItemOnBlur) {
+			tagInput.blur(function(e){
+				if(currentItem != null){
+                    addItem(currentItem);
+                } else if(allowNewTags){
+                    var value = tagInput.val();
+                    if(value != null && value != ''){
+                        addItem(value);
+                    }
+                }
+			});
+		}
 
         tagList.parent().click(function(e){
             tagInput.focus();	

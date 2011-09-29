@@ -18,7 +18,15 @@
                 showTagsNumber: 10,
                 preset: ['Cholera','H1N1'],
                 tags: carTags
-            }); 
+            });
+
+						$("#tagfield3").superblyTagField({
+                allowNewTags: true,
+                showTagsNumber: 10,
+                preset: ['Cholera','H1N1'],
+                tags: carTags,
+								addItemOnBlur: true
+            });
         });
     </script> 
     
@@ -187,6 +195,11 @@
     </div>
     
     <br><br>
+
+		<div class="w30">
+			Tag List with add item on blur
+			<form><input type="text" id="tagfield3"></form>
+		</div>
          
 	<hr />
     
