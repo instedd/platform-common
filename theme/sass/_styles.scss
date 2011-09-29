@@ -11,7 +11,7 @@ h1 + p, h2 + p { margin: -15px 0 15px 0; color: $darkgray; }
 
 hr { border:0; height:1px; color:#dddddd; background:#dddddd; position:relative; margin: 3px 0px; }
 
-table { border-spacing: 0px; }
+/*table { border-spacing: 0px; }*/
 
 ::-webkit-input-placeholder { color:#999999 !important }
 
@@ -50,6 +50,9 @@ input[type=text], input[type=password], input[type=email], textarea {
 }
 
 /* ----- Dropdown/Select ----- */
+
+select:disabled { background-color:transparent; border:1px solid #dddddd }
+
 .ux-dropdown { 
   position: relative; 
   height:25px; 
@@ -98,7 +101,7 @@ input[type=text], input[type=password], input[type=email], textarea {
 /* ----- Text Area ----- */
 textarea.ux-text { width: inherit; @include texboxes_border; padding:2px 2px; resize:none; }
 
-.TaskBox { border: 1px solid #dddddd; background:$disabled_bgtext; font-size:10px; font-weight: bold; letter-spacing:-0.05em; padding:0px 0px 1px 0px; margin:0px 1px; text-align:center; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px; white-space:nowrap }
+.TaskBox { border: 1px solid #dddddd; background:$disabled_bgtext; font-size:10px; font-weight: bold; letter-spacing:-0.05em; padding:0px 0px 1px 0px; margin:5px 1px 0 1px; text-align:center; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px; white-space:nowrap }
 .box.grey .TaskBox { background: white; border-color: white; }
 .TaskBox div { display: inline-block; vertical-align:middle; margin-left:-2px; }
 .TaskBox div.L { color:$darkgray; width:4%; text-align:left; padding-left:0px; }
@@ -106,8 +109,8 @@ textarea.ux-text { width: inherit; @include texboxes_border; padding:2px 2px; re
 .TaskBox div.M { background:$orange; width:88%; margin:0 2px }
 .TaskBox div span { background:$darkgray; height:4px; display:block; width:80% }
 
-.TaskBox.readonly div.R { color: white; }
-.TaskBox.readonly div.M { background: white; }
+.TaskBox.readonly div.R { color:#d0d0d0; }
+.TaskBox.readonly div.M { background:#d0d0d0; }
 .TaskBox.readonly div.L { color:$lightgray; }
 .TaskBox.readonly div span { background:$lightgray; }
 
@@ -132,6 +135,8 @@ textarea.ux-text { width: inherit; @include texboxes_border; padding:2px 2px; re
     position:absolute; right:3px; bottom:-4px 
   }
 }
+  @-moz-document url-prefix() { .ux-nstep .kup { right:6px } }
+  @-moz-document url-prefix() { .ux-nstep .kdown { right:6px } }
 
 /* ----- Checkbox ----- */
 span.checkbox { 
@@ -219,10 +224,10 @@ ul.clist li:last-child { border-bottom:none }
 .StateDisplay .values { display:inline-block; width:50%; vertical-align:middle }
 .StateDisplay button { display:inline-block; vertical-align:middle }
 .values { font-size: 11px; letter-spacing: -0.02em; line-height:9px; padding: 2px 0; text-align: center; white-space: nowrap }
-.values div.L { color: #777777; text-align:left; padding-bottom:3px; float: left }
+.values div.L { color: #777777; text-align:left; padding-bottom:3px; margin-left:2px; float: left }
 .values div.R { color: #f86808; text-align:right; padding-bottom:3px; float: right }
 .values div.L span, .values div.R span { display:block }
-.values div.M { background: #f86808 }
+.values div.M { background: #f86808; margin-left:2px }
 .values div.M span { background: #777777; height: 4px; display: block; width: 40% }
 
 .smvalues { background:#d0d0d0; font-size:11px; letter-spacing:-0.02em; line-height:9px; padding:3px; text-align: center; vertical-align:baseline; white-space: nowrap; width:50px; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px; border:1px solid #DDDDDD }
@@ -420,9 +425,9 @@ a.icon_button {
 }
 
 /* ----- Color ----- */
-.caccept { @extend .icon_button; background-image:url(../images/buttons/color/accept.png) }
-.cadd{ @extend .icon_button; background-image:url(../images/buttons/color/add.png) }
-.cremove { @extend .icon_button; background-image:url(../images/buttons/color/remove.png) }
+.caccept { @extend .icon_button; background-image:url(../images/buttons/color/accept.png); color:$green !important }
+.cadd{ @extend .icon_button; background-image:url(../images/buttons/color/add.png); color:$blue !important }
+.cremove { @extend .icon_button; background-image:url(../images/buttons/color/remove.png); color:$red !important }
 
 
 /* ----- Fancy ----- */
@@ -561,6 +566,7 @@ label.error {
 	outline: none !important;
 	padding: 0px !important;
 	margin: 0px !important;
+	height:18px !important;
 	@include all-box-shadow(none !important);
 }
 
@@ -583,9 +589,11 @@ label.error {
 }
 
 .superblyTagItems .superblyTagItem a{
-    color: #000000;
+    color: #555555;
     cursor: pointer;
     font-style:normal;
+	font-weight:bold;
+	margin-right:2px;
 }
 .remove { background-image: url(../images/tags/cross.png); height:10px; width:11px; padding:0 1px; margin-left:2px; display:inline-block; @include button-states(15px); }
 
@@ -624,14 +632,14 @@ label.error {
 
 
 /* ------------ Gral BOX ------------------- */
-.drop_shadow { border-top:1px solid #d0d0d0; box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.3); -moz-box-shadow:0px 1px 1px 1px rgba(0, 0, 0, 0.3); -webkit-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.3); border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; }
+.drop_shadow { border-top:1px solid #d0d0d0; box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.3); -moz-box-shadow:0px 1px 2px 1px rgba(0, 0, 0, 0.3); -webkit-box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.3); border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; }
 .box { @extend .drop_shadow; background:#FFFFFF; padding:10px; }
-.sbox { padding:2px; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px }
+.sbox { padding:2px; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px }
 .box.plain { padding:6px; margin:4px 0; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px; -webkit-box-shadow:none;-moz-box-shadow:none; box-shadow:none }
 
 .box.grey, .sbox.grey { background:#d0d0d0; color:#555555 }
 
-.box { margin-bottom: 7px !important; }
+/*.box { margin-bottom: 7px !important; }*/
 .box.tab { position:relative; z-index:10 }
 
 hr.shadow { background: #e5e6ec; background: -moz-linear-gradient(top, #e5e6ec 0%, #ffffff 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e5e6ec), color-stop(100%, #ffffff));
@@ -687,7 +695,7 @@ div.tabsline { padding:20px 0 20px 0; border-top:1px solid #d0d0d0; background:#
 /* -------- General ---------*/
 .tablewrapp { padding:2px 0; border-radius:6px; -moz-border-radius:6px; -webkit-border-radius:6px; box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2); -moz-box-shadow:0px 1px 1px 1px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2) }
 
-.titletable { color:#555555; margin:5px 0 5px 5px; display:block }
+.titletable { color:#555555; margin:5px 0 5px 10px; display:block }
 
 .GralTable { width:100%; -moz-border-radius:6px 6px 6px 6px; -webkit-border-radius:6px 6px 6px 6px;	border-radius:6px 6px 6px 6px; border-collapse:collapse }
 
@@ -699,6 +707,7 @@ div.tabsline { padding:20px 0 20px 0; border-top:1px solid #d0d0d0; background:#
 
 .GralTable td { letter-spacing:-0.005em; padding:2px 6px; border-bottom:1px solid #eeeeee }
 .GralTable tr:last-child td { border-bottom:none }
+.GralTable.w-pagination tr:last-child td { border-bottom:1px solid #eeeeee }
 
 .GralTable tr th.sort { cursor:pointer }
 .GralTable tr th:first-child { border-radius:4px 0 0 0; -moz-border-radius:4px 0 0 0; -webkit-border-radius:4px 0 0 0 }
@@ -713,12 +722,13 @@ div.tabsline { padding:20px 0 20px 0; border-top:1px solid #d0d0d0; background:#
 /* -------- Table with Buttons ---------*/
 .ButtonTable tr:hover { background:#eaeaea }
 .ButtonTable td { height:32px }
-.ButtonTable td button { padding:0; margin:-3px 0 0 0; float:right; display:none }
-.ButtonTable tr:hover td button { display:block }
-.ButtonTable tr td:last-child { width:160px }
+.ButtonTable td button { padding:0; margin:-3px 0 0 1px !important; visibility:hidden; vertical-align:middle }
+.ButtonTable tr:hover td button { visibility:visible }
+.ButtonTable tr td:last-child { width:160px; text-align:right }
 
 /* -------- Availability. Table with colors and rounded td corners ---------*/
-.Availability td { text-align:center; padding:2px; border:1px solid #ffffff; border-collapse:separate; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px }
+.Availability { width:590px !important; margin:0 auto }
+.Availability td { text-align:center; padding:2px; border-collapse:separate; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px }
 .Availability tr td:first-child { width:18px }
 .Availability td.b { background:#555555; color:#ffffff }
 .Availability td.gn { background:#bde561; color:#769925 }
@@ -733,7 +743,7 @@ div.tabsline { padding:20px 0 20px 0; border-top:1px solid #d0d0d0; background:#
 
 
 /* --------- PAGINATION ----------- */
-.pagination { background: #ffffff; /* old browsers */background: -moz-linear-gradient(top, #eaeaea 0%, #ffffff 100%); /* firefox */background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eaeaea), color-stop(100%,#ffffff)); /* webkit */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaeaea', endColorstr='#ffffff',GradientType=0 ); -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2) inset; -moz-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2) inset; box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2) inset; -moz-border-radius:22px; -webkit-border-radius:22px; border-radius:22px; font-size:13px; color:#000000; font-weight:bold; padding:2px 0; margin:12px auto; display: table; text-align:center; position:relative }
+.pagination { background: #ffffff; /* old browsers */background: -moz-linear-gradient(top, #eaeaea 0%, #ffffff 100%); /* firefox */background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eaeaea), color-stop(100%,#ffffff)); /* webkit */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaeaea', endColorstr='#ffffff',GradientType=0 ); -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2) inset; -moz-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2) inset; box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2) inset; -moz-border-radius:22px; -webkit-border-radius:22px; border-radius:22px; font-size:13px; color:#000000; padding:2px 0; margin:7px auto; display: table; text-align:center; position:relative }
 .pagination a { color:#777777; text-decoration:none }
 .pagination span { margin:0 3px }
 
