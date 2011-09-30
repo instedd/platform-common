@@ -258,6 +258,19 @@ ul.clist li:last-child { border-bottom:none }
 .circle.green .step-name  { color:#739524 }	
 
 
+/* --------- Form Editor ----------- */
+.feditor { width:623px; margin-top:-5px }
+.feditor-top { background:url(../theme/images/formEditor/item.png) no-repeat left top; height:12px }
+.feditor-container { background:url(../theme/images/formEditor/item.png) no-repeat left bottom; padding:0 5px 15px 5px }
+.feditor-container div { display:inline-block; vertical-align:top }
+.feditor-container div button { margin-top:-8px }
+.feditor-container div.feditor-content { width:515px }
+.feditor-container div.feditor-content h1 { color:#000000; margin-bottom:0px }
+.feditor-container div.feditor-content .hint { font-size:12px; font-style:italic; color:#555555 }
+	
+.feditor.first { width:623px; margin-top:5px }
+.feditor.first .feditor-top { background-position:right top }
+.feditor.last .feditor-container { background-position:right bottom }
 
 
 
@@ -424,6 +437,23 @@ a.icon_button {
   vertical-align:middle;
 }
 
+.icon_button_large {
+  background-color: transparent;
+  background-position:left top; 
+  background-repeat:no-repeat; 
+  height:59px; 
+  width:59px;
+  margin:0px 5px 0px 0px; 
+  cursor:pointer; 
+  border:none;
+  display:inline-block;
+  @include button-states(60px);
+}
+a.icon_button_large {
+  padding-top: 3px !important;
+  vertical-align:middle;
+}
+
 /* ----- Color ----- */
 .caccept { @extend .icon_button; background-image:url(../images/buttons/color/accept.png); color:$green !important }
 .cadd{ @extend .icon_button; background-image:url(../images/buttons/color/add.png); color:$blue !important }
@@ -489,6 +519,35 @@ a.icon_button {
 .premove{ @extend .icon_button; background-image:url(../images/buttons/plain/remove.png) }
 .pstop{ @extend .icon_button; background-image:url(../images/buttons/plain/stop.png) }
 .pstopped{ @extend .icon_button; background-image:url(../images/buttons/plain/stopped.png) }
+
+
+/* ----- Large ----- */
+.lalert { @extend .icon_button_large; background-image:url(../images/buttons/large/alert.png) }
+.lalertandreport{ @extend .icon_button_large; background-image:url(../images/buttons/large/alertAndReport.png) }
+.lanswer{ @extend .icon_button_large; background-image:url(../images/buttons/large/answer.png) }
+.lbookmark { @extend .icon_button_large; background-image:url(../images/buttons/large/bookmark.png) }
+.lcallback { @extend .icon_button_large; background-image:url(../images/buttons/large/callback.png) }
+.lcloud { @extend .icon_button_large; background-image:url(../images/buttons/large/cloud.png) }
+.ldate { @extend .icon_button_large; background-image:url(../images/buttons/large/date.png) }
+.ldial { @extend .icon_button_large; background-image:url(../images/buttons/large/dial.png) }
+.ldirections { @extend .icon_button_large; background-image:url(../images/buttons/large/directions.png) }
+.lfilter { @extend .icon_button_large; background-image:url(../images/buttons/large/filter.png) }
+.lforwardcall { @extend .icon_button_large; background-image:url(../images/buttons/large/forwardCall.png) }
+.lgroupchat { @extend .icon_button_large; background-image:url(../images/buttons/large/groupChat.png) }
+.llocation { @extend .icon_button_large; background-image:url(../images/buttons/large/location.png) }
+.lmessage { @extend .icon_button_large; background-image:url(../images/buttons/large/message.png) }
+.lmicrophone { @extend .icon_button_large; background-image:url(../images/buttons/large/microphone.png) }
+.lmultipleoptions { @extend .icon_button_large; background-image:url(../images/buttons/large/multipleOptions.png) }
+.lnumber { @extend .icon_button_large; background-image:url(../images/buttons/large/number.png) }
+.lnumeral { @extend .icon_button_large; background-image:url(../images/buttons/large/numeral.png) }
+.lparagraph { @extend .icon_button_large; background-image:url(../images/buttons/large/paragraph.png) }
+.lphone { @extend .icon_button_large; background-image:url(../images/buttons/large/phone.png) }
+.lreport { @extend .icon_button_large; background-image:url(../images/buttons/large/report.png) }
+.lsingleoption { @extend .icon_button_large; background-image:url(../images/buttons/large/singleOption.png) }
+.lsound { @extend .icon_button_large; background-image:url(../images/buttons/large/sound.png) }
+.ltext { @extend .icon_button_large; background-image:url(../images/buttons/large/text.png) }
+
+
 
 
 
@@ -724,7 +783,7 @@ div.tabsline { padding:20px 0 20px 0; border-top:1px solid #d0d0d0; background:#
 .ButtonTable td { height:32px }
 .ButtonTable td button { padding:0; margin:-3px 0 0 1px !important; visibility:hidden; vertical-align:middle }
 .ButtonTable tr:hover td button { visibility:visible }
-.ButtonTable tr td:last-child { width:160px; text-align:right }
+.ButtonTable tr td:last-child { width:160px; text-align:right; white-space:nowrap }
 
 /* -------- Availability. Table with colors and rounded td corners ---------*/
 .Availability { width:590px !important; margin:0 auto }

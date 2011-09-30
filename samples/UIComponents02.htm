@@ -89,7 +89,7 @@ $(document).ready(function(){
   
   <div class="box plain grey">
    
-   <div class="steps-line">
+   <div class="steps-line"><!-- El width de la clase line-fill tiene un porcentaje que resulta de dividir 99 por la cantidad de line-fills que tenga, en este caso son 3 o sea 33% -->
         <div class="steps-container">
             <span class="circle first green"><span class="inner"><span class="step-name">Step 1</span></span></span>
             <span class="line-fill"></span><span class="circle"><span class="inner"><span class="step-name">Step 2</span></span></span>
@@ -104,7 +104,7 @@ $(document).ready(function(){
   
   <div class="box plain grey">
    
-   <div class="steps-line">
+   <div class="steps-line"><!-- El width de la clase line-fill tiene un porcentaje que resulta de dividir 99 por la cantidad de line-fills que tenga, en este caso son 3 o sea 33% -->
         <div class="steps-container">
             <span class="circle first green"><span class="inner"><span class="step-name">Step 1</span></span></span>
             <span class="line-fill green"></span><span class="circle green"><span class="inner"><span class="step-name">Step 2</span></span></span>
@@ -124,7 +124,48 @@ $(document).ready(function(){
   
   <h1>Form editor</h1>
   
+            
+            <div class="feditor first">
+            	<div class="feditor-top"></div>
+                <div class="feditor-container">
+                
+                    <div class="feditor-button"><button class="lsingleoption"></button></div><!-- #feditor-button -->
+                    <div class="feditor-content">
+                        <h1>Number of patients per day</h1>
+                        <span class="hint">Hint: Select an option</span>
+                    </div><!-- #feditor-content -->
+                
+                
+                </div><!-- #feditor-container -->
+            </div><!-- #feditor -->
   
+            <div class="feditor">
+            	<div class="feditor-top"></div>
+                <div class="feditor-container">
+                
+                    <div class="feditor-button"><button class="lmultipleoptions"></button></div><!-- #feditor-button -->
+                    <div class="feditor-content">
+                        <h1>Common diseases</h1>
+                        <span class="hint">Hint: Select one or more options</span>
+                    </div><!-- #feditor-content -->
+                
+                
+                </div><!-- #feditor-container -->
+            </div><!-- #feditor -->
+
+            <div class="feditor last">
+            	<div class="feditor-top"></div>
+                <div class="feditor-container">
+                
+                    <div class="feditor-button"><button class=" llocation"></button></div><!-- #feditor-button -->
+                    <div class="feditor-content">
+                        <h1>Most deprived areas</h1>
+                        <span class="hint">Hint: Enter location's coordinates</span>
+                    </div><!-- #feditor-content -->
+                
+                
+                </div><!-- #feditor-container -->
+            </div><!-- #feditor -->
 
 
 	<br><br>
