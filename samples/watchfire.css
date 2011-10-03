@@ -16,18 +16,18 @@ label { color:#555555 }
 .avatar span { display:block; position:absolute; margin:0px auto; width:65px; height:65px; z-index:1; box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2)inset; -moz-box-shadow:0px 0px 2px 1px rgba(0, 0, 0, 0.2)inset; -webkit-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2)inset; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px }
 .avatar img { border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px }
 
-.location { background:#555555 url(../theme/images/icons/small/white/location.png) no-repeat; color:#FFFFFF; padding:2px 3px 2px 16px; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px }
+.location { background:#555555 url(../theme/images/icons/16/white/location.png) no-repeat; color:#FFFFFF; padding:2px 3px 2px 16px; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px }
 #achannels { color:#555555 }
 
-.mobile { background: url(../theme/images/icons/small/black/mobile.png) no-repeat left; padding-left:20px }
-.message { background: url(../theme/images/icons/small/black/message.png) no-repeat left; padding-left:20px }
-.twitter { background: url(../theme/images/icons/small/black/twitter.png) no-repeat left; padding-left:20px }
-.phone { background: url(../theme/images/icons/small/black/phone.png) no-repeat left; padding-left:20px }
+.mobile { background: url(../theme/images/icons/16/black/mobile.png) no-repeat left; padding-left:20px }
+.message { background: url(../theme/images/icons/16/black/message.png) no-repeat left; padding-left:20px }
+.twitter { background: url(../theme/images/icons/16/black/twitter.png) no-repeat left; padding-left:20px }
+.phone { background: url(../theme/images/icons/16/black/phone.png) no-repeat left; padding-left:20px }
 
-.gmobile { background: url(../theme/images/icons/small/grey/mobile.png) no-repeat left; padding-left:20px }
-.gmessage { background: url(../theme/images/icons/small/grey/message.png) no-repeat left; padding-left:20px }
-.gtwitter { background: url(../theme/images/icons/small/grey/twitter.png) no-repeat left; padding-left:20px }
-.gphone { background: url(../theme/images/icons/small/grey/phone.png) no-repeat left; padding-left:20px }
+.gmobile { background: url(../theme/images/icons/16/grey/mobile.png) no-repeat left; padding-left:20px }
+.gmessage { background: url(../theme/images/icons/16/grey/message.png) no-repeat left; padding-left:20px }
+.gtwitter { background: url(../theme/images/icons/16/grey/twitter.png) no-repeat left; padding-left:20px }
+.gphone { background: url(../theme/images/icons/16/grey/phone.png) no-repeat left; padding-left:20px }
 
 
 /* ------------ Power button ------------------- */

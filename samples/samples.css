@@ -6,19 +6,6 @@
 
 
 
-/* --------- Form Editor ----------- */
-.feditor { width:623px; margin-top:-5px }
-.feditor-top { background:url(../theme/images/formEditor/item.png) no-repeat left top; height:12px }
-.feditor-container { background:url(../theme/images/formEditor/item.png) no-repeat left bottom; padding:0 5px 15px 5px }
-.feditor-container div { display:inline-block; vertical-align:top }
-.feditor-container div button { margin-top:-8px }
-.feditor-container div.feditor-content { width:515px }
-.feditor-container div.feditor-content h1 { color:#000000; margin-bottom:0px }
-.feditor-container div.feditor-content .hint { font-size:12px; font-style:italic; color:#555555 }
-	
-.feditor.first { width:623px; margin-top:5px }
-.feditor.first .feditor-top { background-position:right top }
-.feditor.last .feditor-container { background-position:right bottom }
 
 
 

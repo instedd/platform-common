@@ -241,29 +241,39 @@ ul.clist li:last-child { border-bottom:none }
 /* ------------ Steps Display ------------------- */
 .steps-line { background:#FFFFFF; height:6px; width:90%; margin:40px auto 30px auto; -webkit-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset; -moz-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset; box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset;	position:relative }
 
+/*.steps-line.dotted { background:transparent; height:6px; width:90%; margin:40px auto 30px auto; -webkit-box-shadow:none; -moz-box-shadow:none; box-shadow:none;	position:relative } */
+
 .steps-container { position:absolute; top:-6px; width:100%; white-space:nowrap }
 
 .circle { background:#FFFFFF; display:inline-block; vertical-align:middle; width:12px; height:12px; margin:-1px 0 0 -3px; position:relative; -moz-border-radius:20px; -webkit-border-radius:20px; border-radius:20px;	-webkit-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset; -moz-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset;	box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset }
 .circle.first { float:left; margin-top:3px !important }
 .circle.last { right:0px; top:0px; margin-top:3px !important; position:absolute }
+.steps-container.dotted .circle.first { z-index:10 }
+.steps-container.dotted .circle.last { z-index:10 }
 	
 .inner { background:#ffffff; display:inline-block; width:6px; height:6px; -moz-border-radius:15px; -webkit-border-radius:15px; border-radius:15px; position:absolute; top:3px; left:3px; text-align:center; z-index:2  }	
 
-.line-fill { background:#ffffff; display:inline-block; vertical-align:middle; position:relative; height:2px; width:33%; margin:0 -5px 0 -7px; z-index:1 }
+.line-fill { display:inline-block; vertical-align:middle; position:relative; border-top:2px solid #ffffff; margin:0 -5px 0 -7px; z-index:1 }
+.line-fill.dotted { background:#D0D0D0; display:inline-block; vertical-align:middle; position:relative; border-top:6px dotted #e4e4e4; width:33%; margin:0 -5px 0 -7px; z-index:1 }
 
 .step-name { font-size:12px; text-align:center; width:120px; position:absolute; top:-25px; left:-60px }
 
 .circle.green .inner { background:#739524 }	
-.line-fill.green { background:#739524 }
+.line-fill.green { border-top:2px solid #739524 !important }
 .circle.green .step-name  { color:#739524 }	
 
+.steps-container.s3 .line-fill { width:49.5% }
+.steps-container.s4 .line-fill { width:33% }
+.steps-container.s5 .line-fill { width:24.75% }
+.steps-container.s6 .line-fill { width:19.8% }
 
 /* --------- Form Editor ----------- */
 .feditor { width:623px; margin-top:-5px }
-.feditor-top { background:url(../theme/images/formEditor/item.png) no-repeat left top; height:12px }
-.feditor-container { background:url(../theme/images/formEditor/item.png) no-repeat left bottom; padding:0 5px 15px 5px }
+.feditor-top { background:url(../images/formEditor/item.png) no-repeat left top; height:12px }
+.feditor-container { background:url(../images/formEditor/item.png) no-repeat left bottom; padding:0 5px 15px 5px }
 .feditor-container div { display:inline-block; vertical-align:top }
 .feditor-container div button { margin-top:-8px }
+.feditor-container div button.active { background-position:0 -120px !important }
 .feditor-container div.feditor-content { width:515px }
 .feditor-container div.feditor-content h1 { color:#000000; margin-bottom:0px }
 .feditor-container div.feditor-content .hint { font-size:12px; font-style:italic; color:#555555 }
@@ -546,6 +556,7 @@ a.icon_button_large {
 .lsingleoption { @extend .icon_button_large; background-image:url(../images/buttons/large/singleOption.png) }
 .lsound { @extend .icon_button_large; background-image:url(../images/buttons/large/sound.png) }
 .ltext { @extend .icon_button_large; background-image:url(../images/buttons/large/text.png) }
+.lunknown { @extend .icon_button_large; background-image:url(../images/buttons/large/unknown.png) }
 
 
 
@@ -588,7 +599,7 @@ a.icon_button_large {
 
 /* ----- Error ----- */
 label.error { 
-  background:url(../images/icons/small/orange/alert.png) no-repeat; 
+  background:url(../images/icons/18/orange/alert.png) no-repeat; 
   color:#ff6600 !important; 
   padding-left:19px; padding-top: 1px; margin-left:2px; white-space:nowrap; display: inline !important; }
 
@@ -705,7 +716,7 @@ hr.shadow { background: #e5e6ec; background: -moz-linear-gradient(top, #e5e6ec 0
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5e6ec', endColorstr='#ffffff',GradientType=0 ); height:15px; margin:3px 0 3px -10px; z-index:0; }
 
 .error_description {
-  background: url(../images/icons/medium/orange/alert.png) no-repeat 8px 8px;
+  background: url(../images/icons/24/orange/alert.png) no-repeat 8px 8px;
   color: $orange;
   h2 { 
     color: $orange; 
@@ -736,7 +747,7 @@ ul.tabs.top li:active { background:#f3f3f3; color:#000000 }
 ul.tabs.top li a { display:block; padding:9px 10px 6px 10px; position:relative; margin-bottom:-2px; z-index:20 }
 ul.tabs.top li.active a { background:#ffffff; padding:8px 11px 6px 11px }
 
-ul.tabs.bottom  { margin:-7px 0 0 10px; padding:0; position:relative }
+ul.tabs.bottom  { margin:0 0 0 10px; padding:0; position:relative }
 ul.tabs.bottom li { color:#555555; display:inline-block; list-type:none; padding:0 1px 2px 1px; margin:0 2px 0 0; border-radius:0 0 4px 4px; -moz-border-radius:0 0 4px 4px; -webkit-border-radius:0 0 4px 4px }
 ul.tabs.bottom li.active { color:#000000; padding:0 0 2px 0; box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2); -moz-box-shadow:0px 1px 1px 1px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2) }
 ul.tabs.bottom li.active:hover { background:#ffffff }
