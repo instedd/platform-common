@@ -277,11 +277,28 @@ ul.clist li:last-child { border-bottom:none }
 .feditor-container div.feditor-content { width:515px }
 .feditor-container div.feditor-content h1 { color:#000000; margin-bottom:0px }
 .feditor-container div.feditor-content .hint { font-size:12px; font-style:italic; color:#555555 }
-	
+
 .feditor.first { width:623px; margin-top:5px }
 .feditor.first .feditor-top { background-position:right top }
 .feditor.last .feditor-container { background-position:right bottom }
 
+.feditor-list { width: 623 px; float: left; }
+.feditor-sidebar { 
+  @extend .box;
+  width: 240 px;
+  float: left;
+  margin: 5px 0 0 30px;
+  .range {
+    span {
+      font-size: 12px;
+      color: $darkgray;
+    }
+    input[type=text]{
+      width: 40px;
+    }
+  }
+}
+	
 
 
 

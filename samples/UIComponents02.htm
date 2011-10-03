@@ -142,11 +142,12 @@ $(document).ready(function(){
   <h1>Form editor</h1>
   
             
+          <div class="feditor-list">
             <div class="feditor first">
             	<div class="feditor-top"></div>
                 <div class="feditor-container">
                 
-                    <div class="feditor-button"><button class="lsingleoption"></button></div><!-- #feditor-button -->
+                    <div class="feditor-button"><button class="active lsingleoption"></button></div><!-- #feditor-button -->
                     <div class="feditor-content">
                         <h1>Number of patients per day</h1>
                         <span class="hint">Hint: Select an option</span>
@@ -183,6 +184,53 @@ $(document).ready(function(){
                 
                 </div><!-- #feditor-container -->
             </div><!-- #feditor -->
+          </div>
+
+          <div class="feditor-sidebar">
+            <div class="feditor-form">
+              <div class="field">
+                <label for="poll_questions_attributes_1_title">Question Title</label>
+                <p>The name of this question as it is presented.</p>
+                <input type="text" readonly="readonly" value="Number of patients per day" size="30" id="poll_questions_attributes_1_title" class="fieldname required valid">
+              </div>
+              <hr>
+              <div class="field">
+                <label for="poll_questions_attributes_1_description">Hint</label>
+                <p>Additional help for this question.</p>
+                <input value="Select an option" type="text" readonly="readonly" size="30" id="poll_questions_attributes_1_description" class="fieldhint valid">
+              </div>
+              <hr>
+              <div class="field">
+                <label>Options</label>
+                <p>Possible values for this question.</p>
+                <div class="feditor-form-options">
+                  <div class="feditor-form-option">
+                    <input type="text" value="Option 1" readonly="readonly">
+                  </div>
+                  <div class="feditor-form-option">
+                    <input type="text" value="Option 2" readonly="readonly">
+                  </div>
+                  <div class="feditor-form-option">
+                    <input type="text" value="Option 3" readonly="readonly">
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <div class="field">
+                <label>Range</label>
+                <p>Range of values accepted for this question</p>
+                <div class="range">
+                  <input type="text" value="1" size="30" readonly="readonly">
+                  <span>to</span>
+                  <input type="text" value="5" size="30" readonly="readonly">
+                  <div class="clear"></div>
+                </div>
+              </div>
+              <div class="clear"></div>
+            </div>
+          </div>
+
+          <div class="clear"></div>
 
 
 	<br><br>
