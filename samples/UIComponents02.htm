@@ -142,7 +142,7 @@ $(document).ready(function(){
   <h1>Form editor</h1>
   
             
-          <div class="feditor-list">
+          <div class="left">
             <div class="feditor first">
             	<div class="feditor-top"></div>
                 <div class="feditor-container">
@@ -186,51 +186,38 @@ $(document).ready(function(){
             </div><!-- #feditor -->
           </div>
 
-          <div class="feditor-sidebar">
-            <div class="feditor-form">
-              <div class="field">
-                <label for="poll_questions_attributes_1_title">Question Title</label>
-                <p>The name of this question as it is presented.</p>
-                <input type="text" readonly="readonly" value="Number of patients per day" size="30" id="poll_questions_attributes_1_title" class="fieldname required valid">
-              </div>
-              <hr>
-              <div class="field">
-                <label for="poll_questions_attributes_1_description">Hint</label>
-                <p>Additional help for this question.</p>
-                <input value="Select an option" type="text" readonly="readonly" size="30" id="poll_questions_attributes_1_description" class="fieldhint valid">
-              </div>
-              <hr>
-              <div class="field">
-                <label>Options</label>
-                <p>Possible values for this question.</p>
-                <div class="feditor-form-options">
-                  <div class="feditor-form-option">
-                    <input type="text" value="Option 1" readonly="readonly">
-                  </div>
-                  <div class="feditor-form-option">
-                    <input type="text" value="Option 2" readonly="readonly">
-                  </div>
-                  <div class="feditor-form-option">
-                    <input type="text" value="Option 3" readonly="readonly">
-                  </div>
-                </div>
-              </div>
-              <hr>
-              <div class="field">
-                <label>Range</label>
-                <p>Range of values accepted for this question</p>
-                <div class="range">
-                  <input type="text" value="1" size="30" readonly="readonly">
-                  <span>to</span>
-                  <input type="text" value="5" size="30" readonly="readonly">
-                  <div class="clear"></div>
-                </div>
-              </div>
-              <div class="clear"></div>
-            </div>
-          </div>
+          <div class="box right w30 feditor-sidebar">
 
-          <div class="clear"></div>
+                <p class="title">Field Name</p>
+                <p class="smalltext">The name of this question as it is presented.</p>
+                <input type="text" value="Number of patients per day" id="poll_questions_attributes_1_title">
+                
+                <hr>
+                
+                <p class="title">Hint</p>
+                <p class="smalltext">Additional help for this question.</p>
+                <input value="Select an option" type="text" id="poll_questions_attributes_1_description" >
+                
+                <hr>
+                
+                <p class="title">Required <input type="checkbox" class="right"><br class="clear"></p>
+                
+                <p class="smalltext">Additional help for this question.</p>
+                
+                <hr>
+
+                <p class="title">Options</p>
+                <p class="smalltext">Possible values for this question.</p>
+                <ul class="clist w30">
+                    <li><input type="text" class="ux-clist" value="1 to 10" /><button class="clist-remove"></button></li>
+                    <li><input type="text" class="ux-text" value="" placeholder="Name" /><button class="clist-add"></button></li>
+                </ul>
+
+                <br>
+
+        </div><!-- #box right w30 -->
+
+          <div class="clear"></div><!-- #clear -->
 
 
 	<br><br>
