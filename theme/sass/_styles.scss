@@ -806,6 +806,20 @@ div.tabsline { padding:20px 0 20px 0; border-top:1px solid #d0d0d0; background:#
 /* -------- Clean ---------*/
 .CleanTable th { background:#ffffff}
 
+/* -------- No data -------*/
+td.EmptyData { 
+  text-align: center; 
+  background: url(../images/icons/72/grey/information.png) no-repeat center 30px;
+  font-style: italic;
+  color: $lightgray;
+  height: 250px;
+}
+
+td.EmptyDataPie { 
+  @extend .EmptyData;
+  background: url(../images/icons/72/grey/pie.png) no-repeat center 30px;
+}
+
 /* -------- Table with Buttons ---------*/
 .ButtonTable tr:hover { background:#eaeaea }
 .ButtonTable td { height:32px }
