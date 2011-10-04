@@ -809,15 +809,16 @@ div.tabsline { padding:20px 0 20px 0; border-top:1px solid #d0d0d0; background:#
 /* -------- No data -------*/
 td.EmptyData { 
   text-align: center; 
-  background: url(../images/icons/72/grey/information.png) no-repeat center 30px;
+  background: url(../images/icons/72/grey/information.png) no-repeat center 40px;
   font-style: italic;
   color: $lightgray;
-  height: 250px;
+  height: 200px;
+  padding-top: 65px;
 }
 
 td.EmptyDataPie { 
   @extend .EmptyData;
-  background: url(../images/icons/72/grey/pie.png) no-repeat center 30px;
+  background: url(../images/icons/72/grey/pie.png) no-repeat center 40px;
 }
 
 /* -------- Table with Buttons ---------*/
