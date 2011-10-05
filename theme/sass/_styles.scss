@@ -9,6 +9,7 @@ p { padding:0; margin:15px 0; }
 h1, h2 { font-size:18px; color: $darkgray; margin:0 0 15px 0; font-weight: normal; }
 h1 + p, h2 + p { margin: -15px 0 15px 0; color: $darkgray; }
 
+h1 span.err-message, h2 span.err-message { color: $orange }
 hr { border:0; height:1px; color:#dddddd; background:#dddddd; position:relative; margin: 3px 0px; }
 
 /*table { border-spacing: 0px; }*/
@@ -785,7 +786,7 @@ div.tabsline { padding:20px 0 20px 0; border-top:1px solid #d0d0d0; background:#
 
 .GralTable tr:nth-child(2) { background:url(../images/interface/backtd.png) repeat-x }
 
-.GralTable td { letter-spacing:-0.005em; padding:2px 6px; border-bottom:1px solid #eeeeee }
+.GralTable td { letter-spacing:-0.005em; padding:2px 6px; vertical-align:middle; border-bottom:1px solid #eeeeee }
 .GralTable tr:last-child td { border-bottom:none }
 .GralTable.w-pagination tr:last-child td { border-bottom:1px solid #eeeeee }
 
@@ -795,6 +796,9 @@ div.tabsline { padding:20px 0 20px 0; border-top:1px solid #d0d0d0; background:#
 .GralTable th.up, .GralTable th.down { background:#d0d0d0 !important }
 .GralTable th.up span { margin:0 2px 0 0; display:block; height:0px; width:0px; border-width:5px 4px 7px 4px; border-style:solid; border-color: transparent transparent #555555 transparent; float:right }
 .GralTable th.down span { margin:4px 2px 0 0; display:block; height:0px; width:0px; border-width:7px 4px 5px 4px; border-style:solid; border-color: #555555 transparent transparent transparent; float:right }
+
+.GralTable tr.err-message { color:#ff7a21 }
+.GralTable span.err-message { background:url(../images/icons/18/orange/alert.png ) no-repeat; display:inline-block; vertical-align:middle; width:18px; height:18px; margin-right:2px }
 
 /* -------- Clean ---------*/
 .CleanTable th { background:#ffffff}

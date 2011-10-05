@@ -19,15 +19,15 @@ label { color:#555555 }
 .location { background:#555555 url(../theme/images/icons/16/white/location.png) no-repeat; color:#FFFFFF; padding:2px 3px 2px 16px; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px }
 #achannels { color:#555555 }
 
-.mobile { background: url(../theme/images/icons/16/black/mobile.png) no-repeat left; padding-left:20px }
-.message { background: url(../theme/images/icons/16/black/message.png) no-repeat left; padding-left:20px }
-.twitter { background: url(../theme/images/icons/16/black/twitter.png) no-repeat left; padding-left:20px }
-.phone { background: url(../theme/images/icons/16/black/phone.png) no-repeat left; padding-left:20px }
+.mobile { background: url(../theme/images/icons/18/black/mobile.png) no-repeat left; padding-left:20px }
+.message { background: url(../theme/images/icons/18/black/message.png) no-repeat left; padding-left:20px }
+.twitter { background: url(../theme/images/icons/18/black/twitter.png) no-repeat left; padding-left:20px }
+.phone { background: url(../theme/images/icons/18/black/phone.png) no-repeat left; padding-left:20px }
 
-.gmobile { background: url(../theme/images/icons/16/grey/mobile.png) no-repeat left; padding-left:20px }
-.gmessage { background: url(../theme/images/icons/16/grey/message.png) no-repeat left; padding-left:20px }
-.gtwitter { background: url(../theme/images/icons/16/grey/twitter.png) no-repeat left; padding-left:20px }
-.gphone { background: url(../theme/images/icons/16/grey/phone.png) no-repeat left; padding-left:20px }
+.gmobile { background: url(../theme/images/icons/18/grey/mobile.png) no-repeat left; padding-left:20px }
+.gmessage { background: url(../theme/images/icons/18/grey/message.png) no-repeat left; padding-left:20px }
+.gtwitter { background: url(../theme/images/icons/18/grey/twitter.png) no-repeat left; padding-left:20px }
+.gphone { background: url(../theme/images/icons/18/grey/phone.png) no-repeat left; padding-left:20px }
 
 
 /* ------------ Power button ------------------- */
