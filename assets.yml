@@ -12,3 +12,4 @@ javascripts:
     - jquery.status
     - footer
     - init
+    - bubble

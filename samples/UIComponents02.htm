@@ -30,7 +30,18 @@ $(document).ready(function(){
 											themePath: 	'../theme/images/'
 										 
 										});
-
+		$('#bubble_click').bubble({
+			position : 'top',
+			content: $("#bubble_content"),
+			closeSelector: '.close',
+			themeName: 	'bubble',
+			innerHtmlStyle: {
+				color:'#000000',
+				'background-color': 'white'
+			},
+			themePath: '../theme/images/',
+			click: true
+		});
 });
 //-->
 </script>
@@ -236,6 +247,8 @@ $(document).ready(function(){
     <br>
 
   <div ><p>Viendo como funciona el popup <a href="#" class="prueba">Form UI components</a>. Este texto es la nada misma</p></div>
+
+	<div><p><a id="bubble_click">Bubble popup on click</a></p><p id="bubble_content">Content of the bubble <button class="close">close me!</button></p></div>
   
 
 </div><!-- #Main -->
