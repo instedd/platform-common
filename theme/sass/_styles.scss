@@ -47,11 +47,12 @@ p a {
   &.error, .field_with_errors & { border:2px solid #ff6600; margin: 0px; }
 }
 
-input.ux-text {  height:22px; width:inherit; @include texboxes_border; }
+input.ux-text { height:22px; width:inherit; @include texboxes_border }
 
 input[type=text], input[type=password], input[type=email], textarea {
   @extend .ux-text;
 }
+
 
 /* ----- Dropdown/Select ----- */
 
