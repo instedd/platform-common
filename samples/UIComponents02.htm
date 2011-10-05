@@ -15,7 +15,7 @@ $(document).ready(function(){
 		// Documentation: http://www.vegabit.com/jquery_bubble_popup_v2/
 		//create default Bubble Popups for all buttons...
 		$('.prueba').CreateBubblePopup({
-											selectable: false,
+											selectable: true,
 											position : 'top',
 											innerHtml: 'Esto es un tooltip <br /> \
 														hola como va?',
@@ -215,18 +215,14 @@ $(document).ready(function(){
 
                 <hr>
 
-                <p class='title'>Range</p>
-                <p class='smalltext'>Range of values accepted for this question</p>
-                <div class='range'>
-                  <input size="30" type="text" value="1" />
-                  <span class='smalltext'>to</span>
-                  <input size="30" type="text" value="5" />
-                  <div class='clear'></div>
-                </div>
+                <p class="title">Range</p>
+                <p class="smalltext">Range of values accepted for this question</p>
+                  <input class="w13" type="text" value="1" />
+                  <span class="smalltext">to</span>
+                  <input class="w13" type="text" value="5" />
                 
-                <hr>
 
-                <br>
+                <br><br>
 
         </div><!-- #box right w30 -->
 

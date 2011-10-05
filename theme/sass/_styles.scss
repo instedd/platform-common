@@ -593,6 +593,8 @@ a.icon_button_large {
 }
 
 .w06 { @include width-class(60px); }
+.w10 { @include width-class(100px); }
+.w13 { @include width-class(130px); }
 .w15 { @include width-class(150px); }
 .w20 { @include width-class(200px); }
 .w30 { @include width-class(300px); }
