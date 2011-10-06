@@ -56,7 +56,7 @@
 	$(function(){
 		$.instedd.init_components($(document));
 		
-		$('.ux-collapsible > span:first-child > a').live('click', function(){
+		$('.ux-collapsible > span:first-child > a, .ux-collapsible .ux-collapse-trigger').live('click', function(){
 			var collapsible = $(this).closest('.ux-collapsible');
 			collapsible.toggleClass('collapsed');
 			
