@@ -2,11 +2,27 @@
 <html>
 <head>
   <title>Watchfire</title>
-  	<link href="../theme/stylesheets/theme.css" rel="stylesheet" type="text/css" />
-
+	<link href="../theme/stylesheets/theme.css" rel="stylesheet" type="text/css" />
 	<script type="text/javascript" src="../theme/javascripts/jquery-1.6.2.min.js"></script>
-    <script type="text/javascript" src="../theme/javascripts/theme.js"></script>
+	<script type="text/javascript" src="../theme/javascripts/theme.js"></script>
 	<link href="watchfire.css" rel="stylesheet" type="text/css">
+	
+	<script type="text/javascript">
+		$(function(){
+			$('#invite_bubble_trigger').bubble({
+				position : 'top',
+				content: $("#invite_bubble_content"),
+				closeSelector: '#invite_bubble_close',
+				themeName: 	'bubble',
+				innerHtmlStyle: {
+					color:'#000000',
+					'background-color': 'white'
+				},
+				themePath: 'http://theme.instedd.org/theme/images/',
+				click: true
+			});
+		});
+	</script
     
 </head>
 <body class="smallfooter">
@@ -174,6 +190,20 @@
               <a href="/">Home</a>
               <a href="#TODO">Tour</a>
               <a href="#TODO">Community</a>
+							<a href="#" id="invite_bubble_trigger">Invite new users</a>
+							<div id="invite_bubble_content">
+								<div id="invitation_bubble">
+									<div class="left">image</div>
+									<div class="left"><h1>Invite new users to Watchfire</h1></div>
+									<div class="right"><button id="invite_bubble_close" class="pclose"></button></div>
+									<div class="clear"></div>
+									<p>You can invite new users by entering the email</p>
+									<form method="post" action="#">
+										<input type="text" placeholder="Email"/>
+										<button type="submit" class="farrow"></button>
+									</form>
+								</div>
+							</div>
               <a href="#TODO">Help</a>
               <a href="#TODO">Language: English</a>              
             </div>
