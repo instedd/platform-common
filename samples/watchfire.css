@@ -85,7 +85,12 @@ table td div { display:inline-block; vertical-align:middle }
 .mpaused span { background:#d0d0d0; margin-right:5px; width:10px; height:9px; border-top:1px solid #9c9c9c; display:inline-block; border-radius:2px; -moz-border-radius:2px; -webkit-border-radius:2px }
 .minactive span { background:#d0d0d0; margin-right:5px; width:10px; height:9px; border-top:1px solid #9c9c9c; display:inline-block; border-radius:2px; -moz-border-radius:2px; -webkit-border-radius:2px }
 
+/* --------  Invitation buble ------------ */ 
 
-
+#invitation_bubble { text-align:left; color:#000000 }
+#invitation_bubble h1 { font-size:20px; color:#000000 }
+#invitation_bubble p { margin:3px 0 12px 0; padding:0 5px }
+#invitation_bubble button { vertical-align:middle }
+#invitation_bubble .gusers { background:url(../theme/images/icons/48/gradient/users.png) no-repeat; width:48px; height:48px; margin-right:3px }
 
 
