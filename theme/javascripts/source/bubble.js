@@ -21,6 +21,7 @@
 					options.manageMouseEvents = false;
 					_this.click(function(e){
 						_this.ShowBubblePopup();
+						return false;
 					});
 				}
 				
