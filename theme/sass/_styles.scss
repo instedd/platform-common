@@ -499,8 +499,11 @@ a.icon_button_large {
 .fclaim { @extend .icon_button; background-image:url(../images/buttons/fancy/claim.png) }
 .fclose { @extend .icon_button; background-image:url(../images/buttons/fancy/close.png) }
 .fconfiguration { @extend .icon_button; background-image:url(../images/buttons/fancy/configuration.png) }
+.fcsv { @extend .icon_button; background-image:url(../images/buttons/fancy/csv.png) }
+.fdatabase { @extend .icon_button; background-image:url(../images/buttons/fancy/database.png) }
 .fdelete { @extend .icon_button; background-image:url(../images/buttons/fancy/trash.png) }
 .fedit { @extend .icon_button; background-image:url(../images/buttons/fancy/edit.png) }
+.fexcel { @extend .icon_button; background-image:url(../images/buttons/fancy/excel.png) }
 .fexport { @extend .icon_button; background-image:url(../images/buttons/fancy/export.png) }
 .ffacebook { @extend .icon_button; background-image:url(../images/buttons/fancy/facebook.png) }
 .ffolder { @extend .icon_button; background-image:url(../images/buttons/fancy/folder.png) }
@@ -576,7 +579,8 @@ a.icon_button_large {
 
 
 /* ---------- Icons --------- */
-
+/* ---- 18 ----- */
+.i18b-alert { background:url(../images/icons/18/black/alert.png) no-repeat center top; width:18px; height:18px; display:inline-block }
 
 /* ----- Level Selector ----- */
 .lblock{ @extend .icon_button; background-image:url(../images/levelSelector/disable.png) }
@@ -812,12 +816,12 @@ div.tabsline { padding:20px 0 20px 0; border-top:1px solid #d0d0d0; background:#
 
 /* -------- No data -------*/
 td.EmptyData { 
-  text-align: center; 
+  text-align: center !important; 
   background: url(../images/icons/72/grey/information.png) no-repeat center 40px;
   font-style: italic;
   color: $lightgray;
-  height: 200px;
-  padding-top: 65px;
+  height: 200px !important;
+  padding-top: 65px !important;
 }
 
 td.EmptyDataPie { 
