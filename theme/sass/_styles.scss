@@ -792,11 +792,12 @@ div.tabsline { padding:20px 0 20px 0; border-top:1px solid #d0d0d0; background:#
 .GralTable th:last-child { border-right:none }
 
 .GralTable tr:nth-child(2) {
-	background-image: url(../images/interface/backtd.png);
-	background-repeat: repeat-x;
+  background-image: url(../images/interface/backtd.png);
+  background-repeat: repeat-x;
 }
 .GralTable.empty tr:hover { background-color:#ffffff !important;
   background-image: url(http://theme.instedd.org/theme/images/interface/backtd.png) !important;
+  background-repeat: repeat-x;
 }
 .GralTable tr:hover {
   background-image: none;
