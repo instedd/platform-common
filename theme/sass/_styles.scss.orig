@@ -620,7 +620,6 @@ a.icon_button_large {
 .i18w-location { background:url(../images/icons/18/white/location.png) no-repeat center top; width:18px; height:18px; display:inline-block }
 .i18y-alert { background:url(../images/icons/18/yellow/alert.png) no-repeat center top; width:18px; height:18px; display:inline-block }
 
-/* ---- 48 ----- */
 .i48grad-internet { background:url(../images/icons/48/gradient/internet.png) no-repeat center top; width:48px; height:48px; display:inline-block }
 .i48grad-answer { background:url(../images/icons/48/gradient/answer.png) no-repeat center top; width:48px; height:48px; display:inline-block }
 .i48grad-free { background:url(../images/icons/48/gradient/free.png) no-repeat center top; width:48px; height:48px; display:inline-block }
@@ -662,13 +661,11 @@ a.icon_button_large {
 .i48grad-openSource { background:url(../images/icons/48/gradient/openSource.png) no-repeat center top; width:48px; height:48px; display:inline-block }
 .i48grad-shred { background:url(../images/icons/48/gradient/shred.png) no-repeat center top; width:48px; height:48px; display:inline-block }
 
-/* ---- 72 ----- */
 .i72g-information { background:url(../images/icons/72/grey/information.png) no-repeat center top; width:72px; height:72px; display:inline-block }
 .i72g-fire { background:url(../images/icons/72/grey/fire.png) no-repeat center top; width:72px; height:72px; display:inline-block }
 .i72g-pie { background:url(../images/icons/72/grey/pie.png) no-repeat center top; width:72px; height:72px; display:inline-block }
 .i72g-reminder { background:url(../images/icons/72/grey/reminder.png) no-repeat center top; width:72px; height:72px; display:inline-block }
 
-/* ---- 96 ----- */
 .i96grad-teach { background:url(../images/icons/96/gradient/teach.png) no-repeat center top; width:96px; height:96px; display:inline-block }
 .i96grad-folder { background:url(../images/icons/96/gradient/folder.png) no-repeat center top; width:96px; height:96px; display:inline-block }
 .i96grad-signature { background:url(../images/icons/96/gradient/signature.png) no-repeat center top; width:96px; height:96px; display:inline-block }
@@ -892,7 +889,8 @@ div.tabsline { padding:20px 0 20px 0; border-top:1px solid #d0d0d0; background:#
   background-image: url(../images/interface/backtd.png);
   background-repeat: repeat-x;
 }
-.GralTable.empty tr:hover { background-color:#ffffff !important;
+.GralTable.empty tr:hover {
+  background-color:#ffffff !important;
   background-image: url(../images/interface/backtd.png) !important;
   background-repeat: repeat-x;
 }
@@ -924,7 +922,11 @@ td.EmptyData {
   font-style: italic;
   color: $lightgray;
   height: 200px !important;
+<<<<<<< local
+  padding-top: 65px;
+=======
   padding-top: 65px !important;
+>>>>>>> other
 }
 
 td.EmptyDataPie { 
@@ -935,8 +937,8 @@ td.EmptyDataPie {
 /* -------- Table with Buttons ---------*/
 .ButtonTable tr:hover { background:#eaeaea }
 .ButtonTable td { height:32px }
-.ButtonTable td button, .ButtonTable td a.button { padding:0; margin:-3px 0 0 1px !important; visibility:hidden; vertical-align:middle }
-.ButtonTable tr:hover td button, .ButtonTable tr:hover td a.button { visibility:visible }
+.ButtonTable td button { padding:0; margin:-3px 0 0 1px !important; visibility:hidden; vertical-align:middle }
+.ButtonTable tr:hover td button { visibility:visible }
 .ButtonTable tr td:last-child { width:160px; text-align:right; white-space:nowrap }
 
 /* -------- Availability. Table with colors and rounded td corners ---------*/
@@ -966,14 +968,14 @@ td.EmptyDataPie {
 
 .pagination span.button:active { -css3-background:#d0d0d0; background:#d0d0d0; box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1)inset; -moz-box-shadow:0px 1px 1px 0px rgba(0, 0, 0, 0.1)inset; -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1)inset; border-color:#d0d0d0 }
 
-.pagination span.button a {  display:block; position:absolute }
-.pagination span.prev a { top:6px; left:-2px }
-.pagination span.prev:active a { top:7px; left:-1px }
-.pagination span.next a { top:6px; right:-2px }
-.pagination span.next:active a { top:7px; right:-3px }
+.pagination span.button a { font-size:11px; color:#555555; display:block; height:22px; position:absolute }
+.pagination span.button:hover a { color:#000000 }
 
-.pagination span.prev a span { display:block; height:0px; width:0px; border-width:4px 7px 4px 5px; border-style:solid; border-color: transparent #555555 transparent transparent }
-.pagination span.next a span { display:block; height:0px; width:0px; border-width:4px 5px 4px 7px; border-style:solid; border-color: transparent transparent transparent #555555 }
+.pagination span.prev a { top:3px; left:4px }
+.pagination span.prev:active a { top:4px; left:5px }
+.pagination span.next a { top:3px; right:4px }
+.pagination span.next:active a { top:4px; right:3px }
+
 
 
 /* -------- ux-collapsible ---------*/
