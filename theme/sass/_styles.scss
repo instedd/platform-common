@@ -935,7 +935,8 @@ td.EmptyDataPie {
 /* -------- Table with Buttons ---------*/
 .ButtonTable tr:hover { background:#eaeaea }
 .ButtonTable td { height:32px }
-.ButtonTable td button, .ButtonTable td a.button { padding:0; margin:-3px 0 0 1px !important; visibility:hidden; vertical-align:middle }
+.ButtonTable td button, { padding:0; margin:-3px 0 0 1px !important; visibility:hidden; vertical-align:middle }
+.ButtonTable td a.button { visibility: hidden; margin: 0px; padding: 0px !important;}
 .ButtonTable tr:hover td button, .ButtonTable tr:hover td a.button { visibility:visible }
 .ButtonTable tr td:last-child { width:160px; text-align:right; white-space:nowrap }
 
