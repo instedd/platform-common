@@ -7,7 +7,12 @@ textarea, input, select, button, label { font-family:Arial, Helvetica, sans-seri
 p { padding:0; margin:15px 0; }
 
 h1, h2 { font-size:18px; color: $darkgray; margin:0 0 15px 0; font-weight: normal; }
-h1 + p, h2 + p { margin: -15px 0 15px 0; color: $darkgray; }
+h1 + p, h2 + p { color: $darkgray; }
+h1 + p { margin: -15px 0 15px 0; }
+h2 + p {
+  margin: -16px 0 8px 0;
+  font-size: 12px;
+}
 
 h1 span.err-message, h2 span.err-message { color: $orange }
 hr { border:0; height:1px; color:#dddddd; background:#dddddd; position:relative; margin: 3px 0px; }
