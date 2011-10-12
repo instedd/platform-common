@@ -111,7 +111,7 @@ select:disabled { background-color:transparent; border:1px solid #dddddd }
 /* ----- Text Area ----- */
 textarea.ux-text { width: inherit; @include texboxes_border; padding:2px 2px; resize:none; }
 
-.TaskBox { border: 1px solid #dddddd; background:$disabled_bgtext; font-size:10px; font-weight: bold; letter-spacing:-0.05em; padding:0px 0px 1px 0px; margin:5px 1px 0 1px; text-align:center; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px; white-space:nowrap }
+.TaskBox { border: 1px solid #dddddd; background:$disabled_bgtext; font-size:10px; font-weight: bold; letter-spacing:-0.05em; padding:0px 0px 1px 0px; margin:0px 1px 0 1px; text-align:center; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px; white-space:nowrap }
 .box.grey .TaskBox { background: white; border-color: white; }
 .TaskBox div { display: inline-block; vertical-align:middle; margin-left:-2px; }
 .TaskBox div.L { color:$darkgray; width:4%; text-align:left; padding-left:0px; }
