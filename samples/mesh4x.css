@@ -30,7 +30,7 @@ label { color:#555555 }
 /* ------------ Mesh4X ------------------- */
 .data_source { padding:4px 2px !important }
 .data_source a { color:#000000; margin-bottom:0px }
-.data_source div span { display:inline-block; margin-bottom:2px }
+.data_source div span { display:inline-block; vertical-align:middle }
 
 
 /* -------- Tasks Bar ---------------- */
