@@ -467,6 +467,7 @@ a.icon_button {
   padding-top: 3px !important;
   vertical-align:middle;
 }
+a.icon_button.disabled, a.icon_button_large.disabled { cursor:default !important }
 
 .icon_button_large {
   background-color: transparent;
@@ -890,7 +891,7 @@ div.tabsline { padding:20px 0 20px 0; border-top:1px solid #d0d0d0; background:#
 /* ---------------------- Tables --------------------------*/
 
 /* -------- General ---------*/
-.tablewrapp { padding:2px 0; border-radius:6px; -moz-border-radius:6px; -webkit-border-radius:6px; box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2); -moz-box-shadow:0px 1px 1px 1px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2); min-height:300px; }
+.tablewrapp { padding:2px 0; border-radius:6px; -moz-border-radius:6px; -webkit-border-radius:6px; box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2); -moz-box-shadow:0px 1px 1px 1px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2); min-height:300px; position:relative }
 
 .titletable { color:#555555; margin:5px 0 5px 10px; display:block }
 
@@ -911,6 +912,7 @@ div.tabsline { padding:20px 0 20px 0; border-top:1px solid #d0d0d0; background:#
 .GralTable tr:hover {
   background-image: none;
 }
+.GralTable.w-pagination { margin-bottom:40px !important }
 
 .GralTable td { letter-spacing:-0.005em; padding:2px 6px; vertical-align:middle; border-bottom:1px solid #eeeeee }
 .GralTable tr:last-child td { border-bottom:none }
@@ -969,7 +971,8 @@ td.EmptyDataPie {
 
 
 /* --------- PAGINATION ----------- */
-.pagination { background: #ffffff; /* old browsers */background: -moz-linear-gradient(top, #eaeaea 0%, #ffffff 100%); /* firefox */background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eaeaea), color-stop(100%,#ffffff)); /* webkit */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaeaea', endColorstr='#ffffff',GradientType=0 ); -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2) inset; -moz-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2) inset; box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2) inset; -moz-border-radius:22px; -webkit-border-radius:22px; border-radius:22px; font-size:13px; color:#000000; padding:2px 0; margin:7px auto; display: table; text-align:center; position:relative }
+.pagination-container { text-align:center; width:100%; bottom:0px; position:absolute }
+.pagination { background: #ffffff; background: -moz-linear-gradient(top, #eaeaea 0%, #ffffff 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eaeaea), color-stop(100%,#ffffff)); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaeaea', endColorstr='#ffffff',GradientType=0 ); -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2) inset; -moz-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2) inset; box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2) inset; -moz-border-radius:22px; -webkit-border-radius:22px; border-radius:22px; font-size:13px; color:#000000; padding:2px 0; margin:7px auto; display:table  }
 .pagination a { color:#777777; text-decoration:none }
 .pagination span { margin:0 3px }
 
