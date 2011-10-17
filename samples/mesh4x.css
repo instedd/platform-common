@@ -50,3 +50,15 @@ label { color:#555555 }
 
 #tasks-container button:hover { background-position:center -20px }
 #tasks-container button:active { background-position:center -40px }
+
+
+/* -------- Browse ---------------- */
+.browse { background:#FFFFFF; height:280px; width:580px; padding-bottom:10px; margin:10px 0; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px; overflow-x:scroll; overflow-y:hidden }
+.browse .panels-container { white-space:nowrap; height:100% }
+.browse .panels-container div { display:inline-block; margin-left:-3px; vertical-align:top; height:100%; width:184px; padding:5px; overflow:scroll; overflow-x:hidden }
+.browse .panels-container div ul { margin:0; padding:0 }
+.browse .panels-container div ul li { margin:0; padding:3px; list-style:none; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px }
+.browse .panels-container div ul li:hover { background:#d0d0d0 }
+.browse .panels-container div ul li a { display:block }
+.browse .panels-container div ul li.dir a { background:url(../theme/images/icons/18/black/folder.png) no-repeat left; padding:0 0 0 18px }
+.browse .panels-container div ul li.file a { background:url(../theme/images/icons/18/black/file.png) no-repeat left; padding:0 0 0 18px }
