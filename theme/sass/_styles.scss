@@ -1,4 +1,4 @@
-$ux_text_image_width: 25px;
+/*$ux_text_image_width: 25px;*/
 
 /*html {behavior: url('../theme/stylesheets/css3.htc');}*/
 /* ----- Estructura contenido ----- */
@@ -44,8 +44,7 @@ p a {
   border:1px solid #dddddd; 
   padding:0 2px; 
   color: $black; 
-  -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; -webkit-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset; -moz-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset; 
-  box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset;
+  -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; -webkit-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset; -moz-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset; box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset;
   margin: 1px;
   &:focus { border:2px solid #dddddd; margin: 0px; }
   &.readonly, &.readonly:focus, &[readonly], &[readonly]:focus { background-color: $disabled_bgtext; color: $disabled_text; border-width:1px; margin: 1px; }
@@ -168,8 +167,9 @@ span.radio {
 
 /* ----- Search ----- */
 .ux-search { 
-  background: url(../images/search/magnifyingGlass.png) no-repeat 99% 2px;
-  padding-right: $ux_text_image_width !important;
+  background: url(../images/search/magnifyingGlass.png) no-repeat 99% 2px #ffffff;
+  padding-right:25px;
+  /*padding-right: $ux_text_image_width !important;*/
   &:hover { background-position: 99% -18px; }
   &:focus { background-position: 99% -38px; }
   &.readonly { background-position: 99% -58px; }
@@ -178,7 +178,8 @@ span.radio {
 /* ----- Calendar ----- */
 .ux-datepicker {
   background:url(../images/datePicker/calendar.png) no-repeat 99% 2px; 
-  padding-right: $ux_text_image_width !important;
+  padding-right:25px;
+  /*padding-right: $ux_text_image_width !important;*/
   width:inherit; 
   &:hover { background-position: 99% -18px; }
   &:focus { background-position: 99% -38px; }
@@ -702,11 +703,14 @@ a.icon_button_large {
   width: $size !important;
   /* need to expand here .ux-text-with-image */
   & > textarea, &.textarea, & > .field_with_errors > textarea { width: $size - 6px !important; }
-  & > .ux-text:not(.ux-datepicker, .ux-search), &.ux-text:not(.ux-datepicker, .ux-search), & > .field_with_errors > .ux-text:not(.ux-datepicker, .ux-search) { width: $size - 6px !important; } 
   & > .ux-dropdown .select, &.ux-dropdown .select { width: $size - 7px !important; }
-  & > .ux-text-with-image, &.ux-text-with-image { width: $size + 2px - $ux_text_image_width !important; }
   & > .ux-clist, &.clist > li input.ux-text  { width: $size - 38px !important; }
+  & > .ux-text { width: $size - 6px; } 
+  &.ux-text { width: $size - 6px !important; } 
   hr.shadow { width: $size + 20px; }
+  
+  /*& > .ux-text:not(.ux-datepicker, .ux-search), &.ux-text:not(.ux-datepicker, .ux-search), & > .field_with_errors > .ux-text:not(.ux-datepicker, .ux-search) { width: $size - 6px !important; } */
+  /*& > .ux-text-with-image, &.ux-text-with-image { width: $size + 2px - $ux_text_image_width !important; } */
 }
 
 .w06 { @include width-class(60px); }
