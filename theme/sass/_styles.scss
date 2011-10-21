@@ -220,12 +220,17 @@ ul.clist li:last-child { border-bottom:none }
 .BreadCrumb li:first-child { background:url(../images/breadCrumbs/item.png) no-repeat -10px top !important; border-radius: 4px 0 0 4px; border-left:1px solid #ffffff; margin-left:0px; padding-left:8px }
 .BreadCrumb li:first-child:hover { background:url(../images/breadCrumbs/item.png) no-repeat -10px -30px !important; }
 .BreadCrumb li:first-child:active { background:url(../images/breadCrumbs/item.png) no-repeat -10px -60px !important; border-left: 1px solid $disabled_bgtext; }
-.BreadCrumb li:nth-last-child(0n+2) { background:url(../images/breadCrumbs/item.png) no-repeat left top; padding:0 5px 0 10px; position:relative }
-.BreadCrumb li:nth-last-child(0n+2):hover { background:url(../images/breadCrumbs/item.png) no-repeat left -30px }
-.BreadCrumb li:nth-last-child(0n+2):active { background:url(../images/breadCrumbs/item.png) no-repeat left -60px }
-.BreadCrumb li:nth-last-child(0n+2) span { background:url(../images/breadCrumbs/item.png) no-repeat right top; height:21px; width:10px; position:absolute; right:-6px }
-.BreadCrumb li:nth-last-child(0n+2):hover span { background:url(../images/breadCrumbs/item.png) no-repeat right -30px }
-.BreadCrumb li:nth-last-child(0n+2):active span { background:url(../images/breadCrumbs/item.png) no-repeat right -60px }
+.BreadCrumb li.ie_nth-last-child_0n_2, .BreadCrumb li:nth-last-child(0n+2) { 
+  background:url(../images/breadCrumbs/item.png) no-repeat left top; 
+  padding:0 5px 0 10px; 
+  position:relative; 
+  &:hover { background:url(../images/breadCrumbs/item.png) no-repeat left -30px }
+  &:active { background:url(../images/breadCrumbs/item.png) no-repeat left -60px }
+  & span { background:url(../images/breadCrumbs/item.png) no-repeat right top; height:21px; width:10px; position:absolute; right:-6px }
+  &:hover span { background:url(../images/breadCrumbs/item.png) no-repeat right -30px }
+  &:active span { background:url(../images/breadCrumbs/item.png) no-repeat right -60px }
+}
+
 .BreadCrumb li:last-child { background:none !important; color:$darkgray; margin-left:0px; text-shadow:none }
 .BreadCrumb li:last-child:first-child {  border-left:1px solid #d0d0d0; }
 .BreadCrumb li:last-child:hover { background:none !important; color:$darkgray; }
@@ -462,6 +467,7 @@ a.button.cancel:hover { color:#555555 }
   border:none;
   display:inline-block;
   @include button-states(30px);
+  &.ie_not_empty { padding:0 0 0 27px }
   &:not(:empty) { padding:0 0 0 27px }
 }
 a.icon_button {

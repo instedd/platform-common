@@ -141,7 +141,9 @@ References:
 	// --[ patchPseudoClass() ]---------------------------------------------
 	// returns a patch for a pseudo-class
 	function patchPseudoClass( pseudo ) {
-
+		// skip :not(:empty) since we will manage it out of the band in initializacion
+		if (pseudo == ':not(:empty)') return false;
+		
 		var applyClass = true;
 		var className = createClassName(pseudo.slice(1));
 		var isNegated = pseudo.substring(0, 5) == ":not(";

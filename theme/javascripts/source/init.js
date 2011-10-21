@@ -1,7 +1,22 @@
 (function($){
+	var msie_6_to_8 = $.browser.msie && 6 <= parseInt($.browser.version, 10) && parseInt($.browser.version, 10) <= 8;	
+
 	$.extend({ 
 		instedd: {
 			init_components: function(container) {
+
+				if (msie_6_to_8) {
+					$("button[class]:not(:empty), a[class]:not(:empty)").addClass("ie_not_empty");
+						
+					// TODO complete ie hacks for css3 that are not supported, slow with selectivzr
+					// $("input[type='text']", container).addClass("ux-text");
+					// $("input[type='password']", container).addClass("ux-text");
+					// $("input[type='email']", container).addClass("ux-text");
+					// $("textarea", container).addClass("ux-text");				
+					// $("input[readonly='readonly'], textarea[readonly='readonly']", container).addClass("readonly");
+					// $("button[disabled]", container).addClass("disabled");
+				}
+								
 				// initialize built-in components.
 				if ($.fn.datepicker) {
 					$(".ux-datepicker:not([readonly])", container)
@@ -41,14 +56,6 @@
 						});
 					}
 				});
-
-				// TODO for non CSS3 browsers, add this lines
-				// $("input[type='text']", container).addClass("ux-text");
-				// $("input[type='password']", container).addClass("ux-text");
-				// $("input[type='email']", container).addClass("ux-text");
-				// $("textarea", container).addClass("ux-text");				
-				// $("input[readonly='readonly'], textarea[readonly='readonly']", container).addClass("readonly");
-				// $("button[disabled]", container).addClass("disabled");
 			}
 		} 
 	});
@@ -97,7 +104,9 @@
 		// add in the pre-last li of the BreadCrumb a span
 		var bc_items = $('.BreadCrumb li');
 		if (bc_items.length >= 2) {
-			$(bc_items[bc_items.length - 2]).append($("<span>"));
+			var pre_last = $(bc_items[bc_items.length - 2]);
+			if (msie_6_to_8) { pre_last.addClass("ie_nth-last-child_0n_2"); }
+			pre_last.append($("<span>"));
 		}
 		//
 		
