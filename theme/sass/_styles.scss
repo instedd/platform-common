@@ -711,7 +711,7 @@ a.icon_button_large {
   & > textarea, &.textarea, & > .field_with_errors > textarea { width: $size - 6px !important; }
   & > .ux-dropdown .select, &.ux-dropdown .select { width: $size - 7px !important; }
   & > .ux-clist, &.clist > li input.ux-text  { width: $size - 38px !important; }
-  & > .ux-text { width: $size - 6px; } 
+  & > .ux-text, & > .field_with_errors > .ux-text { width: $size - 6px; } 
   &.ux-text { width: $size - 6px !important; } 
   hr.shadow { width: $size + 20px; }
   
