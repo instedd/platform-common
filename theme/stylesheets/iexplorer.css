@@ -1,0 +1,9 @@
+/* Main css file for instedd platform apps on Internet Explorer 6 - 8 */
+.tablewrapp, #User div.container, .box { border:1px solid #d0d0d0 }
+#User { margin-right:24px; border:1px solid transparent }
+#User:hover { border:1px solid #d0d0d0 }
+#instedd-pulldown { border:1px solid transparent }
+#instedd-pulldown:hover { border:1px solid #d0d0d0 }
+
+table .smvalues { vertical-align:top; margin-top:5px }
+ul.tabs.top li.active, ul.tabs.bottom li.active { border:1px solid #d0d0d0 }

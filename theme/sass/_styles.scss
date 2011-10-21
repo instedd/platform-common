@@ -313,13 +313,13 @@ $hover_background_color,$hover_background_color2,
 $active_border_color, $active_border_top_color, $disabled_border_color,$disabled_background_color,$disabled_color) {
   padding:5px 8px; 
   border:1px solid $border_color; 
-  box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2); 
+  box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.3); 
+  -webkit-box-shadow:0 1px 4px 0px rgba(0, 0, 0, 0.3); 
+  -moz-box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.3); 
   border-radius:4px; 
   -css3-background: linear-gradient(90deg,$background_color,$background_color2); 
   background: -moz-linear-gradient(top, $background_color2 0%, $background_color 100%); 
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$background_color2), color-stop(100%,$background_color)); 
-  -webkit-box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2); 
-  -moz-box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2); 
   -moz-border-radius:4px; 
   -webkit-border-radius:4px; 
   color:$color; 
@@ -331,12 +331,12 @@ $active_border_color, $active_border_top_color, $disabled_border_color,$disabled
   &:hover  { 
     padding:5px 8px; 
     border:1px solid $border_color; 
-    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2); 
+	box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.3); 
+	-webkit-box-shadow:0 1px 4px 0px rgba(0, 0, 0, 0.3); 
+	-moz-box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.3); 
     border-radius:4px; -css3-background: linear-gradient(90deg,$hover_background_color,$hover_background_color2); 
     background: -moz-linear-gradient(top, $hover_background_color2 0%, $hover_background_color 100%); 
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$hover_background_color), color-stop(100%,$hover_background_color2));
-    -webkit-box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2); 
-    -moz-box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2); 
     -moz-border-radius:4px; 
     -webkit-border-radius:4px; 
     color:$color; 
@@ -831,7 +831,7 @@ label.error , label.message {
 
 
 /* ------------ Gral BOX ------------------- */
-.drop_shadow { border-top:1px solid #d0d0d0; box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.3); -moz-box-shadow:0px 1px 2px 1px rgba(0, 0, 0, 0.3); -webkit-box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.3); border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; }
+.drop_shadow { border-top:1px solid transparent; box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.3); -moz-box-shadow:0px 1px 4px 0px rgba(0, 0, 0, 0.3); -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.3); border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; }
 .box { @extend .drop_shadow; background:#FFFFFF; padding:10px; }
 .sbox { padding:2px; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px }
 .box.plain { padding:6px; margin:4px 0; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px; -webkit-box-shadow:none;-moz-box-shadow:none; box-shadow:none }
@@ -871,9 +871,9 @@ hr.shadow { background: #e5e6ec; background: -moz-linear-gradient(top, #e5e6ec 0
 /* ---------------------- Tabs --------------------------*/
 ul.tabs.top { margin:0 0 0 10px; padding:0 }
 ul.tabs.top li { color:#555555; display:inline-block; list-type:none; padding:2px 1px 0 1px; margin:0 2px 0 0; border-radius:4px 4px 0 0; -moz-border-radius:4px 4px 0 0; -webkit-border-radius:4px 4px 0 0; border-top:1px solid transparent; }
-ul.tabs.top li.active { color:#000000; border-top:1px solid #d4d4d4; padding:2px 0 0 0; box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2); -moz-box-shadow:0px 1px 1px 1px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2) }
+ul.tabs.top li.active { color:#000000; border-top:1px solid transparent; padding:2px 0 0 0; box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.3); -moz-box-shadow:0px 1px 4px 0px rgba(0, 0, 0, 0.3); -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.3) }
 ul.tabs.top li.active:hover { background:#ffffff }
-ul.tabs.top li:hover { -css3-background: linear-gradient(90deg,#f3f3f3,#ffffff); background: -moz-linear-gradient(top, #f3f3f3 0%, #ffffff 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f3f3f3), color-stop(100%,#ffffff)); box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2); -moz-box-shadow:0px 1px 1px 1px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2); border-top:1px solid #d4d4d4; }
+ul.tabs.top li:hover { -css3-background: linear-gradient(90deg,#f3f3f3,#ffffff); background: -moz-linear-gradient(top, #f3f3f3 0%, #ffffff 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f3f3f3), color-stop(100%,#ffffff)); box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.3); -moz-box-shadow:0px 1px 4px 0px rgba(0, 0, 0, 0.3); -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.3); border-top:1px solid transparent; }
 ul.tabs.top li:active { background:#f3f3f3; color:#000000 }
 
 ul.tabs.top li a { display:block; padding:9px 10px 6px 10px; position:relative; margin-bottom:-2px; z-index:20 }
@@ -881,21 +881,21 @@ ul.tabs.top li.active a { background:#ffffff; padding:8px 11px 6px 11px }
 
 ul.tabs.bottom  { margin:0 0 0 10px; padding:0; position:relative }
 ul.tabs.bottom li { color:#555555; display:inline-block; list-type:none; padding:0 1px 2px 1px; margin:0 2px 0 0; border-radius:0 0 4px 4px; -moz-border-radius:0 0 4px 4px; -webkit-border-radius:0 0 4px 4px }
-ul.tabs.bottom li.active { color:#000000; padding:0 0 2px 0; box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2); -moz-box-shadow:0px 1px 1px 1px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2) }
+ul.tabs.bottom li.active { color:#000000; padding:0 0 2px 0; box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.3); -moz-box-shadow:0px 1px 4px 0px rgba(0, 0, 0, 0.3); -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.3) }
 ul.tabs.bottom li.active:hover { background:#ffffff }
-ul.tabs.bottom li:hover { -css3-background: linear-gradient(90deg,#f3f3f3,#ffffff); background: -moz-linear-gradient(top, #f3f3f3 0%, #ffffff 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f3f3f3), color-stop(100%,#ffffff)); box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2); -moz-box-shadow:0px 1px 1px 1px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2) }
+ul.tabs.bottom li:hover { -css3-background: linear-gradient(90deg,#f3f3f3,#ffffff); background: -moz-linear-gradient(top, #f3f3f3 0%, #ffffff 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f3f3f3), color-stop(100%,#ffffff)); box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.3); -moz-box-shadow:0px 1px 4px 0px rgba(0, 0, 0, 0.3); -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.3) }
 ul.tabs.bottom li:active { background:#f3f3f3; color:#000000 }
 
 ul.tabs.bottom li a { display:block; padding:7px 10px 8px 10px; border-radius:0 0 4px 4px; -moz-border-radius:0 0 4px 4px; -webkit-border-radius:0 0 4px 4px; position:relative; margin-top:-2px; z-index:20 }
 ul.tabs.bottom li.active a { background:#ffffff; padding:6px 11px 7px 11px }
 
-div.tabsline { padding:20px 0 20px 0; border-top:1px solid #d0d0d0; background:#ffffff; position:relative; z-index:10 }
+div.tabsline { padding:20px 0 20px 0; border-top:1px solid #e6e6e6; background:#ffffff; position:relative; z-index:10 }
 
 
 /* ---------------------- Tables --------------------------*/
 
 /* -------- General ---------*/
-.tablewrapp { padding:2px 0; border-radius:6px; -moz-border-radius:6px; -webkit-border-radius:6px; box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2); -moz-box-shadow:0px 1px 1px 1px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2); min-height:300px; position:relative }
+.tablewrapp { padding:2px 0; border-radius:6px; -moz-border-radius:6px; -webkit-border-radius:6px; box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.3); -moz-box-shadow:0 1px 4px 0px rgba(0, 0, 0, 0.3); -webkit-box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.3); min-height:300px; position:relative }
 
 .titletable { color:#555555; margin:5px 0 5px 10px; display:block }
 
