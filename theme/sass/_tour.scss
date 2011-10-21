@@ -1,0 +1,126 @@
+$selected_step_background: #ebffbd;
+$tour_navigation_background: #eaeaea;
+$tour_navigation_text: #242424;
+$tour_text: #434343;
+
+.box.plain.white{
+  border: 1px solid #D0D0D0;
+}
+
+.sunken { border:1px inset;}
+.sunkenBox { @extend .sunken; background:#FFFFFF; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px }
+.sunkenBox.grey { background:$tour_navigation_background; color: $tour_navigation_text; }
+
+.LocalGatewayBox {
+	height:40px;
+	padding-left: 0px !important;
+	padding-top: 0px !important;
+	padding-bottom: 0px !important;
+	padding-right: 3px !important;
+	width: 700px;
+  .LocalGatewayLogo {
+   	background: url(../images/interface/logos/nuntiumLocalGateway.png);
+    background-repeat: no-repeat;
+    width: 107px;
+    height: 40px;
+    padding-top: 0px;
+    margin-top: 3px;
+  }
+  .LocalGatewayText {
+  	padding-top: 14px;
+  	font-size:12px;
+  	color: #555555;
+  	a {
+    	color: black;
+    }
+  }
+  .LocalGatewayArrow {
+    background: url(../images/interface/arrow.png);
+    background-repeat: no-repeat;
+    width: 9px;
+    height: 40px;
+    padding-top: 0px;
+    margin-right: 5px;
+  }
+  a.button {
+  	padding-left: 8px !important;
+  	font-size: 14px;
+  }
+}
+
+.TourContent{
+  .LocalGatewayBox {
+    margin-left: 20px;
+  }
+  p {
+    color: $tour_text;
+    margin-top: 6px !important;
+    margin-bottom: 35px !important;
+  }
+  .pc {
+      background-repeat: no-repeat;
+      width: 31px;
+      height: 30px;
+  }
+  .android {
+      background-repeat: no-repeat;
+      width: 30px;
+      height: 35px;
+  }
+  .TourTitle {
+    color: $blue;
+    font-size: 32px;
+    margin-left: 250px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+  }
+  .TourDevices {
+      background-repeat: no-repeat;
+      width: 402px;
+      height: 329px;
+  }
+  .TourText1 {
+    margin-left: 40px;
+    width: 270px !important;
+  }
+}
+
+.TourNavigation {
+  @extend .sunkenBox;
+  @extend .grey;
+  @extend .w20;
+  padding: 4px;
+  min-height: 640px;
+  .TourNavigationElement{
+    padding: 4px;
+    min-height: 56px;
+    margin-top: 1px;
+    margin-bottom: 5px;
+    border: 1px solid transparent;
+    .start, .manage, .message, .schedule {	
+        background-repeat: no-repeat;
+        width: 48px;
+        height: 49px;
+    }
+    .NavigationLabel {
+      padding-left: 52px;
+      padding-top: 6px;
+    }
+    p {
+      margin-bottom: 4px;
+    }
+    h2, p {
+      color: $tour_navigation_text !important;
+    }
+  }
+  .TourNavigationElement.selected {
+    @extend .sunkenBox;
+    background: $selected_step_background;
+    h2, p {
+      color: $green !important;
+      }
+    .start, .manage, .message, .schedule {
+    background-position: 0px -49px;  
+    }
+  }
+}

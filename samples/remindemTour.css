@@ -1,0 +1,22 @@
+.TourContent .pc {
+  background: url(remindemTour/pc.png);
+}
+.TourContent .android {
+  background: url(remindemTour/android.png);
+}
+.TourContent .TourDevices {
+  background: url(remindemTour/devices.png);
+}
+
+.TourNavigation .TourNavigationElement .start {
+  background: url(remindemTour/start.png);
+}
+.TourNavigation .TourNavigationElement .manage {
+  background: url(remindemTour/manage.png);
+}
+.TourNavigation .TourNavigationElement .message {
+  background: url(remindemTour/message.png);
+}
+.TourNavigation .TourNavigationElement .schedule {
+  background: url(remindemTour/schedule.png);
+}

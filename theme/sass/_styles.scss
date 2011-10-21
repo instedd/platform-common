@@ -845,7 +845,7 @@ label.error , label.message {
   border: 1px solid #D0D0D0;
 }
 
-.box.grey, .sbox.grey { background:#d0d0d0; color:#555555 }
+.box.grey, .sbox.grey { background:#d0d0d0; color:$darkgray }
 
 /*.box { margin-bottom: 7px !important; }*/
 .box.tab { position:relative; z-index:10 }
