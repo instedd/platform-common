@@ -28,7 +28,7 @@
  *
  * http://docs.jquery.com/UI/Datepicker#theming
  */
-.ui-datepicker { width: 200px; height: 195px; padding: 6px;-webkit-box-shadow:0px 1px 4px 1px rgba(0, 0, 0, 0.4); -moz-box-shadow:0px 1px 4px 1px rgba(0, 0, 0, 0.4); box-shadow:0px 1px 4px 1px rgba(0, 0, 0, 0.4); display:none }
+.ui-datepicker { width: 200px; height: 195px; padding: 6px; @include floating-box-shadow(); display:none }
 .ui-datepicker-div {   }
 .ui-datepicker .ui-datepicker-header { position:relative; padding:.2em 0; }
 .ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next { position:absolute; top: 2px; width: 1.8em; height: 1.8em; }
