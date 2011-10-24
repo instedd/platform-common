@@ -1,4 +1,21 @@
 
+@mixin highlighted-items-with-grey() {  
+  padding: 0;
+  
+  li { 
+    background:#FFFFFF; 
+    color:$darkgray; 
+    margin-bottom:5px; 
+    cursor:pointer; 
+    padding:2px 2px 1px 4px; 
+    display:block;
+  
+    &:hover { background:#d0d0d0; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px; }
+    
+    a { display: inline-block; width: 100%; }
+  }
+}
+
 /* -------------- InSTEDD Platform pulldown menu ------------------- */
 #instedd-pulldown { 
   margin:6px 0 0 0; 
@@ -28,18 +45,9 @@
     &:hover { background-position-y: -25px; }
     
     ul { 
-      display:none; margin:22px 0 0 -42px; font-size:12px; 
-      
-      li { 
-        background:#FFFFFF; 
-        color:$darkgray; 
-        margin-bottom:5px; 
-        cursor:pointer; 
-        padding:2px 2px 1px 4px; 
-        display:block;
-        
-        &:hover { background:#d0d0d0; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px; }
-      }
+      display:none; font-size:12px; 
+      margin:22px 0 0 -2px;
+      @include highlighted-items-with-grey();
     }
   }
   
