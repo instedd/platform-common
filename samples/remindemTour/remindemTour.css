@@ -1,0 +1,22 @@
+.TourContent .pc {
+  background: url(pc.png);
+}
+.TourContent .android {
+  background: url(android.png);
+}
+.TourContent .TourDevices {
+  background: url(devices.png);
+}
+
+ul.TourNavigation > li.start > a {
+  background: url(start.png);
+}
+ul.TourNavigation > li.manage > a {
+  background: url(manage.png);
+}
+ul.TourNavigation > li.message > a {
+  background: url(message.png);
+}
+ul.TourNavigation > li.schedule > a {
+  background: url(schedule.png);
+}

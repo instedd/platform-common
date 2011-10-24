@@ -2,10 +2,10 @@
 <html>
 <head>
   <title>Remindem</title>
-  <link href="../theme/stylesheets/theme.css" rel="stylesheet" type="text/css" />
+  <link href="../../theme/stylesheets/theme.css" rel="stylesheet" type="text/css" />
   <link href="remindemTour.css" rel="stylesheet" type="text/css" />
-  <script type="text/javascript" src="../theme/javascripts/jquery-1.6.2.min.js"></script>
-  <script type="text/javascript" src="../theme/javascripts/theme.js"></script>
+  <script type="text/javascript" src="../../theme/javascripts/jquery-1.6.2.min.js"></script>
+  <script type="text/javascript" src="../../theme/javascripts/theme.js"></script>
 </head>
 <body>
   <div id="wrapper">
@@ -36,52 +36,43 @@
 
     <div id="header">
       <div class="left">
-        <a href="/"><img src="../theme/images/header/logos/remindem.png"/></a>
+        <a href="/"><img src="../../theme/images/header/logos/remindem.png"/></a>
       </div>
     </div>
 
     <div id="container">
-      <div class="TourNavigation left">
-        <a href="RemindemTour1.htm">
-          <div class="TourNavigationElement">
-            <div class="start left"></div>
-            <div class="NavigationLabel">
-              <h2>Start</h2>
-              <p>through any internet connection</p>
-            </div>
-          </div>
-        </a>
-        <a href="RemindemTour2.htm">
-          <div class="TourNavigationElement">
-            <div class="schedule left"></div>
-            <div class="NavigationLabel">
-              <h2>Schedule</h2>
-              <p>Messages in advance</p>
-            </div>
-          </div>
-        </a>
-        <a href="RemindemTour3.htm">
-          <div class="TourNavigationElement">
-            <div class="manage left"></div>
-            <div class="NavigationLabel">
-              <h2>Manage</h2>
-              <p>as many lists as you want</p>
-            </div>
-          </div>
-        </a>
-          <div class="TourNavigationElement selected">
-            <div class="message left"></div>
-            <div class="NavigationLabel">
-              <h2>Send</h2>
-              <p>your scheduled text messages</p>
-            </div>
-          </div>
-      </div>
+      <ul class="TourNavigation left">
+        <li class="start selected">
+          <a href="RemindemTour1.htm">
+            <h2>Start</h2>
+            <p>through any internet connection</p>
+          </a>
+        </li>
+        <li class="schedule">
+          <a href="RemindemTour2.htm">
+            <h2>Schedule</h2>
+            <p>Messages in advance</p>
+          </a>
+        </li>
+        <li class="manage">
+          <a href="RemindemTour3.htm">
+            <h2>Manage</h2>
+            <p>as many lists as you want</p>
+          </a>
+        </li>
+        <li class="message">
+          <a href="RemindemTour4.htm">
+            <h2>Send</h2>
+            <p>your scheduled text messages</p>
+          </a>
+        </li>
+      </ul>
+
       <div class="TourContent">
         <h1 class="TourTitle">All you need to get started is an Internet connection and a mobile phone</h1>
         <div>
           <div class="TourDevices left"></div>
-          <div class="left TourText1">
+          <div class="TourText1 left">
             <div class="android"></div>
             <p>Got 'Droid and an Internet connection? Just download and install a small app on your Android phone to get started, then visit Remindem to enter your text messages and set up your delivery schedule. Remindem then automatically helps your phone send reminders to subscribers on your schedule.</p>
             <div class="pc"></div>
@@ -92,12 +83,12 @@
         <div class="LocalGatewayBox box plain white left">
         	<div class="LocalGatewayLogo left"></div>
         	<div class="LocalGatewayText left">will manage the flow of incoming and outgoing messages, <a href="#">learn More <a>.</div>
-        	<a class="button white right" href="#">Try it now!</a>
+        	<a class="button white right" href="remindem.instedd.org/users/sign_up">Try it now!</a>
         	<div class="LocalGatewayArrow right"></div>
         </div>
       </div>
     </div>
-        <div class="clear"></div>
+    <div class="clear"></div>
 
 
 

@@ -85,42 +85,46 @@ $tour_text: #434343;
   }
 }
 
-.TourNavigation {
+ul.TourNavigation {
   @extend .sunkenBox;
   @extend .grey;
-  @extend .w20;
-  padding: 4px;
+
+  padding: 3px;
   min-height: 640px;
-  .TourNavigationElement{
-    padding: 4px;
-    min-height: 56px;
-    margin-top: 1px;
-    margin-bottom: 5px;
+  a {
+    display: block;
+    width: 48px;
+    height: 49px;
+    background-repeat: no-repeat !important;
+  }
+  li{
+      @extend .w20;
+    padding: 1px 4px 4px 4px;
+    margin-top: 0px;
+    margin-bottom: 7px;
+    height: 55px !important;
     border: 1px solid transparent;
-    .start, .manage, .message, .schedule {	
-        background-repeat: no-repeat;
-        width: 48px;
-        height: 49px;
-    }
-    .NavigationLabel {
-      padding-left: 52px;
-      padding-top: 6px;
-    }
+    list-style: none;
     p {
       margin-bottom: 4px;
     }
+    h2 {
+      padding-top: 4px;
+    }
     h2, p {
+      padding-left: 52px;
       color: $tour_navigation_text !important;
+      width: 145px;
     }
   }
-  .TourNavigationElement.selected {
+  li.selected {
     @extend .sunkenBox;
     background: $selected_step_background;
+    a {
+      background-position: 0px -49px !important;
+    }
     h2, p {
       color: $green !important;
-      }
-    .start, .manage, .message, .schedule {
-    background-position: 0px -49px;  
-    }
+      }    
   }
 }

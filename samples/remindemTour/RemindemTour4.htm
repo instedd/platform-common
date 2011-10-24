@@ -2,10 +2,10 @@
 <html>
 <head>
   <title>Remindem</title>
-  <link href="../theme/stylesheets/theme.css" rel="stylesheet" type="text/css" />
+  <link href="../../theme/stylesheets/theme.css" rel="stylesheet" type="text/css" />
   <link href="remindemTour.css" rel="stylesheet" type="text/css" />
-  <script type="text/javascript" src="../theme/javascripts/jquery-1.6.2.min.js"></script>
-  <script type="text/javascript" src="../theme/javascripts/theme.js"></script>
+  <script type="text/javascript" src="../../theme/javascripts/jquery-1.6.2.min.js"></script>
+  <script type="text/javascript" src="../../theme/javascripts/theme.js"></script>
 </head>
 <body>
   <div id="wrapper">
@@ -36,47 +36,38 @@
 
     <div id="header">
       <div class="left">
-        <a href="/"><img src="../theme/images/header/logos/remindem.png"/></a>
+        <a href="/"><img src="../../theme/images/header/logos/remindem.png"/></a>
       </div>
     </div>
 
     <div id="container">
-      <div class="TourNavigation left">
-        <a href="RemindemTour1.htm">
-          <div class="TourNavigationElement">
-            <div class="start left"></div>
-            <div class="NavigationLabel">
-              <h2>Start</h2>
-              <p>through any internet connection</p>
-            </div>
-          </div>
-        </a>
-        <a href="RemindemTour2.htm">
-          <div class="TourNavigationElement">
-            <div class="schedule left"></div>
-            <div class="NavigationLabel">
-              <h2>Schedule</h2>
-              <p>Messages in advance</p>
-            </div>
-          </div>
-        </a>
-        <div class="TourNavigationElement selected">
-          <div class="manage left"></div>
-          <div class="NavigationLabel">
+      <ul class="TourNavigation left">
+        <li class="start">
+          <a href="RemindemTour1.htm">
+            <h2>Start</h2>
+            <p>through any internet connection</p>
+          </a>
+        </li>
+        <li class="schedule">
+          <a href="RemindemTour2.htm">
+            <h2>Schedule</h2>
+            <p>Messages in advance</p>
+          </a>
+        </li>
+        <li class="manage">
+          <a href="RemindemTour3.htm">
             <h2>Manage</h2>
             <p>as many lists as you want</p>
-          </div>
-        </div>
-        <a href="RemindemTour4.htm">
-          <div class="TourNavigationElement">
-            <div class="message left"></div>
-            <div class="NavigationLabel">
-              <h2>Send</h2>
-              <p>your scheduled text messages</p>
-            </div>
-          </div>
-        </a>
-      </div>
+          </a>
+        </li>
+        <li class="message selected">
+          <a href="RemindemTour4.htm">
+            <h2>Send</h2>
+            <p>your scheduled text messages</p>
+          </a>
+        </li>
+      </ul>
+
       <div class="TourContent">
         <h1 class="TourTitle">All you need to get started is an Internet connection and a mobile phone</h1>
         <div>
