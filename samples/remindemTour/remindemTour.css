@@ -1,11 +1,12 @@
 .TourContent .pc {
   background: url(pc.png);
+  background-repeat: no-repeat;
+  padding-top: 35px;
 }
 .TourContent .android {
   background: url(android.png);
-}
-.TourContent .TourDevices {
-  background: url(devices.png);
+  background-repeat: no-repeat;
+  padding-top: 41px;
 }
 
 ul.TourNavigation > li.start > a {
