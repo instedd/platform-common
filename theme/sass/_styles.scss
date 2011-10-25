@@ -29,7 +29,7 @@ a:hover { text-decoration:none; }
 button { overflow:visible }
 img { border: 0px; }
 
-textarea:focus, input:focus, button:focus { outline: none; }
+textarea:focus, input:focus, button:focus, a:focus { outline: none; }
 
 p a { 
   color:$orange; 
@@ -219,25 +219,25 @@ ul.clist li:last-child { border-bottom:none }
 .BreadCrumb:focus { background: #333333 }
 .BreadCrumb ul { margin: 0; padding:0 0 0 1px }
 .BreadCrumb li { background:url(../images/breadCrumbs/item.png) no-repeat left top; margin:0; padding:0 15px 0 10px; float:left; list-style:none; height:21px; margin-left:-10px; line-height:20px; text-shadow: 1px 1px #ffffff }
-.BreadCrumb li:hover { background:url(../images/breadCrumbs/item.png) no-repeat left -30px }
+.BreadCrumb li:hover, .BreadCrumb li:focus { background:url(../images/breadCrumbs/item.png) no-repeat left -30px }
 .BreadCrumb li:active { background:url(../images/breadCrumbs/item.png) no-repeat left -60px; line-height:22px }
 .BreadCrumb li:first-child { background:url(../images/breadCrumbs/item.png) no-repeat -10px top !important; border-radius: 4px 0 0 4px; border-left:1px solid #ffffff; margin-left:0px; padding-left:8px }
-.BreadCrumb li:first-child:hover { background:url(../images/breadCrumbs/item.png) no-repeat -10px -30px !important; }
+.BreadCrumb li:first-child:hover, .BreadCrumb li:first-child:focus { background:url(../images/breadCrumbs/item.png) no-repeat -10px -30px !important; }
 .BreadCrumb li:first-child:active { background:url(../images/breadCrumbs/item.png) no-repeat -10px -60px !important; border-left: 1px solid $disabled_bgtext; }
 .BreadCrumb li.ie_nth-last-child_0n_2, .BreadCrumb li:nth-last-child(0n+2) { 
   background:url(../images/breadCrumbs/item.png) no-repeat left top; 
   padding:0 5px 0 10px; 
   position:relative; 
-  &:hover { background:url(../images/breadCrumbs/item.png) no-repeat left -30px }
+  &:hover, &:focus { background:url(../images/breadCrumbs/item.png) no-repeat left -30px }
   &:active { background:url(../images/breadCrumbs/item.png) no-repeat left -60px }
   & span { background:url(../images/breadCrumbs/item.png) no-repeat right top; height:21px; width:10px; position:absolute; right:-6px }
-  &:hover span { background:url(../images/breadCrumbs/item.png) no-repeat right -30px }
+  &:hover span, &:focus span { background:url(../images/breadCrumbs/item.png) no-repeat right -30px }
   &:active span { background:url(../images/breadCrumbs/item.png) no-repeat right -60px }
 }
 
 .BreadCrumb li:last-child { background:none !important; color:$darkgray; margin-left:0px; text-shadow:none }
 .BreadCrumb li:last-child:first-child {  border-left:1px solid #d0d0d0; }
-.BreadCrumb li:last-child:hover { background:none !important; color:$darkgray; }
+.BreadCrumb li:last-child:hover, .BreadCrumb li:last-child:focus { background:none !important; color:$darkgray; }
 
 
 
@@ -335,7 +335,7 @@ $active_border_color, $active_border_top_color, $disabled_border_color,$disabled
   margin: 4px 2px;
   display:inline-block;
   position:relative;
-  &:hover  { 
+  &:hover, &:focus  { 
     padding:5px 8px; 
     border:1px solid $border_color;
     @include content-box-shadow();
@@ -874,8 +874,8 @@ hr.shadow { background: #e5e6ec; background: -moz-linear-gradient(top, #e5e6ec 0
 ul.tabs.top { margin:0 0 0 10px; padding:0 }
 ul.tabs.top li { color:#555555; display:inline-block; list-type:none; padding:2px 1px 0 1px; margin:0 2px 0 0; border-radius:4px 4px 0 0; -moz-border-radius:4px 4px 0 0; -webkit-border-radius:4px 4px 0 0; border-top:1px solid transparent; }
 ul.tabs.top li.active { color:#000000; border-top:1px solid transparent; padding:2px 0 0 0; @include content-box-shadow(); }
-ul.tabs.top li.active:hover { background:#ffffff }
-ul.tabs.top li:hover { -css3-background: linear-gradient(90deg,#f3f3f3,#ffffff); background: -moz-linear-gradient(top, #f3f3f3 0%, #ffffff 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f3f3f3), color-stop(100%,#ffffff)); @include content-box-shadow(); border-top:1px solid transparent; }
+ul.tabs.top li.active:hover, ul.tabs.top li.active:focus { background:#ffffff }
+ul.tabs.top li:hover, ul.tabs.top li:focus { -css3-background: linear-gradient(90deg,#f3f3f3,#ffffff); background: -moz-linear-gradient(top, #f3f3f3 0%, #ffffff 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f3f3f3), color-stop(100%,#ffffff)); @include content-box-shadow(); border-top:1px solid transparent; }
 ul.tabs.top li:active { background:#f3f3f3; color:#000000 }
 
 ul.tabs.top li a { display:block; padding:9px 10px 6px 10px; position:relative; margin-bottom:-2px; z-index:20 }
@@ -884,8 +884,8 @@ ul.tabs.top li.active a { background:#ffffff; padding:8px 11px 6px 11px }
 ul.tabs.bottom  { margin:0 0 0 10px; padding:0; position:relative }
 ul.tabs.bottom li { color:#555555; display:inline-block; list-type:none; padding:0 1px 2px 1px; margin:0 2px 0 0; border-radius:0 0 4px 4px; -moz-border-radius:0 0 4px 4px; -webkit-border-radius:0 0 4px 4px }
 ul.tabs.bottom li.active { color:#000000; padding:0 0 2px 0; @include content-box-shadow(); }
-ul.tabs.bottom li.active:hover { background:#ffffff }
-ul.tabs.bottom li:hover { -css3-background: linear-gradient(90deg,#f3f3f3,#ffffff); background: -moz-linear-gradient(top, #f3f3f3 0%, #ffffff 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f3f3f3), color-stop(100%,#ffffff)); @include content-box-shadow(); }
+ul.tabs.bottom li.active:hover, ul.tabs.bottom li.active:focus { background:#ffffff }
+ul.tabs.bottom li:hover, ul.tabs.bottom li:focus { -css3-background: linear-gradient(90deg,#f3f3f3,#ffffff); background: -moz-linear-gradient(top, #f3f3f3 0%, #ffffff 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f3f3f3), color-stop(100%,#ffffff)); @include content-box-shadow(); }
 ul.tabs.bottom li:active { background:#f3f3f3; color:#000000 }
 
 ul.tabs.bottom li a { display:block; padding:7px 10px 8px 10px; border-radius:0 0 4px 4px; -moz-border-radius:0 0 4px 4px; -webkit-border-radius:0 0 4px 4px; position:relative; margin-top:-2px; z-index:20 }
@@ -984,7 +984,7 @@ td.EmptyDataPie {
 
 .pagination span.button { border:1px solid #ffffff; margin:0 4px 1px 4px; display:inline-block; vertical-align:middle; -moz-border-radius:22px; -webkit-border-radius:22px; border-radius:22px; width:22px; height:22px;-css3-background: radial-gradient(50% 12%, circle closest-corner, #ffffff, #d0d0d0 15%); background: -moz-radial-gradient(50% 10% , circle , white 1px, #D0D0D0 20px); background: -webkit-radial-gradient(50% 17%, circle, white, #dbdbdb 75%); @include content-box-shadow(); cursor:pointer; position:relative; padding:0 }
 
-.pagination span.button:hover { -css3-background: radial-gradient(50% 12%, circle closest-corner, #f9f9f9, #bfbfbf 15%); background: -moz-radial-gradient(50% 10% , circle , #f9f9f9 1px, #bfbfbf 20px); background: -webkit-radial-gradient(50% 17%, circle, #f9f9f9, #bfbfbf 75%); @include content-box-shadow(); }
+.pagination span.button:hover, .pagination span.button:focus { -css3-background: radial-gradient(50% 12%, circle closest-corner, #f9f9f9, #bfbfbf 15%); background: -moz-radial-gradient(50% 10% , circle , #f9f9f9 1px, #bfbfbf 20px); background: -webkit-radial-gradient(50% 17%, circle, #f9f9f9, #bfbfbf 75%); @include content-box-shadow(); }
 
 .pagination span.button:active { -css3-background:#d0d0d0; background:#d0d0d0; @include none-box-shadow(); border-color:#d0d0d0 }
 
@@ -1006,7 +1006,7 @@ td.EmptyDataPie {
 
 .ux-collapsible > span:first-child > a { 
   color: $darkgray;
-  &:hover { color: $darkgray_hover; }
+  &:hover, &:focus { color: $darkgray_hover; }
 }
 
 .ux-collapsible > span:first-child > .arrow {

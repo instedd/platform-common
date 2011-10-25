@@ -38,6 +38,6 @@ hr + .actions {
     color: $darkgray; 
     text-decoration: none;
     padding: 5px 8px;
-    &:hover { color: $darkgray_hover; }
+    &:hover, &:focus { color: $darkgray_hover; }
   }
 }

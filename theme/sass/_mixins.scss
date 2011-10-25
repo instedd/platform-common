@@ -24,7 +24,7 @@
 @mixin button-states($imageHeight, $horizontalPosition: 0px) {
   background-repeat: no-repeat;
   background-position: $horizontalPosition 0px;
-  &:hover {
+  &:hover, &:focus {
     background-position: $horizontalPosition -1*$imageHeight;  // -1* is needed for appropiate sass compilation
   }
   &:active {
