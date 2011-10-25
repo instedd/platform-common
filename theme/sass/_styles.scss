@@ -60,7 +60,11 @@ input[type=text], input[type=password], input[type=email], textarea {
 
 /* ----- Dropdown/Select ----- */
 
-select:disabled { background-color:transparent; border:1px solid #dddddd }
+select { border:1px solid #dddddd; }
+
+/*
+
+select:disabled { background-color:transparent; }
 
 .ux-dropdown { 
   position: relative; 
@@ -104,8 +108,8 @@ select:disabled { background-color:transparent; border:1px solid #dddddd }
     line-height:28px; 
     cursor:pointer;
     margin: 2px;  
-  } /* for chrome: font-size: 26px; */
-}
+  } /+ for chrome: font-size: 26px; +/
+} */
 
 /* ----- Text Area ----- */
 textarea.ux-text { width: inherit; @include texboxes_border; padding:2px 2px; resize:none; }
