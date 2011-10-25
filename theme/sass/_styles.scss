@@ -927,7 +927,27 @@ div.tabsline { padding:20px 0 20px 0; border-top:1px solid #e6e6e6; background:#
 .GralTable tr:last-child td { border-bottom:none }
 .GralTable.w-pagination tr:last-child td { border-bottom:1px solid #eeeeee }
 
-.GralTable tr th.sort { cursor:pointer }
+.GralTable tr th.sort { 
+  $border_color:#ffffff;$background_color:#d2d2d2;$background_color2:#ffffff;$color:#000000;
+  $hover_background_color:#f0f0f0;$hover_background_color2:#c7c7c7;
+  $active_border_color:#d0d0d0;$active_border_top_color:#9c9c9c;
+  $disabled_border_color:#bbbbbb;$disabled_background_color:transparent;$disabled_color:#999999;
+    
+  cursor:pointer;
+
+  // copy from css3 button mixin
+  &:hover, &:focus  { 
+    @include content-box-shadow();
+    background: -moz-linear-gradient(top, $hover_background_color2 0%, $hover_background_color 100%); 
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$hover_background_color), color-stop(100%,$hover_background_color2));
+    cursor:pointer;
+  }
+  &:active { 
+    background:$background_color;
+    @include none-box-shadow();
+  }  
+}
+
 .GralTable tr th:first-child { border-radius:4px 0 0 0; -moz-border-radius:4px 0 0 0; -webkit-border-radius:4px 0 0 0 }
 .GralTable tr th:last-child { border-radius:0 4px 0 0; -moz-border-radius:0 4px 0 0; -webkit-border-radius:0 4px 0 0 }
 .GralTable th.up, .GralTable th.down { background:#d0d0d0 !important }
