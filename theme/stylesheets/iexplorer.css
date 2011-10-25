@@ -7,3 +7,15 @@
 
 table .smvalues { vertical-align:top; margin-top:5px }
 ul.tabs.top li.active, ul.tabs.bottom li.active { border:1px solid #d0d0d0 }
+
+button.white, a.button.white {
+  background: #d2d2d2;
+}
+
+button.grey, a.button.grey {
+  background: #3b3b3b;
+}
+
+button.orange, a.button.orange {
+	background: #ff6802;
+}

@@ -326,7 +326,7 @@ $active_border_color, $active_border_top_color, $disabled_border_color,$disabled
   padding:5px 8px; 
   border:1px solid $border_color;
   @include content-box-shadow();
-  border-radius:4px; 
+  border-radius:4px;
   -css3-background: linear-gradient(90deg,$background_color,$background_color2); 
   background: -moz-linear-gradient(top, $background_color2 0%, $background_color 100%); 
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$background_color2), color-stop(100%,$background_color)); 
@@ -386,7 +386,7 @@ $active_border_color, $active_border_top_color,
 $disabled_border_color,$disabled_background_color,$disabled_color) {
 */
 
-button.white {
+button.white, a.button.white {
   text-shadow: 0px 1px 0px white; 
   @include css3-button(
     #ffffff,#d2d2d2,#ffffff,#000000, 
@@ -395,7 +395,7 @@ button.white {
     #bbbbbb,transparent,#999999);
 }
 
-button.grey {
+button.grey, a.button.grey {
   text-shadow: 0px -1px 0px black; 
   @include css3-button(
     #313131,#3b3b3b,#767676,#ffffff, 
@@ -405,7 +405,7 @@ button.grey {
     /*#3c3c3c,#767676,#cccccc);*/
 }
 
-button.orange {
+button.orange, a.button.orange {
   text-shadow: 0px -1px 0px #fe3700;
   @include css3-button(
     #fe3700,#ff6802,#fe9639,#ffffff, 
@@ -414,44 +414,18 @@ button.orange {
     #bbbbbb,transparent,#999999);
     /*#ff6802,#fe9639,#ffddbf);*/
 }
-button.cancel { color:#555555 }
-button.cancel:hover { color:#555555 }
 
-a.button.white {
-  text-shadow: 0px 1px 0px white;
-  padding: 7px 11px !important;
-  height: 14px !important; 
-  @include css3-button(
-    #ffffff,#d2d2d2,#ffffff,#000000, 
-    #f0f0f0,#c7c7c7, 
-    #d0d0d0,#9c9c9c, 
-    #bbbbbb,transparent,#999999);
+button.cancel, a.button.cancel { 
+  color:#555555;
+  &:hover {
+    color:#555555;  
+  }
 }
 
-a.button.grey {
-  text-shadow: 0px -1px 0px black; 
+a.button.white, a.button.grey, a.button.orange {
   padding: 7px 11px !important;
-  height: 14px !important; 
-  @include css3-button(
-    #313131,#3b3b3b,#767676,#ffffff, 
-    #616161,#313131, 
-    #3c3c3c,#1e1e1e, 
-    #bbbbbb,transparent,#999999);
+  height: 14px !important;
 }
-
-a.button.orange {
-  text-shadow: 0px -1px 0px #fe3700;
-  padding: 7px 11px !important;
-  height: 14px !important; 
-  @include css3-button(
-    #fe3700,#ff6802,#fe9639,#ffffff, 
-    #fe8418,#e95f02, 
-    #ff6802,#fe1600, 
-    #bbbbbb,transparent,#999999);
-}
-a.button.cancel { color:#555555 }
-a.button.cancel:hover { color:#555555 }
-
 
 
 /* ---------- Icon buttons --------- */
