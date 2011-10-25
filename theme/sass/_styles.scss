@@ -30,6 +30,9 @@ button { overflow:visible }
 img { border: 0px; }
 
 textarea:focus, input:focus, button:focus, a:focus { outline: none; }
+button::-moz-focus-inner {
+  border: 0;
+}
 
 p a { 
   color:$orange; 
