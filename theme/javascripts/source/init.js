@@ -63,6 +63,15 @@
 	$(function(){
 		$.instedd.init_components($(document));
 		
+		if (msie_6_to_8) {
+			// compute iexplorer stylesheet and javascript from current theme.css and theme.js location
+			var theme_js = $('script[src$="theme.js"]');
+			$.getScript(theme_js.attr('src').replace('/theme.js', '/selectivizr.js'));
+			
+			var theme_css = $('link[href$="theme.css"]');
+			$('head').append('<link href="' + theme_css.attr('href').replace('/theme.css', '/iexplorer.css') + '" rel="stylesheet" type="text/css" />');
+		}
+		
 		$('.ux-collapsible > span:first-child > a, .ux-collapsible .ux-collapse-trigger').live('click', function(){
 			var collapsible = $(this).closest('.ux-collapsible');
 			collapsible.toggleClass('collapsed');

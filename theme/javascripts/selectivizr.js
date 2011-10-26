@@ -3,6 +3,10 @@ selectivizr v1.0.2 - (c) Keith Clark, freely distributable under the terms
 of the MIT license.
 
 selectivizr.com
+
+WARNING: modified for instedd platform-common. Removing bottleneck due to css classes used by them.
+CHANGES:
+  * ignore :not(:empty) patching, handled in init.js for <a> and <buttons> with classes.
 */
 /* 
   

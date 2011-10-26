@@ -8,19 +8,25 @@
     <script type="text/javascript" src="../theme/javascripts/theme.js"></script>  
 </head>
 <body>  
-  <div class="flash flash_error"><div>Lorem ipsum dolor sit amet</div></div>
+  <div class="flash flash_error" data-hide-timeout="1000"><div>Lorem ipsum dolor sit amet</div></div>
 
   <div id="wrapper">
       <div id="toolbar"></div>
       <div id="header"></div>
       
       <div id="container">
-        <div class="box centered w30">
+        <div class="box centered w40">
           <h2>Alerts</h2>
           
-          <button class="white" onclick="$.status.showError('Lorem ipsum dolor sit amet');">show error</button>
+          <button class="white" onclick="$.status.showError('Lorem ipsum dolor sit amet');">Show error</button>
 
-          <button class="white" onclick="$.status.showNotice('Lorem ipsum dolor sit amet');">show notice</button>
+          <button class="white" onclick="$.status.showNotice('Lorem ipsum dolor sit amet');">Show notice</button>
+
+          <br/>
+
+          <button class="white" onclick="$.status.showError('Lorem ipsum dolor sit amet', 1000);">Show autohide error</button>
+
+          <button class="white" onclick="$.status.showNotice('Lorem ipsum dolor sit amet', 1000);">Show autohide notice</button>
           
         </div>  
       </div>

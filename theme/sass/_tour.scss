@@ -2,6 +2,7 @@ $selected_step_background: #ebffbd;
 $tour_navigation_background: #eaeaea;
 $tour_navigation_text: #242424;
 $tour_text: #434343;
+$separation_from_navigation: 45px;
 
 .box.plain.white{
   border: 1px solid #D0D0D0;
@@ -56,34 +57,50 @@ $tour_text: #434343;
   }
   p {
     color: $tour_text;
-    margin-top: 6px !important;
-    margin-bottom: 35px !important;
+    margin-left: $separation_from_navigation;
+    margin-bottom: 20px;
+    margin-top: 6px;
+    margin-right: 20px;
+    span.highlight {
+      background:#a2e1fc;
+      padding: 2px;
+    	border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px;
+      color: $blue;
+    }
   }
-  .pc {
-      background-repeat: no-repeat;
-      width: 31px;
-      height: 30px;
-  }
-  .android {
-      background-repeat: no-repeat;
-      width: 30px;
-      height: 35px;
-  }
-  .TourTitle {
+  h1 {
     color: $blue;
     font-size: 32px;
-    margin-left: 250px;
+    margin-left: $separation_from_navigation;
     margin-bottom: 50px;
     margin-top: 30px;
   }
-  .TourDevices {
-      background-repeat: no-repeat;
-      width: 402px;
-      height: 329px;
+  h2 {
+    color: $blue;
+    font-size: 24px;
+    margin-left: $separation_from_navigation;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    + p {
+      margin: inherit;
+      margin-left: $separation_from_navigation;
+      font-size: inherit;
+    }
   }
-  .TourText1 {
-    margin-left: 40px;
-    width: 270px !important;
+  h3 {
+    color: $tour_text;
+    font-size: 20px;
+    margin-left: $separation_from_navigation;
+    margin-bottom: 0px;
+    margin-top: 30px;
+    font-weight: normal;
+    + p {
+      margin-top: 0px;
+    }
+  }
+  
+  p.advertised {
+    color: $blue;
   }
 }
 
@@ -100,7 +117,7 @@ ul.TourNavigation {
     background-repeat: no-repeat !important;
   }
   li{
-      @extend .w20;
+    @extend .w20;
     padding: 1px 4px 4px 4px;
     margin-top: 0px;
     margin-bottom: 7px;
