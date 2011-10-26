@@ -6,10 +6,7 @@
 	<script type="text/javascript" src="../theme/javascripts/jquery-1.6.2.min.js"></script>
 	<script type="text/javascript" src="../theme/javascripts/theme.js"></script>
 	<link href="mesh4x.css" rel="stylesheet" type="text/css" />
-    <!--[if (gte IE 6)&(lte IE 8)]>
-      <script type="text/javascript" src="../theme/javascripts/source/selectivizr.js"></script>
-    <![endif]-->	
-    </head>
+</head>
 <body>
   <div id="wrapper">
     <div id="toolbar">
@@ -93,7 +90,7 @@
     
     <div class="data_source box grey w60">
         <div class="w50 left">
-            <a class="farrow" onclick="show_form($(this));" url_to_use="/meshes/047f481fb2121a7a4d270851cfd8e0d8/data_sources/047f481fb2121a7a4d270851cff82383/edit?kind=csv">Admin users</a> <span>(User/documents/adminUsers.csv)</span>
+            <a class="farrow" onClick="show_form($(this));" url_to_use="/meshes/047f481fb2121a7a4d270851cfd8e0d8/data_sources/047f481fb2121a7a4d270851cff82383/edit?kind=csv">Admin users</a> <span>(User/documents/adminUsers.csv)</span>
         </div><!-- #w50 left -->
         
         <a href="/meshes/047f481fb2121a7a4d270851cfd8e0d8/data_sources/047f481fb2121a7a4d270851cff82383" class="fdelete right" data-confirm="Data source 'lalala' will be deleted. Are you sure?" data-method="delete" rel="nofollow"></a>
@@ -103,6 +100,72 @@
         <div class="clear"></div>
     
     </div><!-- #data_source box grey w60 -->
+    
+    <br><br>
+    
+    <div class="box grey w58">
+    
+    <label>Name</label><br>
+    <input type="text" class="ux-text w30">
+    <br><br>
+    
+    <label>File</label><br>
+    <div class="browse">
+    
+        <div class="panels-container">
+            <div>
+                <ul>
+                    <li class="dir"><a href="#">App Data</a></li>
+                    <li class="dir"><a href="#">Logs</a></li>
+                    <li class="dir"><a href="#">Program files</a></li>
+                    <li class="dir"><a href="#">Temp</a></li>
+                    <li class="dir"><a href="#">User</a></li>
+                </ul>
+            
+            </div>
+    
+            <div>
+                <ul>
+                    <li class="dir"><a href="#">Contacts</a></li>
+                    <li class="dir"><a href="#">Desktop</a></li>
+                    <li class="dir"><a href="#">Documents</a></li>
+                    <li class="dir"><a href="#">Downloads</a></li>
+                    <li class="dir"><a href="#">Favorites</a></li>
+                    <li class="dir"><a href="#">Links</a></li>
+                    <li class="dir"><a href="#">Music</a></li>
+                    <li class="dir"><a href="#">Pictures</a></li>
+                    <li class="dir"><a href="#">Videos</a></li>
+                </ul>
+            
+            </div>
+    
+            <div>
+                <ul>
+                    <li class="dir"><a href="#">Backup</a></li>
+                    <li class="dir"><a href="#">Old</a></li>
+                    <li class="dir"><a href="#">User</a></li>
+                </ul>
+            
+            </div>
+    
+            <div>
+                <ul>
+                    <li class="file"><a href="#">guestUsers.xls</a></li>
+                    <li class="file"><a href="#">otherUsers.xls</a></li>
+                </ul>
+            
+            </div>
+        </div><!-- #panels-container -->    
+    
+    
+    </div><!-- #browse --> 
+      
+    
+    <input type="text" class="ux-text w30" disabled> <button class="farrow">Done</button> <a href="#" class="cancel">Cancel</a>
+    
+    
+    
+    </div><!-- #box grey w60 -->
     
     <br><br><br>
     

@@ -1,0 +1,23 @@
+.TourContent .pc {
+  background: url(pc.png);
+  background-repeat: no-repeat;
+  padding-top: 35px;
+}
+.TourContent .android {
+  background: url(android.png);
+  background-repeat: no-repeat;
+  padding-top: 41px;
+}
+
+ul.TourNavigation > li.start > a {
+  background: url(start.png);
+}
+ul.TourNavigation > li.manage > a {
+  background: url(manage.png);
+}
+ul.TourNavigation > li.message > a {
+  background: url(message.png);
+}
+ul.TourNavigation > li.schedule > a {
+  background: url(schedule.png);
+}

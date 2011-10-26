@@ -3,6 +3,10 @@ selectivizr v1.0.2 - (c) Keith Clark, freely distributable under the terms
 of the MIT license.
 
 selectivizr.com
+
+WARNING: modified for instedd platform-common. Removing bottleneck due to css classes used by them.
+CHANGES:
+  * ignore :not(:empty) patching, handled in init.js for <a> and <buttons> with classes.
 */
 /* 
   
@@ -141,7 +145,9 @@ References:
 	// --[ patchPseudoClass() ]---------------------------------------------
 	// returns a patch for a pseudo-class
 	function patchPseudoClass( pseudo ) {
-
+		// skip :not(:empty) since we will manage it out of the band in initializacion
+		if (pseudo == ':not(:empty)') return false;
+		
 		var applyClass = true;
 		var className = createClassName(pseudo.slice(1));
 		var isNegated = pseudo.substring(0, 5) == ":not(";

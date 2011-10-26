@@ -24,7 +24,7 @@
 @mixin button-states($imageHeight, $horizontalPosition: 0px) {
   background-repeat: no-repeat;
   background-position: $horizontalPosition 0px;
-  &:hover {
+  &:hover, &:focus {
     background-position: $horizontalPosition -1*$imageHeight;  // -1* is needed for appropiate sass compilation
   }
   &:active {
@@ -40,3 +40,16 @@
   -moz-box-shadow: $boxShadow; 
   box-shadow: $boxShadow;
 }
+
+@mixin content-box-shadow {
+  @include all-box-shadow(0px 1px 5px 1px rgba(0, 0, 0, 0.2));
+}
+
+@mixin floating-box-shadow {
+  @include all-box-shadow(0px 1px 2px 2px rgba(0, 0, 0, 0.2));
+}
+
+@mixin none-box-shadow {
+  @include all-box-shadow(none);
+}
+

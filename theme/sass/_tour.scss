@@ -1,0 +1,147 @@
+$selected_step_background: #ebffbd;
+$tour_navigation_background: #eaeaea;
+$tour_navigation_text: #242424;
+$tour_text: #434343;
+$separation_from_navigation: 45px;
+
+.box.plain.white{
+  border: 1px solid #D0D0D0;
+}
+
+.sunken { border:1px inset;}
+.sunkenBox { @extend .sunken; background:#FFFFFF; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px }
+.sunkenBox.grey { background:$tour_navigation_background; color: $tour_navigation_text; }
+
+.LocalGatewayBox {
+	height:40px;
+	padding-left: 0px !important;
+	padding-top: 0px !important;
+	padding-bottom: 0px !important;
+	padding-right: 3px !important;
+	width: 700px;
+  .LocalGatewayLogo {
+   	background: url(../images/interface/logos/nuntiumLocalGateway.png);
+    background-repeat: no-repeat;
+    width: 107px;
+    height: 40px;
+    padding-top: 0px;
+    margin-top: 3px;
+  }
+  .LocalGatewayText {
+  	padding-top: 14px;
+  	font-size:12px;
+  	color: #555555;
+  	a {
+    	color: black;
+    }
+  }
+  .LocalGatewayArrow {
+    background: url(../images/interface/arrow.png);
+    background-repeat: no-repeat;
+    width: 9px;
+    height: 40px;
+    padding-top: 0px;
+    margin-right: 5px;
+  }
+  a.button {
+  	padding-left: 8px !important;
+  	font-size: 14px;
+  }
+}
+
+.TourContent{
+  .LocalGatewayBox {
+    margin-left: 20px;
+  }
+  p {
+    color: $tour_text;
+    margin-left: $separation_from_navigation;
+    margin-bottom: 20px;
+    margin-top: 6px;
+    margin-right: 20px;
+    span.highlight {
+      background:#a2e1fc;
+      padding: 2px;
+    	border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px;
+      color: $blue;
+    }
+  }
+  h1 {
+    color: $blue;
+    font-size: 32px;
+    margin-left: $separation_from_navigation;
+    margin-bottom: 50px;
+    margin-top: 30px;
+  }
+  h2 {
+    color: $blue;
+    font-size: 24px;
+    margin-left: $separation_from_navigation;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    + p {
+      margin: inherit;
+      margin-left: $separation_from_navigation;
+      font-size: inherit;
+    }
+  }
+  h3 {
+    color: $tour_text;
+    font-size: 20px;
+    margin-left: $separation_from_navigation;
+    margin-bottom: 0px;
+    margin-top: 30px;
+    font-weight: normal;
+    + p {
+      margin-top: 0px;
+    }
+  }
+  
+  p.advertised {
+    color: $blue;
+  }
+}
+
+ul.TourNavigation {
+  @extend .sunkenBox;
+  @extend .grey;
+
+  padding: 3px;
+  min-height: 640px;
+  a {
+    display: block;
+    width: 48px;
+    height: 49px;
+    background-repeat: no-repeat !important;
+  }
+  li{
+    @extend .w20;
+    padding: 1px 4px 4px 4px;
+    margin-top: 0px;
+    margin-bottom: 7px;
+    height: 55px !important;
+    border: 1px solid transparent;
+    list-style: none;
+    p {
+      margin-bottom: 4px;
+    }
+    h2 {
+      padding-top: 4px;
+    }
+    h2, p {
+      padding-left: 52px;
+      color: $tour_navigation_text !important;
+      width: 145px;
+    }
+  }
+  li.selected {
+    @extend .sunkenBox;
+    background: $selected_step_background;
+    a {
+      background-position: 0px -49px !important;
+    }
+    h2, p {
+      color: $green !important;
+      }    
+  }
+}

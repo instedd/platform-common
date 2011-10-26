@@ -41,7 +41,8 @@ ul.RightMenu { margin:0; padding:0; position:absolute; right:0; z-index:10 }
 ul.RightMenu li { list-style:none; display:inline-block; vertical-align:top; margin:0; padding:0 }
 
 #footer-span {
-  height: 200px;
+  height: 220px;
+  margin-top:10px;
 }
 
 #footer {
@@ -93,7 +94,8 @@ ul.RightMenu li { list-style:none; display:inline-block; vertical-align:top; mar
 }
 
 body.smallfooter #footer-span {
-  height: 52px;
+  height: 65px;
+  margin-top:10px;
 }
 
 body.smallfooter #footer-container {
