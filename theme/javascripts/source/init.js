@@ -87,7 +87,11 @@
 			return false;
 		});
 		
-		// these are one time per page		
+		// these are one time per page
+		
+		// pagination controls
+		$(".pagination span.disabled a").live('click', function(){ return false; }); // cancel click on disabled buttons
+		
 		// position user menu
 		$('#User').mouseenter(function(){
 			var container = $('.container', $(this));

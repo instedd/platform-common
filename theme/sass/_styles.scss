@@ -985,11 +985,24 @@ td.EmptyDataPie {
 
 .pagination span.button:active { -css3-background:#d0d0d0; background:#d0d0d0; @include none-box-shadow(); border-color:#d0d0d0 }
 
+.pagination span.button.disabled { 
+  background: #ffffff; 
+  border:1px solid #bbbbbb; 
+  @include none-box-shadow();
+  text-shadow:none; 
+  cursor:default; 
+  filter:progid:DXImageTransform.Microsoft.Shadow(color='#ffffff',direction='0',strength='0'); 
+  color:#999999; 
+}
+
 .pagination span.button a {  display:block; position:absolute }
 .pagination span.prev a { top:6px; left:-2px }
 .pagination span.prev:active a { top:7px; left:-1px }
+.pagination span.prev.disabled a { top:6px; left:-2px }
+
 .pagination span.next a { top:6px; right:-2px }
 .pagination span.next:active a { top:7px; right:-3px }
+.pagination span.next.disabled a { top:6px; right:-2px }
 
 .pagination span.prev a span { display:block; height:0px; width:0px; border-width:4px 7px 4px 5px; border-style:solid; border-color: transparent #555555 transparent transparent }
 .pagination span.next a span { display:block; height:0px; width:0px; border-width:4px 5px 4px 7px; border-style:solid; border-color: transparent transparent transparent #555555 }
