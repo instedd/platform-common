@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+
+@font-face {
+	/* This declaration targets Internet Explorer */
+	font-family: 'TheSansPlain';
+	src: url('../fonts/thesansp-webfont.eot');
+}
+
+@font-face {
+	/* This declaration targets everything else */
+	font-family: 'TheSansPlain';
+	src: url(//:) format('no404'), url('../fonts/thesansp-webfont.woff') format('woff'), url('../fonts/thesansp-webfont.ttf') format('truetype'), url('../fonts/thesansp-webfont.svg#webfontRQq2qx4c') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	/* This declaration targets Internet Explorer */
+	font-family: 'TheSansBlack';
+	src: url('../fonts/thesanbp-webfont.eot');
+}
+
+@font-face {
+	/* This declaration targets everything else */
+	font-family: 'TheSansBlack';
+	src: url(//:) format('no404'), url('../fonts/thesanbp-webfont.woff') format('woff'), url('../fonts/thesanbp-webfont.ttf') format('truetype'), url('../fonts/thesanbp-webfont.svg#webfontRQq2qx4c') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*-------------------------- HOME --------------------------*/
+#container { margin-top:-10px !important }
+h1 { font-family:TheSansBlack, Arial, Helvetica, sans-serif; font-size:48px; color:#000000 }
+h1.home { margin-top:60px; color:#ff6600  }
+h1+p.sub { font-family:TheSansPlain, Arial, Helvetica, sans-serif; font-size:24px; color:#ff6600; margin-top:-35px }
+h2 { font-family:TheSansPlain, Arial, Helvetica, sans-serif; font-size:24px }
+.main-image.people { background:url(../images/home/people.png) no-repeat; width:425px; padding-top:360px }
+.home-middle-bar { background:#dddddd; text-align:center; padding:10px 0; margin:40px auto 20px auto; width:960px; border-radius:6px; -moz-border-radius:6px; -webkit-border-radius:6px }
+.home-middle-bar div { display:inline-block; vertical-align:middle }
+.home-middle-bar div.prev a span { display:block; height:0px; width:0px; border-width:8px 14px 8px 10px; border-style:solid; border-color: transparent #555555 transparent transparent }
+.home-middle-bar div.next a span { display:block; height:0px; width:0px; border-width:8px 10px 8px 14px; border-style:solid; border-color: transparent transparent transparent #555555 }
+.home-middle-bar div.prev a.disabled span, .home-middle-bar div.next a.disabled span { filter: alpha(opacity=50); -moz-opacity:0.5; -khtml-opacity: 0.5; opacity: 0.5; cursor:default; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; }
+.benefits { -css3-background: linear-gradient(90deg,#ffffff,#d0d0d0); background: -moz-linear-gradient(top, #ffffff 0%, #d0d0d0 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#d0d0d0)); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#d0d0d0',GradientType=0 ); text-align:left; padding:0 10px; margin:0 6px; border:1px solid #ffffff; border-radius:6px; -moz-border-radius:6px; -webkit-border-radius:6px; box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.3); -webkit-box-shadow:0 1px 4px 0px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.3); width:860px; overflow:hidden }
+#benefits-container { width:1860px }
+#benefits-container div { float:left; width:204px; padding:5px; height:70px; border-right:1px solid #e2e2e2; border-left:1px solid #ececec }
+#benefits-container div:first-child { border-left:none }
+#benefits-container div:last-child { border-right:none }
+#benefits-container div span { margin-bottom:30px }
+#benefits-container div h3 { font-size:16px; margin:2px 0 0 0; padding:0 }
+#benefits-container div p { font-size:12px; color:#555555; margin:0; padding:0 }
+h1+p.desc { font-size:16px; color:#000000; margin:-20px 0 40px 0 !important; }
+.icon-container { background-color:#d0d0d0; border-radius:6px; -moz-border-radius:6px; -webkit-border-radius:6px; box-shadow: 0 1px 1px 0px rgba(0, 0, 0, 0.3)inset; -webkit-box-shadow:0 1px 1px 0px rgba(0, 0, 0, 0.3)inset; -moz-box-shadow: 0 1px 1px 0px rgba(0, 0, 0, 0.3)inset; padding:4px; margin:0 12px 8px 0; text-align:center }
+
+.w45 { width:450px }

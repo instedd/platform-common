@@ -532,6 +532,7 @@ a.icon_button_large {
 .fpause { @extend .icon_button; background-image:url(../images/buttons/fancy/pause.png) }
 .fphone { @extend .icon_button; background-image:url(../images/buttons/fancy/phone.png) }
 .fplay { @extend .icon_button; background-image:url(../images/buttons/fancy/play.png) }
+.fpdf { @extend .icon_button; background-image:url(../images/buttons/fancy/pdf.png) }
 .fpreview { @extend .icon_button; background-image:url(../images/buttons/fancy/preview.png) }
 .frecord { @extend .icon_button; background-image:url(../images/buttons/fancy/record.png) }
 .frecording { @extend .icon_button; background-image:url(../images/buttons/fancy/recording.png) }
@@ -641,6 +642,7 @@ a.icon_button_large {
 .i18y-alert { background:url(../images/icons/18/yellow/alert.png) no-repeat center top; @include icon(18px); }
 
 .i48grad-internet { background:url(../images/icons/48/gradient/internet.png) no-repeat center top; @include icon(48px); }
+.i48grad-alert { background:url(../images/icons/48/gradient/alert.png) no-repeat center top; @include icon(48px); }
 .i48grad-answer { background:url(../images/icons/48/gradient/answer.png) no-repeat center top; @include icon(48px); }
 .i48grad-free { background:url(../images/icons/48/gradient/free.png) no-repeat center top; @include icon(48px); }
 .i48grad-time { background:url(../images/icons/48/gradient/time.png) no-repeat center top; @include icon(48px); }
@@ -680,16 +682,21 @@ a.icon_button_large {
 .i48grad-callback { background:url(../images/icons/48/gradient/callback.png) no-repeat center top; @include icon(48px); }
 .i48grad-openSource { background:url(../images/icons/48/gradient/openSource.png) no-repeat center top; @include icon(48px); }
 .i48grad-shred { background:url(../images/icons/48/gradient/shred.png) no-repeat center top; @include icon(48px); }
+.i48grad-settings { background:url(../images/icons/48/gradient/settings.png) no-repeat center top; @include icon(48px); }
 
 .i72g-information { background:url(../images/icons/72/grey/information.png) no-repeat center top; @include icon(72px); }
 .i72g-fire { background:url(../images/icons/72/grey/fire.png) no-repeat center top; @include icon(72px); }
 .i72g-pie { background:url(../images/icons/72/grey/pie.png) no-repeat center top; @include icon(72px); }
 .i72g-reminder { background:url(../images/icons/72/grey/reminder.png) no-repeat center top; @include icon(72px); }
 
-.i96grad-teach { background:url(../images/icons/96/gradient/teach.png) no-repeat center top; @include icon(96px); }
+.i96grad-book { background:url(../images/icons/96/gradient/book.png) no-repeat center top; @include icon(96px); }
+.i96grad-diabetic { background:url(../images/icons/96/gradient/diabetic.png) no-repeat center top; @include icon(96px); }
 .i96grad-folder { background:url(../images/icons/96/gradient/folder.png) no-repeat center top; @include icon(96px); }
-.i96grad-signature { background:url(../images/icons/96/gradient/signature.png) no-repeat center top; @include icon(96px); }
 .i96grad-ok { background:url(../images/icons/96/gradient/ok.png) no-repeat center top; @include icon(96px); }
+.i96grad-pregnant { background:url(../images/icons/96/gradient/pregnant.png) no-repeat center top; @include icon(96px); }
+.i96grad-signature { background:url(../images/icons/96/gradient/signature.png) no-repeat center top; @include icon(96px); }
+.i96grad-teach { background:url(../images/icons/96/gradient/teach.png) no-repeat center top; @include icon(96px); }
+.i96grad-vaccine { background:url(../images/icons/96/gradient/vaccine.png) no-repeat center top; @include icon(96px); }
 
 
 /* ----- Level Selector ----- */
