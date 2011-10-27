@@ -7,15 +7,10 @@
 
 table .smvalues { vertical-align:top; margin-top:5px }
 ul.tabs.top li.active, ul.tabs.bottom li.active { border:1px solid #d0d0d0 }
+ul.RightMenu li { display:inline }
 
-button.white, a.button.white {
-  background: #d2d2d2;
-}
 
-button.grey, a.button.grey {
-  background: #3b3b3b;
-}
-
-button.orange, a.button.orange {
-	background: #ff6802;
-}
+/* --------------- Buttons ----------------*/
+button.white, a.button.white { filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#d2d2d2',GradientType=0 )}
+button.grey, a.button.grey { filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#767676', endColorstr='#3b3b3b',GradientType=0 )}
+button.orange, a.button.orange { filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fe9639', endColorstr='#ff6802',GradientType=0 )}

@@ -6,13 +6,14 @@ body { background:#ffffff; font-family:Arial, Helvetica, sans-serif; font-size:1
 textarea, input, select, button, label { font-family:Arial, Helvetica, sans-serif; font-size:14px; }
 p { padding:0; margin:15px 0; }
 
-h1, h2 { font-size:18px; color: $darkgray; margin:0 0 15px 0; font-weight: normal; }
+h1, h2 { font-size:20px; color: $darkgray; margin:0 0 15px 0; font-weight: normal; }
 h1 + p, h2 + p { color: $darkgray; }
 h1 + p { margin: -15px 0 15px 0; }
 h2 + p {
   margin: -16px 0 8px 0;
   font-size: 12px;
 }
+h3 { font-size:16px }
 
 h1 span.err-message, h2 span.err-message { color: $orange }
 hr { border:0; height:1px; color:#dddddd; background:#dddddd; position:relative; margin: 3px 0px; }
@@ -482,6 +483,8 @@ a.icon_button_large {
 .fblock { @extend .icon_button; background-image:url(../images/buttons/fancy/block.png) }
 .fbranch { @extend .icon_button; background-image:url(../images/buttons/fancy/branch.png) }
 .fbug { @extend .icon_button; background-image:url(../images/buttons/fancy/bug.png) }
+.fbulb { @extend .icon_button; background-image:url(../images/buttons/fancy/bulb.png) }
+.fchat { @extend .icon_button; background-image:url(../images/buttons/fancy/chat.png) }
 .fclaim { @extend .icon_button; background-image:url(../images/buttons/fancy/claim.png) }
 .fclose { @extend .icon_button; background-image:url(../images/buttons/fancy/close.png) }
 .fconfiguration { @extend .icon_button; background-image:url(../images/buttons/fancy/configuration.png) }
@@ -499,6 +502,7 @@ a.icon_button_large {
 .fkey { @extend .icon_button; background-image:url(../images/buttons/fancy/key.png) }
 .fleave { @extend .icon_button; background-image:url(../images/buttons/fancy/leave.png) }
 .fleft { @extend .icon_button; background-image:url(../images/buttons/fancy/left.png) }
+.flinux { @extend .icon_button; background-image:url(../images/buttons/fancy/linux.png) }
 .flocation { @extend .icon_button; background-image:url(../images/buttons/fancy/location.png) }
 .fmerge { @extend .icon_button; background-image:url(../images/buttons/fancy/merge.png) }
 .fmessage { @extend .icon_button; background-image:url(../images/buttons/fancy/message.png) }
@@ -521,6 +525,7 @@ a.icon_button_large {
 .fsync { @extend .icon_button; background-image:url(../images/buttons/fancy/sync.png) }
 .fteach { @extend .icon_button; background-image:url(../images/buttons/fancy/teach.png) }
 .ftwitter { @extend .icon_button; background-image:url(../images/buttons/fancy/twitter.png) }
+.fubuntu { @extend .icon_button; background-image:url(../images/buttons/fancy/ubuntu.png) }
 .fuser { @extend .icon_button; background-image:url(../images/buttons/fancy/user.png) }
 .fusers { @extend .icon_button; background-image:url(../images/buttons/fancy/users.png) }
 .fuTurn { @extend .icon_button; background-image:url(../images/buttons/fancy/uTurn.png) }
