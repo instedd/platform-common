@@ -7,53 +7,56 @@
   @include button-states(80px);
 }
 
-.footer-next {
-  background-image: url(../images/footer/next.png);
-  float: right;
-  @include footer-pager;
-}
+#instedd-footer {
 
-.footer-prev {
-  background-image: url(../images/footer/previous.png);
-  float: left;
-  @include footer-pager;
-}
+  .footer-next {
+    background-image: url(../images/footer/next.png);
+    float: right;
+    @include footer-pager;
+  }
 
-.jcarousel-clip, .jcarousel-container {
-  height: 79px;
-  overflow: hidden;
-}
+  .footer-prev {
+    background-image: url(../images/footer/previous.png);
+    float: left;
+    @include footer-pager;
+  }
 
-.jcarousel-container, .jcarousel-clip {
-  width: 620px;
-}
+  .jcarousel-clip, .jcarousel-container {
+    height: 79px;
+    overflow: hidden;
+  }
 
-.jcarousel-container {
-  background-image: url(../images/footer/container.png);
-}
+  .jcarousel-container, .jcarousel-clip {
+    width: 620px;
+  }
 
-.jcarousel-item {
-  width: 54px;
-  margin:3px;
-  text-align: center;
-}
+  .jcarousel-container {
+    background-image: url(../images/footer/container.png);
+  }
 
-.jcarousel-item a {
-  height: 76px;
-	width: 56px;
-  display: block;
-  outline: 0;
-  text-decoration: none;
-  @include button-states(90px);
-}
+  .jcarousel-item {
+    width: 54px;
+    margin:3px;
+    text-align: center;
+  }
 
-.tool-name {
-	display: none;
-}
+  .jcarousel-item a {
+    height: 76px;
+  	width: 56px;
+    display: block;
+    outline: 0;
+    text-decoration: none;
+    @include button-states(90px);
+  }
 
-.jcarousel-item.selected a, .jcarousel-item.selected a:hover {
-	background-position: 0px -180px;
-  cursor: default;
+  .tool-name {
+  	display: none;
+  }
+
+  .jcarousel-item.selected a, .jcarousel-item.selected a:hover {
+  	background-position: 0px -180px;
+    cursor: default;
+  }
 }
 
 #geochat a {
