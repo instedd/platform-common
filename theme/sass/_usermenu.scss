@@ -1,5 +1,5 @@
 /* -------------- User menu ------------------- */
-#User { background:url(../images/icons/misc/black/arrowDown.png) no-repeat 94% 6px; font-size:12px; padding:4px 20px 2px 4px; margin-top:5px; position:absloute; cursor:pointer }
+#User { background:url(../images/icons/misc/black/arrowDownMargin.png) no-repeat right 6px; font-size:12px; padding:4px 17px 2px 4px; margin-top:5px; position:absloute; cursor:pointer }
 #User:hover {  
   @include floating-box-shadow();
   border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px; }
