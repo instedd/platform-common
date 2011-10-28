@@ -1,7 +1,6 @@
 @charset "utf-8";
 /* ------------ Replace in Theme.css ------------------- */
-h1, h2, h3 { padding:0; margin:0 0 6px 0 }
-h1 { font-size:18px; font-weight:normal; color:#555555 }
+h1 { font-size:20px; font-weight:normal; color:#555555 }
 
 label { color:#555555 }
 
@@ -38,7 +37,7 @@ label { color:#555555 }
 
 #tasks-container { width:960px; padding:4px 0; margin:0 auto; position:relative }
 
-.stripes { background:url(../theme/images/tasks/stripes.gif) repeat-x; width:60px; height:10px; display:inline-block; vertical-align:middle; margin:0 2px; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px }
+.stripes { background:url(../theme/images/tasks/stripes.gif) repeat-x; width:60px; height:10px; display:inline-block; vertical-align:middle; margin:0 2px; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px; box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2)inset; -moz-box-shadow:0px 0px 2px 0px rgba(0, 0, 0, 0.2)inset; -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2)inset; border-bottom:1px solid #eaeaea; border-left:1px solid #d9d9d9; border-right:1px solid #d9d9d9; border-top:1px solid #a9a9a9 }
 
 #tasks-container span.b { color:#000000 }
 
