@@ -1,0 +1,34 @@
+.community {
+  .header + hr {
+    margin-bottom: 16px !important;
+  }
+  h1 + p {
+    margin-bottom: 21px !important;
+  }
+  p {
+    color: #434343;
+    margin-bottom: 5px;
+  }
+  .subscribe{
+    @extend .w60;
+    background:url(../images/icons/48/gradient/message.png) no-repeat left top;
+    margin-bottom: 15px;
+    margin-top: -2px;
+  	h2 {
+     padding-top: 7px;
+     margin-left: 60px;
+     color: #242424;
+    }
+    p {
+      margin-left: 60px;
+      color: #242424;
+    }
+  }
+  .emailInput {
+    margin-top: 8px;
+    padding-bottom:6px !important;
+    input {
+      margin-top: 8px;
+    }
+  }
+}

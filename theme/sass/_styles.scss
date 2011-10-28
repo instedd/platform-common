@@ -709,8 +709,10 @@ a.icon_button_large {
 .w13 { @include width-class(130px); }
 .w15 { @include width-class(150px); }
 .w20 { @include width-class(200px); }
+.w22 { @include width-class(220px); }
 .w30 { @include width-class(300px); }
 .w40 { @include width-class(400px); }
+.w45 { @include width-class(450px); }
 .w50 { @include width-class(500px); }
 .w54 { @include width-class(540px); }
 .w55 { @include width-class(550px); }
