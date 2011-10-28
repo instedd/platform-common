@@ -28,13 +28,15 @@
 	font-style: normal;
 }
 
+.homepage {
+
 /*-------------------------- HOME (top) --------------------------*/
 #container { margin-top:-10px !important }
 h1 { font-family:TheSansBlack, Arial, Helvetica, sans-serif; font-size:48px; color:#000000 }
 h1.home { margin-top:60px; color:#ff6600  }
 h1+p.sub { font-family:TheSansPlain, Arial, Helvetica, sans-serif; font-size:24px; color:#ff6600; margin-top:-35px }
 h2 { font-family:TheSansPlain, Arial, Helvetica, sans-serif; font-size:24px }
-.main-image.people { background:url(../images/home/people.png) no-repeat; width:425px; padding-top:360px }
+.people { background:url(../images/home/people.png) no-repeat; width:425px; padding-top:360px }
 
 
 /*-------------------------- HOME (middle bar) --------------------------*/
@@ -76,6 +78,4 @@ div.support h2 { margin-top:25px }
 hr { margin:15px 0 }
 p { margin:0 0 10px 0; color:#555555 }
 
-/*---------- widths ----------*/
-.w22 { width:220px }
-.w45 { width:450px }
+}
