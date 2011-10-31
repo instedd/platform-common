@@ -17,7 +17,9 @@
 }
 
 /* -------------- InSTEDD Platform pulldown menu ------------------- */
-#instedd-pulldown { 
+#instedd-pulldown {
+  display: none;
+ 
   margin:6px 0 0 0; 
   padding:4px; 
   position:absolute; 

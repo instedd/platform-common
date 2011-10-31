@@ -89,10 +89,10 @@ ul.RightMenu button { font-size:12px !important }
     a:hover { color: $orange_hover; }
   }
   .more {
-    float: right;
-    margin: 7px 0px;
+    margin: 3px 0px;
   }
 }
+#footer-container .right { text-align:right }
 
 body.smallfooter #footer-span {
   height: 65px;

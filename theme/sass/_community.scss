@@ -9,9 +9,11 @@
     color: #434343;
     margin-bottom: 5px;
   }
+  .fimport {
+    margin-left: 15px;
+  }
   .subscribe{
     @extend .w60;
-    background:url(../images/icons/48/gradient/message.png) no-repeat left top;
     margin-bottom: 15px;
     margin-top: -2px;
   	h2 {
