@@ -30,7 +30,7 @@ $.each(apps, function(index, app){
 		.append($("<a>").attr('href',app.url).attr('target','_blank').append($("<div>").addClass('tool-name').text(app.name)))
 	);
 	
-	$('#instedd-pulldown > li > ul').append($("<li>").append($("<a>").attr('href',app.url).text(app.name)));
+	// $('#instedd-pulldown > li > ul').append($("<li>").append($("<a>").attr('href',app.url).text(app.name)));
 });
 
 $("#tools-carousel").append($("<li>"));

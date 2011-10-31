@@ -18,21 +18,20 @@
 
 /* -------------- InSTEDD Platform pulldown menu ------------------- */
 #instedd-pulldown {
-  display: none;
- 
   margin:6px 0 0 0; 
   padding:4px; 
   position:absolute; 
   top:-3px; left:0; 
   z-index:40;
   
-  &:hover { 
+/*  &:hover { 
     background:#FFFFFF;
     @include floating-box-shadow(); 
     -moz-border-radius:5px; 
     -webkit-border-radius:5px; 
     border-radius:5px 
   }
+*/
   
   li { 
     background:url(../images/header/InSTEDDPlatform.png) no-repeat left top; 
@@ -42,14 +41,14 @@
     list-style:none; 
     cursor:pointer; 
     
-    &:hover { background-position-y: -25px; }
+/*    &:hover { background-position-y: -25px; }
     
     ul { 
       display:none; font-size:12px; 
       margin:22px 0 0 -2px;
       @include highlighted-items-with-grey();
-    }
+    }*/
   }
   
-  &:hover li ul { display:block; }
+/*  &:hover li ul { display:block; } */
 }
