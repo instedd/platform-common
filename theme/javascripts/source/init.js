@@ -127,9 +127,7 @@
 		window.setTimeout(function(){
 			jQuery('.benefits #benefits-container').jcarousel({
 			  buttonNextHTML: '<div class="next"><a href="#" onclick="return false;"><span></span></a></div>',
-			  buttonPrevHTML: '<div class="prev"><a href="#" onclick="return false;"><span></span></a></div>',
-			  itemFirstInCallback: function (carousel, item, i) { },
-			  itemLastInCallback: function (carousel, item, i) { }
+			  buttonPrevHTML: '<div class="prev"><a href="#" onclick="return false;"><span></span></a></div>'
 			});
 		}, 500);
 		

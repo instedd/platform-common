@@ -42,9 +42,18 @@ h2 { font-family:TheSansPlain, Arial, Helvetica, sans-serif; font-size:24px }
 /*-------------------------- HOME (middle bar) --------------------------*/
 .home-middle-bar { background:#dddddd; text-align:center; padding:10px 0; margin:40px auto 20px auto; width:960px; border-radius:6px; -moz-border-radius:6px; -webkit-border-radius:6px }
 .home-middle-bar div { display:inline-block; vertical-align:middle }
-.home-middle-bar div.prev a span { display:block; height:0px; width:0px; border-width:8px 14px 8px 10px; border-style:solid; border-color: transparent #555555 transparent transparent }
-.home-middle-bar div.next a span { display:block; height:0px; width:0px; border-width:8px 10px 8px 14px; border-style:solid; border-color: transparent transparent transparent #555555 }
-.home-middle-bar div.prev a.disabled span, .home-middle-bar div.next a.disabled span { filter: alpha(opacity=50); -moz-opacity:0.5; -khtml-opacity: 0.5; opacity: 0.5; cursor:default; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; }
+
+.home-middle-bar div.prev a span { display:block; height:0px; width:0px; border-width:8px 14px 8px 10px; border-style:solid;
+  border-color: transparent $black transparent transparent;
+  &:hover, &:focus, &:active { border-color: transparent $black_hover transparent transparent; }
+}
+.home-middle-bar div.prev.jcarousel-prev-disabled a span { border-color: transparent $lightgray_hover transparent transparent; }
+
+.home-middle-bar div.next a span { display:block; height:0px; width:0px; border-width:8px 10px 8px 14px; border-style:solid;
+  border-color: transparent transparent transparent $black;
+  &:hover, &:focus, &:active { border-color: transparent transparent transparent $black_hover; }
+}
+.home-middle-bar div.next.jcarousel-next-disabled a span { border-color: transparent transparent transparent $lightgray_hover; }
 
 #benefits-container { width:1400px }
 
