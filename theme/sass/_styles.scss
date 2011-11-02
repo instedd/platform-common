@@ -888,7 +888,7 @@ div.tabsline { padding:20px 0 20px 0; border-top:1px solid #e6e6e6; background:#
 /* ---------------------- Tables --------------------------*/
 
 /* -------- General ---------*/
-.tablewrapp { padding:2px 0; border-radius:6px; -moz-border-radius:6px; -webkit-border-radius:6px; @include content-box-shadow(); min-height:300px; position:relative }
+.tablewrapp { padding:0 0; border-radius:6px; -moz-border-radius:6px; -webkit-border-radius:6px; @include content-box-shadow(); min-height:300px; position:relative }
 
 .titletable { color:#555555; margin:5px 0 5px 10px; display:block }
 
@@ -925,14 +925,12 @@ div.tabsline { padding:20px 0 20px 0; border-top:1px solid #e6e6e6; background:#
 
   // copy from css3 button mixin
   &:hover, &:focus  { 
-    @include content-box-shadow();
     background: -moz-linear-gradient(top, $hover_background_color2 0%, $hover_background_color 100%); 
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$hover_background_color), color-stop(100%,$hover_background_color2));
     cursor:pointer;
   }
   &:active { 
     background:$background_color;
-    @include none-box-shadow();
   }  
 }
 
@@ -993,14 +991,14 @@ td.EmptyDataPie {
 .pagination a { color:#777777; text-decoration:none }
 .pagination span { margin:0 3px }
 
-.pagination span.button { border:1px solid #ffffff; margin:0 4px 1px 4px; display:inline-block; vertical-align:middle; -moz-border-radius:22px; -webkit-border-radius:22px; border-radius:22px; width:22px; height:22px;-css3-background: radial-gradient(50% 12%, circle closest-corner, #ffffff, #d0d0d0 15%); background: -moz-radial-gradient(50% 10% , circle , white 1px, #D0D0D0 20px); background: -webkit-radial-gradient(50% 17%, circle, white, #dbdbdb 75%); @include content-box-shadow(); cursor:pointer; position:relative; padding:0 }
+.pagination span.button { border:1px solid #ffffff; margin:1px 4px 1px 3px; display:inline-block; vertical-align:middle; -moz-border-radius:22px; -webkit-border-radius:22px; border-radius:22px; width:22px; height:22px;-css3-background: radial-gradient(50% 12%, circle closest-corner, #ffffff, #d0d0d0 15%); background: -moz-radial-gradient(50% 10% , circle , white 1px, #D0D0D0 20px); background: -webkit-radial-gradient(50% 17%, circle, white, #dbdbdb 75%); @include content-box-shadow(); cursor:pointer; position:relative; padding:0 }
 
 .pagination span.button:hover, .pagination span.button:focus { -css3-background: radial-gradient(50% 12%, circle closest-corner, #f9f9f9, #bfbfbf 15%); background: -moz-radial-gradient(50% 10% , circle , #f9f9f9 1px, #bfbfbf 20px); background: -webkit-radial-gradient(50% 17%, circle, #f9f9f9, #bfbfbf 75%); @include content-box-shadow(); }
 
 .pagination span.button:active { -css3-background:#d0d0d0; background:#d0d0d0; @include none-box-shadow(); border-color:#d0d0d0 }
 
 .pagination span.button.disabled { 
-  background: #ffffff; 
+  background: transparent; 
   border:1px solid #bbbbbb; 
   @include none-box-shadow();
   text-shadow:none; 
@@ -1024,7 +1022,10 @@ td.EmptyDataPie {
 .pagination span.next.disabled a span { top:6px; right:-2px }
 
 .pagination span.prev a span { display:block; height:0px; width:0px; border-width:4px 7px 4px 5px; border-style:solid; border-color: transparent #555555 transparent transparent }
+.pagination span.prev.disabled a span { display:block; height:0px; width:0px; border-width:4px 7px 4px 5px; border-style:solid; border-color: transparent #bbbbbb transparent transparent }
+
 .pagination span.next a span { display:block; height:0px; width:0px; border-width:4px 5px 4px 7px; border-style:solid; border-color: transparent transparent transparent #555555 }
+.pagination span.next.disabled a span { display:block; height:0px; width:0px; border-width:4px 5px 4px 7px; border-style:solid; border-color: transparent transparent transparent #bbbbbb }
 
 
 /* -------- ux-collapsible ---------*/
