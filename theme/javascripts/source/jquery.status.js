@@ -48,7 +48,8 @@ $.status.showError(msg, [kind]);
 						hideFunc = function() {
 							window.setTimeout(function() {
 								message_body.animate({top : -message.outerHeight() + 'px'}, {duration: 1200});
-						}, timeout)};
+							}, timeout);
+						};
 					}
 
 					// display message with animation 200ms after page load
@@ -65,8 +66,17 @@ $.status.showError(msg, [kind]);
 			_set_position: function(dom) {
 				var header = $("#header");
 				var y = header.offset().top + header.height() - 11;
+				var scrollY = $(window).scrollTop();
 				dom.css('left', (($(document).width() - dom.outerWidth()) / 2) + 'px');
-				dom.css('top', y + 'px');
+				if ( scrollY > y) {
+					dom.css('top', '0px');
+					dom.css('position', 'fixed');
+					dom.css('z-index', 100);
+				} else if ( scrollY < y) {
+					dom.css('position', 'absolute');
+					dom.css('top', y + 'px');
+					dom.css('z-index', 0);
+				}
 				dom.show();
 			}
 		}
@@ -74,5 +84,6 @@ $.status.showError(msg, [kind]);
 		
 	$(function(){ $.status._display_flash(true); });
 	$(window).resize(function(){ $.status._display_flash(false); });
+	$(window).scroll(function(){ $.status._display_flash(false); });
 
 })(jQuery);
