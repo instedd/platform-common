@@ -32,9 +32,9 @@
 
 /*-------------------------- HOME (top) --------------------------*/
 #container { margin-top:-10px !important }
-h1 { font-family:TheSansBlack, Arial, Helvetica, sans-serif; font-size:48px; color:#000000 }
-h1.home { margin-top:60px; color:#ff6600  }
-h1+p.sub { font-family:TheSansPlain, Arial, Helvetica, sans-serif; font-size:24px; color:#ff6600; margin-top:-35px }
+h1 { font-family:TheSansBlack, Arial, Helvetica, sans-serif; font-size:48px; color:#000000; line-height:35px; margin:5px 0 10px 0 }
+h1.home { margin-top:60px; color:#ff6600; line-height:35px  }
+h1+p.sub { font-family:TheSansPlain, Arial, Helvetica, sans-serif; font-size:24px; color:#ff6600; line-height:22px }
 h2 { font-family:TheSansPlain, Arial, Helvetica, sans-serif; font-size:24px }
 .people { background:url(../images/home/people.png) no-repeat; width:425px; padding-top:360px }
 
@@ -99,7 +99,7 @@ h2 { font-family:TheSansPlain, Arial, Helvetica, sans-serif; font-size:24px }
 
 
 /*-------------------------- HOME (bottom) --------------------------*/
-h1+p.desc { font-size:16px; color:#000000; margin:-20px 0 40px 0 !important; }
+h1+p.desc { font-size:16px; color:#000000; margin:0 0 40px 0 !important; line-height:22px }
 .InfoGraphic { background:url(../images/home/InfoGraphic.png) no-repeat; width:411px; height:335px }
 .icon-container { background-color:#d0d0d0; border-radius:6px; -moz-border-radius:6px; -webkit-border-radius:6px; box-shadow: 0 1px 1px 0px rgba(0, 0, 0, 0.3)inset; -webkit-box-shadow:0 1px 1px 0px rgba(0, 0, 0, 0.3)inset; -moz-box-shadow: 0 1px 1px 0px rgba(0, 0, 0, 0.3)inset; padding:4px; margin:0 12px 8px 0; text-align:center }
 .box.features{ padding:15px }
