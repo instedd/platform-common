@@ -1,8 +1,8 @@
+require 'bundler/setup'
 require 'smart_asset'
 require 'fileutils'
-require 'right_aws'
-
-DISTRIBUTION_ID = 'E3L595KW7W8HK9'
+require 'cloudfiles'
+require 'digest/md5'
 
 task :default => [:all]
 
@@ -30,7 +30,7 @@ task :css do
   puts `compass compile`
 end
 
-task :deploy => [:all, :sample_index, :build_zip, :upload, :invalidate]
+task :deploy => [:build_zip, :upload]
 
 task :sample_index do
   puts "building samples/index.htm"
@@ -53,33 +53,59 @@ task :sample_index do
   file.close
 end
 
-task :build_zip => :all do
+task :build_zip => [:all, :sample_index] do
   puts "building theme/theme.zip"
   `zip -r theme/theme.zip theme/ -x theme/theme.zip *sass* *.DS_Store *javascripts/source/*`
 end
 
 task :upload  do
-  # be sure to have exported these keys
-  # export AWS_ACCESS_KEY_ID=yourS3accesskey
-  # export AWS_SECRET_ACCESS_KEY=yourS3secretkey
-  puts "uploading to s3"
-  ['samples','theme'].each do |folder|
-    puts %x[s3sync -v --public-read --recursive --exclude="\.DS_Store|sass|javascripts/source" --cache-control="public,max-age=3600" --delete #{folder}/ theme.instedd.org:#{folder}]
+  files = Dir['{{samples,theme}/**/*,index.htm}']
+  files.reject! { |x| !File.file? x }
+  files.reject! { |x| x.end_with? '/.DS_Store' }
+  files.reject! { |x| x.start_with? 'theme/sass/' }
+  files.reject! { |x| x.start_with? 'theme/javascripts/source' }
+
+  cf = CloudFiles::Connection.new :username => ENV['CLOUDFILES_USER'], :api_key => ENV['CLOUDFILES_API_KEY']
+  ['platform-common', 'platform-common-staging'].each do |bucket_name|
+    puts "Uploading changes to bucket '#{bucket_name}'"
+    bucket = cf.container bucket_name
+    $stored_files = bucket.objects_detail
+
+    def has_to_update? file
+      stored = $stored_files[file]
+      if stored
+        if File.size(file) != stored[:bytes].to_i || Digest::MD5.file(file).to_s != stored[:hash]
+          puts "Updating file #{file}"
+          true
+        else
+          false
+        end
+      else
+        puts "Uploading new file #{file}"
+        true
+      end
+    end
+
+    files.each do |file|
+      if has_to_update? file
+        obj = bucket.create_object file
+        headers = {}
+        headers['Access-Control-Allow-Origin'] = '*' if file.start_with? 'theme/fonts/'
+        obj.write open(file), headers
+      end
+    end
+
+    ($stored_files.keys - files).each do |missing|
+      next if File.directory? missing
+      puts "Deleting file #{missing}"
+      bucket.delete_object missing
+    end
+
+    begin
+      puts "Invalidating cache"
+      bucket.purge_from_cdn
+    rescue
+      puts "Failed to invalidate CDN (probably last invalidation was less than an hour ago)"
+    end
   end
-  puts "done"
-end
-
-task :invalidate do
-  puts "invalidating cloudfront paths"
-  acf = RightAws::AcfInterface.new(ENV['AWS_ACCESS_KEY_ID'], ENV['AWS_SECRET_ACCESS_KEY'])
-
-  # fixed paths to invalidate
-  paths_to_invalidate = ['/theme/javascripts/theme.js', '/theme/stylesheets/theme.css']
-
-  # files in sample to invalidate
-  Dir["#{Dir.pwd}/samples/**/*.*"].each do |filename|
-    paths_to_invalidate << filename.sub("#{Dir.pwd}", "")
-  end
-
-  acf.create_invalidation DISTRIBUTION_ID, :path => paths_to_invalidate
 end
