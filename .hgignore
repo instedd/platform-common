@@ -6,5 +6,4 @@ theme/stylesheets/theme.css
 theme/theme.zip
 
 syntax: regexp
-^index\.htm$
 ^samples/index\.htm$
