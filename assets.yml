@@ -8,6 +8,7 @@ javascripts:
     - superbly-tagfield
     - jquery.jcarousel.min
     - jquery.bubblepopup.v2.3.1.min
+    - jquery.placeholder
     - jquery.wajbar
     - jquery.status
     - footer

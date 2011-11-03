@@ -25,6 +25,8 @@
 				}
 
 				$(".ux-wajbar", container).wajbar();
+				
+				$('input[placeholder],textarea[placeholder]', container).placeholder();
 
 				$(".ux-nstep", container).each(function(){
 					var nstep = $(this);
