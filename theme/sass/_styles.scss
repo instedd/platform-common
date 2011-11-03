@@ -24,6 +24,13 @@ hr { border:0; height:1px; color:#dddddd; background:#dddddd; position:relative;
 
 :-moz-placeholder { color:#999999 !important }
 
+label.placeholder {
+  cursor: text;
+  padding: 4px 4px 4px 4px;
+  color: #999999;
+  font-style: italic;
+}
+
 /* ----- CLASSES ----- */
 a { color: inherit; text-decoration:none }
 a:hover { text-decoration:none; }
