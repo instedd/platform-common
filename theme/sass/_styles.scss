@@ -207,8 +207,24 @@ span.radio {
 }
 .ux-clist:disabled { background-color:white !important; color:#999999; border:1px solid transparent !important; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
 
-.clist-add { @extend .padd; vertical-align:middle !important }
-.clist-remove { @extend .premove; vertical-align:middle !important }
+.clist-button {
+  background-color: transparent;
+  background-position:left top; 
+  background-repeat:no-repeat; 
+  height:24px; 
+  width:24px;
+  margin: 4px 2px; 
+  cursor:pointer; 
+  border:none;
+  display:inline-block;
+  vertical-align:middle !important;
+  @include button-states(30px);
+  &.ie_not_empty { padding:0 0 0 27px }
+  &:not(:empty) { padding:0 0 0 27px }
+}
+
+.clist-add { @extend .clist-button; background-image:url(../images/buttons/plain/add.png); }
+.clist-remove { @extend .clist-button; background-image:url(../images/buttons/plain/remove.png); }
 .clist-add:disabled { background-position: 0 -90px !important }
 .clist-remove:disabled { background-position: 0 -90px !important }
 

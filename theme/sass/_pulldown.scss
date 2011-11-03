@@ -35,11 +35,12 @@
   
   li { 
     background:url(../images/header/InSTEDDPlatform.png) no-repeat left top; 
-    min-width:138px; 
+    width:125px;
+/*    min-width:138px; */
     min-height:18px; 
     display:inline-block; 
     list-style:none; 
-    cursor:pointer; 
+/*    cursor:pointer; */
     
 /*    &:hover { background-position-y: -25px; }
     
