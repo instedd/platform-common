@@ -1004,8 +1004,8 @@ td.EmptyDataPie {
 
 
 /* -------- Two column table  ---------*/
-.TwoColumn tr td:nth-child(1) { }
-.TwoColumn tr td:nth-child(2), .TwoColumn tr th:nth-child(2) { width:100px; text-align:right }
+.TwoColumn tr td:first-child { }
+.TwoColumn tr td:last-child, .TwoColumn tr th:last-child { width:100px; text-align:right }
 
 
 /* --------- PAGINATION ----------- */
