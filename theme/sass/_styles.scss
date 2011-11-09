@@ -911,7 +911,7 @@ div.tabsline { padding:20px 0 20px 0; border-top:1px solid #e6e6e6; background:#
 /* ---------------------- Tables --------------------------*/
 
 /* -------- General ---------*/
-.tablewrapp { padding:0 0; border-radius:6px; -moz-border-radius:6px; -webkit-border-radius:6px; @include content-box-shadow(); min-height:300px; position:relative }
+.tablewrapp { padding:0 0 1px 0; border-radius:6px; -moz-border-radius:6px; -webkit-border-radius:6px; @include content-box-shadow(); min-height:300px; position:relative }
 
 .titletable { color:#555555; margin:5px 0 5px 10px; display:block }
 
@@ -975,8 +975,8 @@ td.EmptyData {
   background: url(../images/icons/72/grey/information.png) no-repeat center 40px;
   font-style: italic;
   color: $lightgray;
-  height: 200px !important;
-  padding-top: 65px !important;
+  height:200px !important;
+  padding-top:65px !important;
 }
 
 td.EmptyDataPie { 
