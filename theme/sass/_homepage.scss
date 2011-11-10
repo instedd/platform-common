@@ -30,97 +30,110 @@
 
 .homepage {
 
-/*-------------------------- HOME (top) --------------------------*/
-#container { margin-top:-10px !important }
-h1 { font-family:TheSansBlack, Arial, Helvetica, sans-serif; font-size:48px; color:#000000; line-height:35px; margin:5px 0 10px 0 }
-h1.home { margin-top:60px; color:#ff6600; line-height:35px  }
-h1+p.sub { font-family:TheSansPlain, Arial, Helvetica, sans-serif; font-size:24px; color:#ff6600; line-height:22px }
-h2 { font-family:TheSansPlain, Arial, Helvetica, sans-serif; font-size:24px }
-.people { background:url(../images/home/people.png) no-repeat; width:425px; padding-top:360px }
+  /*-------------------------- HOME (top) --------------------------*/
+  #container { margin-top:-10px !important }
+  h1 { font-family:TheSansBlack, Arial, Helvetica, sans-serif; font-size:48px; color:#000000; line-height:35px; margin:5px 0 10px 0 }
+  h1.home { margin-top:60px; color:#ff6600; line-height:35px  }
+  h1+p.sub { font-family:TheSansPlain, Arial, Helvetica, sans-serif; font-size:24px; color:#ff6600; line-height:22px }
+  h2 { font-family:TheSansPlain, Arial, Helvetica, sans-serif; font-size:24px; color:black; }
+  .people { background:url(../images/home/people.png) no-repeat; width:425px; padding-top:360px }
 
 
-/*-------------------------- HOME (middle bar) --------------------------*/
-.home-middle-bar { background:#dddddd; text-align:center; padding:10px 0; margin:40px auto 20px auto; width:960px; border-radius:6px; -moz-border-radius:6px; -webkit-border-radius:6px }
-.home-middle-bar div { display:inline-block; vertical-align:middle }
+  /*-------------------------- HOME (middle bar) --------------------------*/
+  .home-middle-bar { background:#dddddd; text-align:center; padding:10px 0; margin:35px auto 50px auto; width:960px; border-radius:6px; -moz-border-radius:6px; -webkit-border-radius:6px }
+  .home-middle-bar div { display:inline-block; vertical-align:middle }
 
-.home-middle-bar div.prev a span { display:block; height:0px; width:0px; border-width:8px 14px 8px 10px; border-style:solid;
-  border-color: transparent $black transparent transparent;
-  &:hover, &:focus, &:active { border-color: transparent $black_hover transparent transparent; }
-}
-.home-middle-bar div.prev.jcarousel-prev-disabled a span { border-color: transparent $lightgray_hover transparent transparent; }
+  .home-middle-bar div.prev a span { display:block; height:0px; width:0px; border-width:8px 14px 8px 10px; border-style:solid;
+    border-color: transparent $black transparent transparent;
+    &:hover, &:focus, &:active { border-color: transparent $black_hover transparent transparent; }
+  }
+  .home-middle-bar div.prev.jcarousel-prev-disabled a span { border-color: transparent $lightgray_hover transparent transparent; }
 
-.home-middle-bar div.next a span { display:block; height:0px; width:0px; border-width:8px 10px 8px 14px; border-style:solid;
-  border-color: transparent transparent transparent $black;
-  &:hover, &:focus, &:active { border-color: transparent transparent transparent $black_hover; }
-}
-.home-middle-bar div.next.jcarousel-next-disabled a span { border-color: transparent transparent transparent $lightgray_hover; }
+  .home-middle-bar div.next a span { display:block; height:0px; width:0px; border-width:8px 10px 8px 14px; border-style:solid;
+    border-color: transparent transparent transparent $black;
+    &:hover, &:focus, &:active { border-color: transparent transparent transparent $black_hover; }
+  }
+  .home-middle-bar div.next.jcarousel-next-disabled a span { border-color: transparent transparent transparent $lightgray_hover; }
 
-#benefits-container { width:1400px }
+  #benefits-container { width:1400px }
 
-#benefits-container div { float:left; width:208px; padding:5px; height:70px; border-right:1px solid #e2e2e2; border-left:1px solid #ececec }
-#benefits-container div:first-child { border-left:none }
-#benefits-container div:last-child { border-right:none }
-#benefits-container div span { margin-bottom:30px }
-#benefits-container div h3 { font-size:16px; margin:2px 0 0 0; padding:0 }
-#benefits-container div p { font-size:12px; color:#555555; margin:0; padding:0 }
+  #benefits-container div { float:left; width:208px; padding:5px; height:70px; border-right:1px solid #e2e2e2; border-left:1px solid #ececec }
+  #benefits-container div:first-child { border-left:none }
+  #benefits-container div:last-child { border-right:none }
+  #benefits-container div span { margin-bottom:30px }
+  #benefits-container div h3 { font-size:16px; margin:2px 0 0 0; padding:0 }
+  #benefits-container div p { font-size:12px; color:#555555; margin:0; padding:0 }
 
-.benefits {
-  width: 100%;
-  position: relative;
-  
-  .prev { left: 4px; top: 0; position: absolute; }
-  .next { right: 0; top: 0; position: absolute; }
-  .prev, .next { 
-    width: 30px;
-    a { 
-      height: 70px; display: block;
-      position: relative;
-      span { top: 33px; position: absolute; }
+  .benefits {
+    width: 100%;
+    position: relative;
+    .prev { left: 4px; top: 0; position: absolute; }
+    .next { right: 0; top: 0; position: absolute; }
+    .prev, .next { 
+      width: 30px;
+      a { 
+        height: 70px; display: block;
+        position: relative;
+        span { top: 33px; position: absolute; }
+      }
+    }
+    .jcarousel-clip {
+      width: 880px;
+      -css3-background: linear-gradient(90deg,#ffffff,#d0d0d0); background: -moz-linear-gradient(top, #ffffff 0%, #d0d0d0 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#d0d0d0)); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#d0d0d0',GradientType=0 ); text-align:left; padding:0 0px; margin:0 6px; border:1px solid #ffffff; border-radius:6px; -moz-border-radius:6px; -webkit-border-radius:6px; box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.3); -webkit-box-shadow:0 1px 4px 0px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.3); overflow:hidden;
+      }
+
+    .jcarousel-item { 
+      width: 208px; padding:5px; height:70px; border-right:1px solid #e2e2e2; border-left:1px solid #ececec; 
+      &:first-child { border-left:1px solid transparent; }
+      &:last-child { border-right:1px solid transparent; }
+      span { margin-bottom:30px; }
+      h3 { font-size:16px; margin:2px 0 0 0; padding:0; font-weight: normal; }
+      p { font-size:12px; color:#555555; margin:0; padding:0; }  
     }
   }
-  
-  .jcarousel-clip {
-    width: 880px;
-    
-    
--css3-background: linear-gradient(90deg,#ffffff,#d0d0d0); background: -moz-linear-gradient(top, #ffffff 0%, #d0d0d0 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#d0d0d0)); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#d0d0d0',GradientType=0 ); text-align:left; padding:0 0px; margin:0 6px; border:1px solid #ffffff; border-radius:6px; -moz-border-radius:6px; -webkit-border-radius:6px; box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.3); -webkit-box-shadow:0 1px 4px 0px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.3); overflow:hidden;
-    
+
+
+  /*-------------------------- HOME (bottom) --------------------------*/
+  h1+p.desc { font-size:16px; color:#000000; margin:0 0 40px 0 !important; line-height:22px }
+  .InfoGraphic { background:url(../images/home/InfoGraphic.png) no-repeat; width:411px; height:335px }
+  .icon-container { background-color:#d0d0d0; border-radius:6px; -moz-border-radius:6px; -webkit-border-radius:6px; box-shadow: 0 1px 1px 0px rgba(0, 0, 0, 0.3)inset; -webkit-box-shadow:0 1px 1px 0px rgba(0, 0, 0, 0.3)inset; -moz-box-shadow: 0 1px 1px 0px rgba(0, 0, 0, 0.3)inset; padding:4px; margin:0 12px 8px 0; text-align:center }
+  .box.features{ padding:15px }
+  .features h2 { margin:0 }
+  .features div div { padding:0 0 10px 12px }
+  span.r-arrow { display:inline-block; height:0px; width:0px; border-width:4px 5px 4px 7px; border-style:solid; border-color: transparent transparent transparent #555555; margin-left:-12px }
+
+  .box.plain.orange { background:#fff0bd; padding:20px }
+  .box.plain.orange h2 { color:#ff6600 }
+  .box.plain.orange span:first-child { color:#ff6600; display: block; }
+  .box.plain.orange p { font-size:14px; color:#555555; margin:15px 0 3px 0 }
+  .box.plain.orange hr { background-color:#ffcd8e; }
+
+  .box.plain.orange table td { color:#555555; line-height:15px; padding-bottom:6px }
+  .box.plain.orange table tr td:first-child { color:#ff6600; vertical-align:top; white-space:nowrap }
+  .box.plain.orange table tr td:last-child { padding-left:35px }
+  .box.plain.orange table button, .box.plain.orange table .button { margin:0 0 0 -30px  }
+  div.support h2 { margin-top:25px }
+
+
+  hr { margin:15px 0 }
+  p {
+    margin:0 0 10px 0;
+    color:#555555;
+  }
+  p.plain {
+      color:black !important;
+    }
+
+  a.black {
+    color: black !important;
   }
 
-  .jcarousel-item { 
-    width: 208px; padding:5px; height:70px; border-right:1px solid #e2e2e2; border-left:1px solid #ececec; 
-    &:first-child { border-left:1px solid transparent; }
-    &:last-child { border-right:1px solid transparent; }
-    span { margin-bottom:30px; }
-    h3 { font-size:16px; margin:2px 0 0 0; padding:0; font-weight: normal; }
-    p { font-size:12px; color:#555555; margin:0; padding:0; }  
+  .homeHeader {
+   position: relative;
+   height: 395px;
+   .loginLinks {
+     bottom: 0px;
+     position: absolute;
+   }
   }
-}
-
-
-/*-------------------------- HOME (bottom) --------------------------*/
-h1+p.desc { font-size:16px; color:#000000; margin:0 0 40px 0 !important; line-height:22px }
-.InfoGraphic { background:url(../images/home/InfoGraphic.png) no-repeat; width:411px; height:335px }
-.icon-container { background-color:#d0d0d0; border-radius:6px; -moz-border-radius:6px; -webkit-border-radius:6px; box-shadow: 0 1px 1px 0px rgba(0, 0, 0, 0.3)inset; -webkit-box-shadow:0 1px 1px 0px rgba(0, 0, 0, 0.3)inset; -moz-box-shadow: 0 1px 1px 0px rgba(0, 0, 0, 0.3)inset; padding:4px; margin:0 12px 8px 0; text-align:center }
-.box.features{ padding:15px }
-.features h2 { margin:0 }
-.features div div { padding:0 0 10px 12px }
-span.r-arrow { display:inline-block; height:0px; width:0px; border-width:4px 5px 4px 7px; border-style:solid; border-color: transparent transparent transparent #555555; margin-left:-12px }
-
-.box.plain.orange { background:#fff0bd; padding:20px }
-.box.plain.orange h2 { color:#ff6600 }
-.box.plain.orange span:first-child { color:#ff6600; display: block; }
-.box.plain.orange p { font-size:14px; color:#555555; margin:15px 0 3px 0 }
-.box.plain.orange hr { background-color:#ffcd8e; }
-
-.box.plain.orange table td { color:#555555; line-height:15px; padding-bottom:6px }
-.box.plain.orange table tr td:first-child { color:#ff6600; vertical-align:top; white-space:nowrap }
-.box.plain.orange table tr td:last-child { padding-left:35px }
-.box.plain.orange table button, .box.plain.orange table .button { margin:0 0 0 -30px  }
-div.support h2 { margin-top:25px }
-
-
-hr { margin:15px 0 }
-p { margin:0 0 10px 0; color:#555555 }
-
 }
