@@ -33,14 +33,14 @@
   /*-------------------------- HOME (top) --------------------------*/
   #container { margin-top:-10px !important }
   h1 { font-family:TheSansBlack, Arial, Helvetica, sans-serif; font-size:48px; color:#000000; line-height:35px; margin:5px 0 10px 0 }
-  h1.home { margin-top:60px; color:#ff6600; line-height:35px  }
-  h1+p.sub { font-family:TheSansPlain, Arial, Helvetica, sans-serif; font-size:24px; color:#ff6600; line-height:22px }
+  h1.home { margin-top:80px; color:#ff6600; line-height:35px  }
+  h1+p.sub { font-family:TheSansPlain, Arial, Helvetica, sans-serif; font-size:24px; color:#ff6600; line-height:22px;margin-bottom: 18px; margin-top: -2px; }
   h2 { font-family:TheSansPlain, Arial, Helvetica, sans-serif; font-size:24px; color:black; }
   .people { background:url(../images/home/people.png) no-repeat; width:425px; padding-top:360px }
 
 
   /*-------------------------- HOME (middle bar) --------------------------*/
-  .home-middle-bar { background:#dddddd; text-align:center; padding:10px 0; margin:35px auto 50px auto; width:960px; border-radius:6px; -moz-border-radius:6px; -webkit-border-radius:6px }
+  .home-middle-bar { background:#dddddd; text-align:center; padding:10px 0; margin:30px auto 50px auto; width:960px; border-radius:6px; -moz-border-radius:6px; -webkit-border-radius:6px }
   .home-middle-bar div { display:inline-block; vertical-align:middle }
 
   .home-middle-bar div.prev a span { display:block; height:0px; width:0px; border-width:8px 14px 8px 10px; border-style:solid;
@@ -131,6 +131,7 @@
   .homeHeader {
    position: relative;
    height: 395px;
+   padding-top: 1px;
    .loginLinks {
      bottom: 0px;
      position: absolute;
