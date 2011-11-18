@@ -110,6 +110,12 @@ body.smallfooter #footer-container {
   }
 }
 
+.VersionNumber {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-left: 11px;
+}
+
 @import "footer";
 @import "pulldown";
 @import "navmenu";
