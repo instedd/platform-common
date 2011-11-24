@@ -20,6 +20,7 @@ task :js do
   end
   puts "Removing temp folder"
   Dir.delete "#{Dir.pwd}/theme/javascripts/temp"
+  abort if File.size("#{Dir.pwd}/theme/javascripts/theme.js") == 0
 end
 
 task :css do
@@ -28,6 +29,7 @@ task :css do
 
   puts "compressing css"
   puts `compass compile`
+  abort unless $?.success?
 end
 
 task :deploy => [:build_zip, :upload]
