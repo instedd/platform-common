@@ -4,7 +4,7 @@ var apps = [
 	{ id:'geochat', url:'http://geochat.instedd.org/', name:'Geochat'},
 	{ id:'mesh4X', url:'http://instedd.org/technologies/mesh4x/', name:'Mesh4X'},
 	{ id:'nuntium', url:'http://nuntium.instedd.org/', name:'Nuntium'},
-	{ id:'nuntiumLocalGateway', url:'http://instedd.org/', name:'Nuntium Local Gateway'},
+	{ id:'localGateway', url:'http://instedd.org/', name:'Local Gateway'},
 	{ id:'pollit', url:'http://instedd.org/technologies/geochat-polls/', name:'Pollit'},
 	{ id:'remindem', url:'http://remindem.instedd.org/', name:'Remindem'},
 	{ id:'reportingWheel', url:'http://reportingwheel.instedd.org/', name:'Reporting Wheel'},

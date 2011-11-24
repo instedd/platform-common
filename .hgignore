@@ -4,6 +4,7 @@ syntax: glob
 theme/javascripts/theme.js
 theme/stylesheets/theme.css
 theme/theme.zip
+**.orig
 
 syntax: regexp
 ^samples/index\.htm$
