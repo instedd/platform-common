@@ -1,22 +1,22 @@
 (function($){
-	var msie_6_to_8 = $.browser.msie && 6 <= parseInt($.browser.version, 10) && parseInt($.browser.version, 10) <= 8;	
+	var msie_6_to_8 = $.browser.msie && 6 <= parseInt($.browser.version, 10) && parseInt($.browser.version, 10) <= 8;
 
-	$.extend({ 
+	$.extend({
 		instedd: {
 			init_components: function(container) {
 
 				if (msie_6_to_8) {
 					$("button[class]:not(:empty), a[class]:not(:empty)").addClass("ie_not_empty");
-						
+
 					// TODO complete ie hacks for css3 that are not supported, slow with selectivzr
 					// $("input[type='text']", container).addClass("ux-text");
 					// $("input[type='password']", container).addClass("ux-text");
 					// $("input[type='email']", container).addClass("ux-text");
-					// $("textarea", container).addClass("ux-text");				
+					// $("textarea", container).addClass("ux-text");
 					// $("input[readonly='readonly'], textarea[readonly='readonly']", container).addClass("readonly");
 					// $("button[disabled]", container).addClass("disabled");
 				}
-								
+
 				// initialize built-in components.
 				if ($.fn.datepicker) {
 					$(".ux-datepicker:not([readonly])", container)
@@ -25,7 +25,7 @@
 				}
 
 				$(".ux-wajbar", container).wajbar();
-				
+
 				$('input[placeholder],textarea[placeholder]', container).placeholder();
 
 				$(".ux-nstep", container).each(function(){
@@ -38,7 +38,7 @@
 					var kdown = $("<button>").attr('type','button').addClass('kdown').text('');
 					var kup = $("<button>").attr('type','button').addClass('kup').text('');
 					nstep.append(kdown).append(kup);
-					
+
 					if (source.attr('readonly')) {
 						// is readonly
 						kdown.attr('disabled', true);
@@ -50,7 +50,7 @@
 						};
 						kdown.click(function(){
 							if (min != null && min >= current()) return;
-							source.val(current()-1); 
+							source.val(current()-1);
 						});
 						kup.click(function(){
 							if (max != null && current() >= max) return;
@@ -59,16 +59,16 @@
 					}
 				});
 			}
-		} 
+		}
 	});
-	
+
 	$(function(){
 		$.instedd.init_components($(document));
-		
+
 		$('.ux-collapsible > span:first-child > a, .ux-collapsible .ux-collapse-trigger').live('click', function(){
 			var collapsible = $(this).closest('.ux-collapsible');
 			collapsible.toggleClass('collapsed');
-			
+
 			if (collapsible.data('on-expanded')) {
 				if (collapsible.hasClass('collapsed')) {
 					collapsible.removeClass(collapsible.data('on-expanded'));
@@ -76,37 +76,55 @@
 					collapsible.addClass(collapsible.data('on-expanded'));
 				}
 			}
-			
+
 			return false;
 		});
-		
+
 		// these are one time per page
-		
+
 		// pagination controls
 		$(".pagination span.disabled a").live('click', function(){ return false; }); // cancel click on disabled buttons
-		
-		// position user menu
-		$('#User').mouseenter(function(){
-			var container = $('.container', $(this));
-			var band = $('.band', container);
-			if (band.length == 0) {
-				container.prepend(band = $("<div>").addClass("band"));
-			}
-			var margin_to_center = -container.width()/2 + $(this).width()/2 - 2;
-			container.css('margin-left', margin_to_center);
-			var exceeded = container.offset().left + container.width() - $(window).width() + 20; // HACK 20 a bit of space
 
-			if (exceeded > 0) {
-				container.css('margin-left', margin_to_center - $(this).width()/2 - exceeded - 10); // HACK padding of container
-				band.css('margin-left',  container.width()/2 + exceeded);
+		// position user menu
+		var $user = $('#User');
+		$user.click(function(event) {
+			if ($user.hasClass('open')) {
+				$user.removeClass('open');
 			} else {
-				band.css('margin-left', 'auto');
-				band.css('margin-right', 'auto');
+				var container = $('.container', $(this));
+				var band = $('.band', container);
+				if (band.length == 0) {
+					container.prepend(band = $("<div>").addClass("band"));
+				}
+				var margin_to_center = -container.width()/2 + $(this).width()/2 - 2;
+				container.css('margin-left', margin_to_center);
+				var exceeded = container.offset().left + container.width() - $(window).width() + 20; // HACK 20 a bit of space
+
+				if (exceeded > 0) {
+					container.css('margin-left', margin_to_center - $(this).width()/2 - exceeded - 10); // HACK padding of container
+					band.css('margin-left',  container.width()/2 + exceeded);
+				} else {
+					band.css('margin-left', 'auto');
+					band.css('margin-right', 'auto');
+				}
+
+				band.width($(this).width() + 20); // hack padding of #User
+
+				$user.addClass('open');
 			}
-			
-			band.width($(this).width() + 20); // hack padding of #User
+			event.stopPropagation();
 		});
-		
+
+		$('#User div.container').click(function(event) {
+			event.stopPropagation();
+		});
+
+		$('html').click(function() {
+			if ($user.hasClass('open')) {
+				$user.removeClass('open');
+			}
+		});
+
 		// add in the pre-last li of the BreadCrumb a span
 		var bc_items = $('.BreadCrumb li');
 		if (bc_items.length >= 2) {
@@ -115,7 +133,7 @@
 			pre_last.append($("<span>"));
 		}
 		//
-		
+
 		// add before/after for the NavMenu
 		var nav_menu = $('#NavMenu ul');
 		nav_menu.prepend($('<li>')).append($('<li>'));
@@ -123,8 +141,8 @@
 		active_item.prev().addClass('before');
 		active_item.next().addClass('after');
 		//
-		
-		
+
+
 		// homepage benefits
 		window.setTimeout(function(){
 			jQuery('.benefits #benefits-container').jcarousel({
@@ -132,13 +150,13 @@
 			  buttonPrevHTML: '<div class="prev"><a href="#" onclick="return false;"><span></span></a></div>'
 			});
 		}, 500);
-		
+
 		// style fixes for msie 6, 7, 8
 		if (msie_6_to_8) {
 			// compute iexplorer stylesheet and javascript from current theme.css and theme.js location
 			var theme_js = $('script[src$="theme.js"]');
 			$.getScript(theme_js.attr('src').replace('/theme.js', '/selectivizr.js'));
-			
+
 			var theme_css = $('link[href$="theme.css"]');
 			$('head').append('<link href="' + theme_css.attr('href').replace('/theme.css', '/iexplorer.css') + '" rel="stylesheet" type="text/css" />');
 		}

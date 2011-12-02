@@ -1,10 +1,15 @@
 /* -------------- User menu ------------------- */
 #User { background:url(../images/icons/misc/black/arrowDownMargin.png) no-repeat right 6px; font-size:12px; padding:4px 17px 2px 4px; margin-top:5px; position:absloute; cursor:pointer }
-#User:hover {  
+#User.open {
   @include floating-box-shadow();
-  border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px; }
+  border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px;
+}
 #User div.container { background:#FFFFFF; font-size:12px; min-width:250px; padding:8px; margin-top:-9px; position:absolute; @include floating-box-shadow(); border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px; display:none; }
-#User:hover div.container { display:block; }
+#User.open div.container { display:block; }
+#User:hover {
+  color: #333333;
+  background:url(../images/icons/misc/black/arrowDownMarginOver.png) no-repeat right 6px;
+}
 
 #User div p { margin: 0 0 7px 0; padding:0 }
 #User div hr { margin: 6px 0; padding:0 }
