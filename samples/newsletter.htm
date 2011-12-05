@@ -1,0 +1,677 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+        <!-- Facebook sharing information tags -->
+        <meta property="og:title" content="*|MC:SUBJECT|*" />
+        
+        <title>*|MC:SUBJECT|*</title>
+		<style type="text/css">
+			/* Client-specific Styles */
+			#outlook a{padding:0;} /* Force Outlook to provide a "view in browser" button. */
+			body{width:100% !important;background-color:#a6a6a6 !important} .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
+			body{-webkit-text-size-adjust:none;} /* Prevent Webkit platforms from changing default text sizes. */
+
+			/* Reset Styles */
+			body{margin:0; padding:0;}
+			img{border:0; height:auto; line-height:100%; outline:none; text-decoration:none;}
+			table td{border-collapse:collapse;}
+			#backgroundTable{height:100% !important; margin:0; padding:0; width:100% !important;}
+			hr { margin:0; padding:0; height:0; border:none }
+			p { margin:0; padding:0 }
+
+			/* Template Styles */
+
+			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: COMMON PAGE ELEMENTS /\/\/\/\/\/\/\/\/\/\ */
+
+			/**
+			* @tab Page
+			* @section background color
+			* @tip Set the background color for your email. You may want to choose one that matches your company's branding.
+			* @theme page
+			*/
+			body, #backgroundTable{
+				/*@editable*/ background-color:#a6a6a6;
+			}
+
+			/**
+			* @tab Page
+			* @section email border
+			* @tip Set the border for your email.
+			*/
+			#templateContainer{
+				/*@editable*/ border-top: 1px solid #DDDDDD;
+			}
+
+			/**
+			* @tab Page
+			* @section heading 1
+			* @tip Set the styling for all first-level headings in your emails. These should be the largest of your headings.
+			* @style heading 1
+			*/
+			h1, .h1{
+				/*@editable*/ color:#202020;
+				display:block;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:32px;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ line-height:100%;
+				margin-top:0;
+				margin-right:0;
+				margin-bottom:10px;
+				margin-left:0;
+				/*@editable*/ text-align:left;
+			}
+
+			/**
+			* @tab Page
+			* @section heading 2
+			* @tip Set the styling for all second-level headings in your emails.
+			* @style heading 2
+			*/
+			h2, .h2{
+				/*@editable*/ color:#202020;
+				display:block;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:20px;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ line-height:100%;
+				margin-top:0;
+				margin-right:0;
+				margin-bottom:5px;
+				margin-left:0;
+				/*@editable*/ text-align:left;
+			}
+
+			/**
+			* @tab Page
+			* @section heading 3
+			* @tip Set the styling for all third-level headings in your emails.
+			* @style heading 3
+			*/
+			h3, .h3{
+				/*@editable*/ color:#000000;
+				display:block;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:14px;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ line-height:100%;
+				margin-top:0;
+				margin-right:0;
+				margin-bottom:4px;
+				margin-left:0;
+				/*@editable*/ text-align:left;
+			}
+
+			/**
+			* @tab Page
+			* @section heading 4
+			* @tip Set the styling for all fourth-level headings in your emails. These should be the smallest of your headings.
+			* @style heading 4
+			*/
+			h4, .h4{
+				/*@editable*/ color:#202020;
+				display:block;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:22px;
+				/*@editable*/ font-weight:bold;
+				/*@editable*/ line-height:100%;
+				margin-top:0;
+				margin-right:0;
+				margin-bottom:10px;
+				margin-left:0;
+				/*@editable*/ text-align:left;
+			}
+			
+			p { margin:5px 0 }
+			
+			hr { background:#e5e5e5; height:1px }
+			
+			a { color:#78b352; text-decoration:none }
+
+			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: PREHEADER /\/\/\/\/\/\/\/\/\/\ */
+
+			/**
+			* @tab Header
+			* @section preheader style
+			* @tip Set the background color for your email's preheader area.
+			* @theme page
+			*/
+			#templatePreheader{
+				/*@editable*/ background-color:#a6a6a6;
+				
+			}
+
+			/**
+			* @tab Header
+			* @section preheader text
+			* @tip Set the styling for your email's preheader text. Choose a size and color that is easy to read.
+			*/
+			.preheaderContent div{
+				/*@editable*/ color:#ffffff;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:10px;
+				/*@editable*/ line-height:100%;
+				/*@editable*/ text-align:left;
+			}
+
+			/**
+			* @tab Header
+			* @section preheader link
+			* @tip Set the styling for your email's preheader links. Choose a color that helps them stand out from your text.
+			*/
+			.preheaderContent div a:link, .preheaderContent div a:visited, /* Yahoo! Mail Override */ .preheaderContent div a .yshortcuts /* Yahoo! Mail Override */{
+				/*@editable*/ color:#ffffff;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ text-decoration:underline;
+			}
+
+			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: HEADER /\/\/\/\/\/\/\/\/\/\ */
+
+			/**
+			* @tab Header
+			* @section header style
+			* @tip Set the background color and border for your email's header area.
+			* @theme header
+			*/
+			#templateHeader{
+				/*@editable*/ background-color:#FFFFFF;
+				/*@editable*/ border-bottom:0;
+			}
+
+			/**
+			* @tab Header
+			* @section header text
+			* @tip Set the styling for your email's header text. Choose a size and color that is easy to read.
+			*/
+			.headerContent{
+				/*@editable*/ color:#202020;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:34px;
+				/*@editable*/ font-weight:bold;
+				/*@editable*/ line-height:100%;
+				/*@editable*/ padding:0;
+				/*@editable*/ text-align:center;
+				/*@editable*/ vertical-align:middle;
+			}
+
+			/**
+			* @tab Header
+			* @section header link
+			* @tip Set the styling for your email's header links. Choose a color that helps them stand out from your text.
+			*/
+			.headerContent a:link, .headerContent a:visited, /* Yahoo! Mail Override */ .headerContent a .yshortcuts /* Yahoo! Mail Override */{
+				/*@editable*/ color:#336699;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ text-decoration:underline;
+			}
+
+			#headerImage{
+				height:auto;
+				max-width:600px !important;
+			}
+
+			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: MAIN BODY /\/\/\/\/\/\/\/\/\/\ */
+
+			/**
+			* @tab Body
+			* @section body style
+			* @tip Set the background color for your email's body area.
+			*/
+			#templateContainer, .bodyContent{
+				/*@editable*/ background-color:#FFFFFF;
+			}
+
+			/**
+			* @tab Body
+			* @section body text
+			* @tip Set the styling for your email's main content text. Choose a size and color that is easy to read.
+			* @theme main
+			*/
+			.bodyContent div{
+				/*@editable*/ color:#000000;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:14px;
+				/*@editable*/ line-height:120%;
+				/*@editable*/ text-align:left;
+			}
+
+			/**
+			* @tab Body
+			* @section body link
+			* @tip Set the styling for your email's main content links. Choose a color that helps them stand out from your text.
+			*/
+			.bodyContent div a:link, .bodyContent div a:visited, /* Yahoo! Mail Override */ .bodyContent div a .yshortcuts /* Yahoo! Mail Override */{
+				/*@editable*/ color:#336699;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ text-decoration:underline;
+			}
+
+			.bodyContent img{
+				display:inline;
+				height:auto;
+			}
+			
+			.newsContent td{
+				/*@editable*/ color:#666666;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:12px;
+				/*@editable*/ line-height:115%;
+				/*@editable*/ text-align:left;
+			}
+			.small { 
+				font-size:10px !important;
+				color:#999999 !important;
+			}
+
+			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: FOOTER /\/\/\/\/\/\/\/\/\/\ */
+
+			/**
+			* @tab Footer
+			* @section footer style
+			* @tip Set the background color and top border for your email's footer area.
+			* @theme footer
+			*/
+			#templateFooter{
+				/*@editable*/ background-color:#d1d1d1;
+				/*@editable*/ border-top:0;
+			}
+
+			/**
+			* @tab Footer
+			* @section footer text
+			* @tip Set the styling for your email's footer text. Choose a size and color that is easy to read.
+			* @theme footer
+			*/
+			.footerContent{
+				/*@editable*/ color:#666666;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:12px;
+				/*@editable*/ line-height:125%;
+				/*@editable*/ text-align:left;
+			}
+
+			/**
+			* @tab Footer
+			* @section footer link
+			* @tip Set the styling for your email's footer links. Choose a color that helps them stand out from your text.
+			*/
+			.footerContent a:link, .footerContent a:visited, /* Yahoo! Mail Override */ .footerContent a .yshortcuts /* Yahoo! Mail Override */{
+				/*@editable*/ color:#666666;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ text-decoration:none;
+			}
+
+			hr.gray{
+				background:#9d9d9d;
+			}
+
+			/**
+			* @tab Footer
+			* @section social bar style
+			* @tip Set the background color and border for your email's footer social bar.
+			* @theme footer
+			*/
+			#social{
+				/*@editable*/ background-color:#FAFAFA;
+				/*@editable*/ border:0;
+			}
+
+			/**
+			* @tab Footer
+			* @section social bar style
+			* @tip Set the background color and border for your email's footer social bar.
+			*/
+			#social div{
+				/*@editable*/ text-align:center;
+			}
+
+			/**
+			* @tab Footer
+			* @section utility bar style
+			* @tip Set the background color and border for your email's footer utility bar.
+			* @theme footer
+			*/
+			#utility{
+				/*@editable background-color:#FFFFFF;*/
+				/*@editable*/ border:0;
+				/*@editable*/ color:#FFFFFF;
+			}
+
+			/**
+			* @tab Footer
+			* @section utility bar style
+			* @tip Set the background color and border for your email's footer utility bar.
+			*/
+			#utility a {
+				/*@editable*/ color:#FFFFFF;
+			}
+
+			#monkeyRewards img{
+				max-width:190px;
+			}
+			#subscription {
+				color:#78b352;
+			}
+		</style>
+	</head>
+    <body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
+    	<center>
+        	<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="backgroundTable" bgcolor="#a6a6a6">
+            	<tr>
+                	<td align="center" valign="top">
+                        <!-- // Begin Template Preheader \\ -->
+                        <table border="0" cellpadding="5" cellspacing="0" width="600" id="templatePreheader">
+                            <tr>
+                                <td valign="top" class="preheaderContent">
+                                
+                                	<!-- // Begin Module: Standard Preheader \ -->
+                                    <table border="0" cellpadding="5" cellspacing="0" width="100%">
+                                    	<tr>
+                                        	<td valign="top">
+                                            	<div mc:edit="std_preheader_content">
+                                                	 Use this area to offer a short teaser of your email's content. Text here will show in the preview area of some email clients.
+                                                </div>
+                                            </td>
+                                            <!-- *|IFNOT:ARCHIVE_PAGE|* -->
+											<td valign="top" width="190">
+                                            	<div mc:edit="std_preheader_links">
+                                                	Is this email not displaying correctly?<br /><a href="*|ARCHIVE|*" target="_blank">View it in your browser</a>.
+                                                </div>
+                                            </td>
+											<!-- *|END:IF|* -->
+                                        </tr>
+                                    </table>
+                                	<!-- // End Module: Standard Preheader \ -->
+                                
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- // End Template Preheader \\ -->
+                    	<table border="0" cellpadding="0" cellspacing="0" width="600" id="templateContainer">
+                        	<tr>
+                            	<td align="center" valign="top">
+                                    <!-- // Begin Template Header \\ -->
+                                	<table border="0" cellpadding="0" cellspacing="0" width="600" id="templateHeader">
+                                        <tr>
+                                            <td class="headerContent" bgcolor="#FFFFFF">
+                                            
+                                            	<!-- // Begin Module: Standard Header Image \\ -->
+                                            	<table border="0" cellpadding="0" cellspacing="0" width="530" align="center">
+                                                <tr>
+                                                	<td height="15px"></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left"><a href="http://www.ilabamericalatina.org/" target="_blank"><img src="http://dl.dropbox.com/u/3549025/newsletter/instedd-ilab-logo.gif" title="InSTEDD Ilab" alt="InSTEDD Ilab"/></a></td>
+                                                    <td align="right"><a href="#" target="_blank"><img src="http://dl.dropbox.com/u/3549025/newsletter/b-suscribete.gif" title="Suscribete" alt="Suscribete" /></a></td>
+                                                </tr>
+                                                </table>
+                                                <table border="0" cellpadding="0" cellspacing="0" width="600" align="center">
+                                                <tr><td height="20px"></td></tr>
+                                                <tr><td><img src="http://dl.dropbox.com/u/3549025/newsletter/header-sep.gif" /></td></tr>
+                                                <tr><td height="30px"></td></tr>
+                                                </table>
+                                            	<!-- // End Module: Standard Header Image \\ -->
+                                            
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- // End Template Header \\ -->
+                                </td>
+                            </tr>
+                        	<tr>
+                            	<td align="center" valign="top">
+                                    <!-- // Begin Template Body \\ -->
+                                	<table border="0" cellpadding="0" cellspacing="0" width="600" id="templateBody" bgcolor="#FFFFFF">
+                                    	<tr>
+                                            <td valign="top" class="bodyContent">
+                                
+                                                <!-- // Begin Module: Standard Content \\ -->
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                    <tr>
+                                                    	<td width="35px"></td>
+                                                        <td valign="top">
+                                                            <div mc:edit="std_content00">
+                                                                <h1 class="h1">Tecnología Innovadora con Impacto Social</h1>
+                                                                En este Newsletter encontrarás un compilado de información relevante acerca de innovaciones tecnológicas aplicadas a la salud, la respuesta ante emergencias, el desarrollo y la defensa de las libertades individuales. Podrás enterarte de noticias destacadas en el campo de las redes sociales, el cuidado del medio ambiente, la responsabilidad social empresaria, las nuevas plataformas de software libre y la ayuda humanitaria, entre otros temas. Esperamos que te sientas identificado con nuestro abordaje de las diferentes temáticas planteadas y decidas involucrarte, opinar y ayudarnos a difundir nuestro mensaje.
+                                                                <br />
+                                                                <br />
+                                                               No dudes en ponerte en contacto con nosotros para sugerirnos temas o ideas para mejorar este Newsletter, o si consideras que podríamos ayudarte con tus proyectos sociales. Gracias en nombre del equipo del iLab. Te esperamos.
+                                                            </div>
+														</td>
+                                                    	<td width="35px"></td>
+                                                    </tr>
+                                                    <tr><td></td><td height="50" valign="middle"><hr /></td><td></td></tr><!-- // separator \\ -->
+                                                    <tr>
+                                                    	<td valign="top"><img src="http://dl.dropbox.com/u/3549025/newsletter/ic-message.gif" /></td>
+                                                        <td valign="top" class="newsContent">
+                                                        <table>
+                                                        <tr>
+                                                            <td valign="top" width="258" class="small">sábado 2 de abril de 2011</td>
+                                                            <td width="14px">&nbsp;</td>
+                                                            <td valign="top" width="258" class="small">sábado 26 de marzo de 2011</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td valign="top"><h2 class="h2">Ficción vs. Realidad: Usando tecnología para detener una pandemia desde su fuente</h2></td>
+                                                            <td>&nbsp;</td>
+                                                            <td valign="top"><h2 class="h2">Las 10 necesidades claves que hemos detectado en las ONGs y demás organismos sociales de América Latina</h2></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><img src="http://dl.dropbox.com/u/3549025/newsletter/photo01.jpg" width="258px" /></td>
+                                                            <td>&nbsp;</td>
+                                                            <td><img src="http://dl.dropbox.com/u/3549025/newsletter/photo02.jpg" width="258px" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td valign="top">El 27 de octubre se estrenó en la Argentina "Contagio", el éxito de taquilla de Steven Soderbergh que aborda el delicado tema de una pandemia que azota a la humanidad. En este post comparamos la ficción planteada en el film con la labor de los trabajadores sanitarios de carne y hueso a la hora de tener que lidiar con brotes epidémicos en la vida real, a partir de la vasta experiencia del equipo de InSTEDD en el ámbito de la salud pública....</td>
+                                                            <td>&nbsp;</td>
+                                                            <td valign="top"> Hace tan sólo 6 meses lanzamos el iLab América Latina, el segundo laboratorio de innovación de InSTEDD. En este ínterin hemos establecido un fructífero intercambio con ONGs, agencias gubernamentales, empresas sociales, fundaciones, universidades y demás organismos de cooperación de la Argentina, Chile, Uruguay, Colombia, Guatemala, México, Perú y Haití. Este post refleja los aspectos más vitales de dicha experiencia.</td>
+                                                        </tr>
+                                                        </table>
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr><td></td><td height="50" valign="middle"><hr /></td><td></td></tr><!-- // separator \\ -->
+                                                    <tr>
+                                                    	<td valign="top"><img src="http://dl.dropbox.com/u/3549025/newsletter/ic-fb.gif" /></td>
+                                                        <td valign="top" class="newsContent">
+                                                        <table>
+                                                        <tr>
+                                                            <td valign="top">En otra oportunidad nos hemos referido a la fantástica experiencia de la comunidad Open Source Ecology en el terreno del hardware de código abierto (ver <a href="http://ow.ly/7c7el" target="_blank">http://ow.ly/7c7el</a>). Pues bien, en noviembre se lanzará en la Argentina el proyecto Open Source Hardware, un nuevo concepto informático que permite el libre acceso a los planos de construcción de los dispositivos, al firmware (instrucciones) y al software asociado.</td>
+                                                        </tr>
+                                                        </table>
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr><td></td><td><br /></td><td></td></tr><!-- // spacer \\ -->
+                                                    <tr>
+                                                    	<td></td>
+                                                        <td valign="top" class="newsContent">
+                                                        <table cellpadding="5" bgcolor="#e5e5e5">
+                                                        <tr>
+                                                            <td valign="top">
+                                                            <h3>¿Qué es el hardware libre, la nueva “movida” tecnológica que llega a la Argentina?</h3>
+                                                            <p><a href="http://tecnologia.iprofesional.com" target="_blank">tecnologia.iprofesional.com</a></p>
+                                                            La tendencia se basa en revelar las especificaciones básicas de los "fierros" informáticos, para mejorar el 
+                                                            rendimiento de las computadoras
+                                                            </td>
+                                                            <td valign="top"><img src="http://dl.dropbox.com/u/3549025/newsletter/photo03.jpg" /></td>
+                                                        </tr>
+                                                        </table>
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr><td></td><td height="50" valign="middle"><hr /></td><td></td></tr><!-- // separator \\ -->
+                                                    <tr>
+                                                    	<td valign="top"><img src="http://dl.dropbox.com/u/3549025/newsletter/ic-fb.gif" /></td>
+                                                        <td valign="top" class="newsContent">
+                                                        <table>
+                                                        <tr>
+                                                            <td valign="top">En otra oportunidad nos hemos referido a la fantástica experiencia de la comunidad Open Source Ecology en el terreno del hardware de código abierto (ver <a href="http://ow.ly/7c7el" target="_blank">http://ow.ly/7c7el</a>). Pues bien, en noviembre se lanzará en la Argentina el proyecto Open Source Hardware, un nuevo concepto informático que permite el libre acceso a los planos de construcción de los dispositivos, al firmware (instrucciones) y al software asociado.</td>
+                                                        </tr>
+                                                        </table>
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr><td></td><td><br /></td><td></td></tr><!-- // spacer \\ -->
+                                                    <tr>
+                                                    	<td></td>
+                                                        <td valign="top" class="newsContent">
+                                                        <table cellpadding="5" bgcolor="#e5e5e5">
+                                                        <tr>
+                                                            <td valign="top">
+                                                            <h3>Crisis y paraisos fiscales</h3>
+                                                            <p><a href="http://www.youtube.com" target="_blank">www.youtube.com</a></p>
+                                                            Porque siempre pagamos los del siempre, los paraisos fiscales, el expolio, es un video didáctico en que se explica
+                                                            el efecto que tiene, en la crisis, que gra...
+                                                            </td>
+                                                            <td valign="top"><img src="http://dl.dropbox.com/u/3549025/newsletter/photo04.jpg" /></td>
+                                                        </tr>
+                                                        </table>
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr><td></td><td height="50" valign="middle"><hr /></td><td></td></tr><!-- // separator \\ -->
+                                                    <tr>
+                                                    	<td valign="top"><img src="http://dl.dropbox.com/u/3549025/newsletter/ic-tw.gif" /></td>
+                                                        <td valign="top" class="newsContent">
+                                                        <table>
+                                                        <tr>
+                                                            <td valign="top">¿Estás preparado para responder ante un <a href="#">#desastre</a>? Excelente instructivo 
+                                                            para <a href="#">#SanFrancisco</a> <a href="http://ow.ly/7e2Nu" target="_blank">http://ow.ly/7e2Nu</a><br />
+                                                            <span class="small">hace 23 horas</span></td>
+                                                        </tr>
+                                                        </table>
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr><td></td><td height="50" valign="middle"><hr /></td><td></td></tr><!-- // separator \\ -->
+                                                    <tr>
+                                                    	<td valign="top"><img src="http://dl.dropbox.com/u/3549025/newsletter/ic-tw.gif" /></td>
+                                                        <td valign="top" class="newsContent">
+                                                        <table>
+                                                        <tr>
+                                                            <td valign="top">Crean #robot que prescinde de fuente de <a href="#">#energía</a>para caminar, y que ayudará a 
+                                                            personas con capacidades reducidas <a href="http://ow.ly/79xn2" target="_blank">http://ow.ly/79xn2</a><br />
+                                                            <span class="small">hace 4 días</span></td>
+                                                        </tr>
+                                                        </table>
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+                                                </table>
+                                                <!-- // End Module: Standard Content \\ -->
+                                                
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- // End Template Body \\ -->
+                                </td>
+                            </tr>
+                        	<tr>
+                            	<td align="center" valign="top"><br />
+                                    <!-- // Begin Template Footer \\ -->
+                                	<table border="0" cellpadding="0" cellspacing="0" width="600" id="templateFooter" bgcolor="#d1d1d1">
+                                    	<tr>
+                                        	<td valign="top" class="footerContent" align="center">
+                                            
+                                            	<table cellpadding="15" cellspacing="0" width="585px">
+                                                <tr>
+                                                	<td align="left" valign="middle"><a href="#" target="_blank"><img src="http://dl.dropbox.com/u/3549025/newsletter/instedd-ilab-logo-footer.gif" title="InSTEDD Ilab" alt="InSTEDD Ilab" /></a></td>
+                                                	<td align="right" valign="middle"><a href="#"><img src="http://dl.dropbox.com/u/3549025/newsletter/b-siguenos-twitter.gif" title="Síguenos en Twitter" alt="Síguenos en Twitter" /></a>  <a href="#"><img src="http://dl.dropbox.com/u/3549025/newsletter/b-siguenos-fb.gif" title="Síguenos en Facebook" alt="Síguenos en Facebook" /></a></td>
+                                                </tr>
+                                                </table>
+                                            
+                                            
+                                            </td>
+                                        </tr>
+                                    	<tr>
+                                        	<td height="20" valign="middle" align="center"><hr class="gray" width="90%" /></td>
+                                        </tr>
+                                    	<tr>
+                                        	<td align="center">
+                                                <table cellpadding="15" cellspacing="0" width="585px">
+                                                    <tr>
+                                                        <td valign="top" width="35%" class="footerContent">
+                                                            Contacto<br />
+                                                            <a href="http://www.ilabamericalatina.org" target="_blank">www.ilabamericalatina.org</a><br />
+                                                            +54 11 4796 0164<br />
+                                                            ilablatam@instedd.org
+                                                        </td>
+                                                        <td valign="top" class="footerContent">
+                                                            Bartolomé Cruz 1818, 1º<br />
+                                                            Vicente López, B1638BHR<br />
+                                                            Buenos Aires, Argentina
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    	<tr>
+                                        	<td height="20" valign="middle" align="center"><hr class="gray" width="90%" /></td>
+                                        </tr>
+                                    	<tr>
+                                        	<td>
+                                                <table cellpadding="5" cellspacing="0" height="35px">
+                                                    <tr>
+                                                        <td width="8"></td>
+                                                        <td valign="top" class="footerContent">
+                                                            <a href="#" target="_blank">Política de privacidad </a>
+                                                        </td>
+                                                        <td valign="top" class="footerContent">
+                                                            <a href="#" target="_blank">Términos y condiciones</a>
+                                                        </td>
+                                                        <td valign="top" class="footerContent">
+                                                            <a href="http://instedd.org/" target="_blank">InSTEDD</a>
+                                                        </td>
+                                                        <td valign="top" class="footerContent">
+                                                            <a href="http://www.manas.com.ar/" target="_blank">Manas</a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+
+
+                                	<table border="0" cellpadding="10" cellspacing="0" width="600" bgcolor="#383838">
+                                    	<tr>
+                                        	<td valign="top" class="footerContent">
+                                            
+                                                <!-- // Begin Module: Standard Footer \\ -->
+                                                <table border="0" cellpadding="10" cellspacing="0" width="100%">
+                                                     <tr>
+                                                        <td align="center">
+                                                            <table cellpadding="5" cellspacing="0" bgcolor="#000000" width="560px" id="subscription">
+                                                            	<tr>
+                                                                	<td width="5px"></td>
+                                                                	<td><span style="color:#78b352">Estás recibiendo este e-mail porque te has suscripto a nuestro servicio de Newsletter a través del sitio web del InSTEDD iLab América Latina</span></td>
+                                                                	<td width="5px"></td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                   <tr>
+                                                        <td valign="middle" id="utility">
+                                                            <div mc:edit="std_utility">
+                                                                &nbsp;<a href="*|UNSUB|*">Desuscríbete de este Newsletter </a> &nbsp;  <a href="*|UPDATE_PROFILE|*">Actualiza tus preferencias de suscripción</a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!-- // End Module: Standard Footer \\ -->
+                                            
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- // End Template Footer \\ -->
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </body>
+</html>
