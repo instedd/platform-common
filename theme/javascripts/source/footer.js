@@ -5,7 +5,7 @@ var apps = [
 	{ id:'mesh4X', url:'http://instedd.org/technologies/mesh4x/', name:'Mesh4X'},
 	{ id:'nuntium', url:'http://nuntium.instedd.org/', name:'Nuntium'},
 	{ id:'localGateway', url:'http://instedd.org/', name:'Local Gateway'},
-	{ id:'pollit', url:'http://instedd.org/technologies/geochat-polls/', name:'Pollit'},
+	{ id:'pollit', url:'http://pollit.instedd.org/', name:'Pollit'},
 	{ id:'remindem', url:'http://remindem.instedd.org/', name:'Remindem'},
 	{ id:'reportingWheel', url:'http://reportingwheel.instedd.org/', name:'Reporting Wheel'},
 	{ id:'resourceMap', url:'http://resourcemap.instedd.org/', name:'Resource Map'},
@@ -29,7 +29,7 @@ $.each(apps, function(index, app){
 	$("#tools-carousel").append($("<li>").attr('id',app.id)
 		.append($("<a>").attr('href',app.url).attr('target','_blank').append($("<div>").addClass('tool-name').text(app.name)))
 	);
-	
+
 	// $('#instedd-pulldown > li > ul').append($("<li>").append($("<a>").attr('href',app.url).text(app.name)));
 });
 
@@ -55,10 +55,10 @@ jQuery('#tools-carousel').jcarousel({
 
 jQuery("ul#tools-carousel li").each(function() {
   elem = $(this);
-  
+
   var _app_name = $('#instedd-footer').attr('data-app-name');
   if (typeof _app_name === 'undefined' || _app_name === false) { _app_name = app_name; }
-  
+
   if(elem.attr('id') == _app_name) {
     elem.addClass('selected');
     elem.children().first().click(function(){return false;});
