@@ -115,7 +115,7 @@
 			event.stopPropagation();
 		});
 
-		$('#User div.container').click(function(event) {
+		$('#User div.container').not('a').click(function(event) {
 			event.stopPropagation();
 		});
 
