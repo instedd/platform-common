@@ -112,11 +112,15 @@
 
 				$user.addClass('open');
 			}
-			event.stopPropagation();
+			if (event.target.tagName.toLowerCase() != 'a') {
+				event.stopPropagation();
+			}
 		});
 
 		$('#User div.container').not('a').click(function(event) {
-			event.stopPropagation();
+			if (event.target.tagName.toLowerCase() != 'a') {
+				event.stopPropagation();
+			}
 		});
 
 		$('html').click(function() {
