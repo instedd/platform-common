@@ -136,7 +136,11 @@
 			if (msie_6_to_8) { pre_last.addClass("ie_nth-last-child_0n_2"); }
 			pre_last.append($("<span>"));
 		}
-		//
+
+		// clicking on an li in BreadCrum clicks the first link in it
+		$('.BreadCrumb li').click(function(event) {
+			window.location = $(this).find('a')[0].href;
+		});
 
 		// add before/after for the NavMenu
 		var nav_menu = $('#NavMenu ul');
