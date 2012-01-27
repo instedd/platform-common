@@ -734,6 +734,7 @@ a.icon_button_large {
 .w20 { @include width-class(200px); }
 .w22 { @include width-class(220px); }
 .w30 { @include width-class(300px); }
+.w33 { @include width-class(330px); }
 .w40 { @include width-class(400px); }
 .w45 { @include width-class(450px); }
 .w50 { @include width-class(500px); }
@@ -929,9 +930,9 @@ div.tabsline { padding:20px 0 20px 0; border-top:1px solid #e6e6e6; background:#
   background-image: url(../images/interface/backtd.png) !important;
   background-repeat: repeat-x;
 }
-.GralTable tr:hover {
+/*.GralTable tr:hover {
   background-image: none;
-}
+}*/
 .GralTable.w-pagination { margin-bottom:40px !important }
 
 .GralTable td { letter-spacing:-0.005em; padding:2px 6px; vertical-align:middle; border-bottom:1px solid #eeeeee }
