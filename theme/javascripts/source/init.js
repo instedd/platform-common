@@ -112,11 +112,15 @@
 
 				$user.addClass('open');
 			}
-			event.stopPropagation();
+			if (event.target.tagName.toLowerCase() != 'a') {
+				event.stopPropagation();
+			}
 		});
 
 		$('#User div.container').not('a').click(function(event) {
-			event.stopPropagation();
+			if (event.target.tagName.toLowerCase() != 'a') {
+				event.stopPropagation();
+			}
 		});
 
 		$('html').click(function() {
@@ -132,7 +136,11 @@
 			if (msie_6_to_8) { pre_last.addClass("ie_nth-last-child_0n_2"); }
 			pre_last.append($("<span>"));
 		}
-		//
+
+		// clicking on an li in BreadCrum clicks the first link in it
+		$('.BreadCrumb li').click(function(event) {
+			window.location = $(this).find('a')[0].href;
+		});
 
 		// add before/after for the NavMenu
 		var nav_menu = $('#NavMenu ul');
@@ -140,8 +148,11 @@
 		var active_item = $(".active", nav_menu);
 		active_item.prev().addClass('before');
 		active_item.next().addClass('after');
-		//
 
+		// clicking on an li in NavMenu clicks the first link in it
+		$('#NavMenu li').click(function(event) {
+			window.location = $(this).find('a')[0].href;
+		});
 
 		// homepage benefits
 		window.setTimeout(function(){
