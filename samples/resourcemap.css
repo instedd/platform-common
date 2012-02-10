@@ -42,16 +42,16 @@
 .tablescroll { overflow:auto; overflow-x:hidden; height:410px; margin-top:40px }
 .tablescroll .GralTable tr:nth-child(2) { background:none !important }
 .tablescroll .GralTable td div { display:inline-block; width:272px; overflow:hidden;  }
+.tablescroll .GralTable td div img { display:inline-block; vertical-align:middle; margin:5px 2px 0 0 }
 .tablescroll .GralTable td div span { margin-top:5px; white-space:nowrap }
-.tablescroll .GralTable td div p { display:inline-block; padding:0; margin:0; vertical-align:middle; white-space:nowrap }
+.tablescroll .GralTable td div p { display:inline-block; padding:0; margin:5px 0 0 0; vertical-align:middle; white-space:nowrap }
+.tablescroll .GralTable td div p a { color:inherit }
 .tablescroll .GralTable td button.farrow { float:right  }
-tr.opened td span { background:url(../theme/images/icons/18/black/folder_open.png) no-repeat left; padding-left:20px }
-tr.closed td span { background:url(../theme/images/icons/18/black/folder.png) no-repeat left; padding-left:20px }
 .stat-r { background:#ff4800; background-image:none !important; border-top:1px solid #bf3602; display:inline-block; vertical-align:middle; margin:0 2px 0 0 !important; width:12px; height:12px; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px }
 .stat-y { background:#fcbb00; background-image:none !important; border-top:1px solid #bc8b00; display:inline-block; vertical-align:middle; margin:0 2px 0 0 !important; width:12px; height:12px; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px }
 .stat-g { background:#79e820; background-image:none !important; border-top:1px solid #5bae18; display:inline-block; vertical-align:middle; margin:0 2px 0 0 !important; width:12px; height:12px; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px }
 .tablebottom { padding:15px 0 0 10px; color:#555555 }
 
-.lev1 div span:first-child { margin-left:10px !important }
-.lev2 div span:first-child { margin-left:30px !important }
-.lev3 div span:first-child { margin-left:50px !important }
+.lev1 div img, .lev1 div span:first-child { margin-left:10px !important }
+.lev2 div img, .lev2 div span:first-child { margin-left:30px !important }
+.lev3 div img, .lev3 div span:first-child { margin-left:50px !important }
