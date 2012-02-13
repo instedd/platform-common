@@ -47,7 +47,7 @@ function lastInCallback(carousel, item, i) {
 }
 
 var _app_name = $('#instedd-footer').attr('data-app-name');
-if (typeof _app_name === 'undefined' || _app_name === false) { _app_name = app_name; }
+if (typeof _app_name === 'undefined' || _app_name === false) { _app_name = apps[0].name; }
 
 var _app_index = -1;
 for(var i = 0; i < apps.length; i++) {
