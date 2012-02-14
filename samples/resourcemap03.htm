@@ -1,0 +1,318 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Resource Map</title>
+  	<link href="../theme/stylesheets/theme.css" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript" src="../theme/javascripts/jquery-1.6.2.min.js"></script>
+    <script type="text/javascript" src="../theme/javascripts/theme.js"></script>
+	<link href="resourcemap.css" rel="stylesheet" type="text/css">
+    
+    <script type="text/javascript"> 
+        $(function() {
+            var carTags = ['John Smith','Diane Saunders','Hepatitis','Hepatize','Hepatized','Hepatizes','Hepatizing','Hrpatocellular','Kampong Cham','Kampong Chang','Kampong speu','Kampong Thom','Kampot','Honda','Hyundai','Jaguar','Jeep','Kia','Lada','Lexus','Lotus','Malaria','Mazda','Mercedes','Nissan','Opel','Peugeot','Porsche','Rover','Renault','Suzuki','Subaru','Seat','Tifus','Volvo','Vauxhall','VW'];
+ 
+            // Initialize Demo 2
+            $("#tagfield2").superblyTagField({
+                allowNewTags: true,
+                showTagsNumber: 10,
+                preset: ['John Smith','Diane Saunders'],
+                tags: nameTags
+            });
+
+        });
+    </script> 
+    
+    
+    
+    
+    
+</head>
+<body>
+  <div id="wrapper">
+    <div id="toolbar">
+      <ul id="instedd-pulldown"></ul>
+      
+      <div id="NavMenu">
+          <ul>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Volunteers</a></li>
+            <li><a href="#">Help</a></li>
+          </ul><!-- #menu -->
+      </div><!-- #NavMenu -->
+      
+      
+      <ul class="RightMenu">
+          <li>
+            <div id="User">John Doe<br><br>
+          	<div class="container">
+            	<div class="avatar left"><span></span><img src="../theme/images/avatars/male1.png" /></div>
+            	<!--<img src="../theme/images/avatars/male1.png" class="left">-->
+                <p>jdoe</p>
+                <p>at <span class="location">Office</span></p>
+                <p>GMT -03:00 (Brasilia)</p>
+                <div class="clear"></div>
+                <hr>
+                <div id="achannels">
+                <p>Active channels</p>
+                <p><span class="mobile">+54 1134075826</span></p>
+                <p><span class="message">jdoe@instedd.com</span></p>
+                <p><span class="twitter">johndoe</span></p>
+                </div>
+                <hr>
+                <ul>
+                  <li><a href="#">Privacy</a></li>
+                  <li><a href="mailto:support@instedd.org?subject=[appname-bug]">Report a bug</a></li>
+                </ul>
+                <hr>
+                <ul>
+                  <li><a href="#">Sign Out</a></li>
+                </ul>
+            </div>
+          </div><!-- #User --> 
+          </li>
+          <li>
+          <a href="#" class="icon fsettings"></a>
+          </li>
+        </ul>
+    </div><!-- #toolbar -->
+
+    <div id="header">
+    
+      <div class="left"><a href="/"><img src="../theme/images/header/logos/resourceMap.png"/></a></div>
+
+      <div class="BreadCrumb">
+      	<ul><li><a href="#">Collections</a></li><li>Cambodia Health Clinics</li><li>Layers</li></ul>
+      </div><!-- #BreadCrumb -->
+      
+      <div class="clear"></div><!-- #clear -->
+      
+    </div><!-- #header -->
+
+    <div id="container">
+    <h1>Cambodia Health Clinics</h1>
+    <p>Lorem ipsum dolor amet, consectetur elite.</p>
+
+
+     <ul class="tabs top">
+    	<li><a href="#">Overview</a></li>
+    	<li class="active"><a href="#">Layers</a></li>
+    	<li><a href="#">Members</a></li>
+    	<li><a href="#">Tresholds</a></li>
+    	<li><a href="#">Reminders</a></li>
+    	<li><a href="#">Channels</a></li>
+    	<li><a href="#">Settings</a></li>
+    </ul><!-- #tabs -->
+	<div class="tabsline"></div><!-- #tabsline -->  
+    
+    <h1>Layers</h1>
+    <p>Lorem ipsum dolor sit amet</p>
+    
+    <div class="box grey w60">
+    
+    	<div class="toptitle"><span>Location info</span> &rarr; <em>Public layer</em></div><!-- #toptitle -->
+        
+        <div class="rightbuttons">
+            <button class="fbranch"></button>
+            <button class="fdelete"></button>
+        </div><!-- #rightbuttons -->
+        
+        <div class="middlebuttons">
+            <button class="faccept">Commune</button>, <button class="fchat">District</button>, <button class="fchat">Village</button>, <button class="fchat">Code</button>, <button class="fchat">Building facade</button>
+        </div><!-- #middlebuttons -->
+        
+        <button class="farrow">Edit</button>
+    
+    
+    </div><!-- #box grey w60 -->
+    
+    <br>
+
+    <div class="box grey w60">
+    
+    	<div class="toptitle"><span>Location info</span> &rarr; <em>Public layer</em></div><!-- #toptitle -->
+        
+        <div class="rightbuttons">
+            <button class="fbranch"></button>
+            <button class="fdelete"></button>
+        </div><!-- #rightbuttons -->
+        
+        <div class="middlebuttons">
+            <button class="faccept">Commune</button>, <button class="fchat">District</button>, <button class="fchat">Village</button>, <button class="fchat">Code</button>, <button class="fchat">Building facade</button>
+        </div><!-- #middlebuttons -->
+        
+        <button class="farrow">Edit</button>
+    
+    
+    </div><!-- #box grey w60 -->
+    
+    <br>
+
+    <div class="box w80">
+    
+        <div class="rightbuttons">
+            <button class="fbranch"></button>
+            <button class="fdelete"></button>
+        </div><!-- #rightbuttons -->
+        
+        <label>Name</label><br>
+        <input type="text" value="Staff" class="w30">
+        
+        <br><br>
+        
+        <label>Access</label><br>
+        <input type="checkbox">Public <br>
+        <input type="checkbox">Private, share only with: <input type="text" id="tagfield2" class="w45">
+        <br><br>
+        
+        
+        <label>Fields</label>
+        <br><br>
+          <div class="left">
+            <div class="feditor first">
+            	<div class="feditor-top"></div>
+                <div class="feditor-container">
+                <div class="rightbuttons"><button class="fdelete"></button></div><!-- #rightbuttons -->
+                
+                    <div class="feditor-button"><button class="active lsingleoption"></button></div><!-- #feditor-button -->
+                    <div class="feditor-content">
+                        <h1>Director's name</h1>
+                        <span class="hint">Code: DIRNAM</span>
+                    </div><!-- #feditor-content -->
+                
+                
+                </div><!-- #feditor-container -->
+            </div><!-- #feditor first-->
+  
+            <div class="feditor">
+            	<div class="feditor-top"></div>
+                <div class="feditor-container">
+                <div class="rightbuttons"><button class="fdelete"></button></div><!-- #rightbuttons -->
+                
+                    <div class="feditor-button"><button class="lmultipleoptions"></button></div><!-- #feditor-button -->
+                    <div class="feditor-content">
+                        <h1>Director's phone</h1>
+                        <span class="hint">Code: DIRPHO</span>
+                    </div><!-- #feditor-content -->
+                
+                
+                </div><!-- #feditor-container -->
+            </div><!-- #feditor -->
+
+            <div class="feditor">
+            	<div class="feditor-top"></div>
+                <div class="feditor-container">
+                <div class="rightbuttons"><button class="fdelete"></button></div><!-- #rightbuttons -->
+                
+                    <div class="feditor-button"><button class=" llocation"></button></div><!-- #feditor-button -->
+                    <div class="feditor-content">
+                        <h1>Most deprived areas</h1>
+                        <span class="hint">Hint: Enter location's coordinates</span>
+                    </div><!-- #feditor-content -->
+                
+                
+                </div><!-- #feditor-container -->
+                
+            </div><!-- #feditor -->
+            
+            
+            
+            <div class="feditor-add">
+            	<div class="feditor-add-top"></div>
+                <div class="feditor-add-container">
+                
+                    <div class="feditor-add-content">
+                        <h1>Add form field</h1>
+                        <span><button class="ltext"></button><br>Text</span>
+                        <span><button class="lnumber"></button><br>Numeric</span>
+                        <span><button class="llocation"></button><br>Stock</span>
+                        <span><button class="llocation"></button><br>Picture</span>
+                    </div><!-- #feditor-add-content -->
+                
+                
+                </div><!-- #feditor-add-container -->
+            </div><!-- #feditor-add -->
+            
+            
+            
+          </div><!-- #left -->
+
+            <div class="box right w30 feditor-sidebar">
+
+                <p class="title">Type</p>
+                <p class="smalltext">The data type to fill in this field.</p>
+                <select><option value="1">Text</option></select>
+                
+                <hr>
+                
+                <p class="title">Name</p>
+                <p class="smalltext">The name of this field as it is presented.</p>
+                <input value="Director's name" type="text" >
+                
+                <hr>
+                
+                <p class="title">Code</p>
+                <p class="smalltext">The abbreviation used to report via SMS.</p>
+                <input value="DIRNAM" type="text" >
+                               
+    
+                <br><br>
+                
+
+            </div><!-- #box right w30 -->
+
+          <div class="clear"></div><!-- #clear -->
+
+        <hr>
+        
+        <div class="bottom-actions">
+            <button type="button" class="white">Save</button>  
+            <a href="#" class="tgrey">Cancel</a>
+        </div><!-- #bottom-actions -->
+    
+    
+    </div><!-- #box grey w60 -->
+    
+    <div class="box grey addlayer">
+        <span>Add layer</span> <button type="button" class="cadd right"></button><br clear="all">
+    </div><!-- #box grey addlayer -->
+
+    </div><!-- #container -->
+    
+    
+
+    <div id="footer-span">
+      <div id="footer">
+        <div id="footer-container">
+          <div>
+            <div class="left platform">
+              InSTEDD has created an evolving platform of free and open source technologies to support humanitarian causes. These tools can be used individually or as building blocks for larger solutions. <a href="http://instedd.org/technologies/">Click here</a> to learn more
+            </div>
+            <div class="right">
+              <a href="http://instedd.org/technologies/" class="more">Learn more</a>
+              <div id="instedd-footer" data-app-name="nuntium"></div>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div>
+            <div class="left">
+              <a href="http://instedd.org">&copy; 2011 InSTEDD</a>
+              <a href="#TODO">Terms and conditions</a>
+              <a href="#TODO">Contact us</a>
+            </div>
+            <div class="right">
+              <a href="/">Home</a>
+              <a href="#TODO">Tour</a>
+              <a href="#TODO">Community</a>
+              <a href="#TODO">Help</a>
+              <a href="#TODO">Language: English</a>              
+            </div>
+            <div class="clear">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- #footer-span -->
+  </div><!-- #wrapper -->
+</body>
+</html>

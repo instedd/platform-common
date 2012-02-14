@@ -337,6 +337,14 @@ ul.clist li:last-child { border-bottom:none }
 .feditor.first .feditor-top { background-position:right top }
 .feditor.last .feditor-container { background-position:right bottom }
 
+.feditor-add { width:623px; margin-top:-5px; text-align:center }
+.feditor-add-top { background:url(../images/formEditor/add.png) no-repeat left top; padding:0 5px 15px 5px }
+.feditor-add-content span { font-size:12px; display:inline-block; vertical-align:top }
+.feditor-add-container { background:url(../images/formEditor/add.png) no-repeat right bottom; padding:0 5px 35px 5px }
+
+
+
+
 .feditor-sidebar p { color:#555555; padding:0; margin:0 }
 .feditor-sidebar p.smalltext { margin-bottom:3px }
 .feditor-sidebar hr { margin:12px 0 }
