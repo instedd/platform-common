@@ -339,6 +339,7 @@ ul.clist li:last-child { border-bottom:none }
 
 .feditor-add { width:623px; margin-top:-5px; text-align:center }
 .feditor-add-top { background:url(../images/formEditor/add.png) no-repeat left top; padding:0 5px 15px 5px }
+.feditor-add-top.empty { background-position-x: 100%; }
 .feditor-add-content span { font-size:12px; display:inline-block; vertical-align:top }
 .feditor-add-container { background:url(../images/formEditor/add.png) no-repeat right bottom; padding:0 5px 35px 5px }
 
