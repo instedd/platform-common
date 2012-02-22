@@ -950,6 +950,7 @@ div.tabsline { padding:20px 0 20px 0; border-top:1px solid #e6e6e6; background:#
 .GralTable td { letter-spacing:-0.005em; padding:2px 6px; vertical-align:middle; border-bottom:1px solid #eeeeee }
 .GralTable tr:last-child td { border-bottom:none }
 .GralTable.w-pagination tr:last-child td { border-bottom:1px solid #eeeeee }
+.GralTable tr.add td { color: #1E87C9 }
 
 .GralTable tr th.sort {
   $border_color:#ffffff;$background_color:#d2d2d2;$background_color2:#ffffff;$color:#000000;

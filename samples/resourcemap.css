@@ -46,7 +46,7 @@
 .tablescroll .GralTable tr:nth-child(2) { background:none !important }
 .tablescroll .GralTable tr.active td { background:#d0d0d0 }
 .tablescroll .GralTable tr td:first-child { border-right:1px solid #eeeeee }
-.tablescroll .GralTable td div { display:inline-block; width:272px; overflow:hidden;  }
+.tablescroll .GralTable td div { display:inline-block; width:272px; overflow:hidden }
 .tablescroll .GralTable td div img { display:inline-block; vertical-align:middle; margin:5px 2px 0 0 }
 .tablescroll .GralTable td div span { margin-top:5px; white-space:nowrap }
 .tablescroll .GralTable td div p { display:inline-block; padding:0; margin:5px 0 0 0; vertical-align:middle; white-space:nowrap }
