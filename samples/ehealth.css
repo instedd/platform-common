@@ -19,8 +19,14 @@
 .gphone { background: url(../theme/images/icons/18/grey/phone.png) no-repeat left; padding-left:20px }
 
 
+/* ------------ eHalth classes ------------------- */
 
-
+.filter { color:#555555; margin-bottom:8px }
+.pagination { margin:0 }
+.pagination span { color:#555555 }
+.GralTable td { padding:8px 6px }
+.GralTable button { margin:0 2px; vertical-align:top }
+.w025 { width:25px !important }
 
 
 
