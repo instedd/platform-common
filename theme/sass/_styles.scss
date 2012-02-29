@@ -241,6 +241,56 @@ ul.clist li button { margin:0px 0px 0px 2px !important }
 ul.clist li:last-child { border-bottom:none }
 
 
+/* ----- Crud List Mapping ----- */
+.ux-mclist {
+  color: #999999 !important;
+  border-color:white !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+  &:focus { border:2px solid #dddddd !important;
+  -webkit-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset;
+  -moz-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset;
+  box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset; }
+}
+.ux-mclist:disabled { background-color:white !important; color:#999999; border:1px solid transparent !important; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
+
+.mclist-button {
+  background-color: transparent;
+  background-position:left top;
+  background-repeat:no-repeat;
+  height:24px;
+  width:24px;
+  margin: 4px 2px;
+  cursor:pointer;
+  border:none;
+  display:inline-block;
+  vertical-align:middle !important;
+  @include button-states(30px);
+  &.ie_not_empty { padding:0 0 0 27px }
+  &:not(:empty) { padding:0 0 0 27px }
+}
+
+.mclist-add { @extend .clist-button; background-image:url(../images/buttons/plain/add.png); }
+.mclist-remove { @extend .clist-button; background-image:url(../images/buttons/plain/remove.png); }
+.mclist-add:disabled { background-position: 0 -90px !important }
+.mclist-remove:disabled { background-position: 0 -90px !important }
+
+
+ul.mclist { margin:4px 0; padding:0 }
+ul.mclist li { border-bottom:1px solid #DDDDDD; margin-bottom:2px; list-type:none; display:block; padding:1px 0 1px 0; margin:0  }
+ul.mclist li .ux-mclist, ul.mclist li .ux-text  { width:inherit }
+ul.mclist li button { margin:0px 0px 0px 2px !important }
+ul.mclist li:last-child { border-bottom:none }
+
+ul.mclist li input.arrowinput { background:url(../images/crudList/back-field01.png) no-repeat; width:72px !important; height:23px !important; border:none !important; padding-right:14px !important; -webkit-box-shadow: none !important; -moz-box-shadow: none !important; box-shadow: none !important }
+ul.mclist li .arrowinput:focus { width:74px !important; margin:0 !important }  
+  
+.arrowgrey { background:url(../images/crudList/back-field02.png) no-repeat; width:70px; height:20px; padding:3px 15px 0 5px; display:inline-block; vertical-align:middle; overflow:hidden }
+
+
+
+
 /* ----- BreadCrumb ----- */
 .BreadCrumb { background:#d0d0d0; border-radius: 4px; height: 22px; overflow: hidden }
 .BreadCrumb:focus { background: #333333 }
@@ -731,6 +781,7 @@ a.icon_button_large {
   & > textarea, &.textarea, & > .field_with_errors > textarea { width: $size - 6px !important; }
   & > .ux-dropdown .select, &.ux-dropdown .select { width: $size - 7px !important; }
   & > .ux-clist, &.clist > li input.ux-text  { width: $size - 38px !important; }
+  & > .ux-mclist, &.mclist > li input.ux-text  { width: $size - 126px; }
   & > .ux-text, & > .field_with_errors > .ux-text { width: $size - 6px; }
   &.ux-text { width: $size - 6px !important; }
   hr.shadow { width: $size + 20px; }
@@ -769,8 +820,8 @@ label.error , label.message {
 .pulldown select { margin-top:-26px; position:absolute; z-index:5; cursor:pointer; opacity: 0 }*/
 
 
-::-webkit-input-placeholder { font-style:italic; color:#999999 }
-:-moz-placeholder { font-style:italic; color:#999999 }
+::-webkit-input-placeholder { color:#999999 }
+:-moz-placeholder { color:#999999 }
 
 
 /* ------------ Super TAG ------------------ */
