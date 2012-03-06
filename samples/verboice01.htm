@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Verboice</title>
+	<link href="../theme/stylesheets/theme.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="../theme/javascripts/jquery-1.6.2.min.js"></script>
+	<script type="text/javascript" src="../theme/javascripts/theme.js"></script>
+	<link href="verboice.css" rel="stylesheet" type="text/css">
+    </head>
+<body class="smallfooter">
+  <div id="wrapper">
+    <div id="toolbar">
+      <ul id="instedd-pulldown"></ul>
+      
+      <div id="NavMenu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Tour</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Help</a></li>
+          </ul><!-- #menu -->
+      </div><!-- #NavMenu -->
+      
+      <ul class="RightMenu">
+          <li>
+              <div id="User">John Doe<br><br>
+                    <div class="container">
+                        <div class="avatar left"><span></span><img src="../theme/images/avatars/male1.png" /></div>
+                        <!--<img src="../theme/images/avatars/male1.png" class="left">-->
+                        <p>jdoe</p>
+                        <p>at <span class="location">Office</span></p>
+                        <p>GMT -03:00 (Brasilia)</p>
+                        <div class="clear"></div>
+                        <hr>
+                        <p>Active channels</p>
+                        <p><span class="mobile">+54 1134075826</span></p>
+                        <p><span class="message">jdoe@instedd.com</span></p>
+                        <p><span class="twitter">johndoe</span></p>
+                        <hr>
+                        <p>Privacy</p>
+                        <p>Report a bug</p>
+                        <hr>
+                        <p>Sign Out</p>
+                    </div>
+                  </div><!-- #User -->
+          </li>
+          <li><button type="button" class="icon fsettings"></button></li>
+      </ul><!-- #RightMenu -->
+          
+    </div><!-- #toolbar -->
+
+    <div id="header">
+    
+      <div class="left"><a href="/"><img src="../theme/images/header/logos/verboice.png" ></a></div>
+
+      <div class="BreadCrumb">
+      	<ul><li><a href="#">Applications & Channels</a></li><li><a href="#">Baby diagnostic</a></li><li>Configuration</li></ul>
+      </div><!-- #BreadCrumb -->
+      
+      <div class="clear"></div><!-- #clear -->
+      
+    </div><!-- #header -->
+
+    <div id="container">
+    	
+        <h1>Baby diagnostic</h1>
+        
+
+     <ul class="tabs top">
+    	<li><a href="#">Overview</a></li>
+    	<li><a href="#">Logs</a></li>
+    	<li class="active"><a href="#">Configuration</a></li>
+    </ul><!-- #tabs -->
+	<div class="tabsline"></div><!-- #tabsline -->
+    
+    
+    
+    	<h1>Properties</h1>
+        <p class="desc">Bellow you can configure this Task Hub properties</p>  
+
+
+        <label>Title</label><br>
+        <input type="text" value="Baby diagnostic" class="w60">
+        
+        <br><br>
+        
+        <label>Repeat messagekey</label>
+        <p class="desc">Select a key to repeat messages</p>
+        
+        <input type="radio" name="r" id="a"><label for="a">Asterisk</label><br>  
+        <input type="radio" name="r" id="b"><label for="b">Zero</label><br>  
+        <input type="radio" name="r" id="c"><label for="c">None</label>  
+        
+        <br><br>
+        
+        <label>Status</label><br>
+        
+        <input type="radio" name="s" id="e"><label for="e">Active</label><br>  
+        <input type="radio" name="s" id="f"><label for="f">Inactive</label><br>  
+        
+        <br><hr><br>
+        
+        <h1>Languages</h1>
+        <p class="desc">Define the language for your application</p>
+        <ul class="clist w30">
+            <li><input type="text" class="ux-clist" value="Turkish" /><button class="clist-remove"></button></li>
+            <li><input type="text" class="ux-clist" value="Spanish" /><button class="clist-remove"></button></li>
+            <li><input type="text" class="ux-clist" value="English" /><button class="clist-remove"></button></li>
+            <li><input type="text" class="ux-text" value="" placeholder="Enter language name" /><button class="clist-add"></button></li>
+        </ul>
+        
+        <br><hr><br>
+        
+        <h1>Workflow</h1>
+        <p class="desc">Use the following tool to define your application's workflow</p>
+
+        
+        <br>
+        
+        <hr>
+
+        <div class="bottom-actions">
+            <button class="white" type="button">Save</button>  
+            <button class="white cancel" type="button">Cancel</button>
+        </div><!-- #bottom-actions -->            
+
+
+
+    
+    </div><!-- #container -->
+
+    <div id="footer-span">
+      <div id="footer">
+        <div id="footer-container">
+          <div>
+            <div class="left platform">
+              InSTEDD has created an evolving platform of free and open source technologies to support humanitarian causes. These tools can be used individually or as building blocks for larger solutions. <a href="http://instedd.org/technologies/">Click here</a> to learn more
+            </div>
+            <div class="right">
+              <a href="http://instedd.org/technologies/" class="more">Learn more</a>
+              <div id="instedd-footer" data-app-name="nuntium"></div>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div>
+            <div class="left">
+              <a href="http://instedd.org">&copy; 2011 InSTEDD</a>
+              <a href="#TODO">Terms and conditions</a>
+              <a href="#TODO">Contact us</a>
+            </div>
+            <div class="right">
+              <a href="#TODO">Forms</a>
+              <a href="#TODO">Endpoints</a>
+              <a href="#TODO">Calls</a>
+            </div>
+            <div class="clear">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- #footer-span -->
+  </div><!-- #wrapper -->
+</body>
+</html>
