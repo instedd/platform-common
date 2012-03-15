@@ -27,8 +27,11 @@
     }
   }
   .emailInput {
-    margin-top: 8px;
+    margin-top: 15px;
     padding-bottom:6px !important;
+    .left {
+      width: 480px;
+    }
     input {
       margin-top: 8px;
     }
