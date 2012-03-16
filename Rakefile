@@ -42,7 +42,7 @@ task :sample_index do
 
   file = File.new("samples/index.htm", "w+")
   file.puts "<!DOCTYPE HTML><html><body><h1>InSTEDD Platform Common</h1><pre>#{hg_tip}</pre>"
-  file.puts "<a href=\"http://code.google.com/p/instedd-platform-common/source/detail?r=#{hg_version}\">source on google code</a>"
+  file.puts "<a href=\"https://bitbucket.org/instedd/platform-common/changeset/#{hg_version}\">source on bitbucket</a>"
   file.puts "<ul>"
 
   Dir["#{Dir.pwd}/samples/**/*.htm"].sort.each do |filename|
