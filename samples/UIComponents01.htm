@@ -1,17 +1,17 @@
-<!DOCTYPE HTML> 
-<html lang="en"> 
-<head> 
-	<meta charset="UTF-8"> 
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
 <title>Forms UI Components</title>
 <link href="../theme/stylesheets/theme.css" rel="stylesheet" type="text/css" />
 <link href="samples.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="../theme/javascripts/jquery-1.6.2.min.js"></script> 
+<script type="text/javascript" src="../theme/javascripts/jquery-1.6.2.min.js"></script>
 <script type="text/javascript" src="../theme/javascripts/jquery-ui-1.8.16.min.js"></script>
 <script type="text/javascript" src="../theme/javascripts/theme.js"></script>
-    <script type="text/javascript"> 
+    <script type="text/javascript">
         $(function() {
             var carTags = ['Cholera','H1N1','Hepatitis','Hepatize','Hepatized','Hepatizes','Hepatizing','Hrpatocellular','Kampong Cham','Kampong Chang','Kampong speu','Kampong Thom','Kampot','Honda','Hyundai','Jaguar','Jeep','Kia','Lada','Lexus','Lotus','Malaria','Mazda','Mercedes','Nissan','Opel','Peugeot','Porsche','Rover','Renault','Suzuki','Subaru','Seat','Tifus','Volvo','Vauxhall','VW'];
- 
+
             // Initialize Demo 2
             $("#tagfield2").superblyTagField({
                 allowNewTags: true,
@@ -20,22 +20,27 @@
                 tags: carTags
             });
 
-						$("#tagfield3").superblyTagField({
+            $("#tagfield3").superblyTagField({
                 allowNewTags: true,
                 showTagsNumber: 10,
                 preset: ['Cholera','H1N1'],
                 tags: carTags,
-								addItemOnBlur: true
+                addItemOnBlur: true
             });
+
+            $("#autocomplete").autocomplete({
+              source: carTags
+            });
+
         });
-    </script> 
-    
+    </script>
+
   <script>
   $(function() {
-  	$(".ux-datepicker").datepicker( "option", "changeMonth", true );
-  	$(".ux-datepicker").datepicker( "option", "changeYear", true );
-  	$(".ux-datepicker").datepicker( "option", "currentText", 'Now' );
-  	$(".ux-datepicker").datepicker( "option", "duration", 'slow' );
+    $(".ux-datepicker").datepicker( "option", "changeMonth", true );
+    $(".ux-datepicker").datepicker( "option", "changeYear", true );
+    $(".ux-datepicker").datepicker( "option", "currentText", 'Now' );
+    $(".ux-datepicker").datepicker( "option", "duration", 'slow' );
   });
 </script>
 
@@ -46,25 +51,25 @@
 <body>
 <div id="Main">
     <div id="Header">Form UI components</div><!-- #Header -->
-    
+
     <div id="Content">
-    
+
     <h1>Text field</h1>
     <p><input type="text" class="w30" value="Read-only" readonly="readonly" /></p>
     <p><input type="text" class="w30" value="Normal" /></p>
     <p><input type="text" class="w30 error" value="Invalid" /><label class="error">Error description</label></p>
-    
+
     <p><input type="email" class="w30" value="jdoe@acme.org" /></p>
 
 
-    
+
     <br><br>
-         
-    
-	<hr />
+
+
+  <hr />
 
     <h1>Combo box / Dropdown</h1>
-    
+
     <p>
         <select name="d" class="w30">
             <option value="1">iLab</option>
@@ -80,58 +85,58 @@
           <option value="3">Manas Technology</option>
       </select>
     </p>
-    
-    
+
+
     <br><br>
-         
-    
-	<hr />
+
+
+  <hr />
 
     <h1>Text area</h1>
-    
+
     <p>
       <textarea placeholder="Write your comment here" class="w50"></textarea>
     </p>
-    
+
     <p>
       <textarea class="w50 error">Lorem ipsum dolor sit amet</textarea>
     </p>
-    
-    <p>    
+
+    <p>
       <textarea class="w50" readonly="readonly">Readonly ... Lorem ipsum dolor sit amet</textarea>
     </p>
 
-    
+
     <br><br>
-         
+
 
     <hr />
-  
+
     <h1>Text area + Wajbar</h1>
-    
+
     <textarea placeholder="Write your comment here" class="ux-wajbar w50" maxlength="140"></textarea>
-    
+
     <br/>
 
-    
+
     <textarea placeholder="Write your comment here" readonly="readonly" class="w50 ux-wajbar" maxlength="140"></textarea>
-    
+
     <br/>
-    
+
     <div class="box grey w60">
       <textarea placeholder="Write your comment here" class="ux-wajbar" maxlength="140"></textarea>
     </div>
 
     <br/>
-    
+
     <div class="box grey w60">
       <textarea placeholder="Write your comment here" readonly="readonly" class="ux-wajbar" maxlength="140">Disabled textarea</textarea>
     </div>
-    
+
     <br><br>
-         
-    
-	<hr />
+
+
+  <hr />
     <br/>
 
     <h1>Numeric stepper</h1>
@@ -147,66 +152,79 @@
     </div>
     </p>
 
-		<p>
-			Bounded to 0,10
-		<div class="ux-nstep w06">
-			<input type="text" size="2" value="1" data-min="0" data-max="10">
-		</div>
-		</p>
-		
-		<p>
-			Upper bounded to 10
-		<div class="ux-nstep w06">
-			<input type="text" size="2" value="1" data-max="10">
-		</div>
-		</p>
-		
-		<p>
-			Lower bounded to 0
-		<div class="ux-nstep w06">
-			<input type="text" size="2" value="1" data-min="0">
-		</div>
-		</p>
-     
-    
+    <p>
+      Bounded to 0,10
+    <div class="ux-nstep w06">
+      <input type="text" size="2" value="1" data-min="0" data-max="10">
+    </div>
+    </p>
+
+    <p>
+      Upper bounded to 10
+    <div class="ux-nstep w06">
+      <input type="text" size="2" value="1" data-max="10">
+    </div>
+    </p>
+
+    <p>
+      Lower bounded to 0
+    <div class="ux-nstep w06">
+      <input type="text" size="2" value="1" data-min="0">
+    </div>
+    </p>
+
+
     <br><br>
-         
-    
-	<hr />
+
+
+  <hr />
     <br/>
 
     <h1>Search</h1>
     <p>
-        <input type="text" placeholder="Search" class="w30 ux-search"> 
+        <input type="text" placeholder="Search" class="w30 ux-search">
     </p>
     <p>
-        <input type="text" value="Lorem ipsum dolor" class="w30 ux-search" readonly="readonly"> 
+        <input type="text" value="Lorem ipsum dolor" class="w30 ux-search" readonly="readonly">
     </p>
-    
-    
+
+
     <br><br>
-         
-	<hr />
+
+  <hr />
+    <br/>
+
+    <h1>Autocomplete</h1>
+    <div class="w30">
+      <form><input type="text" id="autocomplete"/></form>
+    </div>
+
+    <br><br>
+
+  <hr />
     <br/>
 
     <h1>Tags</h1>
     <div class="w30">
       <form><input type="text" id="tagfield2"></form>
     </div>
-    
+
     <br><br>
 
-		<div class="w30">
-			Tag List with add item on blur
-			<form><input type="text" id="tagfield3"></form>
-		</div>
-         
-	<hr />
-    
+    <div class="w30">
+      Tag List with add item on blur
+      <form><input type="text" id="tagfield3"></form>
+    </div>
+
+    <br><br>
+
+
+  <hr />
+
     <br>
-         
+
     <h1>Date Picker</h1>
-    
+
     <div>
       <input type="text" class="w30 ux-datepicker" />
     </div>
@@ -214,60 +232,60 @@
     <div>
       <input type="text" class="w30 ux-datepicker" readonly="readonly" />
     </div>
-    
+
     <br /><br />
 
-	<hr />
+  <hr />
     <br/>
 
     <h1>CRUD list</h1>
-    
+
     <ul class="clist w30">
         <li><input type="text" class="ux-clist" value="John Doe" /><button class="clist-remove"></button></li>
         <li><input type="text" class="ux-clist" value="Paul Doe" /><button class="clist-remove"></button></li>
         <li><input type="text" class="ux-clist" value="Mike Doe" /><button class="clist-remove"></button></li>
         <li><input type="text" class="ux-text" value="" placeholder="Name" /><button class="clist-add"></button></li>
     </ul>
-    
+
     <br /><br />
 
-	<hr />
+  <hr />
     <br/>
 
     <h1>CRUD list Disabled</h1>
-    
+
     <ul class="clist w30">
         <li><input type="text" class="ux-clist" value="John Doe" disabled /><button class="clist-remove" disabled></button></li>
         <li><input type="text" class="ux-clist" value="Paul Doe" disabled /><button class="clist-remove" disabled></button></li>
         <li><input type="text" class="ux-clist" value="Mike Doe" disabled /><button class="clist-remove" disabled></button></li>
         <li><input type="text" class="ux-text" value="" placeholder="Name" disabled /><button class="clist-add" disabled></button></li>
     </ul>
-    
+
     <br /><br />
 
   <hr />
 
     <h1>Radio button</h1>
-    
+
     <p>
     <input type="radio" checked name="GroupA" id="GroupA_1"> <label for="GroupA_1">A - Option 1</label> <br>
     <input type="radio" name="GroupA" id="GroupA_2"> <label for="GroupA_2">A - Option 2</label> <br>
-    <input type="radio" disabled="disabled" name="GroupA" id="GroupA_2"> <label for="GroupA_2">A - Option 3 (disabled)</label>    
+    <input type="radio" disabled="disabled" name="GroupA" id="GroupA_2"> <label for="GroupA_2">A - Option 3 (disabled)</label>
     </p>
 
     <p>
     <input type="radio" name="GroupB" id="GroupB_1"> <label for="GroupB_1">B - Option 1</label> <br>
     <input type="radio" name="GroupB" id="GroupB_2" > <label for="GroupB_2">B - Option 2</label> <br>
-    <input type="radio" checked disabled="disabled" name="GroupB" id="GroupB_3"> <label for="GroupB_3">B - Option 3 (disabled and selected)</label>    
+    <input type="radio" checked disabled="disabled" name="GroupB" id="GroupB_3"> <label for="GroupB_3">B - Option 3 (disabled and selected)</label>
     </p>
-    
+
     <br /><br />
 
-	<hr />
+  <hr />
     <br/>
 
     <h1>Checkbox</h1>
-    
+
     <p>
     <input type="checkbox" checked name="GroupC" id="sms1"> <label for="sms1">SMS</label> <br>
     <input type="checkbox" name="GroupC" id="email1"> <label for="email1">Email</label> <br>
@@ -279,70 +297,70 @@
     <input type="checkbox" checked name="GroupD" id="email2" > <label for="email2">Email</label> <br>
     <input type="checkbox" checked disabled="disabled" name="GroupC" id="twitter2"> <label for="twitter2">Twitter</label>
     </p>
-    
+
     <br /><br />
 
-	<hr />
+  <hr />
     <br/>
 
     <h1>White button</h1>
     <button type="button" class="white"><span>Label</span></button>
     <a href="#" class="button white"><span>Label</span></a><br>
-    
-   	<button type="button" class="white" disabled><span>Label</span></button>
+
+    <button type="button" class="white" disabled><span>Label</span></button>
     <a href="#" class="button white disabled"><span>Label</span></a>
-    
+
     <br><br>
-       
-	<hr />
+
+  <hr />
     <br/>
 
     <h1>Grey button</h1>
-    
+
     <button type="button" class="grey"><span>Label</span></button>
     <a href="#" class="button grey"><span>Label</span></a><br>
-    
+
     <button type="button" class="grey" disabled><span>Label</span></button>
-    <a href="#" class="button grey disabled"><span>Label</span></a><br>    
-    
+    <a href="#" class="button grey disabled"><span>Label</span></a><br>
+
     <br /><br />
 
-	<hr />
+  <hr />
     <br/>
 
     <h1>Orange button</h1>
 
     <button type="button" class="orange"><span>Label</span></button>
     <a href="#" class="button orange"><span>Label</span></a><br>
-        
+
     <button type="button" class="orange" disabled><span>Label</span></button>
-    <a href="#" class="button orange disabled"><span>Label</span></a>    
-    
-	<hr />
+    <a href="#" class="button orange disabled"><span>Label</span></a>
+
+  <hr />
     <br/>
 
   <h1>Icon Buttons</h1>
 
   <button type="button" class="faccept">Label</button> <a href="#" class="fsettings">Change my password</a><br>
-    
+
     <br /><br />
 
-	<hr />
+  <hr />
     <br/>
 
     <h1>Mark button</h1>
-    
+
     <br /><br />
 
-	<hr />
+  <hr />
     <br/>
-    
+
     <h1>Collapsible items</h1>
-    
+
     <p>
-      
+
       <div class="ux-collapsible">
-      	<span><a href="#" class="arrow">Title</a></span>
+        <span><a href="#" class="arrow">Title</a></span>
         <table class="ux-content">
           <tr>
           <td>John Doe</td>
@@ -362,9 +380,9 @@
           </tr>
         </table>
       </div>
-      
+
       <div class="ux-collapsible collapsed">
-      	<span><a href="#" class="arrow">Title</a></span>
+        <span><a href="#" class="arrow">Title</a></span>
         <table class="ux-content">
           <tr>
           <td>John Doe</td>
@@ -384,10 +402,10 @@
           </tr>
         </table>
       </div>
-      
+
       <br/>
-      
-      
+
+
       <form action="#">
 
         <h2>Edit User</h2>
@@ -408,7 +426,7 @@
           <div class="ux-content">
 
           <div class="field w30">
-            <label for="user_password">Password</label> 
+            <label for="user_password">Password</label>
             <p>(leave blank if you don't want to change it)</p>
             <input id="user_password" name="user[password]" size="30" type="password">
           </div>
@@ -425,25 +443,25 @@
           <button type="submit" class="white">Update</button>
           <a href="http://localhost:3000/">Back</a>
         </div>
-        
-      </form>
-			
-			<br />
 
-			<h2>Custom trigger</h2>
-			
-			<div class="ux-collapsible">
-				<button class="ux-collapse-trigger">Trigger</button>
-      	<div class="ux-content">Content</div>
+      </form>
+
+      <br />
+
+      <h2>Custom trigger</h2>
+
+      <div class="ux-collapsible">
+        <button class="ux-collapse-trigger">Trigger</button>
+        <div class="ux-content">Content</div>
       </div>
-      
+
     </p>
-    
+
     <br /><br />
 
-	<hr />
+  <hr />
     <br/>
-    
+
     <h1>Test: all have same width</h1>
         <p><input type="text" class="w30" value="Normal" /></p>
         <p><input type="text" placeholder="Search" class="w30 ux-search"></p>
@@ -463,12 +481,12 @@
       <p class="w50"><input type="text" value="Normal" /></p>
       <p class="w50"><input type="text" placeholder="Search" class="ux-search"></p>
       <p class="w50"><textarea placeholder="Write your comment here"></textarea></p>
-    
+
     <br /><br />
 
-	<hr />
+  <hr />
     <br/>
-      
+
     <h1>Test: Numeric stepper with text</h1>
 
     <p>
@@ -482,12 +500,12 @@
       </div>
       <span>Lorem ipsum dolor sit amet</span>
     </p>
-    
+
     <br /><br />
 
-	<hr />
+  <hr />
     <br/>
-    
+
     <h1>Two Column Table</h1>
 
     <table class="GralTable TwoColumn CleanTable">
@@ -519,12 +537,12 @@
             </td>
         </tr>
     </table>
-    
+
     <br /><br />
 
-	<hr />
+  <hr />
     <br/>
-    
+
     <h1>Table</h1>
 
     <table class="GralTable">
@@ -558,9 +576,9 @@
     <br /><br />
 
     <hr />
-    
+
     <br/>
-    
+
     <h1>Empty Table with Wrap</h1>
 
     <div class="tablewrapp">
