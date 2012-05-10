@@ -24,6 +24,13 @@
             .datepicker();
         }
 
+        if ($.fn.datetimepicker) {
+          $(".ux-datetimepicker:not([readonly])", container)
+            .click(function(){ $(this).datepicker("show"); })
+            .datetimepicker();
+        }
+
+
         $(".ux-wajbar", container).wajbar();
 
         $('input[placeholder],textarea[placeholder]', container).placeholder();
