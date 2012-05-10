@@ -7,6 +7,7 @@
 <link href="samples.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="../theme/javascripts/jquery-1.6.2.min.js"></script>
 <script type="text/javascript" src="../theme/javascripts/jquery-ui-1.8.16.min.js"></script>
+<script type="text/javascript" src="../theme/javascripts/jquery-ui-timepicker-addon.js"></script>
 <script type="text/javascript" src="../theme/javascripts/theme.js"></script>
     <script type="text/javascript">
         $(function() {
@@ -34,18 +35,6 @@
 
         });
     </script>
-
-  <script>
-  $(function() {
-    $(".ux-datepicker").datepicker( "option", "changeMonth", true );
-    $(".ux-datepicker").datepicker( "option", "changeYear", true );
-    $(".ux-datepicker").datepicker( "option", "currentText", 'Now' );
-    $(".ux-datepicker").datepicker( "option", "duration", 'slow' );
-  });
-</script>
-
-
-
 </head>
 
 <body>
@@ -234,6 +223,25 @@
     </div>
 
     <br /><br />
+
+
+    <hr />
+
+      <br>
+
+      <h1>Date Time Picker</h1>
+
+      <div>
+        <input type="text" class="w30 ux-datetimepicker" />
+      </div>
+
+      <div>
+        <input type="text" class="w30 ux-datetimepicker" readonly="readonly" />
+      </div>
+
+      <br /><br />
+
+
 
   <hr />
     <br/>
