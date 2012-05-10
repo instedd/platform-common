@@ -4,18 +4,18 @@
 .avatar span { display:block; position:absolute; margin:0px auto; width:65px; height:65px; z-index:1; box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2)inset; -moz-box-shadow:0px 0px 2px 1px rgba(0, 0, 0, 0.2)inset; -webkit-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2)inset; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px }
 .avatar img { border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px }
 
-.location { background:#555555 url(../theme/images/icons/18/white/location.png) no-repeat; color:#FFFFFF; padding:2px 3px 2px 16px; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px }
+.location { background:#555555 url(http://theme.instedd.org/theme/images/icons/18/white/location.png) no-repeat; color:#FFFFFF; padding:2px 3px 2px 16px; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px }
 #achannels { color:#555555 }
 
-.mobile { background: url(../theme/images/icons/18/black/mobile.png) no-repeat left; padding-left:20px }
-.message { background: url(../theme/images/icons/18/black/message.png) no-repeat left; padding-left:20px }
-.twitter { background: url(../theme/images/icons/18/black/twitter.png) no-repeat left; padding-left:20px }
-.phone { background: url(../theme/images/icons/18/black/phone.png) no-repeat left; padding-left:20px }
+.mobile { background: url(http://theme.instedd.org/theme/images/icons/18/black/mobile.png) no-repeat left; padding-left:20px }
+.message { background: url(http://theme.instedd.org/theme/images/icons/18/black/message.png) no-repeat left; padding-left:20px }
+.twitter { background: url(http://theme.instedd.org/theme/images/icons/18/black/twitter.png) no-repeat left; padding-left:20px }
+.phone { background: url(http://theme.instedd.org/theme/images/icons/18/black/phone.png) no-repeat left; padding-left:20px }
 
-.gmobile { background: url(../theme/images/icons/18/grey/mobile.png) no-repeat left; padding-left:20px }
-.gmessage { background: url(../theme/images/icons/18/grey/message.png) no-repeat left; padding-left:20px }
-.gtwitter { background: url(../theme/images/icons/18/grey/twitter.png) no-repeat left; padding-left:20px }
-.gphone { background: url(../theme/images/icons/18/grey/phone.png) no-repeat left; padding-left:20px }
+.gmobile { background: url(http://theme.instedd.org/theme/images/icons/18/grey/mobile.png) no-repeat left; padding-left:20px }
+.gmessage { background: url(http://theme.instedd.org/theme/images/icons/18/grey/message.png) no-repeat left; padding-left:20px }
+.gtwitter { background: url(http://theme.instedd.org/theme/images/icons/18/grey/twitter.png) no-repeat left; padding-left:20px }
+.gphone { background: url(http://theme.instedd.org/theme/images/icons/18/grey/phone.png) no-repeat left; padding-left:20px }
 
 
 /* ------------ table ------------------- */
@@ -25,8 +25,8 @@
 .GralTable span { vertical-align:middle; display:inline-block }
 .GralTable tr { clear:both }
 .titletable { padding:4px 0 2px 2px; display:inline-block !important; margin-left:5px !important }
-.exp { background: url(../theme/images/icons/misc/black/arrowRight.png) no-repeat 2px 50%; padding-left:16px }
-.col { background: url(../theme/images/icons/misc/black/arrowDown.png) no-repeat 0px 50%; padding-left:16px }
+.exp { background: url(http://theme.instedd.org/theme/images/icons/misc/black/arrowRight.png) no-repeat 2px 50%; padding-left:16px }
+.col { background: url(http://theme.instedd.org/theme/images/icons/misc/black/arrowDown.png) no-repeat 0px 50%; padding-left:16px }
 /*
 .lev1 { padding-left: 18px !important }
 .lev2 { padding-left: 32px !important }
@@ -37,7 +37,7 @@
 .box.nopadd { padding:0 }
 .box.nopadd .left { border-right:1px solid #eeeeee}
 .h50 { height:500px}
-.tableheader { background:url(../theme/images/interface/backtd.png) repeat-x left 32px #ffffff; position:absolute; height:40px; z-index:1 }
+.tableheader { background:url(http://theme.instedd.org/theme/images/interface/backtd.png) repeat-x left 32px #ffffff; position:absolute; height:40px; z-index:1 }
 .tableheader.expanded { width:960px }
 .tableheader.expanded div { display:inline-block }
 .tableheader.expanded div:first-child { border-right:1px solid #eeeeee; width:342px }
@@ -65,7 +65,7 @@
 .tablescroll hr { width:95%; margin:0 auto }
 
 ul.taglist { padding:0 4px; border:1px solid #dddddd; height:128px; overflow:auto; overflow-x:hidden; -webkit-box-shadow: 0px 0.05em 1px 1px rgba(0, 0, 0, 0.2) inset; -moz-box-shadow: 0px 0.05em 1px 1px rgba(0, 0, 0, 0.2) inset; box-shadow: 0px 0.05em 1px 1px rgba(0, 0, 0, 0.2) inset; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px }
-ul.taglist li { background:url(../theme/images/interface/add.png) no-repeat 98% -15px; margin:3px 0; border:1px solid #dddddd; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px }
+ul.taglist li { background:url(http://theme.instedd.org/theme/images/interface/add.png) no-repeat 98% -15px; margin:3px 0; border:1px solid #dddddd; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px }
 ul.taglist li:hover { background-color:#eaeaea }
 ul.taglist li a { display:block }
 
@@ -76,7 +76,7 @@ ul.taglist li a { display:block }
 .lev3 div img, .lev3 div span:first-child { margin-left:50px !important }
 
 .mapheader span { display:inline-block; margin-top:6px }
-.mapheader .alert { background:url(../theme/images/icons/18/orange/alert.png) no-repeat left 50%; padding-left:20px; color:#ff6602 }
+.mapheader .alert { background:url(http://theme.instedd.org/theme/images/icons/18/orange/alert.png) no-repeat left 50%; padding-left:20px; color:#ff6602 }
 .mapa { background:#CCCCCC /* elminar */; color: #666666 /* elminar */; width:610px; height:458px; margin:0 8px 0 0; border:1px solid #c3c3c1 }
 
 .box { position:relative; -webkit-box-shadow: 0px 0.05em 1px 1px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0px 0.05em 1px 1px rgba(0, 0, 0, 0.3); box-shadow: 0px 0.05em 1px 1px rgba(0, 0, 0, 0.3) }
@@ -87,10 +87,50 @@ ul.taglist li a { display:block }
 .toptitle { width:550px }
 .toptitle span { color:#000000 }
 .rightbuttons { position:absolute; right:2px; top:5px }
-.rightbuttons button { margin:0 }
+.rightbuttons button { margin:0; vertical-align:middle }
+
+h1+div.searchfilters { margin:-10px 0 10px 0 !important }
+div.searchfilters div:first-child { width:85% }
+.greyback { background:#d0d0d0; display:inline-block; margin:2px 2px 2px 0; padding-right:4px; border:1px solid #dddddd; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px }
+.greyback button { margin:0px; padding:0px; vertical-align:middle; color:#666666 }
+.greyback span { display:none; vertical-align:middle; margin:0 0 0 3px; color:#666666 }
+.greyback:active span { display:inline-block }
+.greyback span a { color:#000000 }
+
+.expdiv, .coldiv { border-bottom:1px solid #dddddd; padding-left:0px !important; width:95% }
+.expdiv span, .coldiv span { color:#555555; padding:0 2px 0 22px; border-bottom:1px solid #ffffff; display:inline-block; margin-bottom:-2px; vertical-align:middle }
+.expdiv span { background: url(http://theme.instedd.org/theme/images/icons/misc/grey/arrowRight.png) no-repeat 10px 50% #ffffff }
+.coldiv span { background: url(http://theme.instedd.org/theme/images/icons/misc/grey/arrowDown.png) no-repeat 10px 50% #ffffff }
+div#description div,div#status div { padding-left:0px !important }
+.tablescroll .alert { background:url(http://theme.instedd.org/theme/images/icons/18/orange/alert.png) no-repeat right 50%; padding-right:20px; color:#ff6602 }
+.box.img { display:inline-block; padding:0px !important }
+.box.img span { margin-left:4px; display:block }
+.box.img img { margin:2px 4px !important }
+
+
 
 .feditor-container { position:relative }
 .feditor-container .rightbuttons{ top:-6px; right:5px }
 .w30.feditor-sidebar { width:280px !important }
 .w30.feditor-sidebar > input[type="text"] { width:275px !important }
 .w30.feditor-sidebar > select { width:280px !important }
+
+.btupdn { display: inline-block; vertical-align:middle; width:24px; height:24px; position:relative }
+.fmoveup, .fmovedown {
+    background-color: transparent;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    border: medium none;
+    cursor: pointer;
+    display: inline-block;
+    height: 12px;
+    min-width: 24px;
+}
+.fmoveup:hover, .fmovedown:hover {
+    background-position: 0 -30px;
+}
+.fmoveup:active, .fmovedown:active {
+    background-position: 0 -60px;
+}
+.fmovedown { background:url(http://resmap-stg.instedd.org/assets/moveDown.png) no-repeat; position:absolute; bottom:1px }
+.fmoveup { background:url(http://resmap-stg.instedd.org/assets/moveUp.png) no-repeat; position:absolute; top:0 }
