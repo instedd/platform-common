@@ -156,11 +156,6 @@
     active_item.prev().addClass('before');
     active_item.next().addClass('after');
 
-    // clicking on an li in NavMenu clicks the first link in it
-    $('#NavMenu li').click(function(event) {
-      window.location = $(this).find('a')[0].href;
-    });
-
     // homepage benefits
     window.setTimeout(function(){
       jQuery('.benefits #benefits-container').jcarousel({
