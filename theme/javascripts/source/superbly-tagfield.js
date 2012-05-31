@@ -123,7 +123,7 @@
 
         // functions 
         function setValue(){
-            tagField.val(inserted.join(','));
+            tagField.val(inserted.join(',')).change();
         }
 
         function updateTagInputWidth()
