@@ -5,6 +5,7 @@ theme/javascripts/theme.js
 theme/stylesheets/theme.css
 theme/theme.zip
 **.orig
+.bundle
 
 syntax: regexp
 ^samples/index\.htm$
