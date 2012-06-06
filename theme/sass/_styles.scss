@@ -230,8 +230,8 @@ span.radio {
   &:not(:empty) { padding:0 0 0 27px }
 }
 
-.clist-add { @extend .clist-button; background-image:url(../images/buttons/plain/add.png); }
-.clist-remove { @extend .clist-button; background-image:url(../images/buttons/plain/remove.png); }
+.clist-add { @extend .clist-button; background-image:url(../images/buttons/small/plain/add.png); }
+.clist-remove { @extend .clist-button; background-image:url(../images/buttons/small/plain/remove.png); }
 .clist-add:disabled { background-position: 0 -90px !important }
 .clist-remove:disabled { background-position: 0 -90px !important }
 
@@ -271,8 +271,8 @@ ul.clist li:last-child { border-bottom:none }
   &:not(:empty) { padding:0 0 0 27px }
 }
 
-.mclist-add { @extend .clist-button; background-image:url(../images/buttons/plain/add.png); }
-.mclist-remove { @extend .clist-button; background-image:url(../images/buttons/plain/remove.png); }
+.mclist-add { @extend .clist-button; background-image:url(../images/buttons/small/plain/add.png); }
+.mclist-remove { @extend .clist-button; background-image:url(../images/buttons/small/plain/remove.png); }
 .mclist-add:disabled { background-position: 0 -90px !important }
 .mclist-remove:disabled { background-position: 0 -90px !important }
 
@@ -549,108 +549,149 @@ a.icon_button_large {
   vertical-align:middle;
 }
 
-/* ----- Color ----- */
-.caccept { @extend .icon_button; background-image:url(../images/buttons/color/accept.png); color:$green !important }
-.cadd{ @extend .icon_button; background-image:url(../images/buttons/color/add.png); color:$blue !important }
-.cremove { @extend .icon_button; background-image:url(../images/buttons/color/remove.png); color:$red !important }
+/* ----- Small Color ----- */
+.caccept { @extend .icon_button; background-image:url(../images/buttons/small/color/accept.png); color:$green !important }
+.cadd{ @extend .icon_button; background-image:url(../images/buttons/small/color/add.png); color:$blue !important }
+.cremove { @extend .icon_button; background-image:url(../images/buttons/small/color/remove.png); color:$red !important }
 
 
-/* ----- Fancy ----- */
-.faccept { @extend .icon_button; background-image:url(../images/buttons/fancy/accept.png) }
-.fadd{ @extend .icon_button; background-image:url(../images/buttons/fancy/add.png) }
-.fandroid{ @extend .icon_button; background-image:url(../images/buttons/fancy/android.png) }
-.fapple { @extend .icon_button; background-image:url(../images/buttons/fancy/apple.png) }
-.farrange { @extend .icon_button; background-image:url(../images/buttons/fancy/arrange.png) }
-.farrow { @extend .icon_button; background-image:url(../images/buttons/fancy/arrow.png) }
-.fblock { @extend .icon_button; background-image:url(../images/buttons/fancy/block.png) }
-.fbranch { @extend .icon_button; background-image:url(../images/buttons/fancy/branch.png) }
-.fbug { @extend .icon_button; background-image:url(../images/buttons/fancy/bug.png) }
-.fbulb { @extend .icon_button; background-image:url(../images/buttons/fancy/bulb.png) }
-.fchat { @extend .icon_button; background-image:url(../images/buttons/fancy/chat.png) }
-.fclaim { @extend .icon_button; background-image:url(../images/buttons/fancy/claim.png) }
-.fclose { @extend .icon_button; background-image:url(../images/buttons/fancy/close.png) }
-.fconfiguration { @extend .icon_button; background-image:url(../images/buttons/fancy/configuration.png) }
-.fcsv { @extend .icon_button; background-image:url(../images/buttons/fancy/csv.png) }
-.fdatabase { @extend .icon_button; background-image:url(../images/buttons/fancy/database.png) }
-.fdelete { @extend .icon_button; background-image:url(../images/buttons/fancy/trash.png) }
-.fedit { @extend .icon_button; background-image:url(../images/buttons/fancy/edit.png) }
-.fexcel { @extend .icon_button; background-image:url(../images/buttons/fancy/excel.png) }
-.fexport { @extend .icon_button; background-image:url(../images/buttons/fancy/export.png) }
-.ffacebook { @extend .icon_button; background-image:url(../images/buttons/fancy/facebook.png) }
-.ffolder { @extend .icon_button; background-image:url(../images/buttons/fancy/folder.png) }
-.fhelp { @extend .icon_button; background-image:url(../images/buttons/fancy/help.png) }
-.fimport { @extend .icon_button; background-image:url(../images/buttons/fancy/import.png) }
-.finsert { @extend .icon_button; background-image:url(../images/buttons/fancy/insert.png) }
-.fkey { @extend .icon_button; background-image:url(../images/buttons/fancy/key.png) }
-.fleave { @extend .icon_button; background-image:url(../images/buttons/fancy/leave.png) }
-.fleft { @extend .icon_button; background-image:url(../images/buttons/fancy/left.png) }
-.flinux { @extend .icon_button; background-image:url(../images/buttons/fancy/linux.png) }
-.flocation { @extend .icon_button; background-image:url(../images/buttons/fancy/location.png) }
-.fmerge { @extend .icon_button; background-image:url(../images/buttons/fancy/merge.png) }
-.fmessage { @extend .icon_button; background-image:url(../images/buttons/fancy/message.png) }
-.fpause { @extend .icon_button; background-image:url(../images/buttons/fancy/pause.png) }
-.fphone { @extend .icon_button; background-image:url(../images/buttons/fancy/phone.png) }
-.fplay { @extend .icon_button; background-image:url(../images/buttons/fancy/play.png) }
-.fpdf { @extend .icon_button; background-image:url(../images/buttons/fancy/pdf.png) }
-.fpreview { @extend .icon_button; background-image:url(../images/buttons/fancy/preview.png) }
-.frecord { @extend .icon_button; background-image:url(../images/buttons/fancy/record.png) }
-.frecording { @extend .icon_button; background-image:url(../images/buttons/fancy/recording.png) }
-.fremove { @extend .icon_button; background-image:url(../images/buttons/fancy/remove.png) }
-.frequest { @extend .icon_button; background-image:url(../images/buttons/fancy/request.png) }
-.fright { @extend .icon_button; background-image:url(../images/buttons/fancy/right.png) }
-.frss { @extend .icon_button; background-image:url(../images/buttons/fancy/rss.png) }
-.fsearch { @extend .icon_button; background-image:url(../images/buttons/fancy/search.png) }
-.fsettings { @extend .icon_button; background-image:url(../images/buttons/fancy/settings.png) }
-.fsnapshot { @extend .icon_button; background-image:url(../images/buttons/fancy/snapshot.png) }
-.fstop { @extend .icon_button; background-image:url(../images/buttons/fancy/stop.png) }
-.fstopped { @extend .icon_button; background-image:url(../images/buttons/fancy/stopped.png) }
-.fsync { @extend .icon_button; background-image:url(../images/buttons/fancy/sync.png) }
-.fteach { @extend .icon_button; background-image:url(../images/buttons/fancy/teach.png) }
-.ftwitter { @extend .icon_button; background-image:url(../images/buttons/fancy/twitter.png) }
-.fubuntu { @extend .icon_button; background-image:url(../images/buttons/fancy/ubuntu.png) }
-.fuser { @extend .icon_button; background-image:url(../images/buttons/fancy/user.png) }
-.fusers { @extend .icon_button; background-image:url(../images/buttons/fancy/users.png) }
-.fuTurn { @extend .icon_button; background-image:url(../images/buttons/fancy/uTurn.png) }
-.fwindows { @extend .icon_button; background-image:url(../images/buttons/fancy/windows.png) }
+/* ----- Small Fancy ----- */
+.faccept { @extend .icon_button; background-image:url(../images/buttons/small/fancy/accept.png) }
+.fadd{ @extend .icon_button; background-image:url(../images/buttons/small/fancy/add.png) }
+.fandroid{ @extend .icon_button; background-image:url(../images/buttons/small/fancy/android.png) }
+.fapple { @extend .icon_button; background-image:url(../images/buttons/small/fancy/apple.png) }
+.farrange { @extend .icon_button; background-image:url(../images/buttons/small/fancy/arrange.png) }
+.farrow { @extend .icon_button; background-image:url(../images/buttons/small/fancy/arrow.png) }
+.fblock { @extend .icon_button; background-image:url(../images/buttons/small/fancy/block.png) }
+.fbranch { @extend .icon_button; background-image:url(../images/buttons/small/fancy/branch.png) }
+.fbug { @extend .icon_button; background-image:url(../images/buttons/small/fancy/bug.png) }
+.fbulb { @extend .icon_button; background-image:url(../images/buttons/small/fancy/bulb.png) }
+.fchat { @extend .icon_button; background-image:url(../images/buttons/small/fancy/chat.png) }
+.fclaim { @extend .icon_button; background-image:url(../images/buttons/small/fancy/claim.png) }
+.fclose { @extend .icon_button; background-image:url(../images/buttons/small/fancy/close.png) }
+.fconfiguration { @extend .icon_button; background-image:url(../images/buttons/small/fancy/configuration.png) }
+.fcsv { @extend .icon_button; background-image:url(../images/buttons/small/fancy/csv.png) }
+.fdatabase { @extend .icon_button; background-image:url(../images/buttons/small/fancy/database.png) }
+.fdelete { @extend .icon_button; background-image:url(../images/buttons/small/fancy/trash.png) }
+.fedit { @extend .icon_button; background-image:url(../images/buttons/small/fancy/edit.png) }
+.fexcel { @extend .icon_button; background-image:url(../images/buttons/small/fancy/excel.png) }
+.fexport { @extend .icon_button; background-image:url(../images/buttons/small/fancy/export.png) }
+.ffacebook { @extend .icon_button; background-image:url(../images/buttons/small/fancy/facebook.png) }
+.ffolder { @extend .icon_button; background-image:url(../images/buttons/small/fancy/folder.png) }
+.fhelp { @extend .icon_button; background-image:url(../images/buttons/small/fancy/help.png) }
+.fimport { @extend .icon_button; background-image:url(../images/buttons/small/fancy/import.png) }
+.finsert { @extend .icon_button; background-image:url(../images/buttons/small/fancy/insert.png) }
+.fkey { @extend .icon_button; background-image:url(../images/buttons/small/fancy/key.png) }
+.fleave { @extend .icon_button; background-image:url(../images/buttons/small/fancy/leave.png) }
+.fleft { @extend .icon_button; background-image:url(../images/buttons/small/fancy/left.png) }
+.flinux { @extend .icon_button; background-image:url(../images/buttons/small/fancy/linux.png) }
+.flocation { @extend .icon_button; background-image:url(../images/buttons/small/fancy/location.png) }
+.fmerge { @extend .icon_button; background-image:url(../images/buttons/small/fancy/merge.png) }
+.fmessage { @extend .icon_button; background-image:url(../images/buttons/small/fancy/message.png) }
+.fpause { @extend .icon_button; background-image:url(../images/buttons/small/fancy/pause.png) }
+.fphone { @extend .icon_button; background-image:url(../images/buttons/small/fancy/phone.png) }
+.fplay { @extend .icon_button; background-image:url(../images/buttons/small/fancy/play.png) }
+.fpdf { @extend .icon_button; background-image:url(../images/buttons/small/fancy/pdf.png) }
+.fpreview { @extend .icon_button; background-image:url(../images/buttons/small/fancy/preview.png) }
+.frecord { @extend .icon_button; background-image:url(../images/buttons/small/fancy/record.png) }
+.frecording { @extend .icon_button; background-image:url(../images/buttons/small/fancy/recording.png) }
+.fremove { @extend .icon_button; background-image:url(../images/buttons/small/fancy/remove.png) }
+.frequest { @extend .icon_button; background-image:url(../images/buttons/small/fancy/request.png) }
+.fright { @extend .icon_button; background-image:url(../images/buttons/small/fancy/right.png) }
+.frss { @extend .icon_button; background-image:url(../images/buttons/small/fancy/rss.png) }
+.fsearch { @extend .icon_button; background-image:url(../images/buttons/small/fancy/search.png) }
+.fsettings { @extend .icon_button; background-image:url(../images/buttons/small/fancy/settings.png) }
+.fsnapshot { @extend .icon_button; background-image:url(../images/buttons/small/fancy/snapshot.png) }
+.fstop { @extend .icon_button; background-image:url(../images/buttons/small/fancy/stop.png) }
+.fstopped { @extend .icon_button; background-image:url(../images/buttons/small/fancy/stopped.png) }
+.fsync { @extend .icon_button; background-image:url(../images/buttons/small/fancy/sync.png) }
+.fteach { @extend .icon_button; background-image:url(../images/buttons/small/fancy/teach.png) }
+.ftwitter { @extend .icon_button; background-image:url(../images/buttons/small/fancy/twitter.png) }
+.fubuntu { @extend .icon_button; background-image:url(../images/buttons/small/fancy/ubuntu.png) }
+.fuser { @extend .icon_button; background-image:url(../images/buttons/small/fancy/user.png) }
+.fusers { @extend .icon_button; background-image:url(../images/buttons/small/fancy/users.png) }
+.fuTurn { @extend .icon_button; background-image:url(../images/buttons/small/fancy/uTurn.png) }
+.fwindows { @extend .icon_button; background-image:url(../images/buttons/small/fancy/windows.png) }
+.fmovedown { @extend .icon_button; background-image:url(../images/buttons/small/fancy/movedown.png) }
+.fmoveup { @extend .icon_button; background-image:url(../images/buttons/small/fancy/moveup.png) }
 
-/* ----- Plain ----- */
-.padd{ @extend .icon_button; background-image:url(../images/buttons/plain/add.png) }
-.pback{ @extend .icon_button; background-image:url(../images/buttons/plain/back.png) }
-.pblock{ @extend .icon_button; background-image:url(../images/buttons/plain/block.png) }
-.pclose{ @extend .icon_button; background-image:url(../images/buttons/plain/close.png) }
-.pnext{ @extend .icon_button; background-image:url(../images/buttons/plain/next.png) }
-.pprevious{ @extend .icon_button; background-image:url(../images/buttons/plain/previous.png) }
-.premove{ @extend .icon_button; background-image:url(../images/buttons/plain/remove.png) }
-.pstop{ @extend .icon_button; background-image:url(../images/buttons/plain/stop.png) }
-.pstopped{ @extend .icon_button; background-image:url(../images/buttons/plain/stopped.png) }
+/* ----- Small Plain ----- */
+.padd{ @extend .icon_button; background-image:url(../images/buttons/small/plain/add.png) }
+.pback{ @extend .icon_button; background-image:url(../images/buttons/small/plain/back.png) }
+.pblock{ @extend .icon_button; background-image:url(../images/buttons/small/plain/block.png) }
+.pclose{ @extend .icon_button; background-image:url(../images/buttons/small/plain/close.png) }
+.pnext{ @extend .icon_button; background-image:url(../images/buttons/small/plain/next.png) }
+.pprevious{ @extend .icon_button; background-image:url(../images/buttons/small/plain/previous.png) }
+.premove{ @extend .icon_button; background-image:url(../images/buttons/small/plain/remove.png) }
+.pstop{ @extend .icon_button; background-image:url(../images/buttons/small/plain/stop.png) }
+.pstopped{ @extend .icon_button; background-image:url(../images/buttons/small/plain/stopped.png) }
 
 
-/* ----- Large ----- */
-.lalert { @extend .icon_button_large; background-image:url(../images/buttons/large/alert.png) }
-.lalertandreport{ @extend .icon_button_large; background-image:url(../images/buttons/large/alertAndReport.png) }
-.lanswer{ @extend .icon_button_large; background-image:url(../images/buttons/large/answer.png) }
-.lbookmark { @extend .icon_button_large; background-image:url(../images/buttons/large/bookmark.png) }
-.lcallback { @extend .icon_button_large; background-image:url(../images/buttons/large/callback.png) }
-.lcloud { @extend .icon_button_large; background-image:url(../images/buttons/large/cloud.png) }
-.ldate { @extend .icon_button_large; background-image:url(../images/buttons/large/date.png) }
-.ldial { @extend .icon_button_large; background-image:url(../images/buttons/large/dial.png) }
-.ldirections { @extend .icon_button_large; background-image:url(../images/buttons/large/directions.png) }
-.lfilter { @extend .icon_button_large; background-image:url(../images/buttons/large/filter.png) }
-.lforwardcall { @extend .icon_button_large; background-image:url(../images/buttons/large/forwardCall.png) }
-.lgroupchat { @extend .icon_button_large; background-image:url(../images/buttons/large/groupChat.png) }
-.llocation { @extend .icon_button_large; background-image:url(../images/buttons/large/location.png) }
-.lmessage { @extend .icon_button_large; background-image:url(../images/buttons/large/message.png) }
-.lmicrophone { @extend .icon_button_large; background-image:url(../images/buttons/large/microphone.png) }
-.lmultipleoptions { @extend .icon_button_large; background-image:url(../images/buttons/large/multipleOptions.png) }
-.lnumber { @extend .icon_button_large; background-image:url(../images/buttons/large/number.png) }
-.lnumeral { @extend .icon_button_large; background-image:url(../images/buttons/large/numeral.png) }
-.lparagraph { @extend .icon_button_large; background-image:url(../images/buttons/large/paragraph.png) }
-.lphone { @extend .icon_button_large; background-image:url(../images/buttons/large/phone.png) }
-.lreport { @extend .icon_button_large; background-image:url(../images/buttons/large/report.png) }
-.lsingleoption { @extend .icon_button_large; background-image:url(../images/buttons/large/singleOption.png) }
-.lsound { @extend .icon_button_large; background-image:url(../images/buttons/large/sound.png) }
-.ltext { @extend .icon_button_large; background-image:url(../images/buttons/large/text.png) }
-.lunknown { @extend .icon_button_large; background-image:url(../images/buttons/large/unknown.png) }
+/* ----- Large Fancy ----- */
+.lalert { @extend .icon_button_large; background-image:url(../images/buttons/large/fancy/alert.png) }
+.lalertandreport{ @extend .icon_button_large; background-image:url(../images/buttons/large/fancy/alertAndReport.png) }
+.lanswer{ @extend .icon_button_large; background-image:url(../images/buttons/large/fancy/answer.png) }
+.lbookmark { @extend .icon_button_large; background-image:url(../images/buttons/large/fancy/bookmark.png) }
+.lcallback { @extend .icon_button_large; background-image:url(../images/buttons/large/fancy/callback.png) }
+.lcloud { @extend .icon_button_large; background-image:url(../images/buttons/large/fancy/cloud.png) }
+.ldate { @extend .icon_button_large; background-image:url(../images/buttons/large/fancy/date.png) }
+.ldial { @extend .icon_button_large; background-image:url(../images/buttons/large/fancy/dial.png) }
+.ldirections { @extend .icon_button_large; background-image:url(../images/buttons/large/fancy/directions.png) }
+.lfilter { @extend .icon_button_large; background-image:url(../images/buttons/large/fancy/filter.png) }
+.lforwardcall { @extend .icon_button_large; background-image:url(../images/buttons/large/fancy/forwardCall.png) }
+.lgroupchat { @extend .icon_button_large; background-image:url(../images/buttons/large/fancy/groupChat.png) }
+.llocation { @extend .icon_button_large; background-image:url(../images/buttons/large/fancy/location.png) }
+.lmessage { @extend .icon_button_large; background-image:url(../images/buttons/large/fancy/message.png) }
+.lmicrophone { @extend .icon_button_large; background-image:url(../images/buttons/large/fancy/microphone.png) }
+.lmultipleoptions { @extend .icon_button_large; background-image:url(../images/buttons/large/fancy/multipleOptions.png) }
+.lnumber { @extend .icon_button_large; background-image:url(../images/buttons/large/fancy/number.png) }
+.lnumeral { @extend .icon_button_large; background-image:url(../images/buttons/large/fancy/numeral.png) }
+.lparagraph { @extend .icon_button_large; background-image:url(../images/buttons/large/fancy/paragraph.png) }
+.lphone { @extend .icon_button_large; background-image:url(../images/buttons/large/fancy/phone.png) }
+.lreport { @extend .icon_button_large; background-image:url(../images/buttons/large/fancy/report.png) }
+.lsingleoption { @extend .icon_button_large; background-image:url(../images/buttons/large/fancy/singleOption.png) }
+.lsound { @extend .icon_button_large; background-image:url(../images/buttons/large/fancy/sound.png) }
+.ltext { @extend .icon_button_large; background-image:url(../images/buttons/large/fancy/text.png) }
+.lunknown { @extend .icon_button_large; background-image:url(../images/buttons/large/fancy/unknown.png) }
+.lnumeric { @extend .icon_button_large; background-image:url(../images/buttons/large/fancy/numericPair.png) }
+.lpicture { @extend .icon_button_large; background-image:url(../images/buttons/large/fancy/picture.png) }
+.lcsv { @extend .icon_button_large; background-image:url(../images/buttons/large/fancy/csv.png) }
+.lexcel { @extend .icon_button_large; background-image:url(../images/buttons/large/fancy/excel.png) }
+.ldatabase { @extend .icon_button_large; background-image:url(../images/buttons/large/fancy/dataBase.png) }
+
+
+/* ----- Large Plain----- */
+.lpalert { @extend .icon_button_large; background-image:url(../images/buttons/large/plain/alert.png) }
+.lpbell { @extend .icon_button_large; background-image:url(../images/buttons/large/plain/bell.png) }
+.lpcalendar { @extend .icon_button_large; background-image:url(../images/buttons/large/plain/calendar.png) }
+.lpchart { @extend .icon_button_large; background-image:url(../images/buttons/large/plain/chart.png) }
+.lpchat { @extend .icon_button_large; background-image:url(../images/buttons/large/plain/chat.png) }
+.lpdatabase { @extend .icon_button_large; background-image:url(../images/buttons/large/plain/database.png) }
+.lpeye { @extend .icon_button_large; background-image:url(../images/buttons/large/plain/eye.png) }
+.lpfacebook { @extend .icon_button_large; background-image:url(../images/buttons/large/plain/facebook.png) }
+.lpflag { @extend .icon_button_large; background-image:url(../images/buttons/large/plain/flag.png) }
+.lpfolder { @extend .icon_button_large; background-image:url(../images/buttons/large/plain/folder.png) }
+.lpgear { @extend .icon_button_large; background-image:url(../images/buttons/large/plain/gear.png) }
+.lpgroup { @extend .icon_button_large; background-image:url(../images/buttons/large/plain/group.png) }
+.lpkey { @extend .icon_button_large; background-image:url(../images/buttons/large/plain/key.png) }
+.lplabel { @extend .icon_button_large; background-image:url(../images/buttons/large/plain/label.png) }
+.lplock { @extend .icon_button_large; background-image:url(../images/buttons/large/plain/lock.png) }
+.lpmagicwand { @extend .icon_button_large; background-image:url(../images/buttons/large/plain/alert.png) }
+.lpmail { @extend .icon_button_large; background-image:url(../images/buttons/large/plain/alert.png) }
+.lpmedicalkit { @extend .icon_button_large; background-image:url(../images/buttons/large/plain/medicalkit.png) }
+.lpnews { @extend .icon_button_large; background-image:url(../images/buttons/large/plain/news.png) }
+.lpnumber { @extend .icon_button_large; background-image:url(../images/buttons/large/plain/number.png) }
+.lpok { @extend .icon_button_large; background-image:url(../images/buttons/large/plain/ok.png) }
+.lppin { @extend .icon_button_large; background-image:url(../images/buttons/large/plain/pin.png) }
+.lprobot { @extend .icon_button_large; background-image:url(../images/buttons/large/plain/robot.png) }
+.lprss { @extend .icon_button_large; background-image:url(../images/buttons/large/plain/rss.png) }
+.lpshakehands { @extend .icon_button_large; background-image:url(../images/buttons/large/plain/shakehands.png) }
+.lpshield { @extend .icon_button_large; background-image:url(../images/buttons/large/plain/shield.png) }
+.lptask { @extend .icon_button_large; background-image:url(../images/buttons/large/plain/task.png) }
+.lptext { @extend .icon_button_large; background-image:url(../images/buttons/large/plain/text.png) }
+.lpthermometer { @extend .icon_button_large; background-image:url(../images/buttons/large/plain/thermometer.png) }
+.lptwitter { @extend .icon_button_large; background-image:url(../images/buttons/large/plain/twitter.png) }
+
 
 
 /* ---------- Icons --------- */
@@ -662,6 +703,7 @@ a.icon_button_large {
   width: $size;
 }
 
+/* ---------- Icons x 18 black --------- */
 .i18b-queuedMessages { background:url(../images/icons/18/black/queuedMessages.png) no-repeat center top; @include icon(18px); }
 .i18b-internet { background:url(../images/icons/18/black/internet.png) no-repeat center top; @include icon(18px); }
 .i18b-skip { background:url(../images/icons/18/black/skip.png) no-repeat center top; @include icon(18px); }
@@ -679,6 +721,10 @@ a.icon_button_large {
 .i18b-phone { background:url(../images/icons/18/black/phone.png) no-repeat center top; @include icon(18px); }
 .i18b-error { background:url(../images/icons/18/black/error.png) no-repeat center top; @include icon(18px); }
 .i18b-groupChat { background:url(../images/icons/18/black/groupChat.png) no-repeat center top; @include icon(18px); }
+.i18b-folder { background:url(../images/icons/18/black/folder.png) no-repeat center top; @include icon(18px); }
+.i18b-folderOpen { background:url(../images/icons/18/black/folder_open.png) no-repeat center top; @include icon(18px); }
+
+/* ---------- Icons x 18 grey --------- */
 .i18g-queuedMessages { background:url(../images/icons/18/grey/queuedMessages.png) no-repeat center top; @include icon(18px); }
 .i18g-internet { background:url(../images/icons/18/grey/internet.png) no-repeat center top; @include icon(18px); }
 .i18g-skip { background:url(../images/icons/18/grey/skip.png) no-repeat center top; @include icon(18px); }
@@ -696,14 +742,21 @@ a.icon_button_large {
 .i18g-phone { background:url(../images/icons/18/grey/phone.png) no-repeat center top; @include icon(18px); }
 .i18g-error { background:url(../images/icons/18/grey/error.png) no-repeat center top; @include icon(18px); }
 .i18g-groupChat { background:url(../images/icons/18/grey/groupChat.png) no-repeat center top; @include icon(18px); }
+
+
+/* ---------- Icons x 18 orange --------- */
 .i18o-alert { background:url(../images/icons/18/orange/alert.png) no-repeat center top; @include icon(18px); }
 .i18o-error { background:url(../images/icons/18/orange/error.png) no-repeat center top; @include icon(18px); }
+
+/* ---------- Icons x 18 white --------- */
 .i18w-dataBase { background:url(../images/icons/18/white/dataBase.png) no-repeat center top; @include icon(18px); }
 .i18w-location { background:url(../images/icons/18/white/location.png) no-repeat center top; @include icon(18px); }
-.i18y-alert { background:url(../images/icons/18/yellow/alert.png) no-repeat center top; @include icon(18px); }
-.i18b-folder { background:url(../images/icons/18/black/folder.png) no-repeat center top; @include icon(18px); }
-.i18b-folderOpen { background:url(../images/icons/18/black/folder_open.png) no-repeat center top; @include icon(18px); }
 
+/* ---------- Icons x 18 yellow --------- */
+.i18y-alert { background:url(../images/icons/18/yellow/alert.png) no-repeat center top; @include icon(18px); }
+
+
+/* ---------- Icons x 48 gradient --------- */
 .i48grad-internet { background:url(../images/icons/48/gradient/internet.png) no-repeat center top; @include icon(48px); }
 .i48grad-alert { background:url(../images/icons/48/gradient/alert.png) no-repeat center top; @include icon(48px); }
 .i48grad-answer { background:url(../images/icons/48/gradient/answer.png) no-repeat center top; @include icon(48px); }
@@ -749,11 +802,51 @@ a.icon_button_large {
 .i48grad-call-flow { background:url(../images/icons/48/gradient/call-flow.png) no-repeat center top; @include icon(48px); }
 .i48grad-shield { background:url(../images/icons/48/gradient/shield.png) no-repeat center top; @include icon(48px); }
 
+
+/* ---------- Icons x 48 plain --------- */
+.i48plain-alert { @extend .icon_button_large; background-image:url(../images/icons/48/plain/alert.png) }
+.i48plain-bell { @extend .icon_button_large; background-image:url(../images/icons/48/plain/bell.png) }
+.i48plain-calendar { @extend .icon_button_large; background-image:url(../images/icons/48/plain/calendar.png) }
+.i48plain-chart { @extend .icon_button_large; background-image:url(../images/icons/48/plain/chart.png) }
+.i48plain-chat { @extend .icon_button_large; background-image:url(../images/icons/48/plain/chat.png) }
+.i48plain-database { @extend .icon_button_large; background-image:url(../images/icons/48/plain/database.png) }
+.i48plain-eye { @extend .icon_button_large; background-image:url(../images/icons/48/plain/eye.png) }
+.i48plain-facebook { @extend .icon_button_large; background-image:url(../images/icons/48/plain/facebook.png) }
+.i48plain-flag { @extend .icon_button_large; background-image:url(../images/icons/48/plain/flag.png) }
+.i48plain-folder { @extend .icon_button_large; background-image:url(../images/icons/48/plain/folder.png) }
+.i48plain-gear { @extend .icon_button_large; background-image:url(../images/icons/48/plain/gear.png) }
+.i48plain-group { @extend .icon_button_large; background-image:url(../images/icons/48/plain/group.png) }
+.i48plain-key { @extend .icon_button_large; background-image:url(../images/icons/48/plain/key.png) }
+.i48plain-label { @extend .icon_button_large; background-image:url(../images/icons/48/plain/label.png) }
+.i48plain-lock { @extend .icon_button_large; background-image:url(../images/icons/48/plain/lock.png) }
+.i48plain-magicwand { @extend .icon_button_large; background-image:url(../images/icons/48/plain/alert.png) }
+.i48plain-mail { @extend .icon_button_large; background-image:url(../images/icons/48/plain/alert.png) }
+.i48plain-medicalkit { @extend .icon_button_large; background-image:url(../images/icons/48/plain/medicalkit.png) }
+.i48plain-news { @extend .icon_button_large; background-image:url(../images/icons/48/plain/news.png) }
+.i48plain-number { @extend .icon_button_large; background-image:url(../images/icons/48/plain/number.png) }
+.i48plain-ok { @extend .icon_button_large; background-image:url(../images/icons/48/plain/ok.png) }
+.i48plain-pin { @extend .icon_button_large; background-image:url(../images/icons/48/plain/pin.png) }
+.i48plain-robot { @extend .icon_button_large; background-image:url(../images/icons/48/plain/robot.png) }
+.i48plain-rss { @extend .icon_button_large; background-image:url(../images/icons/48/plain/rss.png) }
+.i48plain-shakehands { @extend .icon_button_large; background-image:url(../images/icons/48/plain/shakehands.png) }
+.i48plain-shield { @extend .icon_button_large; background-image:url(../images/icons/48/plain/shield.png) }
+.i48plain-task { @extend .icon_button_large; background-image:url(../images/icons/48/plain/task.png) }
+.i48plain-text { @extend .icon_button_large; background-image:url(../images/icons/48/plain/text.png) }
+.i48plain-thermometer { @extend .icon_button_large; background-image:url(../images/icons/48/plain/thermometer.png) }
+.i48plain-twitter { @extend .icon_button_large; background-image:url(../images/icons/48/plain/twitter.png) }
+
+
+
+
+
+/* ---------- Icons x 72 grey --------- */
 .i72g-information { background:url(../images/icons/72/grey/information.png) no-repeat center top; @include icon(72px); }
 .i72g-fire { background:url(../images/icons/72/grey/fire.png) no-repeat center top; @include icon(72px); }
 .i72g-pie { background:url(../images/icons/72/grey/pie.png) no-repeat center top; @include icon(72px); }
 .i72g-reminder { background:url(../images/icons/72/grey/reminder.png) no-repeat center top; @include icon(72px); }
 
+
+/* ---------- Icons x 96 gradient --------- */
 .i96grad-book { background:url(../images/icons/96/gradient/book.png) no-repeat center top; @include icon(96px); }
 .i96grad-diabetic { background:url(../images/icons/96/gradient/diabetic.png) no-repeat center top; @include icon(96px); }
 .i96grad-folder { background:url(../images/icons/96/gradient/folder.png) no-repeat center top; @include icon(96px); }
