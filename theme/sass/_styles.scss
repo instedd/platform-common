@@ -344,13 +344,13 @@ ul.mclist li .arrowinput:focus { width:74px !important; margin:0 !important }
 
 
 /* ------------ Steps Display ------------------- */
-.steps-line { background:#FFFFFF; height:6px; width:90%; margin:40px auto 30px auto; -webkit-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset; -moz-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset; box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset;	position:relative }
+.steps-line { background:#FFFFFF; height:6px; width:90%; margin:40px auto 30px auto; -webkit-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset; -moz-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset; box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset; position:relative }
 
-/*.steps-line.dotted { background:transparent; height:6px; width:90%; margin:40px auto 30px auto; -webkit-box-shadow:none; -moz-box-shadow:none; box-shadow:none;	position:relative } */
+/*.steps-line.dotted { background:transparent; height:6px; width:90%; margin:40px auto 30px auto; -webkit-box-shadow:none; -moz-box-shadow:none; box-shadow:none; position:relative } */
 
 .steps-container { position:absolute; top:-6px; width:100%; white-space:nowrap }
 
-.circle { background:#FFFFFF; z-index: 3; display:inline-block; vertical-align:middle; width:12px; height:12px; margin:-1px 0 0 -3px; position:relative; -moz-border-radius:20px; -webkit-border-radius:20px; border-radius:20px;	-webkit-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset; -moz-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset;	box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset; }
+.circle { background:#FFFFFF; z-index: 3; display:inline-block; vertical-align:middle; width:12px; height:12px; margin:-1px 0 0 -3px; position:relative; -moz-border-radius:20px; -webkit-border-radius:20px; border-radius:20px; -webkit-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset; -moz-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset;  box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3) inset; }
 .circle.first { float:left; margin-top:3px !important }
 .circle.last { right:0px; top:0px; margin-top:3px !important; position:absolute }
 .steps-container.dotted .circle.first { z-index:10 }
@@ -449,7 +449,7 @@ $active_border_color, $active_border_top_color, $disabled_border_color,$disabled
     @include none-box-shadow();
     text-shadow:none;
     padding:5px 8px;
-	cursor:default;
+  cursor:default;
     filter:progid:DXImageTransform.Microsoft.Shadow(color='#ffffff',direction='0',strength='0');
     color:$disabled_color;
   }
@@ -927,35 +927,35 @@ label.error , label.message {
 .superblyTagfieldDiv ul{ margin: 0; padding: 0 }
 
 .superblyTagfield{
-	/* if no javascript */
-	outline: none;
-	width: 100%;
-	height: 28px;
-	border: solid 1px;
+  /* if no javascript */
+  outline: none;
+  width: 100%;
+  height: 28px;
+  border: solid 1px;
     background-color: #FFFFFF;
 }
 
 .superblyTagInput{
-	border: none !important;
-	outline: none !important;
-	padding: 0px !important;
-	margin: 0px !important;
-	height:18px !important;
-	@include all-box-shadow(none !important);
+  border: none !important;
+  outline: none !important;
+  padding: 0px !important;
+  margin: 0px !important;
+  height:18px !important;
+  @include all-box-shadow(none !important);
 }
 
 .superblyTagInputItem{
-	padding: 0px;
-	margin: 0px;
+  padding: 0px;
+  margin: 0px;
 }
 
 .superblyTagItems > li{
-	list-style: none;
-	float: left;
-	padding: 1px 2px 2px 4px;
-	margin: 2px 1px 0px 1px;
-	position: relative;
-	border-radius: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px;
+  list-style: none;
+  float: left;
+  padding: 1px 2px 2px 4px;
+  margin: 2px 1px 0px 1px;
+  position: relative;
+  border-radius: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px;
 }
 
 .superblyTagItems .superblyTagItem{
@@ -966,38 +966,38 @@ label.error , label.message {
     color: #555555;
     cursor: pointer;
     font-style:normal;
-	font-weight:bold;
-	margin-right:2px;
+  font-weight:bold;
+  margin-right:2px;
 }
 .remove { background-image: url(../images/tags/cross.png); height:10px; width:11px; padding:0 1px; margin-left:2px; display:inline-block; @include button-states(15px); }
 
 .superblySuggestItems{
     min-width:100px;
- 	position: absolute;
-	left: 0;
-	top: 30px;
-	z-index: 100;
-	background:#FFFFFF;
-	padding:2px;
-	-moz-border-radius:4px; -webkit-border-radius:4px; border-radius:4px;
-	@include floating-box-shadow();
+  position: absolute;
+  left: 0;
+  top: 30px;
+  z-index: 100;
+  background:#FFFFFF;
+  padding:2px;
+  -moz-border-radius:4px; -webkit-border-radius:4px; border-radius:4px;
+  @include floating-box-shadow();
 }
 
 .superblySuggestItems .superblySuggestItem{
     padding:3px 5px;
-	list-style: none;
-	float: none;
+  list-style: none;
+  float: none;
     color: #000000;
-	margin:2px;
-	-moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px
+  margin:2px;
+  -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px
 }
 
 .superblySuggestItems .superblySuggestItem:hover {
-   	cursor: pointer; background:#cccccc;
+    cursor: pointer; background:#cccccc;
 }
 
 .superblySuggestItems .selected{
-	background-color: #cccccc;
+  background-color: #cccccc;
 }
 
 .superblySuggestItems:empty {
@@ -1074,9 +1074,9 @@ div.tabsline { padding:20px 0 20px 0; border-top:1px solid #e6e6e6; background:#
 
 .titletable { color:#555555; margin:5px 0 5px 10px; display:block }
 
-.GralTable { width:100%; -moz-border-radius:6px 6px 6px 6px; -webkit-border-radius:6px 6px 6px 6px;	border-radius:6px 6px 6px 6px; border-collapse:collapse }
+.GralTable { width:100%; -moz-border-radius:6px 6px 6px 6px; -webkit-border-radius:6px 6px 6px 6px; border-radius:6px 6px 6px 6px; border-collapse:collapse }
 
-.GralTable th {	background: #e5e6ec; background: -moz-linear-gradient(top, #ffffff 0%, #d0d0d0 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#d0d0d0)); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d0d0d0',GradientType=0 ); text-shadow: 0px 1px 0px #ffffff; color:#555555; font-weight:normal; text-align:left;	padding:6px; border-bottom:1px solid #ffffff; border-right:1px solid #ffffff }
+.GralTable th { background: #e5e6ec; background: -moz-linear-gradient(top, #ffffff 0%, #d0d0d0 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#d0d0d0)); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d0d0d0',GradientType=0 ); text-shadow: 0px 1px 0px #ffffff; color:#555555; font-weight:normal; text-align:left; padding:6px; border-bottom:1px solid #ffffff; border-right:1px solid #ffffff }
 
 .GralTable th:last-child { border-right:none }
 
@@ -1142,6 +1142,11 @@ td.EmptyData {
 td.EmptyDataPie {
   @extend .EmptyData;
   background: url(../images/icons/72/grey/pie.png) no-repeat center 40px;
+}
+
+td.EmptyFolder {
+  @extend .EmptyData;
+  background: url(../images/icons/72/grey/folder.png) no-repeat center 40px;
 }
 
 /* -------- Table with Buttons ---------*/
