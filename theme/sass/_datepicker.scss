@@ -37,24 +37,24 @@
 */
 
 .ui-datepicker .ui-datepicker-prev {
-  background-image:url(../images/buttons/plain/previous.png);
+  background-image:url(../images/buttons/small/plain/previous.png);
   @include button-states(30px);
   left:2px;
 }
 
 .ui-datepicker .ui-datepicker-next {
-  background-image:url(../images/buttons/plain/next.png);
+  background-image:url(../images/buttons/small/plain/next.png);
   @include button-states(30px);
   right:2px;
 }
 
 /*
-.ui-datepicker .ui-datepicker-prev { background:url(../images/buttons/plain/previous.png) no-repeat center top; width:22px; height:22px; left:2px; }
-.ui-datepicker .ui-datepicker-next { background:url(../images/buttons/plain/next.png) no-repeat center top; width:22px; height:22px; right:2px; }
-.ui-datepicker .ui-datepicker-prev-hover { background:url(../images/buttons/plain/previous.png) no-repeat center -29px !important; cursor:pointer; left:2px; }
-.ui-datepicker .ui-datepicker-next-hover { background:url(../images/buttons/plain/next.png) no-repeat center -29px !important; cursor:pointer; right:2px; }
-.ui-datepicker .ui-datepicker-prev-hover:active { background:url(../images/buttons/plain/previous.png) no-repeat center -59px !important; cursor:pointer; left:2px; }
-.ui-datepicker .ui-datepicker-next-hover:active { background:url(../images/buttons/plain/next.png) no-repeat center -59px !important; cursor:pointer; right:2px; }
+.ui-datepicker .ui-datepicker-prev { background:url(../images/buttons/small/plain/previous.png) no-repeat center top; width:22px; height:22px; left:2px; }
+.ui-datepicker .ui-datepicker-next { background:url(../images/buttons/small/plain/next.png) no-repeat center top; width:22px; height:22px; right:2px; }
+.ui-datepicker .ui-datepicker-prev-hover { background:url(../images/buttons/small/plain/previous.png) no-repeat center -29px !important; cursor:pointer; left:2px; }
+.ui-datepicker .ui-datepicker-next-hover { background:url(../images/buttons/small/plain/next.png) no-repeat center -29px !important; cursor:pointer; right:2px; }
+.ui-datepicker .ui-datepicker-prev-hover:active { background:url(../images/buttons/small/plain/previous.png) no-repeat center -59px !important; cursor:pointer; left:2px; }
+.ui-datepicker .ui-datepicker-next-hover:active { background:url(../images/buttons/small/plain/next.png) no-repeat center -59px !important; cursor:pointer; right:2px; }
 */
 
 .ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span { display: block; position: absolute; left: 50%; margin-left: -8px; top: 50%; margin-top: -8px;  }
