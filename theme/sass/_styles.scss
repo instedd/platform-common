@@ -577,6 +577,7 @@ a.icon_button_large {
 .fexcel { @extend .icon_button; background-image:url(../images/buttons/small/fancy/excel.png) }
 .fexport { @extend .icon_button; background-image:url(../images/buttons/small/fancy/export.png) }
 .ffacebook { @extend .icon_button; background-image:url(../images/buttons/small/fancy/facebook.png) }
+.ffullscreen { @extend .icon_button; background-image:url(../images/buttons/small/fancy/fullscreen.png) }
 .ffolder { @extend .icon_button; background-image:url(../images/buttons/small/fancy/folder.png) }
 .fhelp { @extend .icon_button; background-image:url(../images/buttons/small/fancy/help.png) }
 .fimport { @extend .icon_button; background-image:url(../images/buttons/small/fancy/import.png) }
@@ -597,6 +598,7 @@ a.icon_button_large {
 .frecording { @extend .icon_button; background-image:url(../images/buttons/small/fancy/recording.png) }
 .fremove { @extend .icon_button; background-image:url(../images/buttons/small/fancy/remove.png) }
 .frequest { @extend .icon_button; background-image:url(../images/buttons/small/fancy/request.png) }
+.frestore { @extend .icon_button; background-image:url(../images/buttons/small/fancy/restore.png) }
 .fright { @extend .icon_button; background-image:url(../images/buttons/small/fancy/right.png) }
 .frss { @extend .icon_button; background-image:url(../images/buttons/small/fancy/rss.png) }
 .fsearch { @extend .icon_button; background-image:url(../images/buttons/small/fancy/search.png) }
@@ -614,6 +616,7 @@ a.icon_button_large {
 .fwindows { @extend .icon_button; background-image:url(../images/buttons/small/fancy/windows.png) }
 .fmovedown { @extend .icon_button; background-image:url(../images/buttons/small/fancy/movedown.png) }
 .fmoveup { @extend .icon_button; background-image:url(../images/buttons/small/fancy/moveup.png) }
+
 
 /* ----- Small Plain ----- */
 .padd{ @extend .icon_button; background-image:url(../images/buttons/small/plain/add.png) }
