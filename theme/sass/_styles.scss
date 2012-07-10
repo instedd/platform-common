@@ -661,6 +661,8 @@ a.icon_button_large {
 .lcsv { @extend .icon_button_large; background-image:url(../images/buttons/large/fancy/csv.png) }
 .lexcel { @extend .icon_button_large; background-image:url(../images/buttons/large/fancy/excel.png) }
 .ldatabase { @extend .icon_button_large; background-image:url(../images/buttons/large/fancy/dataBase.png) }
+.luser { @extend .icon_button_large; background-image:url(../images/buttons/large/fancy/user.png) }
+
 
 
 /* ----- Large Plain----- */
@@ -695,6 +697,12 @@ a.icon_button_large {
 .lpthermometer { @extend .icon_button_large; background-image:url(../images/buttons/large/plain/thermometer.png) }
 .lptwitter { @extend .icon_button_large; background-image:url(../images/buttons/large/plain/twitter.png) }
 
+
+/* ----- Other ----- */
+.oleftcollapse { @extend .icon_button; background-image:url(../images/buttons/other/leftCollapse.png) }
+.oleftexpand { @extend .icon_button; background-image:url(../images/buttons/other/leftExpand.png) }
+.orightcollapse { @extend .icon_button; background-image:url(../images/buttons/other/rightCollapse.png) }
+.orightexpand { @extend .icon_button; background-image:url(../images/buttons/other/rightExpand.png) }
 
 
 /* ---------- Icons --------- */
