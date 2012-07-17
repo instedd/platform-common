@@ -662,6 +662,7 @@ a.icon_button_large {
 .lexcel { @extend .icon_button_large; background-image:url(../images/buttons/large/fancy/excel.png) }
 .ldatabase { @extend .icon_button_large; background-image:url(../images/buttons/large/fancy/dataBase.png) }
 .luser { @extend .icon_button_large; background-image:url(../images/buttons/large/fancy/user.png) }
+.llanguage { @extend .icon_button_large; background-image:url(../images/buttons/large/fancy/language.png) }
 
 
 
@@ -696,6 +697,7 @@ a.icon_button_large {
 .lptext { @extend .icon_button_large; background-image:url(../images/buttons/large/plain/text.png) }
 .lpthermometer { @extend .icon_button_large; background-image:url(../images/buttons/large/plain/thermometer.png) }
 .lptwitter { @extend .icon_button_large; background-image:url(../images/buttons/large/plain/twitter.png) }
+.lpexternalflow { @extend .icon_button_large; background-image:url(../images/buttons/large/plain/externalFlow.png) }
 
 
 /* ----- Other ----- */
