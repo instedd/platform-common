@@ -64,10 +64,9 @@ p a {
 
 input.ux-text { height:22px; width:inherit; @include texboxes_border }
 
-input[type=text], input[type=password], input[type=email], textarea {
+input[type=text], input[type=password], input[type=email], input[type=number], textarea {
   @extend .ux-text;
 }
-
 
 /* ----- Dropdown/Select ----- */
 
