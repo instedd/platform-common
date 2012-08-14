@@ -71,6 +71,21 @@
             }
           }
         });
+      },
+      init_breadcrumb: function() {
+        // add in the pre-last li of the BreadCrumb a span
+        var bc_items = $('.BreadCrumb li');
+        if (bc_items.length >= 2) {
+          var pre_last = $(bc_items[bc_items.length - 2]);
+          if (msie_6_to_8) { pre_last.addClass("ie_nth-last-child_0n_2"); }
+          pre_last.append($("<span>"));
+        }
+
+        // clicking on an li in BreadCrum clicks the first link in it
+        $('.BreadCrumb li').click(function(event) {
+          window.location = $(this).find('a')[0].href;
+        });
+
       }
     }
   });
@@ -142,18 +157,7 @@
       }
     });
 
-    // add in the pre-last li of the BreadCrumb a span
-    var bc_items = $('.BreadCrumb li');
-    if (bc_items.length >= 2) {
-      var pre_last = $(bc_items[bc_items.length - 2]);
-      if (msie_6_to_8) { pre_last.addClass("ie_nth-last-child_0n_2"); }
-      pre_last.append($("<span>"));
-    }
-
-    // clicking on an li in BreadCrum clicks the first link in it
-    $('.BreadCrumb li').click(function(event) {
-      window.location = $(this).find('a')[0].href;
-    });
+    $.instedd.init_breadcrumb();
 
     // add before/after for the NavMenu
     var nav_menu = $('#NavMenu ul');
