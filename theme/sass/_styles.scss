@@ -39,7 +39,7 @@ img { border: 0px; }
 
 textarea:focus, input:focus, button:focus, a:focus { outline: none; }
 button::-moz-focus-inner {
-  border: 0;
+  border: 0r
 }
 
 p a {
@@ -662,6 +662,7 @@ a.icon_button_large {
 .ldatabase { @extend .icon_button_large; background-image:url(../images/buttons/large/fancy/dataBase.png) }
 .luser { @extend .icon_button_large; background-image:url(../images/buttons/large/fancy/user.png) }
 .llanguage { @extend .icon_button_large; background-image:url(../images/buttons/large/fancy/language.png) }
+.lhierarchy { @extend .icon_button_large; background-image:url(../images/buttons/large/fancy/hierarchy.png) }
 
 
 
