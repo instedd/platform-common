@@ -39,7 +39,7 @@ img { border: 0px; }
 
 textarea:focus, input:focus, button:focus, a:focus { outline: none; }
 button::-moz-focus-inner {
-  border: 0;
+  border: 0r
 }
 
 p a {
@@ -663,7 +663,7 @@ a.icon_button_large {
 .luser { @extend .icon_button_large; background-image:url(../images/buttons/large/fancy/user.png) }
 .llanguage { @extend .icon_button_large; background-image:url(../images/buttons/large/fancy/language.png) }
 .lsite { @extend .icon_button_large; background-image:url(../images/buttons/large/fancy/relatedSite.png) }
-
+.lhierarchy { @extend .icon_button_large; background-image:url(../images/buttons/large/fancy/hierarchy.png) }
 
 
 
@@ -737,6 +737,9 @@ a.icon_button_large {
 .i18b-groupChat { background:url(../images/icons/18/black/groupChat.png) no-repeat center top; @include icon(18px); }
 .i18b-folder { background:url(../images/icons/18/black/folder.png) no-repeat center top; @include icon(18px); }
 .i18b-folderOpen { background:url(../images/icons/18/black/folder_open.png) no-repeat center top; @include icon(18px); }
+.i18b-robot { background:url(../images/icons/18/black/robot.png) no-repeat center top; @include icon(18px); }
+.i18b-audio { background:url(../images/icons/18/black/audio.png) no-repeat center top; @include icon(18px); }
+.i18b-file { background:url(../images/icons/18/black/file.png) no-repeat center top; @include icon(18px); }
 
 /* ---------- Icons x 18 grey --------- */
 .i18g-queuedMessages { background:url(../images/icons/18/grey/queuedMessages.png) no-repeat center top; @include icon(18px); }
