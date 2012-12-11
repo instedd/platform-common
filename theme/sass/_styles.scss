@@ -443,10 +443,10 @@ $active_border_color, $active_border_top_color, $disabled_border_color,$disabled
   }
   &.disabled, &[disabled] {
     opacity: 1;
-    background:$disabled_background_color;
+    background:#eeeeee;
     border:1px solid $disabled_border_color;
     @include none-box-shadow();
-    text-shadow:none;
+    text-shadow:0px 1px 0px white;
     padding:5px 8px;
   cursor:default;
     filter:progid:DXImageTransform.Microsoft.Shadow(color='#ffffff',direction='0',strength='0');
@@ -926,6 +926,21 @@ label.error , label.message {
   background:url(../images/icons/18/orange/alert.png) no-repeat;
   color:#ff6600 !important;
   padding-left:19px; padding-top: 1px; margin-left:2px; white-space:nowrap; display: inline !important; }
+  
+.error-message {
+	padding:15px !important;
+	h2 {
+		color:$black !important;
+	}
+	p {
+		color:$black !important;
+		margin-top:-5px;
+		clear:both;
+	}
+	hr {
+		margin: 14px auto;
+	}
+}	
 
 /*.pulldown { position:relative }
 .pulldown span.l { background:url(../images/combobox/white.png) no-repeat left top; height:22px; padding:2px 0 2px 10px; display:block }
