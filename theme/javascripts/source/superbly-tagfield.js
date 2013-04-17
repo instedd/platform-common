@@ -146,7 +146,9 @@
             } else if(allowNewTags){
                 var value = tagInput.val();
                 if(value != null && value != ''){
-                    addItem(value);
+                    $.each(value.split(','), function(index, value) {
+                        addItem(value);
+                    });
                 }
             }
 		}
@@ -159,7 +161,8 @@
                     tagstmp.splice(index,1);
                 }
                 inserted.push(value);
-                inputItem.before("<li class='superblyTagItem'><span>" + value + "</span><a> x</a></li>");
+                var new_li = $('<li>').addClass('superblyTagItem').append($('<span>').text(value)).append('<a> x</a>');
+                inputItem.before(new_li);
                 tagInput.val("");
                 currentValue = null;
                 currentItem = null;
@@ -186,7 +189,7 @@
             index = jQuery.inArray(value,inserted);
             if(index > -1){
                 inserted.splice(index,1);
-                tagList.children(".superblyTagItem").filter(function(){return $('span', this).html() == value;}).remove();
+                tagList.children(".superblyTagItem").filter(function(){return $('span', this).text() == value;}).remove();
             }
             tagstmp.sort();
             tagInput.focus();
@@ -227,21 +230,21 @@
             suggestList.empty();
             var suggestions = getSuggestionsArray(value);
             for(key in suggestions){
-                suggestList.append("<li class='superblySuggestItem'>" + suggestions[key] + "</li>");
+                suggestList.append($("<li>").addClass('superblySuggestItem').text(suggestions[key]));
             }
 
             var suggestionItems = suggestList.children('.superblySuggestItem');
 
             // add click event to suggest items
             suggestionItems.click(function(e){
-                addItem($(this).html());
+                addItem($(this).text());
             });
 
             selectedIndex=null;
             if(!allowNewTags){
                 selectedIndex=0;
                 $(suggestionItems[selectedIndex]).addClass("selected");	
-                currentItem = $(suggestionItems[selectedIndex]).html();
+                currentItem = $(suggestionItems[selectedIndex]).text();
             }
         }
 
@@ -256,7 +259,7 @@
                 selectedIndex++;
             }
             $(suggestions[selectedIndex]).addClass("selected");
-            currentItem = $(suggestions[selectedIndex]).html();
+            currentItem = $(suggestions[selectedIndex]).text();
         }
 
         function selectUp(){
@@ -269,7 +272,7 @@
                 $(suggestions[selectedIndex]).removeClass("selected");
                 selectedIndex--;
                 $(suggestions[selectedIndex]).addClass("selected");
-                currentItem = $(suggestions[selectedIndex]).html();
+                currentItem = $(suggestions[selectedIndex]).text();
             }
         }
     }
