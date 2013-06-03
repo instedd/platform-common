@@ -83,7 +83,16 @@
 
         // clicking on an li in BreadCrum clicks the first link in it
         $('.BreadCrumb li').click(function(event) {
-          window.location = $(this).find('a')[0].href;
+          if (event.target.tagName.toLowerCase() != 'a') {
+            var url = $(this).find('a').first().attr('href');
+            if (url) {
+              if (event.button == 0 && !event.ctrlKey) {
+                window.location = url;
+              } else {
+                window.open(url);
+              }
+            }
+          }
         });
 
       }
