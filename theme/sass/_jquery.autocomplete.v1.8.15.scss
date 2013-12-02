@@ -35,3 +35,11 @@ ul.ui-autocomplete {
 
   }
 }
+
+/*
+   This fixes an issue with the autocomplete that prevents selecting an option
+   by clicking on the white space after the text of the suggestion.
+*/
+.ui-menu-item .ui-corner-all {
+  display: block;
+}
