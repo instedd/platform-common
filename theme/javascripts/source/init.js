@@ -181,7 +181,7 @@
         buttonNextHTML: '<div class="next"><a href="#" onclick="return false;"><span></span></a></div>',
         buttonPrevHTML: '<div class="prev"><a href="#" onclick="return false;"><span></span></a></div>'
       });
-    }, 500);
+    }, 10);
 
     // style fixes for msie 6, 7, 8
     if (msie_6_to_8) {
