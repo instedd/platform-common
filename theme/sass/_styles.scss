@@ -823,6 +823,60 @@ a.icon_button_large {
 .i48grad-call-flow { background:url(../images/icons/48/gradient/call-flow.png) no-repeat center top; @include icon(48px); }
 .i48grad-shield { background:url(../images/icons/48/gradient/shield.png) no-repeat center top; @include icon(48px); }
 
+/* ---------- Icons x 48 gradient (black & red) --------- */
+.i48grad {
+  @include icon(48px);
+  background-repeat: no-repeat;
+  background-position: center top;
+
+  &.red { background-position-y: -50px; }
+
+  &.internet { background-image:url(../images/icons/48/gradient/internet.png) }
+  &.alert { background-image:url(../images/icons/48/gradient/alert.png) }
+  &.answer { background-image:url(../images/icons/48/gradient/answer.png) }
+  &.free { background-image:url(../images/icons/48/gradient/free.png) }
+  &.time { background-image:url(../images/icons/48/gradient/time.png) }
+  &.dial { background-image:url(../images/icons/48/gradient/dial.png) }
+  &.accept { background-image:url(../images/icons/48/gradient/accept.png) }
+  &.microphone { background-image:url(../images/icons/48/gradient/microphone.png) }
+  &.sound { background-image:url(../images/icons/48/gradient/sound.png) }
+  &.information { background-image:url(../images/icons/48/gradient/information.png) }
+  &.list { background-image:url(../images/icons/48/gradient/list.png) }
+  &.channel { background-image:url(../images/icons/48/gradient/channel.png) }
+  &.directions { background-image:url(../images/icons/48/gradient/directions.png) }
+  &.lock { background-image:url(../images/icons/48/gradient/lock.png) }
+  &.mobile { background-image:url(../images/icons/48/gradient/mobile.png) }
+  &.dataBase { background-image:url(../images/icons/48/gradient/dataBase.png) }
+  &.date { background-image:url(../images/icons/48/gradient/date.png) }
+  &.plug { background-image:url(../images/icons/48/gradient/plug.png) }
+  &.import { background-image:url(../images/icons/48/gradient/import.png) }
+  &.request { background-image:url(../images/icons/48/gradient/request.png) }
+  &.twitter { background-image:url(../images/icons/48/gradient/twitter.png) }
+  &.users { background-image:url(../images/icons/48/gradient/users.png) }
+  &.message { background-image:url(../images/icons/48/gradient/message.png) }
+  &.mountain { background-image:url(../images/icons/48/gradient/mountain.png) }
+  &.wifi { background-image:url(../images/icons/48/gradient/wifi.png) }
+  &.numeral { background-image:url(../images/icons/48/gradient/numeral.png) }
+  &.pie { background-image:url(../images/icons/48/gradient/pie.png) }
+  &.googleDocs { background-image:url(../images/icons/48/gradient/googleDocs.png) }
+  &.reminder { background-image:url(../images/icons/48/gradient/reminder.png) }
+  &.key { background-image:url(../images/icons/48/gradient/key.png) }
+  &.download { background-image:url(../images/icons/48/gradient/download.png) }
+  &.bookmark { background-image:url(../images/icons/48/gradient/bookmark.png) }
+  &.phone { background-image:url(../images/icons/48/gradient/phone.png) }
+  &.cloud { background-image:url(../images/icons/48/gradient/cloud.png) }
+  &.forwardCall { background-image:url(../images/icons/48/gradient/forwardCall.png) }
+  &.error { background-image:url(../images/icons/48/gradient/error.png) }
+  &.claim { background-image:url(../images/icons/48/gradient/claim.png) }
+  &.automatic { background-image:url(../images/icons/48/gradient/automatic.png) }
+  &.callback { background-image:url(../images/icons/48/gradient/callback.png) }
+  &.openSource { background-image:url(../images/icons/48/gradient/openSource.png) }
+  &.shred { background-image:url(../images/icons/48/gradient/shred.png) }
+  &.settings { background-image:url(../images/icons/48/gradient/settings.png) }
+  &.call-flow { background-image:url(../images/icons/48/gradient/call-flow.png) }
+  &.shield { background-image:url(../images/icons/48/gradient/shield.png) }
+}
+
 
 /* ---------- Icons x 48 plain --------- */
 .i48plain-alert { @extend .icon_button_large; background-image:url(../images/icons/48/plain/alert.png) }
@@ -927,7 +981,7 @@ label.error , label.message {
   background:url(../images/icons/18/orange/alert.png) no-repeat;
   color:#ff6600 !important;
   padding-left:19px; padding-top: 1px; margin-left:2px; white-space:nowrap; display: inline !important; }
-  
+
 .error-message {
 	padding:15px !important;
 	h2 {
@@ -941,7 +995,7 @@ label.error , label.message {
 	hr {
 		margin: 14px auto;
 	}
-}	
+}
 
 /*.pulldown { position:relative }
 .pulldown span.l { background:url(../images/combobox/white.png) no-repeat left top; height:22px; padding:2px 0 2px 10px; display:block }
