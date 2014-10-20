@@ -667,6 +667,7 @@ a.icon_button_large {
 .lsite { @extend .icon_button_large; background-image:url(../images/buttons/large/fancy/relatedSite.png) }
 .lhierarchy { @extend .icon_button_large; background-image:url(../images/buttons/large/fancy/hierarchy.png) }
 .lgovernment { @extend .icon_button_large; background-image:url(../images/buttons/large/fancy/government.png) }
+.laddressbook { @extend .icon_button_large; background-image:url(../images/buttons/large/fancy/addressBook.png) }
 
 
 /* ----- Large Plain----- */
@@ -822,6 +823,7 @@ a.icon_button_large {
 .i48grad-settings { background:url(../images/icons/48/gradient/settings.png) no-repeat center top; @include icon(48px); }
 .i48grad-call-flow { background:url(../images/icons/48/gradient/call-flow.png) no-repeat center top; @include icon(48px); }
 .i48grad-shield { background:url(../images/icons/48/gradient/shield.png) no-repeat center top; @include icon(48px); }
+.i48grad-addressbook { background:url(../images/icons/48/gradient/addressBook.png) no-repeat center top; @include icon(48px); }
 
 /* ---------- Icons x 48 gradient (black & red) --------- */
 .i48grad {
