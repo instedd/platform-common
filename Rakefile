@@ -37,12 +37,11 @@ task :deploy => [:build_zip, :upload]
 task :sample_index do
   puts "building samples/index.htm"
 
-  hg_tip = `hg tip`.strip
-  hg_version = hg_tip.match("^changeset:.*:(.*)$")[1]
+  git_tip = `git rev-parse head`.strip
 
   file = File.new("samples/index.htm", "w+")
-  file.puts "<!DOCTYPE HTML><html><body><h1>InSTEDD Platform Common</h1><pre>#{hg_tip}</pre>"
-  file.puts "<a href=\"https://bitbucket.org/instedd/platform-common/changeset/#{hg_version}\">source on bitbucket</a>"
+  file.puts "<!DOCTYPE HTML><html><body><h1>InSTEDD Platform Common</h1><pre>#{git_tip}</pre>"
+  file.puts "<a href=\"https://github.com/instedd/platform-common/commit/#{git_tip}\">source on GitHub</a>"
   file.puts "<ul>"
 
   Dir["#{Dir.pwd}/samples/**/*.htm"].sort.each do |filename|
