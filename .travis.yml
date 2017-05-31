@@ -1,7 +1,7 @@
 branches:
   only:
   - master
-before_deploy: "rake sample_index && mkdir -p build && cp -rf theme build/ && cp -rf samples build/ && cp index.htm build/"
+before_deploy: "bundle exec rake sample_index && mkdir -p build && cp -rf theme build/ && cp -rf samples build/ && cp index.htm build/"
 deploy:
   provider: s3
   access_key_id: AKIAJ6QIT5CN46UP75RA
