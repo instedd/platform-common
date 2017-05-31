@@ -1,6 +1,7 @@
 branches:
   only:
   - master
+before_deploy: "mkdir build && cp -rf theme build/ && cp -rf samples build/ && cp index.htm build/"
 deploy:
   provider: s3
   access_key_id: AKIAJ6QIT5CN46UP75RA
@@ -8,5 +9,6 @@ deploy:
     secure: XVicjxH638uh5lMD+kSFLYvcuP17l2T38VED/GHoRBrp3bYPcFvde2zTv8zesGWoUbLCFtEp7+mWlKrGG2pR9FzqWrJI6litUCCU0xIa3mqs1z8scH/7ILS6hsq+0bDwM5NKRzznqSGoNGlZvxp83/KEsywBzHSlOHJIQ/XNPzYo4cU8lqP92w5NtjcQy3TS8k4uptXPABCagL6PQMonXv61QGQCyojKj0KCdN6IuU9MNFOGu9OH/+/PIQlU9OR7CG7y1hvi8IWZbFgkKb+2ZaRpBOpJt55BClYGTR4gozVvjyyEo/XzjLZ5WD4fQCc3Beep58jtpikTEWRX9cLoXviJ1ujrl/hUoxUSJ9m+a7OI7vcZJOrNNJy71HA41/vMN+PdTEDpSHvTQgmDgCUXECYoQYK1Wzn2on91h0yyiR9RZStYh2wNfpYNK/X5FnLXKR4gGb5IDwraJybcuPNoMunx3f1GeeS/3Y+94bRW/Z1+jt8nNLjLPbB7y2sneOGqmYE9z00/lz0EyTu9+DMsES0hY0gfzu/0v2bnYBuEkXwqNbrmf3WFBMl91VYZpCM0VSHofJk9J3ZbSa4OdXQGzEXk2lxxFeWAstEiQ+7dU3V1VKqYBibAsK4Gr1KK+ZIrnxJ9O9p8jMUUNce12BDomFco51OiJphbIm1KlR2esuI=
   bucket: theme.instedd.org
   skip_cleanup: true
+  local_dir: build
   on:
     branch: master
